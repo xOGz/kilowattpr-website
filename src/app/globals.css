@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary (Amber Gold — from logo) */
+  --color-primary: #FFF0D0;
+  --color-primary-container: #F5A623;
+  --color-primary-fixed: #FFBC42;
+  --color-primary-fixed-dim: #E09500;
+  --color-on-primary: #3A2400;
+  --color-on-primary-container: #6B4400;
+
+  /* Secondary (Cyan — from logo solar panels) */
+  --color-secondary: #8BE8FF;
+  --color-secondary-container: #3DD8F5;
+  --color-on-secondary: #003545;
+
+  /* Tertiary */
+  --color-tertiary: #DEFCFF;
+  --color-tertiary-container: #00E5FF;
+  --color-tertiary-fixed: #79F5FF;
+
+  /* Surface Stack (Deep Navy/Indigo — from logo) */
+  --color-surface: #121240;
+  --color-surface-container-lowest: #0A0A2E;
+  --color-surface-container-low: #1B1B5E;
+  --color-surface-container: #222268;
+  --color-surface-container-high: #2D2D75;
+  --color-surface-container-highest: #383882;
+  --color-surface-bright: #42428C;
+
+  /* Text */
+  --color-on-surface: #E8E5F0;
+  --color-on-surface-variant: #C8B890;
+  --color-on-background: #E8E5F0;
+
+  /* Outline */
+  --color-outline: #8A7D60;
+  --color-outline-variant: #4D4232;
+
+  /* Typography */
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-headline: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+  --font-label: 'Inter', sans-serif;
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 200ms ease;
+  --transition-normal: 300ms ease-out;
+  --transition-slow: 500ms ease-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-on-surface);
+  background: var(--color-surface);
+}
+
+/* Selection */
+::selection {
+  background: rgba(245, 166, 35, 0.35);
+  color: #FFF0D0;
+}
+
+@layer components {
+  /* Primary CTA — Amber Gold Gradient */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 font-label font-semibold tracking-wide rounded-full transition-all duration-200;
+    background: linear-gradient(135deg, #E09500, #F5A623);
+    color: #3A2400;
+    padding: 16px 32px;
+    border: none;
+  }
+  .btn-primary:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(245, 166, 35, 0.35);
+  }
+
+  /* Secondary CTA — Glass Cyan */
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 font-label font-semibold tracking-wide rounded-full transition-all duration-200;
+    background: rgba(61, 216, 245, 0.12);
+    color: #8BE8FF;
+    border: 1px solid rgba(139, 232, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 14px 28px;
+  }
+  .btn-secondary:hover {
+    background: rgba(61, 216, 245, 0.22);
+    transform: scale(1.02);
+  }
+
+  /* WhatsApp CTA */
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 font-label font-semibold tracking-wide rounded-full transition-all duration-200;
+    background: #25D366;
+    color: #fff;
+    padding: 16px 32px;
+    border: none;
+  }
+  .btn-whatsapp:hover {
+    background: #20BD5A;
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+  }
+
+  /* Section Title */
+  .section-title {
+    @apply font-display text-display-md leading-tight;
+    color: var(--color-on-surface);
+  }
+
+  /* Section Subtitle */
+  .section-subtitle {
+    @apply font-body text-body-lg mt-4 max-w-2xl;
+    color: var(--color-on-surface-variant);
+  }
+
+  /* Card — Floating Pane (No Borders!) */
+  .card {
+    background: var(--color-surface-container-highest);
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    transition: transform 300ms ease-out, background-color 300ms ease-out;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    background: var(--color-surface-bright);
+  }
+
+  /* Glass Panel — Navy tinted */
+  .glass {
+    background: rgba(27, 27, 94, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Glass Panel — Frosted Solar */
+  .glass-frosted {
+    background: rgba(45, 45, 117, 0.45);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Chip — Active Status (LED look) */
+  .chip-active {
+    @apply font-label text-label-md uppercase tracking-widest;
+    background: rgba(61, 216, 245, 0.15);
+    color: #3DD8F5;
+    border-radius: var(--radius-sm);
+    padding: 6px 12px;
+  }
+
+  /* Chip — Gold */
+  .chip-gold {
+    @apply font-label text-label-md uppercase tracking-widest;
+    background: rgba(245, 166, 35, 0.15);
+    color: #F5A623;
+    border-radius: var(--radius-sm);
+    padding: 6px 12px;
+  }
+
+  /* Ghost border — for input fields */
+  .ghost-border {
+    border: 1px solid rgba(77, 66, 50, 0.15);
+  }
+
+  /* Input Field — Clean Tech */
+  .input-field {
+    background: var(--color-surface-container-lowest);
+    border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    padding: var(--spacing-4);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+    transition: border-color 200ms ease;
+  }
+  .input-field:focus {
+    border-bottom-color: var(--color-primary-container);
+    outline: none;
+  }
+}
+
+/* Scroll reveal animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 500ms ease-out forwards;
+}
+
+/* Staggered children animation */
+.stagger-children > * {
+  opacity: 0;
+  animation: fadeInUp 500ms ease-out forwards;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-children > *:nth-child(2) { animation-delay: 50ms; }
+.stagger-children > *:nth-child(3) { animation-delay: 100ms; }
+.stagger-children > *:nth-child(4) { animation-delay: 150ms; }
+.stagger-children > *:nth-child(5) { animation-delay: 200ms; }
+.stagger-children > *:nth-child(6) { animation-delay: 250ms; }
