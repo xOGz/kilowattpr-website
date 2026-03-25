@@ -8,6 +8,8 @@ import {
 import QuoteForm from '@/components/QuoteForm'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import HeroWithTextRotate from '@/components/HeroWithTextRotate'
+import TestimonialsSection from '@/components/TestimonialsSection'
 
 const HeroDottedSurface = dynamic(() => import('@/components/HeroDottedSurface'), { ssr: false })
 
@@ -137,52 +139,8 @@ export default function HomePage() {
       <LocalBusinessSchema />
       <FAQSchema faqs={faqs} />
 
-      {/* Hero — Dark canvas with Three.js dotted surface */}
-      <section className="relative bg-surface overflow-hidden min-h-[90vh] flex items-center">
-        <HeroDottedSurface />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-          <div className="max-w-4xl">
-            <div className="chip-gold inline-flex items-center gap-2 mb-8">
-              <Star size={12} />
-              4.9★ — 147 RESEÑAS VERIFICADAS
-            </div>
-            <h1 className="font-display text-display-lg mb-6 text-on-surface">
-              Energía Solar de{' '}
-              <span className="text-primary-container">Vanguardia</span>
-              <br />
-              en Puerto Rico
-            </h1>
-            <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-              Técnicos y jornaleros con más de una década de experiencia en Puerto Rico.
-              Independencia energética real para tu hogar o negocio.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/17874312275"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-base px-8 py-4"
-              >
-                <MessageCircle size={20} />
-                Cotización Gratis por WhatsApp
-              </a>
-              <Link href="/servicios" className="btn-secondary text-base px-8 py-4">
-                Ver Servicios <ArrowRight size={18} />
-              </Link>
-            </div>
-
-            {/* Language switcher */}
-            <div className="mt-8 flex items-center gap-3 text-sm text-on-surface-variant">
-              <span className="text-primary-container font-semibold">Español</span>
-              <span className="text-outline">|</span>
-              <Link href="/en" className="hover:text-primary-container transition-colors">
-                English
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero — Enhanced with 21st.dev TextRotate + Three.js dotted surface */}
+      <HeroWithTextRotate />
 
       {/* Trust bar — Subtle tonal shift, no borders */}
       <section className="bg-surface-container-low">
@@ -296,53 +254,8 @@ export default function HomePage() {
       {/* FAQ */}
       <FAQSection faqs={faqs} title="Preguntas Frecuentes sobre Energía Solar en Puerto Rico" />
 
-      {/* Reviews — Glass cards */}
-      <section className="py-20 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="section-title">Lo Que Dicen Nuestros Clientes</h2>
-            <div className="flex items-center justify-center gap-2 mt-5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="text-primary-container fill-primary-container" size={24} />
-              ))}
-              <span className="text-2xl font-display font-bold text-on-surface ml-2">4.9</span>
-              <span className="text-on-surface-variant">/ 147 reseñas</span>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                name: 'Carlos M.',
-                location: 'Aguada, PR',
-                text: 'Excelente servicio de principio a fin. El equipo de Kilowatt PR manejó todos los permisos y la interconexión con LUMA. Mi factura bajó un 90% desde el primer mes. 100% recomendados.',
-              },
-              {
-                name: 'María L.',
-                location: 'San Juan, PR',
-                text: 'Después de los apagones del año pasado decidí instalar el sistema con batería. Kilowatt PR me explicó todo claramente, el precio fue justo y la instalación fue rápida. Ahora tengo paz mental.',
-              },
-              {
-                name: 'Roberto V.',
-                location: 'Ponce, PR',
-                text: 'Contraté para mi negocio. El equipo fue muy profesional, llegaron a tiempo y el sistema funciona perfectamente. Ya van 8 meses y cero problemas. El ahorro mensual es real.',
-              },
-            ].map((review) => (
-              <div key={review.name} className="card">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-primary-container fill-primary-container" size={16} />
-                  ))}
-                </div>
-                <p className="text-on-surface-variant text-body-md leading-relaxed mb-5">&ldquo;{review.text}&rdquo;</p>
-                <div>
-                  <p className="font-headline font-semibold text-on-surface">{review.name}</p>
-                  <p className="text-label-md text-on-surface-variant font-label">{review.location}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Reviews — 21st.dev Auto-scrolling Testimonials Columns */}
+      <TestimonialsSection />
 
       {/* Quote Form + CTA */}
       <section className="py-20 bg-surface-container-low">

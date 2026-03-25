@@ -1,7 +1,8 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
+    darkMode: ['class'],
+    content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,12 +10,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // shadcn compatibility layer (mapped to Kilowatt brand)
+        background: '#121240',
+        foreground: '#E8E5F0',
+        card: { DEFAULT: '#383882', foreground: '#E8E5F0' },
+        popover: { DEFAULT: '#222268', foreground: '#E8E5F0' },
+        muted: { DEFAULT: '#1B1B5E', foreground: '#C8B890' },
+        accent: { DEFAULT: '#2D2D75', foreground: '#E8E5F0' },
+        destructive: { DEFAULT: '#FFB4AB', foreground: '#3A2400' },
+        border: 'rgba(138, 125, 96, 0.3)',
+        input: 'rgba(138, 125, 96, 0.2)',
+        ring: '#F5A623',
+
         // Primary (Amber Gold — from logo)
         primary: {
           DEFAULT: '#FFF0D0',
           container: '#F5A623',
           fixed: '#FFBC42',
           'fixed-dim': '#E09500',
+          foreground: '#3A2400',
         },
         'on-primary': {
           DEFAULT: '#3A2400',
@@ -125,7 +139,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 }
 
 export default config
