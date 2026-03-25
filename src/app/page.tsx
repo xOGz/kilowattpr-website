@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import {
   Sun, Battery, Home, Wrench, Star, CheckCircle, Phone, MessageCircle,
   ArrowRight, Shield, MapPin, Zap,
@@ -8,6 +8,8 @@ import {
 import QuoteForm from '@/components/QuoteForm'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+
+const HeroDottedSurface = dynamic(() => import('@/components/HeroDottedSurface'), { ssr: false })
 
 export const metadata: Metadata = {
   title: 'Instalación de Paneles Solares en Puerto Rico',
@@ -135,19 +137,10 @@ export default function HomePage() {
       <LocalBusinessSchema />
       <FAQSchema faqs={faqs} />
 
-      {/* Hero — Dark canvas with editorial typography */}
+      {/* Hero — Dark canvas with Three.js dotted surface */}
       <section className="relative bg-surface overflow-hidden min-h-[90vh] flex items-center">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1600&q=80"
-            alt="Paneles solares instalados en techo en Puerto Rico"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-          {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface" />
-        </div>
+        <HeroDottedSurface />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
           <div className="max-w-4xl">
             <div className="chip-gold inline-flex items-center gap-2 mb-8">
