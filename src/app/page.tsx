@@ -5,6 +5,7 @@ import {
   Sun, Battery, Home, Wrench, Star, CheckCircle, Phone, MessageCircle,
   ArrowRight, Shield, MapPin, Zap,
 } from 'lucide-react'
+import QuoteForm from '@/components/QuoteForm'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 
@@ -335,44 +336,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA — Gold gradient section */}
-      <section className="py-20 relative overflow-hidden">
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(135deg, #E09500, #F5A623)' }}
-        />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-5" style={{ color: '#3A2400' }}>
-            ¿Listo para la Independencia Energética?
-          </h2>
-          <p className="text-lg mb-10 font-body" style={{ color: '#6B4400' }}>
-            Agenda tu consulta gratis hoy. Sin compromiso, sin costo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/17874312275"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 font-label font-semibold tracking-wide px-8 py-4 rounded-full transition-all duration-200 text-lg"
-              style={{
-                background: '#121240',
-                color: '#E8E5F0',
-              }}
-            >
-              <MessageCircle size={22} />
-              WhatsApp — Cotización Gratis
-            </a>
-            <a
-              href="tel:+17874312275"
-              className="inline-flex items-center justify-center gap-2 font-label font-semibold tracking-wide px-8 py-4 rounded-full transition-all duration-200 text-lg"
-              style={{
-                background: 'rgba(255, 255, 255, 0.9)',
-                color: '#3A2400',
-              }}
-            >
-              <Phone size={22} />
-              787-431-2275
-            </a>
+      {/* Quote Form + CTA */}
+      <section className="py-20 bg-surface-container-low">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-on-surface mb-5">
+                ¿Listo para la Independencia Energética?
+              </h2>
+              <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
+                Completa el formulario y te contactamos en menos de 24 horas con tu cotización
+                gratis. Sin compromiso, sin costo.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://wa.me/17874312275"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-whatsapp text-base px-6 py-4"
+                >
+                  <MessageCircle size={20} />
+                  WhatsApp — Respuesta Inmediata
+                </a>
+                <a
+                  href="tel:+17874312275"
+                  className="btn-secondary text-base px-6 py-4"
+                >
+                  <Phone size={20} />
+                  787-431-2275
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <h3 className="font-headline font-semibold text-on-surface text-lg mb-5">
+                Solicita Tu Cotización Gratis
+              </h3>
+              <QuoteForm />
+            </div>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import QuoteForm from '@/components/QuoteForm'
 import { Home, CheckCircle, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -138,18 +139,11 @@ export default function SelladoTechoPage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-solar-yellow/10 border border-solar-yellow/30 rounded-xl p-6 text-center">
-            <p className="text-navy-dark font-bold text-lg mb-4">
+          <div className="mt-12 bg-solar-yellow/10 border border-solar-yellow/30 rounded-xl p-8">
+            <h3 className="text-navy-dark font-bold text-lg mb-5 text-center">
               Protege tu techo antes de la próxima temporada de lluvias
-            </p>
-            <a
-              href="https://wa.me/17874312275"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary"
-            >
-              Solicitar Evaluación Gratis
-            </a>
+            </h3>
+            <QuoteForm defaultService="Sellado de techo" />
           </div>
         </div>
       </section>
