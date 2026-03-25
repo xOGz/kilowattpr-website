@@ -56,7 +56,7 @@ export default function IncentivosPage() {
             </div>
             <div className="flex items-center gap-1">
               <User size={14} />
-              <span>Equipo Kilowatt PR</span>
+              <Link href="/equipo/julio-santiago-perez" className="hover:text-solar-yellow transition-colors">Ing. Julio A. Santiago Pérez, PE</Link>
             </div>
           </div>
 
@@ -76,15 +76,20 @@ export default function IncentivosPage() {
           <h2>El Crédito Tributario Federal del 30% (ITC)</h2>
           <p>
             El incentivo más significativo para la energía solar en Puerto Rico en 2026 sigue
-            siendo el Crédito Tributario para Inversiones en Energía Limpia (Clean Energy
-            Investment Tax Credit, ITC). Este crédito federal permite deducir el 30% del
-            costo total del sistema solar de lo que debes en impuestos federales.
+            siendo el{' '}
+            <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener noreferrer">
+              Crédito Tributario para Inversiones en Energía Limpia (ITC)
+            </a>, según el IRS. Este crédito federal permite deducir el 30% del costo total
+            del sistema solar de lo que debes en impuestos federales.
           </p>
           <p>
-            El crédito aplica sobre el costo completo del sistema: paneles, inversor, batería
-            (si se instala como parte del proyecto), materiales de instalación y mano de obra.
-            Para un sistema de $25,000, el crédito es de $7,500. Para un sistema de $35,000
-            con batería, el crédito sería de $10,500.
+            Según la{' '}
+            <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics" target="_blank" rel="noopener noreferrer">
+              guía del Departamento de Energía para propietarios
+            </a>, el crédito aplica sobre el costo completo del sistema: paneles, inversor,
+            batería (si se instala como parte del proyecto), materiales de instalación y mano
+            de obra. Para un sistema de $25,000, el crédito es de $7,500. Para un sistema de
+            $35,000 con batería, el crédito sería de $10,500.
           </p>
 
           <div className="not-prose bg-solar-yellow/5 border border-solar-yellow/30 rounded-xl p-6 my-6">
@@ -121,18 +126,28 @@ export default function IncentivosPage() {
 
           <h2>Ley Núm. 17 — Marco Regulatorio Solar de Puerto Rico</h2>
           <p>
-            La Ley de Política Pública Energética de Puerto Rico establece el marco para
-            los incentivos locales de energía renovable. Incluye disposiciones importantes
+            La{' '}
+            <a href="https://energia.pr.gov" target="_blank" rel="noopener noreferrer">
+              Ley de Política Pública Energética de Puerto Rico
+            </a>, administrada por la PREB (Puerto Rico Energy Bureau), establece el marco
+            para los incentivos locales de energía renovable. Incluye disposiciones importantes
             para los propietarios de sistemas solares:
           </p>
 
           <h3>Medición Neta (Net Metering)</h3>
           <p>
-            El programa de medición neta permite a los clientes solares recibir crédito en
-            su cuenta de LUMA Energy por la energía que exportan a la red cuando su sistema
-            produce más de lo que consumen. Este crédito reduce las facturas futuras de LUMA.
-            El valor exacto del crédito por kWh exportado y las reglas específicas del programa
-            están sujetos a las regulaciones de la PREB (Puerto Rico Energy Bureau).
+            El programa de{' '}
+            <a href="https://www.energy.gov/eere/solar/net-metering" target="_blank" rel="noopener noreferrer">
+              medición neta (net metering)
+            </a>{' '}
+            permite a los clientes solares recibir crédito en su cuenta de{' '}
+            <a href="https://lumaenergy.com/generacion-distribuida/" target="_blank" rel="noopener noreferrer">
+              LUMA Energy
+            </a>{' '}
+            por la energía que exportan a la red cuando su sistema produce más de lo que
+            consumen. Este crédito reduce las facturas futuras de LUMA. El valor exacto del
+            crédito por kWh exportado y las reglas específicas del programa están sujetos a
+            las regulaciones de la PREB.
           </p>
 
           <h3>Exención del Impuesto sobre la Propiedad</h3>
@@ -164,9 +179,17 @@ export default function IncentivosPage() {
 
           <h2>¿Cómo Calcular el Retorno de Inversión con Incentivos?</h2>
           <p>
-            Con el crédito federal del 30% y los ahorros mensuales en la factura de LUMA Energy,
-            la mayoría de los sistemas solares en Puerto Rico se pagan en 4 a 6 años. Para un
-            sistema de $25,000:
+            Con el crédito federal del 30% y los ahorros mensuales en la factura de LUMA Energy
+            — cuyas{' '}
+            <a href="https://www.eia.gov/electricity/monthly/epm_table_5_6_a.html" target="_blank" rel="noopener noreferrer">
+              tarifas están entre las más altas de EE.UU. según la EIA
+            </a>{' '}
+            — la mayoría de los sistemas solares en Puerto Rico se pagan en 4 a 6 años. Según
+            la{' '}
+            <a href="https://www.seia.org/solar-industry-research-data" target="_blank" rel="noopener noreferrer">
+              SEIA (Solar Energy Industries Association)
+            </a>, Puerto Rico es uno de los mercados con mejor retorno de inversión solar.
+            Para un sistema de $25,000:
           </p>
           <ul>
             <li>Costo después del crédito federal: $17,500</li>

@@ -130,6 +130,81 @@ export function FAQSchema({ faqs }: { faqs: { question: string; answer: string }
   )
 }
 
+export const authorData = {
+  name: 'Julio A. Santiago Pérez',
+  slug: 'julio-santiago-perez',
+  title: {
+    es: 'Ingeniero Electricista Licenciado',
+    en: 'Licensed Electrical Engineer',
+  },
+  credentials: {
+    peLicense: '6083',
+    peLicenseExpires: '2028-04-12',
+    pvCertification: 'PPPE-PV-1809',
+    certifyingBody: 'DDEC — Departamento de Desarrollo Económico y Comercio de Puerto Rico',
+  },
+  experience: '50+ años',
+  bio: {
+    es: 'Ingeniero electricista licenciado con más de 50 años de experiencia. Ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). Certificado como instalador de sistemas fotovoltaicos por el Programa de Política Pública Energética de Puerto Rico.',
+    en: 'Licensed electrical engineer with over 50 years of experience. Former NASA engineer and former professor at the University of Puerto Rico, Mayagüez Campus (RUM). Certified photovoltaic systems installer by Puerto Rico\'s Public Energy Policy Program.',
+  },
+  url: 'https://www.kilowattpr.com/equipo/julio-santiago-perez',
+}
+
+export function PersonSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': 'https://kilowattpr.com/#julio-santiago-perez',
+    name: authorData.name,
+    jobTitle: 'Ingeniero Electricista Licenciado / Licensed Electrical Engineer',
+    description: authorData.bio.es,
+    url: authorData.url,
+    worksFor: { '@id': 'https://kilowattpr.com/#organization' },
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'Professional License',
+        name: 'Ingeniero Licenciado — Licensed Engineer',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'Junta Examinadora de Ingenieros y Agrimensores de Puerto Rico',
+        },
+        validFrom: '2023-04-13',
+        validUntil: '2028-04-12',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'Professional Certification',
+        name: 'Instalador Certificado de Sistemas PV (Fotovoltaicos)',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'Programa de Política Pública Energética — DDEC Puerto Rico',
+        },
+        identifier: 'PPPE-PV-1809',
+      },
+    ],
+    alumniOf: {
+      '@type': 'CollegeOrUniversity',
+      name: 'Universidad de Puerto Rico, Recinto Universitario de Mayagüez (RUM)',
+    },
+    knowsAbout: [
+      'Solar Energy',
+      'Photovoltaic Systems',
+      'Electrical Engineering',
+      'Battery Storage Systems',
+      'LUMA Energy Interconnection',
+    ],
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
 export function ArticleSchema({
   title,
   description,
@@ -148,9 +223,11 @@ export function ArticleSchema({
     description,
     datePublished,
     author: {
-      '@type': 'Organization',
-      name: 'Equipo Kilowatt PR',
-      url: 'https://kilowattpr.com',
+      '@type': 'Person',
+      '@id': 'https://kilowattpr.com/#julio-santiago-perez',
+      name: authorData.name,
+      jobTitle: 'Ingeniero Electricista Licenciado (PE #6083)',
+      url: authorData.url,
     },
     publisher: { '@id': 'https://kilowattpr.com/#organization' },
     url,

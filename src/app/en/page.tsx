@@ -10,47 +10,48 @@ import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
-  title: 'Instalación de Paneles Solares en Puerto Rico',
+  title: 'Solar Panel Installation in Puerto Rico',
   description:
-    'Kilowatt PR LLC: empresa #1 en instalación de paneles solares en Puerto Rico. Técnicos y jornaleros con más de una década de experiencia. Cotización gratis hoy.',
+    'Kilowatt PR LLC: #1 solar panel installation company in Puerto Rico. Certified technicians with over a decade of experience. Free quote today.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com',
+    canonical: 'https://www.kilowattpr.com/en',
     languages: {
       'es': 'https://www.kilowattpr.com',
       'en': 'https://www.kilowattpr.com/en',
     },
   },
   openGraph: {
-    title: 'Instalación de Paneles Solares en Puerto Rico | Kilowatt PR',
+    title: 'Solar Panel Installation in Puerto Rico | Kilowatt PR',
     description:
-      'Empresa #1 en instalación de paneles solares en Puerto Rico. Técnicos certificados, garantía de 25 años, consulta gratis.',
-    url: 'https://www.kilowattpr.com',
+      '#1 solar panel installation company in Puerto Rico. Certified technicians, 25-year warranty, free consultation.',
+    url: 'https://www.kilowattpr.com/en',
+    locale: 'en_US',
   },
 }
 
 const services = [
   {
     icon: Sun,
-    title: 'Instalación de Paneles Solares',
-    desc: 'Sistemas fotovoltaicos residenciales y comerciales diseñados para las condiciones climáticas de Puerto Rico.',
+    title: 'Solar Panel Installation',
+    desc: 'Residential and commercial photovoltaic systems designed for Puerto Rico\'s climate conditions.',
     href: '/servicios/instalacion-paneles-solares',
   },
   {
     icon: Battery,
-    title: 'Sistemas con Batería',
-    desc: 'Independencia energética total durante los apagones de LUMA Energy. Hasta 24 horas de respaldo.',
+    title: 'Battery Backup Systems',
+    desc: 'Full energy independence during LUMA Energy outages. Up to 24 hours of backup power.',
     href: '/servicios/sistemas-con-bateria',
   },
   {
     icon: Home,
-    title: 'Sellado de Techo',
-    desc: 'Impermeabilización profesional del techo antes de la instalación. Garantía de 2 años de mano de obra.',
+    title: 'Roof Sealing',
+    desc: 'Professional roof waterproofing before installation. 2-year workmanship warranty.',
     href: '/servicios/sellado-de-techo',
   },
   {
     icon: Wrench,
-    title: 'Mantenimiento y Lavado',
-    desc: 'Limpieza profesional cada 6–8 meses para mantener la máxima eficiencia de tus paneles solares.',
+    title: 'Maintenance & Cleaning',
+    desc: 'Professional cleaning every 6-8 months to maintain maximum solar panel efficiency.',
     href: '/servicios/mantenimiento-lavado',
   },
 ]
@@ -58,111 +59,110 @@ const services = [
 const differentiators = [
   {
     icon: CheckCircle,
-    title: 'Más de una Década de Experiencia',
-    desc: 'Nuestros técnicos y jornaleros con más de una década de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de ARPE y el proceso de interconexión con LUMA Energy como nadie.',
+    title: 'Over a Decade of Experience',
+    desc: 'Our certified technicians with over a decade of hands-on experience in Puerto Rico know the climate conditions, ARPE permit requirements, and LUMA Energy interconnection process like no one else.',
   },
   {
     icon: Shield,
-    title: 'Garantía de 25 Años en Paneles',
-    desc: 'Trabajamos con los fabricantes más confiables del mercado. Tus paneles están respaldados por una garantía de 25 años, más 2 años de garantía de mano de obra en sellado de techo.',
+    title: '25-Year Panel Warranty',
+    desc: 'We work with the most reliable manufacturers in the market. Your panels are backed by a 25-year warranty, plus 2 years of workmanship warranty on roof sealing.',
   },
   {
     icon: Zap,
-    title: 'Diseñado para Puerto Rico',
-    desc: 'Cada sistema que instalamos está optimizado para las condiciones de Puerto Rico: huracanes, calor tropical, polvo del Sahara y la infraestructura de LUMA Energy.',
+    title: 'Designed for Puerto Rico',
+    desc: 'Every system we install is optimized for Puerto Rico\'s conditions: hurricanes, tropical heat, Saharan dust, and LUMA Energy\'s infrastructure.',
   },
   {
     icon: Star,
-    title: '4.9 Estrellas / 147 Reseñas',
-    desc: 'Nuestra reputación la construyen nuestros clientes. Con 4.9 estrellas en 147 reseñas verificadas, somos la empresa solar de mayor confianza en Puerto Rico.',
+    title: '4.9 Stars / 147 Reviews',
+    desc: 'Our reputation is built by our customers. With 4.9 stars across 147 verified reviews, we are the most trusted solar company in Puerto Rico.',
   },
 ]
 
 const steps = [
   {
     num: '01',
-    title: 'Consulta Gratis',
-    desc: 'Analizamos tu consumo eléctrico, diseñamos tu sistema en 3D y te presentamos una proyección de ahorro a 25 años, sin costo y sin compromiso.',
+    title: 'Free Consultation',
+    desc: 'We analyze your electricity consumption, design your system in 3D, and present a 25-year savings projection — no cost, no obligation.',
   },
   {
     num: '02',
-    title: 'Diseño y Permisos',
-    desc: 'Manejamos todo el proceso de permisología con ARPE y la solicitud de interconexión con LUMA Energy. Tú no tienes que hacer nada.',
+    title: 'Design & Permits',
+    desc: 'We handle all permitting with ARPE and the interconnection request with LUMA Energy. You don\'t have to do anything.',
   },
   {
     num: '03',
-    title: 'Instalación y Activación',
-    desc: 'Nuestro equipo instala tu sistema en 1–2 días. Del contrato a producción: 6–10 semanas. Empiezas a ahorrar desde el primer mes.',
+    title: 'Installation & Activation',
+    desc: 'Our team installs your system in 1-2 days. From contract to production: 6-10 weeks. You start saving from month one.',
   },
 ]
 
 const faqs = [
   {
-    question: '¿Cuánto cuesta un sistema solar en Puerto Rico?',
+    question: 'How much does a solar system cost in Puerto Rico?',
     answer:
-      'Un sistema solar residencial en Puerto Rico tiene un costo promedio de $15,000 a $35,000, dependiendo del consumo eléctrico del hogar y el tamaño del sistema requerido. Los sistemas más populares van de 5kW a 10kW con o sin batería. Ofrecemos opciones de financiamiento que permiten que muchas familias comiencen a ahorrar desde el primer mes sin un desembolso total inicial. Durante la consulta gratis te presentamos un análisis detallado del costo y los ahorros proyectados a 25 años.',
+      'A residential solar system in Puerto Rico costs between $15,000 and $35,000 on average, depending on your home\'s electricity consumption and the system size required. The most popular systems range from 5kW to 10kW with or without battery backup. We offer financing options that allow many families to start saving from month one without a large upfront payment. During the free consultation, we present a detailed analysis of the cost and projected savings over 25 years.',
   },
   {
-    question: '¿Cuánto tiempo tarda la instalación solar en Puerto Rico?',
+    question: 'How long does solar installation take in Puerto Rico?',
     answer:
-      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 6 y 10 semanas. Este tiempo incluye la obtención de permisos con ARPE (Administración de Reglamentos y Permisos), la aprobación de interconexión con LUMA Energy, la llegada del equipo y la instalación física. La instalación en sí toma generalmente 1 a 2 días. Manejamos todo el proceso de permisos por ti, sin que tengas que hacer nada.',
+      'The complete process from contract signing to your system producing energy takes between 6 and 10 weeks. This includes obtaining permits from ARPE (Administration of Regulations and Permits), interconnection approval with LUMA Energy, equipment delivery, and physical installation. The installation itself typically takes 1 to 2 days. We handle the entire permitting process for you — you don\'t have to do anything.',
   },
   {
-    question: '¿Con qué frecuencia se deben limpiar los paneles solares?',
+    question: 'How often should solar panels be cleaned?',
     answer:
-      'Recomendamos mantenimiento y lavado cada 6 a 8 meses para sistemas en el interior y central de Puerto Rico. Para propiedades en zonas costeras, la frecuencia ideal es cada 4 a 6 meses debido a la acumulación de salitre y polvo del Sahara que reducen la eficiencia de los paneles. Puerto Rico tiene condiciones ambientales únicas que exigen un mantenimiento especializado. Un panel sucio puede perder hasta un 25% de su eficiencia, por lo que el mantenimiento regular protege tu inversión.',
+      'We recommend maintenance and cleaning every 6 to 8 months for systems in interior and central Puerto Rico. For properties in coastal areas, the ideal frequency is every 4 to 6 months due to salt buildup and Saharan dust that reduce panel efficiency. Puerto Rico has unique environmental conditions that require specialized maintenance. A dirty panel can lose up to 25% of its efficiency, so regular maintenance protects your investment.',
   },
   {
-    question: '¿Funciona la batería solar durante los apagones de LUMA Energy?',
+    question: 'Does the solar battery work during LUMA Energy outages?',
     answer:
-      'Sí, los sistemas solares con batería están diseñados específicamente para proporcionar independencia energética durante los apagones de LUMA Energy. Un sistema de batería estándar puede proporcionar hasta 24 horas de electricidad para los electrodomésticos esenciales del hogar. Nuestros sistemas están configurados para desconectarse automáticamente de la red cuando detectan un apagón y reconectarse cuando LUMA Energy restaura el servicio. Esto protege tanto a tu familia como a los técnicos de LUMA que trabajan en las líneas.',
+      'Yes, solar systems with battery backup are specifically designed to provide energy independence during LUMA Energy outages. A standard battery system can provide up to 24 hours of electricity for essential home appliances. Our systems are configured to automatically disconnect from the grid when they detect an outage and reconnect when LUMA Energy restores service. This protects both your family and the LUMA technicians working on the lines.',
   },
   {
-    question: '¿Qué garantías ofrecen en los sistemas solares?',
+    question: 'What warranties do you offer on solar systems?',
     answer:
-      'Los paneles solares que instalamos cuentan con una garantía del fabricante de 25 años que cubre tanto el rendimiento como los defectos de fabricación. Adicionalmente, ofrecemos una garantía de 2 años de mano de obra en todos los trabajos de sellado de techo. Los inversores y baterías tienen garantías específicas según el fabricante, generalmente entre 5 y 10 años. Todos estos detalles te los explicamos con claridad durante la consulta inicial.',
+      'The solar panels we install come with a manufacturer warranty of 25 years covering both performance and manufacturing defects. Additionally, we offer a 2-year workmanship warranty on all roof sealing work. Inverters and batteries have specific warranties depending on the manufacturer, generally between 5 and 10 years. We explain all these details clearly during the initial consultation.',
   },
   {
-    question: '¿Qué incluye la consulta gratis de Kilowatt PR?',
+    question: 'What does Kilowatt PR\'s free consultation include?',
     answer:
-      'Nuestra consulta gratis incluye: análisis completo de tu consumo eléctrico actual, diseño 3D personalizado del sistema solar para tu techo específico, proyección de ahorros a 25 años basada en las tarifas actuales de LUMA Energy, evaluación del estado del techo y recomendaciones, y un estimado detallado de la instalación con opciones de financiamiento. No hay compromiso de compra y toda la información es tuya para tomar la mejor decisión.',
+      'Our free consultation includes: a complete analysis of your current electricity consumption, a personalized 3D solar system design for your specific roof, a 25-year savings projection based on current LUMA Energy rates, roof condition assessment and recommendations, and a detailed installation estimate with financing options. There is no purchase obligation and all the information is yours to make the best decision.',
   },
 ]
 
-export default function HomePage() {
+export default function EnglishHomePage() {
   return (
     <>
       <LocalBusinessSchema />
       <FAQSchema faqs={faqs} />
 
-      {/* Hero — Dark canvas with editorial typography */}
+      {/* Hero */}
       <section className="relative bg-surface overflow-hidden min-h-[90vh] flex items-center">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1600&q=80"
-            alt="Paneles solares instalados en techo en Puerto Rico"
+            alt="Solar panels installed on a roof in Puerto Rico"
             fill
             className="object-cover opacity-20"
             priority
           />
-          {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
           <div className="max-w-4xl">
             <div className="chip-gold inline-flex items-center gap-2 mb-8">
               <Star size={12} />
-              4.9★ — 147 RESEÑAS VERIFICADAS
+              4.9★ — 147 VERIFIED REVIEWS
             </div>
             <h1 className="font-display text-display-lg mb-6 text-on-surface">
-              Energía Solar de{' '}
-              <span className="text-primary-container">Vanguardia</span>
+              Cutting-Edge{' '}
+              <span className="text-primary-container">Solar Energy</span>
               <br />
-              en Puerto Rico
+              in Puerto Rico
             </h1>
             <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-              Técnicos y jornaleros con más de una década de experiencia en Puerto Rico.
-              Independencia energética real para tu hogar o negocio.
+              Certified technicians with over a decade of hands-on experience in Puerto Rico.
+              Real energy independence for your home or business.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -172,34 +172,34 @@ export default function HomePage() {
                 className="btn-primary text-base px-8 py-4"
               >
                 <MessageCircle size={20} />
-                Cotización Gratis por WhatsApp
+                Free Quote via WhatsApp
               </a>
               <Link href="/servicios" className="btn-secondary text-base px-8 py-4">
-                Ver Servicios <ArrowRight size={18} />
+                View Services <ArrowRight size={18} />
               </Link>
             </div>
 
             {/* Language switcher */}
             <div className="mt-8 flex items-center gap-3 text-sm text-on-surface-variant">
-              <span className="text-primary-container font-semibold">Español</span>
-              <span className="text-outline">|</span>
-              <Link href="/en" className="hover:text-primary-container transition-colors">
-                English
+              <Link href="/" className="hover:text-primary-container transition-colors">
+                Español
               </Link>
+              <span className="text-outline">|</span>
+              <span className="text-primary-container font-semibold">English</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trust bar — Subtle tonal shift, no borders */}
+      {/* Trust bar */}
       <section className="bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              { icon: Star, label: '4.9★ / 147 Reseñas' },
-              { icon: Shield, label: 'Garantía 25 Años' },
-              { icon: CheckCircle, label: '+10 Años Experiencia' },
-              { icon: MapPin, label: 'Todo Puerto Rico' },
+              { icon: Star, label: '4.9★ / 147 Reviews' },
+              { icon: Shield, label: '25-Year Warranty' },
+              { icon: CheckCircle, label: '10+ Years Experience' },
+              { icon: MapPin, label: 'All of Puerto Rico' },
             ].map(({ icon: Icon, label }) => (
               <div key={label} className="flex items-center justify-center gap-2 font-label text-label-lg text-on-surface-variant py-2">
                 <Icon size={16} className="text-primary-container" />
@@ -210,13 +210,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services grid — Floating pane cards */}
+      {/* Services grid */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">Nuestros Servicios</h2>
+            <h2 className="section-title">Our Services</h2>
             <p className="section-subtitle mx-auto mt-4">
-              Soluciones completas de energía solar para hogares y negocios en toda la isla.
+              Complete solar energy solutions for homes and businesses across the island.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
@@ -234,7 +234,7 @@ export default function HomePage() {
                 <h3 className="font-headline font-semibold text-on-surface mb-3">{svc.title}</h3>
                 <p className="text-body-md text-on-surface-variant leading-relaxed mb-5">{svc.desc}</p>
                 <span className="text-primary-container font-label text-label-lg flex items-center gap-1 mt-auto group-hover:gap-2 transition-all duration-200">
-                  Ver más <ArrowRight size={14} />
+                  Learn more <ArrowRight size={14} />
                 </span>
               </Link>
             ))}
@@ -242,14 +242,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Kilowatt — Elevated tonal section */}
+      {/* Why Kilowatt */}
       <section className="py-20 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">¿Por Qué Elegir Kilowatt PR?</h2>
+            <h2 className="section-title">Why Choose Kilowatt PR?</h2>
             <p className="section-subtitle mx-auto">
-              Somos la empresa solar de mayor confianza en Puerto Rico. Estos son nuestros
-              compromisos con cada cliente.
+              We are the most trusted solar company in Puerto Rico. These are our
+              commitments to every customer.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -268,17 +268,17 @@ export default function HomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Técnicos y jornaleros con más de una década de experiencia en Puerto Rico
+            Certified technicians with over a decade of hands-on experience in Puerto Rico
           </p>
         </div>
       </section>
 
-      {/* How it works — Steps with editorial numbers */}
+      {/* How it works */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">¿Cómo Funciona el Proceso?</h2>
-            <p className="section-subtitle mx-auto">De la consulta a la producción en 3 pasos.</p>
+            <h2 className="section-title">How Does the Process Work?</h2>
+            <p className="section-subtitle mx-auto">From consultation to production in 3 steps.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step) => (
@@ -301,19 +301,19 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <FAQSection faqs={faqs} title="Preguntas Frecuentes sobre Energía Solar en Puerto Rico" />
+      <FAQSection faqs={faqs} title="Frequently Asked Questions About Solar Energy in Puerto Rico" />
 
-      {/* Reviews — Glass cards */}
+      {/* Reviews */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <h2 className="section-title">What Our Customers Say</h2>
             <div className="flex items-center justify-center gap-2 mt-5">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="text-primary-container fill-primary-container" size={24} />
               ))}
               <span className="text-2xl font-display font-bold text-on-surface ml-2">4.9</span>
-              <span className="text-on-surface-variant">/ 147 reseñas</span>
+              <span className="text-on-surface-variant">/ 147 reviews</span>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -321,17 +321,17 @@ export default function HomePage() {
               {
                 name: 'Carlos M.',
                 location: 'Aguada, PR',
-                text: 'Excelente servicio de principio a fin. El equipo de Kilowatt PR manejó todos los permisos y la interconexión con LUMA. Mi factura bajó un 90% desde el primer mes. 100% recomendados.',
+                text: 'Excellent service from start to finish. The Kilowatt PR team handled all the permits and the LUMA interconnection. My bill dropped 90% from month one. 100% recommended.',
               },
               {
-                name: 'María L.',
+                name: 'Maria L.',
                 location: 'San Juan, PR',
-                text: 'Después de los apagones del año pasado decidí instalar el sistema con batería. Kilowatt PR me explicó todo claramente, el precio fue justo y la instalación fue rápida. Ahora tengo paz mental.',
+                text: 'After last year\'s blackouts I decided to install the battery system. Kilowatt PR explained everything clearly, the price was fair, and the installation was fast. Now I have peace of mind.',
               },
               {
                 name: 'Roberto V.',
                 location: 'Ponce, PR',
-                text: 'Contraté para mi negocio. El equipo fue muy profesional, llegaron a tiempo y el sistema funciona perfectamente. Ya van 8 meses y cero problemas. El ahorro mensual es real.',
+                text: 'I hired them for my business. The team was very professional, arrived on time, and the system works perfectly. It\'s been 8 months with zero issues. The monthly savings are real.',
               },
             ].map((review) => (
               <div key={review.name} className="card">
@@ -357,11 +357,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold text-on-surface mb-5">
-                ¿Listo para la Independencia Energética?
+                Ready for Energy Independence?
               </h2>
               <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
-                Completa el formulario y te contactamos en menos de 24 horas con tu cotización
-                gratis. Sin compromiso, sin costo.
+                Fill out the form and we&apos;ll contact you within 24 hours with your
+                free quote. No obligation, no cost.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
@@ -371,7 +371,7 @@ export default function HomePage() {
                   className="btn-whatsapp text-base px-6 py-4"
                 >
                   <MessageCircle size={20} />
-                  WhatsApp — Respuesta Inmediata
+                  WhatsApp — Instant Response
                 </a>
                 <a
                   href="tel:+17874312275"
@@ -384,7 +384,7 @@ export default function HomePage() {
             </div>
             <div className="card">
               <h3 className="font-headline font-semibold text-on-surface text-lg mb-5">
-                Solicita Tu Cotización Gratis
+                Request Your Free Quote
               </h3>
               <QuoteForm />
             </div>

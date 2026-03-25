@@ -56,7 +56,7 @@ export default function GuiaBateriaPage() {
             </div>
             <div className="flex items-center gap-1">
               <User size={14} />
-              <span>Equipo Kilowatt PR</span>
+              <Link href="/equipo/julio-santiago-perez" className="hover:text-solar-yellow transition-colors">Ing. Julio A. Santiago Pérez, PE</Link>
             </div>
           </div>
 
@@ -76,10 +76,16 @@ export default function GuiaBateriaPage() {
           <h2>¿Por Qué las Baterías Son Especialmente Importantes en Puerto Rico?</h2>
           <p>
             Puerto Rico tiene uno de los registros de confiabilidad eléctrica más bajos de
-            los Estados Unidos. Según datos históricos, los clientes residenciales de LUMA
-            Energy experimentan un promedio de más de 12 horas de apagón al año, con picos
-            significativos después de tormentas tropicales y huracanes. Durante el huracán
-            María en 2017, muchas comunidades estuvieron sin electricidad por semanas o meses.
+            los Estados Unidos. Según datos de la{' '}
+            <a href="https://www.eia.gov/electricity/monthly/epm_table_5_6_a.html" target="_blank" rel="noopener noreferrer">
+              Administración de Información Energética (EIA)
+            </a>, los clientes residenciales de LUMA Energy experimentan un promedio de más
+            de 12 horas de apagón al año, con picos significativos después de tormentas
+            tropicales y huracanes. Según el{' '}
+            <a href="https://www.energy.gov/ceser/puerto-rico-grid-recovery-and-modernization" target="_blank" rel="noopener noreferrer">
+              Departamento de Energía de EE.UU.
+            </a>, durante el huracán María en 2017, muchas comunidades estuvieron sin
+            electricidad por semanas o meses.
           </p>
           <p>
             A diferencia de los generadores de gasolina, que requieren combustible, producen
@@ -93,10 +99,13 @@ export default function GuiaBateriaPage() {
           <h3>Baterías de Litio-Ion (Recomendadas)</h3>
           <p>
             Las baterías de litio-ion son hoy el estándar de la industria para almacenamiento
-            solar residencial. Ofrecen alta densidad de energía, ciclos de vida de 4,000 a
-            10,000 ciclos, y requieren poco o ningún mantenimiento. Son más costosas que las
-            alternativas de plomo-ácido, pero su vida útil es significativamente mayor y
-            toleran mejor el calor tropical de Puerto Rico.
+            solar residencial. Según el{' '}
+            <a href="https://www.nrel.gov/docs/fy23osti/85332.pdf" target="_blank" rel="noopener noreferrer">
+              NREL (National Renewable Energy Laboratory)
+            </a>, ofrecen alta densidad de energía, ciclos de vida de 4,000 a 10,000 ciclos,
+            y requieren poco o ningún mantenimiento. Son más costosas que las alternativas de
+            plomo-ácido, pero su vida útil es significativamente mayor y toleran mejor el calor
+            tropical de Puerto Rico.
           </p>
 
           <h3>Baterías de Litio Ferrofosfato (LFP)</h3>
@@ -142,7 +151,10 @@ export default function GuiaBateriaPage() {
 
           <h2>Instalación Correcta en el Clima de Puerto Rico</h2>
           <p>
-            Las baterías de litio operan mejor en rangos de temperatura de 15°C a 35°C.
+            Según las{' '}
+            <a href="https://www.energy.gov/eere/solar/solar-energy-storage-basics" target="_blank" rel="noopener noreferrer">
+              guías del Departamento de Energía sobre almacenamiento solar
+            </a>, las baterías de litio operan mejor en rangos de temperatura de 15°C a 35°C.
             En Puerto Rico, las temperaturas en interiores no climatizados pueden superar
             los 40°C en verano, lo que puede acelerar la degradación de las baterías y
             reducir su vida útil. Por esta razón, Kilowatt PR instala las baterías en
@@ -153,7 +165,12 @@ export default function GuiaBateriaPage() {
           <h2>Sistema Solar + Batería vs. Generador de Gasolina</h2>
           <p>
             Muchos propietarios en Puerto Rico comparan las baterías solares con los
-            generadores de gasolina. La comparación más honesta muestra que:
+            generadores de gasolina. El{' '}
+            <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
+              NREL
+            </a>{' '}
+            ha documentado la caída de costos de almacenamiento que hace esta comparación
+            cada vez más favorable. La comparación más honesta muestra que:
           </p>
           <ul>
             <li>Las baterías funcionan automáticamente, sin intervención humana</li>

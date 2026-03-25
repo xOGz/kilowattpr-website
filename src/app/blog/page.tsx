@@ -50,7 +50,7 @@ export default function BlogPage() {
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
             Guías, consejos y todo lo que necesitas saber sobre energía solar en Puerto Rico.
-            Escrito por el equipo de Kilowatt PR.
+            Por el Ing. Julio A. Santiago Pérez, PE — ingeniero electricista con más de 50 años de experiencia.
           </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function BlogPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2 text-xs text-gray-400">
                     <User size={12} />
-                    <span>Equipo Kilowatt PR</span>
+                    <Link href="/equipo/julio-santiago-perez" className="hover:text-solar-yellow transition-colors">Ing. Julio A. Santiago Pérez, PE</Link>
                   </div>
                   <Link
                     href={`/blog/${post.slug}`}

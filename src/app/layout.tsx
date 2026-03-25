@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: 'https://www.kilowattpr.com',
+    languages: {
+      'es': 'https://www.kilowattpr.com',
+      'en': 'https://www.kilowattpr.com/en',
+      'x-default': 'https://www.kilowattpr.com',
+    },
   },
 }
 

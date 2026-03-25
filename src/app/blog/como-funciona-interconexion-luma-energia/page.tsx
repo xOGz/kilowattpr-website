@@ -56,7 +56,7 @@ export default function InterconexionLumaPage() {
             </div>
             <div className="flex items-center gap-1">
               <User size={14} />
-              <span>Equipo Kilowatt PR</span>
+              <Link href="/equipo/julio-santiago-perez" className="hover:text-solar-yellow transition-colors">Ing. Julio A. Santiago Pérez, PE</Link>
             </div>
           </div>
 
@@ -75,10 +75,16 @@ export default function InterconexionLumaPage() {
         <div className="prose prose-lg max-w-none text-gray-600">
           <h2>¿Qué es la Interconexión con LUMA Energy?</h2>
           <p>
-            La interconexión solar es el proceso oficial mediante el cual LUMA Energy autoriza
-            la conexión de tu sistema solar fotovoltaico a la red eléctrica de Puerto Rico.
+            La interconexión solar es el proceso oficial mediante el cual{' '}
+            <a href="https://lumaenergy.com" target="_blank" rel="noopener noreferrer">
+              LUMA Energy
+            </a>{' '}
+            autoriza la conexión de tu sistema solar fotovoltaico a la red eléctrica de Puerto Rico.
             Sin esta aprobación, tu sistema no puede funcionar conectado a la red de forma legal.
-            El proceso incluye la revisión técnica del diseño del sistema, la inspección de la
+            El proceso, regulado por la{' '}
+            <a href="https://energia.pr.gov" target="_blank" rel="noopener noreferrer">
+              Oficina Independiente de Protección al Consumidor de Energía (PREB)
+            </a>, incluye la revisión técnica del diseño del sistema, la inspección de la
             instalación y la instalación del medidor bidireccional que mide tanto el consumo
             como la exportación de energía.
           </p>
@@ -97,18 +103,22 @@ export default function InterconexionLumaPage() {
           <h3>Paso 2: Permiso de ARPE</h3>
           <p>
             Paralelamente a la solicitud de interconexión, se debe obtener el permiso de
-            instalación de ARPE (Administración de Reglamentos y Permisos). Aunque son
-            procesos separados, ocurren en paralelo. Kilowatt PR gestiona ambos procesos
-            simultáneamente para minimizar el tiempo total.
+            instalación de{' '}
+            <a href="https://ogpe.pr.gov" target="_blank" rel="noopener noreferrer">
+              OGPE (Oficina de Gerencia de Permisos)
+            </a>, anteriormente conocida como ARPE. Aunque son procesos separados, ocurren
+            en paralelo. Kilowatt PR gestiona ambos procesos simultáneamente para minimizar
+            el tiempo total.
           </p>
 
           <h3>Paso 3: Sometimiento de la Solicitud a LUMA</h3>
           <p>
-            Con la documentación técnica lista, se somete la solicitud de interconexión al
-            portal de LUMA Energy. La solicitud incluye el formulario oficial, los planos
-            técnicos, la documentación del equipo y la información del cliente. LUMA tiene
-            un período de revisión inicial de 5 a 10 días hábiles para confirmar que la
-            solicitud está completa.
+            Con la documentación técnica lista, se somete la solicitud de interconexión al{' '}
+            <a href="https://lumaenergy.com/generacion-distribuida/" target="_blank" rel="noopener noreferrer">
+              portal de generación distribuida de LUMA Energy
+            </a>. La solicitud incluye el formulario oficial, los planos técnicos, la documentación
+            del equipo y la información del cliente. LUMA tiene un período de revisión inicial
+            de 5 a 10 días hábiles para confirmar que la solicitud está completa.
           </p>
 
           <h3>Paso 4: Revisión Técnica de LUMA</h3>
@@ -137,9 +147,17 @@ export default function InterconexionLumaPage() {
           <h3>Paso 7: Instalación del Medidor Bidireccional y Activación</h3>
           <p>
             Tras las inspecciones aprobadas, LUMA Energy programa el cambio del medidor
-            convencional por el medidor bidireccional (net metering). Una vez instalado
-            el nuevo medidor, el sistema puede conectarse a la red y activarse. ¡Tu sistema
-            solar comienza a producir energía y a reducir tu factura desde este momento!
+            convencional por el medidor bidireccional (net metering). El programa de medición
+            neta está regulado por la{' '}
+            <a href="https://energia.pr.gov" target="_blank" rel="noopener noreferrer">
+              PREB (Puerto Rico Energy Bureau)
+            </a>{' '}
+            bajo las disposiciones del{' '}
+            <a href="https://www.energy.gov/eere/solar/net-metering" target="_blank" rel="noopener noreferrer">
+              net metering federal
+            </a>. Una vez instalado el nuevo medidor, el sistema puede conectarse a la red
+            y activarse. ¡Tu sistema solar comienza a producir energía y a reducir tu factura
+            desde este momento!
           </p>
 
           <h2>Tiempos Típicos del Proceso</h2>

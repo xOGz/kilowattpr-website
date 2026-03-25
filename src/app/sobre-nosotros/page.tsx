@@ -126,17 +126,17 @@ export default function AboutPage() {
             {[
               {
                 role: 'Instalador Principal',
-                name: '[Nombre]',
+                name: 'Xavier J. Acevedo',
                 desc: 'Técnico certificado con más de una década de experiencia en instalación de sistemas fotovoltaicos residenciales y comerciales en Puerto Rico.',
               },
               {
                 role: 'Gerente de Proyectos',
-                name: '[Nombre]',
+                name: 'Julio A. Santiago',
                 desc: 'Responsable de coordinar permisos de ARPE, interconexión con LUMA Energy y la experiencia de cada cliente desde la consulta hasta la activación.',
               },
               {
                 role: 'Servicio al Cliente',
-                name: '[Nombre]',
+                name: 'Kristen S. Román',
                 desc: 'Tu punto de contacto principal durante todo el proceso. Disponible para responder preguntas y asegurar que cada cliente quede completamente satisfecho.',
               },
             ].map((member) => (
@@ -150,9 +150,6 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <p className="text-center text-gray-400 text-sm mt-6">
-            * Nombres para actualizar por el cliente
-          </p>
         </div>
       </section>
 
@@ -172,7 +169,7 @@ export default function AboutPage() {
               <CheckCircle className="text-solar-yellow" size={28} />
               <div className="text-left">
                 <p className="font-bold">Licencia Contratista</p>
-                <p className="text-gray-400 text-sm">Núm. [Licencia] — Para actualizar</p>
+                <p className="text-gray-400 text-sm">Núm. PPPE-PV-1809</p>
               </div>
             </div>
           </div>
