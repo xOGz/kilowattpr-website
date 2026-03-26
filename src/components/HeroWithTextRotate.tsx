@@ -37,7 +37,7 @@ export default function HeroWithTextRotate() {
             </span>
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-            Técnicos y jornaleros con más de una década de experiencia en Puerto Rico.
+            Peritos electricistas e Ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico.
             Independencia energética real para tu hogar o negocio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

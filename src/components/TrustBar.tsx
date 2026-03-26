@@ -1,6 +1,6 @@
 "use client";
 
-import { Star, Shield, CheckCircle, MapPin } from "lucide-react";
+import { Star, Shield, CheckCircle, MapPin, Zap } from "lucide-react";
 import { CountUpStat } from "@/components/ui/count-up-stat";
 
 export default function TrustBar() {
@@ -16,20 +16,20 @@ export default function TrustBar() {
             icon={<Star size={16} />}
           />
           <CountUpStat
-            value={25}
+            value={10}
             suffix=" Años"
-            label="Garantía"
+            label="Garantía Equipos"
             icon={<Shield size={16} />}
           />
           <CountUpStat
-            value={10}
+            value={30}
             prefix="+"
             suffix=" Años"
             label="Experiencia"
             icon={<CheckCircle size={16} />}
           />
           <CountUpStat
-            value={21}
+            value={78}
             suffix=""
             label="Municipios PR"
             icon={<MapPin size={16} />}
