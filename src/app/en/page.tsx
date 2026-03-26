@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
-  Sun, Battery, Home, Wrench, Star, CheckCircle, Phone, MessageCircle,
+  Sun, Battery, Wrench, Star, CheckCircle, Phone, MessageCircle,
   ArrowRight, Shield, Zap,
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
@@ -46,10 +46,10 @@ const services = [
     href: '/servicios/sistemas-con-bateria',
   },
   {
-    icon: Home,
-    title: 'Roof Sealing',
-    desc: 'Professional roof waterproofing before installation. 2-year workmanship warranty.',
-    href: '/servicios/sellado-de-techo',
+    icon: Zap,
+    title: 'Electrical Contractor',
+    desc: 'Residential & commercial electrical contractor services. Meter base repairs with LUMA certifications.',
+    href: '/servicios/contratista-electrico',
   },
   {
     icon: Wrench,

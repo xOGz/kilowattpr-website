@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
-  Sun, Battery, Home, Wrench, Star, CheckCircle, Phone, MessageCircle,
+  Sun, Battery, Wrench, Star, CheckCircle, Phone, MessageCircle,
   ArrowRight, Shield, Zap,
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
@@ -45,10 +45,10 @@ const services = [
     href: '/servicios/sistemas-con-bateria',
   },
   {
-    icon: Home,
-    title: 'Sellado de Techo',
-    desc: 'Impermeabilización profesional del techo antes de la instalación. Garantía de 2 años de mano de obra.',
-    href: '/servicios/sellado-de-techo',
+    icon: Zap,
+    title: 'Contratista Eléctrico',
+    desc: 'Servicios de contratista eléctrico residencial y comercial. Reparación de bases de medidores con certificaciones de LUMA.',
+    href: '/servicios/contratista-electrico',
   },
   {
     icon: Wrench,
