@@ -1,10 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import { Menu, X, Phone } from 'lucide-react'
 
-const navLinks = [
+const navLinksES = [
   { href: '/', label: 'Inicio' },
   { href: '/sobre-nosotros', label: 'Nosotros' },
   { href: '/servicios', label: 'Servicios' },
@@ -13,15 +14,29 @@ const navLinks = [
   { href: '/contacto', label: 'Contacto' },
 ]
 
+const navLinksEN = [
+  { href: '/en', label: 'Home' },
+  { href: '/sobre-nosotros', label: 'About' },
+  { href: '/servicios', label: 'Services' },
+  { href: '/proyectos', label: 'Projects' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/contacto', label: 'Contact' },
+]
+
 export default function Header() {
   const [open, setOpen] = useState(false)
+  const pathname = usePathname()
+  const isEnglish = pathname.startsWith('/en')
+  const navLinks = isEnglish ? navLinksEN : navLinksES
+  const ctaLabel = isEnglish ? 'Free Quote' : 'Cotización Gratis'
+  const ctaMobileLabel = isEnglish ? 'Free Quote via WhatsApp' : 'Cotización Gratis por WhatsApp'
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 glass" style={{ borderRadius: 0 }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
+          <Link href={isEnglish ? '/en' : '/'} className="flex items-center gap-2">
             <span className="font-display font-bold text-xl tracking-tight">
               <span className="text-primary-container">KILOWATT</span>
               <span className="text-on-surface"> PR</span>
@@ -42,7 +57,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA */}
+          {/* CTA + Language */}
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+17874312275"
@@ -57,12 +72,22 @@ export default function Header() {
               rel="noopener noreferrer"
               className="btn-primary text-sm py-2.5 px-6"
             >
-              Cotización Gratis
+              {ctaLabel}
             </a>
             <div className="flex items-center gap-2 text-xs font-label text-on-surface-variant border-l border-outline-variant/30 pl-4 ml-1">
-              <span className="text-primary-container font-semibold">ES</span>
-              <span className="text-outline-variant">|</span>
-              <Link href="/en" className="hover:text-primary-container transition-colors">EN</Link>
+              {isEnglish ? (
+                <>
+                  <Link href="/" className="hover:text-primary-container transition-colors">ES</Link>
+                  <span className="text-outline-variant">|</span>
+                  <span className="text-primary-container font-semibold">EN</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-primary-container font-semibold">ES</span>
+                  <span className="text-outline-variant">|</span>
+                  <Link href="/en" className="hover:text-primary-container transition-colors">EN</Link>
+                </>
+              )}
             </div>
           </div>
 
@@ -70,7 +95,7 @@ export default function Header() {
           <button
             className="md:hidden text-on-surface"
             onClick={() => setOpen(!open)}
-            aria-label="Abrir menú"
+            aria-label={isEnglish ? 'Open menu' : 'Abrir menú'}
           >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -98,8 +123,23 @@ export default function Header() {
               className="btn-primary text-sm text-center mt-2"
               onClick={() => setOpen(false)}
             >
-              Cotización Gratis por WhatsApp
+              {ctaMobileLabel}
             </a>
+            <div className="flex items-center justify-center gap-3 mt-2 text-sm font-label text-on-surface-variant">
+              {isEnglish ? (
+                <>
+                  <Link href="/" className="hover:text-primary-container transition-colors" onClick={() => setOpen(false)}>Español</Link>
+                  <span className="text-outline-variant">|</span>
+                  <span className="text-primary-container font-semibold">English</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-primary-container font-semibold">Español</span>
+                  <span className="text-outline-variant">|</span>
+                  <Link href="/en" className="hover:text-primary-container transition-colors" onClick={() => setOpen(false)}>English</Link>
+                </>
+              )}
+            </div>
           </nav>
         </div>
       )}
