@@ -63,7 +63,7 @@ const differentiators = [
   {
     icon: CheckCircle,
     title: 'Over 3 Decades of Experience',
-    desc: 'Our licensed electricians and electrical engineers with over 30 years of hands-on experience in Puerto Rico know the climate conditions, ARPE permit requirements, and LUMA Energy interconnection process like no one else.',
+    desc: 'Our licensed electricians and electrical engineers with over 30 years of hands-on experience in Puerto Rico know the climate conditions, OGPE permit requirements, and LUMA Energy interconnection process like no one else.',
   },
   {
     icon: Shield,
@@ -91,12 +91,12 @@ const steps = [
   {
     num: '02',
     title: 'Design & Permits',
-    desc: 'We handle all permitting with ARPE and the interconnection request with LUMA Energy. You don\'t have to do anything.',
+    desc: 'We handle all permitting with OGPE and the interconnection request with LUMA Energy. You don\'t have to do anything.',
   },
   {
     num: '03',
     title: 'Installation & Activation',
-    desc: 'Our team installs your system in 1-2 days. From contract to production: 6-10 weeks. You start saving from month one.',
+    desc: 'Our team installs your system in 1-2 days. From contract to production: 1-3 weeks. You start saving from month one.',
   },
 ]
 
@@ -109,7 +109,7 @@ const faqs = [
   {
     question: 'How long does solar installation take in Puerto Rico?',
     answer:
-      'The complete process from contract signing to your system producing energy takes between 6 and 10 weeks. This includes obtaining permits from ARPE (Administration of Regulations and Permits), interconnection approval with LUMA Energy, equipment delivery, and physical installation. The installation itself typically takes 1 to 2 days. We handle the entire permitting process for you — you don\'t have to do anything.',
+      'The complete process from contract signing to your system producing energy takes between 1 and 3 weeks. This includes obtaining permits from OGPE (Office of Permit Management), interconnection approval with LUMA Energy, equipment delivery, and physical installation. The installation itself typically takes 1 to 2 days. We handle the entire permitting process for you — you don\'t have to do anything.',
   },
   {
     question: 'How often should solar panels be cleaned?',

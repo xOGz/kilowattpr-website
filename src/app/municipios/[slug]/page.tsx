@@ -57,7 +57,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     },
     {
       question: `¿Cuánto tiempo tarda la instalación en ${municipio.name}?`,
-      answer: `El proceso completo desde la firma del contrato hasta la activación del sistema en ${municipio.name} toma entre 6 y 10 semanas. Este tiempo incluye la tramitación de permisos con ARPE y la aprobación de interconexión con LUMA Energy. La instalación física se realiza en 1 a 2 días. Manejamos todos los trámites por ti.`,
+      answer: `El proceso completo desde la firma del contrato hasta la activación del sistema en ${municipio.name} toma entre 1 y 3 semanas. Este tiempo incluye la tramitación de permisos con OGPE y la aprobación de interconexión con LUMA Energy. La instalación física se realiza en 1 a 2 días. Manejamos todos los trámites por ti.`,
     },
     {
       question: `¿Trabajan con la interconexión de LUMA Energy en ${municipio.name}?`,
@@ -127,7 +127,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
               Kilowatt PR ofrece instalación completa de sistemas solares residenciales y
               comerciales en {municipio.name}. Nuestro servicio incluye consulta y análisis
               de consumo, diseño 3D personalizado del sistema, gestión de todos los permisos
-              con ARPE, tramitación de la interconexión con LUMA Energy, instalación por
+              con OGPE, tramitación de la interconexión con LUMA Energy, instalación por
               técnicos certificados y garantía de 25 años en los paneles.
             </p>
             <p>
@@ -143,7 +143,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
             {[
               `Instalación residencial en ${municipio.name}`,
               'Sistemas con batería de respaldo',
-              'Gestión completa de permisos ARPE',
+              'Gestión completa de permisos OGPE',
               'Interconexión con LUMA Energy',
               'Sellado de techo previo a instalación',
               'Mantenimiento y lavado periódico',

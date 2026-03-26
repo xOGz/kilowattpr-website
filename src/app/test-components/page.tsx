@@ -30,7 +30,7 @@ const testimonials = [
     role: "Ponce, PR",
   },
   {
-    text: "Kilowatt PR manejó todo — permisos, ARPE, interconexión con LUMA. Yo no tuve que hacer nada.",
+    text: "Kilowatt PR manejó todo — permisos, OGPE, interconexión con LUMA. Yo no tuve que hacer nada.",
     image: "https://api.dicebear.com/7.x/initials/svg?seed=AG&backgroundColor=3DD8F5&textColor=003545",
     name: "Ana G.",
     role: "Mayagüez, PR",
@@ -140,7 +140,7 @@ export default function TestComponentsPage() {
           >
             {[
               { num: "01", title: "Consulta Gratis", desc: "Analizamos tu consumo eléctrico y diseñamos tu sistema en 3D." },
-              { num: "02", title: "Diseño y Permisos", desc: "Manejamos ARPE y la interconexión con LUMA Energy por ti." },
+              { num: "02", title: "Diseño y Permisos", desc: "Manejamos OGPE y la interconexión con LUMA Energy por ti." },
               { num: "03", title: "Instalación", desc: "1–2 días de instalación. Empiezas a ahorrar desde el primer mes." },
             ].map((step) => (
               <div key={step.num} className="text-center">

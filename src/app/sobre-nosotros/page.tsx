@@ -54,7 +54,7 @@ export default function AboutPage() {
                   Nuestra empresa está compuesta por peritos electricistas e ingenieros eléctricos certificados con más
                   de 3 décadas de experiencia instalando sistemas solares en Puerto Rico. Conocemos
                   el clima tropical, los requisitos del proceso de interconexión con LUMA Energy,
-                  la permisología de ARPE y las condiciones únicas de cada región de la isla.
+                  la permisología de OGPE y las condiciones únicas de cada región de la isla.
                 </p>
                 <p>
                   Hoy, con más de 147 reseñas verificadas y una calificación de 4.9 estrellas,
@@ -132,7 +132,7 @@ export default function AboutPage() {
               {
                 role: 'Gerente de Proyectos',
                 name: 'Julio A. Santiago',
-                desc: 'Responsable de coordinar permisos de ARPE, interconexión con LUMA Energy y la experiencia de cada cliente desde la consulta hasta la activación.',
+                desc: 'Responsable de coordinar permisos de OGPE, interconexión con LUMA Energy y la experiencia de cada cliente desde la consulta hasta la activación.',
               },
               {
                 role: 'Servicio al Cliente',

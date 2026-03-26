@@ -23,7 +23,7 @@ const testimonials = [
     role: "Ponce, PR",
   },
   {
-    text: "Kilowatt PR manejó todo — permisos, ARPE, interconexión con LUMA. Yo no tuve que hacer nada. El servicio fue impecable de principio a fin.",
+    text: "Kilowatt PR manejó todo — permisos, OGPE, interconexión con LUMA. Yo no tuve que hacer nada. El servicio fue impecable de principio a fin.",
     image: "https://api.dicebear.com/7.x/initials/svg?seed=AG&backgroundColor=3DD8F5&textColor=003545",
     name: "Ana G.",
     role: "Mayagüez, PR",

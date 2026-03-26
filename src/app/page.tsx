@@ -62,7 +62,7 @@ const differentiators = [
   {
     icon: CheckCircle,
     title: 'Más de una Década de Experiencia',
-    desc: 'Nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de ARPE y el proceso de interconexión con LUMA Energy como nadie.',
+    desc: 'Nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de OGPE y el proceso de interconexión con LUMA Energy como nadie.',
   },
   {
     icon: Shield,
@@ -90,12 +90,12 @@ const steps = [
   {
     num: '02',
     title: 'Diseño y Permisos',
-    desc: 'Manejamos todo el proceso de permisología con ARPE y la solicitud de interconexión con LUMA Energy. Tú no tienes que hacer nada.',
+    desc: 'Manejamos todo el proceso de permisología con OGPE y la solicitud de interconexión con LUMA Energy. Tú no tienes que hacer nada.',
   },
   {
     num: '03',
     title: 'Instalación y Activación',
-    desc: 'Nuestro equipo instala tu sistema en 1–2 días. Del contrato a producción: 6–10 semanas. Empiezas a ahorrar desde el primer mes.',
+    desc: 'Nuestro equipo instala tu sistema en 1–2 días. Del contrato a producción: 1–3 semanas. Empiezas a ahorrar desde el primer mes.',
   },
 ]
 
@@ -108,7 +108,7 @@ const faqs = [
   {
     question: '¿Cuánto tiempo tarda la instalación solar en Puerto Rico?',
     answer:
-      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 6 y 10 semanas. Este tiempo incluye la obtención de permisos con ARPE (Administración de Reglamentos y Permisos), la aprobación de interconexión con LUMA Energy, la llegada del equipo y la instalación física. La instalación en sí toma generalmente 1 a 2 días. Manejamos todo el proceso de permisos por ti, sin que tengas que hacer nada.',
+      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 1 y 3 semanas. Este tiempo incluye la obtención de permisos con OGPE (Oficina de Gerencia de Permisos), la aprobación de interconexión con LUMA Energy, la llegada del equipo y la instalación física. La instalación en sí toma generalmente 1 a 2 días. Manejamos todo el proceso de permisos por ti, sin que tengas que hacer nada.',
   },
   {
     question: '¿Con qué frecuencia se deben limpiar los paneles solares?',

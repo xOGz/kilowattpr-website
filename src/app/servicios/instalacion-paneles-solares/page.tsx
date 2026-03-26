@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Instalación de Paneles Solares en Puerto Rico',
   description:
-    'Kilowatt PR instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Técnicos certificados, gestión de permisos ARPE y LUMA. Cotización gratis.',
+    'Kilowatt PR instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Técnicos certificados, gestión de permisos OGPE y LUMA. Cotización gratis.',
   alternates: { canonical: 'https://www.kilowattpr.com/servicios/instalacion-paneles-solares' },
 }
 
@@ -22,8 +22,8 @@ const faqs = [
     answer: 'La interconexión con LUMA Energy es el proceso oficial para conectar tu sistema solar a la red eléctrica. Kilowatt PR maneja todo este proceso por ti: preparamos la solicitud de interconexión, coordinamos la inspección de LUMA, y nos aseguramos de que tu medidor bidireccional esté instalado correctamente. Este proceso puede tomar entre 3 y 6 semanas adicionales a la instalación.',
   },
   {
-    question: '¿Necesito permiso de ARPE para instalar paneles solares en Puerto Rico?',
-    answer: 'Sí, la instalación de paneles solares en Puerto Rico requiere permisos de ARPE (Administración de Reglamentos y Permisos). Este proceso incluye la presentación de planos estructurales y eléctricos. Kilowatt PR gestiona todos estos permisos como parte del servicio de instalación, sin costo adicional para el cliente.',
+    question: '¿Necesito permiso de OGPE para instalar paneles solares en Puerto Rico?',
+    answer: 'Sí, la instalación de paneles solares en Puerto Rico requiere permisos de OGPE (Oficina de Gerencia de Permisos). Este proceso incluye la presentación de planos estructurales y eléctricos. Kilowatt PR gestiona todos estos permisos como parte del servicio de instalación, sin costo adicional para el cliente.',
   },
   {
     question: '¿Los paneles solares resisten los huracanes en Puerto Rico?',
@@ -63,7 +63,7 @@ export default function InstalacionPanelesSolaresPage() {
               En Kilowatt PR, cada instalación comienza con un análisis completo de tu consumo
               eléctrico y una evaluación de tu techo. Diseñamos el sistema en 3D para optimizar
               la captación solar según la orientación e inclinación específica de tu propiedad.
-              Luego gestionamos todos los permisos de ARPE y el proceso de interconexión con
+              Luego gestionamos todos los permisos de OGPE y el proceso de interconexión con
               LUMA Energy, sin que tengas que hacer nada.
             </p>
             <p>
@@ -74,7 +74,7 @@ export default function InstalacionPanelesSolaresPage() {
             </p>
             <p>
               El proceso completo desde la firma del contrato hasta la activación del sistema
-              toma entre 6 y 10 semanas. La instalación física se completa generalmente en
+              toma entre 1 y 3 semanas. La instalación física se completa generalmente en
               1 a 2 días. Durante todo el proceso, tu gerente de proyecto en Kilowatt PR
               estará disponible para responder cualquier pregunta.
             </p>
@@ -95,7 +95,7 @@ export default function InstalacionPanelesSolaresPage() {
               {[
                 { step: '1', title: 'Consulta Gratis', desc: 'Análisis de consumo, diseño 3D del sistema y proyección de ahorros a 25 años. Sin costo, sin compromiso.' },
                 { step: '2', title: 'Firma de Contrato', desc: 'Revisamos todos los detalles del sistema, costo, financiamiento disponible y cronograma de trabajo.' },
-                { step: '3', title: 'Permisos y Diseño Final', desc: 'Gestionamos los permisos de ARPE y sometemos la solicitud de interconexión a LUMA Energy.' },
+                { step: '3', title: 'Permisos y Diseño Final', desc: 'Gestionamos los permisos de OGPE y sometemos la solicitud de interconexión a LUMA Energy.' },
                 { step: '4', title: 'Instalación', desc: 'Nuestro equipo instala el sistema en 1–2 días con mínima interferencia en tu rutina diaria.' },
                 { step: '5', title: 'Inspecciones y Activación', desc: 'Coordinamos las inspecciones requeridas y la activación del medidor bidireccional con LUMA Energy.' },
                 { step: '6', title: 'Seguimiento', desc: 'Te enseñamos a monitorear tu sistema y estamos disponibles para cualquier consulta post-instalación.' },
@@ -122,7 +122,7 @@ export default function InstalacionPanelesSolaresPage() {
                 'Estructura de montaje en acero inoxidable',
                 'Cableado y protecciones eléctricas',
                 'Sistema de monitoreo en tiempo real',
-                'Gestión completa de permisos ARPE',
+                'Gestión completa de permisos OGPE',
                 'Solicitud de interconexión con LUMA',
                 'Garantía de 25 años en paneles',
                 'Orientación para el cliente',

@@ -100,7 +100,7 @@ export default function SistemasConBateriaPage() {
                 'Inversor híbrido inteligente',
                 'Sistema de monitoreo en tiempo real',
                 'Desconexión automática en apagones',
-                'Gestión de permisos ARPE',
+                'Gestión de permisos OGPE',
                 'Interconexión con LUMA Energy',
                 'Instalación con ventilación adecuada',
                 'Configuración de prioridades de carga',
