@@ -91,14 +91,31 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile menu toggle */}
-          <button
-            className="md:hidden text-on-surface"
-            onClick={() => setOpen(!open)}
-            aria-label={isEnglish ? 'Open menu' : 'Abrir menú'}
-          >
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile: language switcher + hamburger */}
+          <div className="md:hidden flex items-center gap-4">
+            <div className="flex items-center gap-2 text-xs font-label text-on-surface-variant">
+              {isEnglish ? (
+                <>
+                  <Link href="/" className="hover:text-primary-container transition-colors">ES</Link>
+                  <span className="text-outline-variant">|</span>
+                  <span className="text-primary-container font-semibold">EN</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-primary-container font-semibold">ES</span>
+                  <span className="text-outline-variant">|</span>
+                  <Link href="/en" className="hover:text-primary-container transition-colors">EN</Link>
+                </>
+              )}
+            </div>
+            <button
+              className="text-on-surface"
+              onClick={() => setOpen(!open)}
+              aria-label={isEnglish ? 'Open menu' : 'Abrir menú'}
+            >
+              {open ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
 
