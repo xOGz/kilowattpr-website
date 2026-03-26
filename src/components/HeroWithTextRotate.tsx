@@ -1,18 +1,26 @@
 "use client";
 
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { Sun, MessageCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
-
-const HeroDottedSurface = dynamic(() => import("@/components/HeroDottedSurface"), { ssr: false });
+import { GradientBackground } from "@/components/ui/gradient-background";
 
 export default function HeroWithTextRotate() {
   return (
-    <section className="relative bg-surface overflow-hidden min-h-[90vh] flex items-center">
-      <HeroDottedSurface />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface pointer-events-none" />
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
+    <GradientBackground
+      className="min-h-[90vh]"
+      gradients={[
+        "linear-gradient(135deg, #0A0A2E 0%, #1B1B5E 40%, #121240 100%)",
+        "linear-gradient(135deg, #121240 0%, #2D2D75 30%, #0E0E35 100%)",
+        "linear-gradient(135deg, #0E0E35 0%, #1B1B5E 50%, #121240 100%)",
+        "linear-gradient(135deg, #1B1B5E 0%, #121240 40%, #0A0A2E 100%)",
+        "linear-gradient(135deg, #0A0A2E 0%, #1B1B5E 40%, #121240 100%)",
+      ]}
+      animationDuration={12}
+      overlay={true}
+      overlayOpacity={0.15}
+    >
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
         <div className="max-w-4xl">
           <div className="chip-gold inline-flex items-center gap-2 mb-8">
             <Sun size={12} />
@@ -54,10 +62,8 @@ export default function HeroWithTextRotate() {
               Ver Servicios <ArrowRight size={18} />
             </Link>
           </div>
-
-
         </div>
       </div>
-    </section>
+    </GradientBackground>
   );
 }
