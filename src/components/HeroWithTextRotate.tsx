@@ -12,15 +12,6 @@ export default function HeroWithTextRotate() {
     <section className="relative bg-surface overflow-hidden min-h-[90vh] flex items-center">
       <HeroDottedSurface />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface pointer-events-none" />
-      {/* Language switcher — top right */}
-      <div className="absolute top-24 right-6 sm:right-10 z-10 flex items-center gap-3 text-sm text-on-surface-variant">
-        <span className="text-primary-container font-semibold">Español</span>
-        <span className="text-outline">|</span>
-        <Link href="/en" className="hover:text-primary-container transition-colors">
-          English
-        </Link>
-      </div>
-
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
         <div className="max-w-4xl">
           <div className="chip-gold inline-flex items-center gap-2 mb-8">

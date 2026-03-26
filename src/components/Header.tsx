@@ -59,6 +59,11 @@ export default function Header() {
             >
               Cotización Gratis
             </a>
+            <div className="flex items-center gap-2 text-xs font-label text-on-surface-variant border-l border-outline-variant/30 pl-4 ml-1">
+              <span className="text-primary-container font-semibold">ES</span>
+              <span className="text-outline-variant">|</span>
+              <Link href="/en" className="hover:text-primary-container transition-colors">EN</Link>
+            </div>
           </div>
 
           {/* Mobile menu toggle */}
