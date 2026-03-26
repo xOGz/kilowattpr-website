@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     url: 'https://kilowattpr.com',
     logo: { '@type': 'ImageObject', url: 'https://kilowattpr.com/logo.png' },
     description:
-      'Kilowatt PR LLC instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Técnicos certificados con más de una década de experiencia.',
+      'Kilowatt PR LLC instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'HC 3 Box 31767',

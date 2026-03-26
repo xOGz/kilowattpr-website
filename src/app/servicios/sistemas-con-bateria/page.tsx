@@ -73,7 +73,7 @@ export default function SistemasConBateriaPage() {
             <p>
               En Kilowatt PR instalamos sistemas de baterías de litio de última generación,
               con la tecnología más confiable disponible en el mercado. Nuestros técnicos
-              y jornaleros con más de una década de experiencia en Puerto Rico conocen exactamente
+              e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico conocen exactamente
               cómo dimensionar y configurar estos sistemas para las condiciones locales.
             </p>
             <p>

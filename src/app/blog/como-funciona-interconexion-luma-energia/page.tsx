@@ -191,8 +191,8 @@ export default function InterconexionLumaPage() {
             con errores en la documentación, falta de seguimiento o desconocimiento de los
             requisitos técnicos específicos. Kilowatt PR gestiona este proceso completamente:
             preparamos toda la documentación, sometemos la solicitud, hacemos seguimiento
-            activo y coordinamos las inspecciones. Nuestros técnicos y jornaleros con más
-            de una década de experiencia en Puerto Rico conocen el proceso y los requisitos
+            activo y coordinamos las inspecciones. Nuestros peritos electricistas e ingenieros eléctricos con más
+            de 3 décadas de experiencia en Puerto Rico conocen el proceso y los requisitos
             de LUMA Energy en detalle.
           </p>
           <p>

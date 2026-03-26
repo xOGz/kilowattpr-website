@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: '%s | Kilowatt PR — Instalación Solar Puerto Rico',
   },
   description:
-    'Kilowatt PR LLC: empresa #1 en instalación de paneles solares en Puerto Rico. Técnicos certificados con más de una década de experiencia. Cotización gratis.',
+    'Kilowatt PR LLC: empresa #1 en instalación de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. Cotización gratis.',
   openGraph: {
     type: 'website',
     locale: 'es_PR',

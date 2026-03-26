@@ -186,7 +186,7 @@ export default function GuiaBateriaPage() {
             Cada hogar en Puerto Rico tiene necesidades diferentes. La cantidad de paneles
             necesarios, el tamaño de la batería y la configuración del sistema dependen de
             tu consumo, el tamaño de tu techo y las cargas que quieras respaldar durante
-            los apagones. Nuestros técnicos y jornaleros con más de una década de experiencia
+            los apagones. Nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia
             en Puerto Rico pueden diseñar el sistema exacto que necesitas durante una consulta
             gratis y sin compromiso.
           </p>

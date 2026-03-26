@@ -15,7 +15,7 @@ import CTAHeading from '@/components/CTAHeading'
 export const metadata: Metadata = {
   title: 'Instalación de Paneles Solares en Puerto Rico',
   description:
-    'Kilowatt PR LLC: empresa #1 en instalación de paneles solares en Puerto Rico. Técnicos y jornaleros con más de una década de experiencia. Cotización gratis hoy.',
+    'Kilowatt PR LLC: empresa #1 en instalación de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. Cotización gratis hoy.',
   alternates: {
     canonical: 'https://www.kilowattpr.com',
     languages: {
@@ -62,7 +62,7 @@ const differentiators = [
   {
     icon: CheckCircle,
     title: 'Más de una Década de Experiencia',
-    desc: 'Nuestros técnicos y jornaleros con más de una década de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de ARPE y el proceso de interconexión con LUMA Energy como nadie.',
+    desc: 'Nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de ARPE y el proceso de interconexión con LUMA Energy como nadie.',
   },
   {
     icon: Shield,
@@ -202,7 +202,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Técnicos y jornaleros con más de una década de experiencia en Puerto Rico
+            Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico
           </p>
         </div>
       </section>

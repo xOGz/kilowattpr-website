@@ -85,7 +85,7 @@ export default function TestComponentsPage() {
             />
           </div>
           <p className="text-xl text-on-surface-variant mt-8 max-w-2xl mx-auto leading-relaxed">
-            Técnicos y jornaleros con más de una década de experiencia en Puerto Rico.
+            Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico.
             Independencia energética real.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-10">

@@ -44,7 +44,7 @@ export default function InstalacionPanelesSolaresPage() {
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
             Sistemas fotovoltaicos residenciales y comerciales instalados por técnicos y
-            jornaleros con más de una década de experiencia en Puerto Rico.
+            ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico.
           </p>
         </div>
       </section>

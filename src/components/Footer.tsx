@@ -15,8 +15,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-body-md leading-relaxed mb-5 text-on-surface-variant">
-              La empresa #1 en instalación de paneles solares en Puerto Rico. Técnicos y jornaleros
-              con más de una década de experiencia.
+              La empresa #1 en instalación de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia.
             </p>
             <div className="flex gap-4">
               <a

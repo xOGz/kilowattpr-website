@@ -21,8 +21,8 @@ export const siteConfig = {
     count: 147,
   },
   trustAnchor: {
-    es: 'técnicos y jornaleros con más de una década de experiencia en Puerto Rico',
-    en: 'certified technicians with over a decade of hands-on experience in Puerto Rico',
+    es: 'peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico',
+    en: 'licensed electricians and electrical engineers with over 3 decades of experience in Puerto Rico',
   },
   hours: 'Lunes–Viernes, 8:00 AM – 5:00 PM',
 }

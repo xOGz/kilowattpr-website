@@ -5,7 +5,7 @@ import { CheckCircle, Award, Users, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Sobre Nosotros',
   description:
-    'Conoce a Kilowatt PR LLC: técnicos y jornaleros con más de una década de experiencia instalando sistemas solares en Puerto Rico. Nuestra misión es tu independencia energética.',
+    'Conoce a Kilowatt PR LLC: peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia instalando sistemas solares en Puerto Rico. Nuestra misión es tu independencia energética.',
   alternates: { canonical: 'https://www.kilowattpr.com/sobre-nosotros' },
   openGraph: {
     title: 'Sobre Nosotros | Kilowatt PR',
@@ -29,7 +29,7 @@ export default function AboutPage() {
               Somos una empresa puertorriqueña comprometida con llevar la independencia
               energética a cada hogar y negocio de la isla. Nuestro equipo de{' '}
               <strong className="text-white">
-                técnicos y jornaleros con más de una década de experiencia en Puerto Rico
+                peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico
               </strong>{' '}
               está con usted en cada paso del camino.
             </p>
@@ -51,8 +51,8 @@ export default function AboutPage() {
                   afectaron profundamente la calidad de vida en toda la isla.
                 </p>
                 <p>
-                  Nuestra empresa está compuesta por técnicos y jornaleros certificados con más
-                  de una década de experiencia instalando sistemas solares en Puerto Rico. Conocemos
+                  Nuestra empresa está compuesta por peritos electricistas e ingenieros eléctricos certificados con más
+                  de 3 décadas de experiencia instalando sistemas solares en Puerto Rico. Conocemos
                   el clima tropical, los requisitos del proceso de interconexión con LUMA Energy,
                   la permisología de ARPE y las condiciones únicas de cada región de la isla.
                 </p>
@@ -127,7 +127,7 @@ export default function AboutPage() {
               {
                 role: 'Instalador Principal',
                 name: 'Xavier J. Acevedo',
-                desc: 'Técnico certificado con más de una década de experiencia en instalación de sistemas fotovoltaicos residenciales y comerciales en Puerto Rico.',
+                desc: 'Perito electricista e ingeniero eléctrico con más de 3 décadas de experiencia en instalación de sistemas fotovoltaicos residenciales y comerciales en Puerto Rico.',
               },
               {
                 role: 'Gerente de Proyectos',

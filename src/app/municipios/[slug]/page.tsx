@@ -36,7 +36,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     name: 'Kilowatt PR LLC',
-    description: `Instalación de paneles solares en ${municipio.name}, Puerto Rico. Técnicos certificados con más de una década de experiencia.`,
+    description: `Instalación de paneles solares en ${municipio.name}, Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia.`,
     url: `https://kilowattpr.com/municipios/${municipio.slug}`,
     telephone: '+1-787-431-2275',
     areaServed: {
@@ -49,7 +49,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
   const faqs = [
     {
       question: `¿Ofrecen instalación de paneles solares en ${municipio.name}?`,
-      answer: `Sí, Kilowatt PR ofrece servicio completo de instalación de paneles solares en ${municipio.name} y todos los municipios circundantes. Nuestro equipo de técnicos y jornaleros con más de una década de experiencia en Puerto Rico atiende proyectos residenciales y comerciales en toda la isla. Contáctanos hoy para una consulta gratis sin compromiso.`,
+      answer: `Sí, Kilowatt PR ofrece servicio completo de instalación de paneles solares en ${municipio.name} y todos los municipios circundantes. Nuestro equipo de peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico atiende proyectos residenciales y comerciales en toda la isla. Contáctanos hoy para una consulta gratis sin compromiso.`,
     },
     {
       question: `¿Cuánto cuesta instalar paneles solares en ${municipio.name}?`,
@@ -87,7 +87,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
             <span className="text-solar-yellow">{municipio.name}, Puerto Rico</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mb-8">
-            Técnicos y jornaleros con más de una década de experiencia instalando sistemas
+            Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia instalando sistemas
             solares en Puerto Rico. Servicio completo en {municipio.name} y municipios
             circundantes.
           </p>
@@ -131,7 +131,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
               técnicos certificados y garantía de 25 años en los paneles.
             </p>
             <p>
-              Con técnicos y jornaleros con más de una década de experiencia en Puerto Rico,
+              Con peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico,
               conocemos las condiciones climáticas, las regulaciones locales y los requisitos
               específicos de LUMA Energy en {municipio.name} y la región. Cada sistema que
               instalamos está diseñado para maximizar la producción solar y la vida útil del

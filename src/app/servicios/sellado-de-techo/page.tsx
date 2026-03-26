@@ -77,7 +77,7 @@ export default function SelladoTechoPage() {
               específicamente para el clima tropical de Puerto Rico. Nuestros materiales son
               resistentes a los rayos UV que deterioran otros productos en la isla, a las
               lluvias intensas y al salitre de las zonas costeras. El trabajo lo realizan
-              nuestros técnicos y jornaleros con más de una década de experiencia en Puerto Rico,
+              nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico,
               garantizando una aplicación correcta en todo momento.
             </p>
             <p>

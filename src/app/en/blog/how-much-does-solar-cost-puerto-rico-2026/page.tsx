@@ -248,8 +248,8 @@ export default function SolarCostPage() {
           </p>
           <p>
             The best way to know exactly how much a system would cost for your specific
-            property is through a free consultation. At Kilowatt PR, our certified technicians
-            with over a decade of experience in Puerto Rico analyze your consumption,
+            property is through a free consultation. At Kilowatt PR, our licensed electricians
+            and electrical engineers with over 3 decades of experience in Puerto Rico analyze your consumption,
             evaluate your roof, and present a detailed design with the exact cost and
             25-year savings projection — no cost, no obligation.
           </p>

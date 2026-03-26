@@ -73,7 +73,7 @@ export default function MantenimientoLavadoPage() {
               previene esta pérdida y protege la garantía de tus paneles.
             </p>
             <p>
-              Nuestro equipo de técnicos y jornaleros con más de una década de experiencia
+              Nuestro equipo de peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia
               en Puerto Rico realiza el mantenimiento con agua purificada y soluciones
               de limpieza específicas para paneles solares. No usamos agua con minerales
               que dejen manchas ni productos abrasivos que dañen el recubrimiento de los

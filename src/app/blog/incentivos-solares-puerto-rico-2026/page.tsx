@@ -213,8 +213,8 @@ export default function IncentivosPage() {
             máximo beneficio disponible.
           </p>
           <p>
-            Lo que sí podemos garantizarte es que en Kilowatt PR, nuestros técnicos y jornaleros
-            con más de una década de experiencia en Puerto Rico instalarán tu sistema de forma
+            Lo que sí podemos garantizarte es que en Kilowatt PR, nuestros peritos electricistas e ingenieros eléctricos
+            con más de 3 décadas de experiencia en Puerto Rico instalarán tu sistema de forma
             que califique para todos los incentivos aplicables. Preparamos toda la documentación
             necesaria para que tu asesor fiscal pueda reclamar el crédito federal sin ningún
             contratiempo.

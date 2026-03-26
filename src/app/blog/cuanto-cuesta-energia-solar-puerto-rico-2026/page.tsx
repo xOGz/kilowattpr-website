@@ -243,7 +243,7 @@ export default function CuantoCuestaPage() {
           <p>
             La mejor manera de saber exactamente cuánto costaría un sistema para tu propiedad
             específica es a través de una consulta gratis. En Kilowatt PR, nuestros técnicos
-            y jornaleros con más de una década de experiencia en Puerto Rico analizan tu consumo,
+            e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico analizan tu consumo,
             evalúan tu techo y te presentan un diseño detallado con el costo exacto y la
             proyección de ahorros a 25 años, sin costo ni compromiso.
           </p>
