@@ -5,7 +5,7 @@ import { CountUpStat } from "@/components/ui/count-up-stat";
 
 export default function TrustBar() {
   return (
-    <section className="bg-surface-container-low">
+    <section className="bg-[#F8F7F4] border-b border-[#E8E5E0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <CountUpStat

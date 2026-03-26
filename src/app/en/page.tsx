@@ -142,15 +142,15 @@ export default function EnglishHomePage() {
       {/* Hero — Enhanced with TextRotate + 3D background */}
       <EnglishHero />
 
-      {/* Trust bar — Animated count-up stats */}
+      {/* Trust bar — LIGHT */}
       <EnglishTrustBar />
 
-      {/* Services grid */}
-      <section className="py-20 bg-surface">
+      {/* Services grid — LIGHT */}
+      <section className="py-20 section-light-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">Our Services</h2>
-            <p className="section-subtitle mx-auto mt-4">
+            <h2 className="font-display text-display-md leading-tight text-[#121240]">Our Services</h2>
+            <p className="font-body text-body-lg mt-4 max-w-2xl mx-auto text-[#4A4A6A]">
               Complete solar energy solutions for homes and businesses across the island.
             </p>
           </div>
@@ -159,16 +159,16 @@ export default function EnglishHomePage() {
               <Link
                 key={svc.href}
                 href={svc.href}
-                className="card group text-center flex flex-col items-center"
+                className="card-light group text-center flex flex-col items-center"
               >
                 <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-5 transition-colors duration-300"
-                  style={{ background: 'rgba(245, 166, 35, 0.12)' }}
+                  style={{ background: 'rgba(245, 166, 35, 0.1)' }}
                 >
-                  <svc.icon className="text-primary-container" size={28} />
+                  <svc.icon className="text-[#E09500]" size={28} />
                 </div>
-                <h3 className="font-headline font-semibold text-on-surface mb-3">{svc.title}</h3>
-                <p className="text-body-md text-on-surface-variant leading-relaxed mb-5">{svc.desc}</p>
-                <span className="text-primary-container font-label text-label-lg flex items-center gap-1 mt-auto group-hover:gap-2 transition-all duration-200">
+                <h3 className="font-headline font-semibold text-[#121240] mb-3">{svc.title}</h3>
+                <p className="text-body-md text-[#4A4A6A] leading-relaxed mb-5">{svc.desc}</p>
+                <span className="text-[#E09500] font-label text-label-lg flex items-center gap-1 mt-auto group-hover:gap-2 transition-all duration-200">
                   Learn more <ArrowRight size={14} />
                 </span>
               </Link>
@@ -177,8 +177,8 @@ export default function EnglishHomePage() {
         </div>
       </section>
 
-      {/* Why Kilowatt */}
-      <section className="py-20 bg-surface-container-low">
+      {/* Why Kilowatt — DARK */}
+      <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="section-title">Why Choose Kilowatt PR?</h2>
@@ -208,12 +208,12 @@ export default function EnglishHomePage() {
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-20 bg-surface">
+      {/* How it works — LIGHT */}
+      <section className="py-20 section-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">How Does the Process Work?</h2>
-            <p className="section-subtitle mx-auto">From consultation to production in 3 steps.</p>
+            <h2 className="font-display text-display-md leading-tight text-[#121240]">How Does the Process Work?</h2>
+            <p className="font-body text-body-lg mt-4 max-w-2xl mx-auto text-[#4A4A6A]">From consultation to production in 3 steps.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step) => (
@@ -227,27 +227,29 @@ export default function EnglishHomePage() {
                 >
                   {step.num}
                 </div>
-                <h3 className="font-headline text-headline-md text-on-surface mb-3">{step.title}</h3>
-                <p className="text-on-surface-variant text-body-lg leading-relaxed">{step.desc}</p>
+                <h3 className="font-headline text-headline-md text-[#121240] mb-3">{step.title}</h3>
+                <p className="text-[#4A4A6A] text-body-lg leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ — LIGHT */}
       <FAQSection faqs={faqs} title="Frequently Asked Questions About Solar Energy in Puerto Rico" />
 
-      {/* Reviews — Auto-scrolling Testimonials */}
+      {/* Reviews — LIGHT */}
       <EnglishTestimonialsSection />
 
-      {/* Quote Form + CTA */}
-      <section className="py-20 bg-surface-container-low">
+      {/* Quote Form + CTA — AMBER GRADIENT */}
+      <section className="py-20 section-cta">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <EnglishCTAHeading />
-              <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#3A2400] mb-5">
+                Ready for Energy Independence?
+              </h2>
+              <p className="text-lg text-[#6B4400] mb-6 leading-relaxed">
                 Fill out the form and we&apos;ll contact you within 24 hours with your
                 free quote. No obligation, no cost.
               </p>
@@ -263,15 +265,15 @@ export default function EnglishHomePage() {
                 </a>
                 <a
                   href="tel:+17874312275"
-                  className="btn-secondary text-base px-6 py-4"
+                  className="btn-secondary-light text-base px-6 py-4"
                 >
                   <Phone size={20} />
                   787-431-2275
                 </a>
               </div>
             </div>
-            <div className="card">
-              <h3 className="font-headline font-semibold text-on-surface text-lg mb-5">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="font-headline font-semibold text-[#121240] text-lg mb-5">
                 Request Your Free Quote
               </h3>
               <QuoteForm />

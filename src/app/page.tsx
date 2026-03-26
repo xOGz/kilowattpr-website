@@ -141,15 +141,15 @@ export default function HomePage() {
       {/* Hero — Enhanced with 21st.dev TextRotate + Three.js dotted surface */}
       <HeroWithTextRotate />
 
-      {/* Trust bar — Animated count-up stats */}
+      {/* Trust bar — LIGHT */}
       <TrustBar />
 
-      {/* Services grid — Floating pane cards */}
-      <section className="py-20 bg-surface">
+      {/* Services grid — LIGHT */}
+      <section className="py-20 section-light-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">Nuestros Servicios</h2>
-            <p className="section-subtitle mx-auto mt-4">
+            <h2 className="font-display text-display-md leading-tight text-[#121240]">Nuestros Servicios</h2>
+            <p className="font-body text-body-lg mt-4 max-w-2xl mx-auto text-[#4A4A6A]">
               Soluciones completas de energía solar para hogares y negocios en toda la isla.
             </p>
           </div>
@@ -158,16 +158,16 @@ export default function HomePage() {
               <Link
                 key={svc.href}
                 href={svc.href}
-                className="card group text-center flex flex-col items-center"
+                className="card-light group text-center flex flex-col items-center"
               >
                 <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-5 transition-colors duration-300"
-                  style={{ background: 'rgba(245, 166, 35, 0.12)' }}
+                  style={{ background: 'rgba(245, 166, 35, 0.1)' }}
                 >
-                  <svc.icon className="text-primary-container" size={28} />
+                  <svc.icon className="text-[#E09500]" size={28} />
                 </div>
-                <h3 className="font-headline font-semibold text-on-surface mb-3">{svc.title}</h3>
-                <p className="text-body-md text-on-surface-variant leading-relaxed mb-5">{svc.desc}</p>
-                <span className="text-primary-container font-label text-label-lg flex items-center gap-1 mt-auto group-hover:gap-2 transition-all duration-200">
+                <h3 className="font-headline font-semibold text-[#121240] mb-3">{svc.title}</h3>
+                <p className="text-body-md text-[#4A4A6A] leading-relaxed mb-5">{svc.desc}</p>
+                <span className="text-[#E09500] font-label text-label-lg flex items-center gap-1 mt-auto group-hover:gap-2 transition-all duration-200">
                   Ver más <ArrowRight size={14} />
                 </span>
               </Link>
@@ -176,8 +176,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Kilowatt — Elevated tonal section */}
-      <section className="py-20 bg-surface-container-low">
+      {/* Why Kilowatt — DARK */}
+      <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="section-title">¿Por Qué Elegir Kilowatt PR?</h2>
@@ -207,12 +207,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* How it works — Steps with editorial numbers */}
-      <section className="py-20 bg-surface">
+      {/* How it works — LIGHT */}
+      <section className="py-20 section-light">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="section-title">¿Cómo Funciona el Proceso?</h2>
-            <p className="section-subtitle mx-auto">De la consulta a la producción en 3 pasos.</p>
+            <h2 className="font-display text-display-md leading-tight text-[#121240]">¿Cómo Funciona el Proceso?</h2>
+            <p className="font-body text-body-lg mt-4 max-w-2xl mx-auto text-[#4A4A6A]">De la consulta a la producción en 3 pasos.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {steps.map((step) => (
@@ -226,27 +226,29 @@ export default function HomePage() {
                 >
                   {step.num}
                 </div>
-                <h3 className="font-headline text-headline-md text-on-surface mb-3">{step.title}</h3>
-                <p className="text-on-surface-variant text-body-lg leading-relaxed">{step.desc}</p>
+                <h3 className="font-headline text-headline-md text-[#121240] mb-3">{step.title}</h3>
+                <p className="text-[#4A4A6A] text-body-lg leading-relaxed">{step.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ — LIGHT WHITE */}
       <FAQSection faqs={faqs} title="Preguntas Frecuentes sobre Energía Solar en Puerto Rico" />
 
-      {/* Reviews — 21st.dev Auto-scrolling Testimonials Columns */}
+      {/* Reviews — LIGHT */}
       <TestimonialsSection />
 
-      {/* Quote Form + CTA */}
-      <section className="py-20 bg-surface-container-low">
+      {/* Quote Form + CTA — AMBER GRADIENT */}
+      <section className="py-20 section-cta">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <CTAHeading />
-              <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-[#3A2400] mb-5">
+                ¿Listo para la Independencia Energética?
+              </h2>
+              <p className="text-lg text-[#6B4400] mb-6 leading-relaxed">
                 Completa el formulario y te contactamos en menos de 24 horas con tu cotización
                 gratis. Sin compromiso, sin costo.
               </p>
@@ -262,15 +264,15 @@ export default function HomePage() {
                 </a>
                 <a
                   href="tel:+17874312275"
-                  className="btn-secondary text-base px-6 py-4"
+                  className="btn-secondary-light text-base px-6 py-4"
                 >
                   <Phone size={20} />
                   787-431-2275
                 </a>
               </div>
             </div>
-            <div className="card">
-              <h3 className="font-headline font-semibold text-on-surface text-lg mb-5">
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <h3 className="font-headline font-semibold text-[#121240] text-lg mb-5">
                 Solicita Tu Cotización Gratis
               </h3>
               <QuoteForm />

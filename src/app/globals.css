@@ -129,10 +129,13 @@ body {
     box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
   }
 
-  /* Section Title */
+  /* Section Title — adapts to light/dark parent */
   .section-title {
     @apply font-display text-display-md leading-tight;
     color: var(--color-on-surface);
+  }
+  .section-light .section-title {
+    color: #121240;
   }
 
   /* Section Subtitle */
@@ -140,18 +143,53 @@ body {
     @apply font-body text-body-lg mt-4 max-w-2xl;
     color: var(--color-on-surface-variant);
   }
+  .section-light .section-subtitle {
+    color: #4A4A6A;
+  }
 
-  /* Card — Floating Pane (No Borders!) */
+  /* Light section base */
+  .section-light {
+    background: #F8F7F4;
+    color: #1A1A2E;
+  }
+  .section-light-white {
+    background: #FFFFFF;
+    color: #1A1A2E;
+  }
+
+  /* Amber CTA section */
+  .section-cta {
+    background: linear-gradient(135deg, #E09500, #F5A623, #FFBC42);
+    color: #3A2400;
+  }
+  .section-cta .section-title {
+    color: #3A2400;
+  }
+
+  /* Card — Dark variant (on dark backgrounds) */
   .card {
     background: var(--color-surface-container-highest);
     border: none;
     border-radius: var(--radius-lg);
     padding: var(--spacing-6);
-    transition: transform 300ms ease-out, background-color 300ms ease-out;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
   }
   .card:hover {
     transform: scale(1.02);
-    background: var(--color-surface-bright);
+  }
+
+  /* Card — Light variant (on light backgrounds) */
+  .card-light {
+    background: #FFFFFF;
+    border: 1px solid rgba(18, 18, 64, 0.08);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-6);
+    box-shadow: 0 1px 3px rgba(18, 18, 64, 0.06);
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+  .card-light:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(18, 18, 64, 0.1);
   }
 
   /* Glass Panel — Navy tinted */
@@ -193,7 +231,7 @@ body {
     border: 1px solid rgba(77, 66, 50, 0.15);
   }
 
-  /* Input Field — Clean Tech */
+  /* Input Field — Clean Tech (dark bg) */
   .input-field {
     background: var(--color-surface-container-lowest);
     border: none;
@@ -207,6 +245,35 @@ body {
   .input-field:focus {
     border-bottom-color: var(--color-primary-container);
     outline: none;
+  }
+
+  /* Input Field — Light bg variant */
+  .input-field-light {
+    background: #F0EFE9;
+    border: 1px solid rgba(18, 18, 64, 0.12);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4);
+    color: #1A1A2E;
+    font-family: var(--font-body);
+    transition: border-color 200ms ease;
+  }
+  .input-field-light:focus {
+    border-color: var(--color-primary-container);
+    outline: none;
+  }
+
+  /* Secondary button for light backgrounds */
+  .btn-secondary-light {
+    @apply inline-flex items-center justify-center gap-2 font-label font-semibold tracking-wide rounded-full transition-all duration-200;
+    background: #121240;
+    color: #FFFFFF;
+    padding: 14px 28px;
+    border: none;
+  }
+  .btn-secondary-light:hover {
+    background: #1B1B5E;
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(18, 18, 64, 0.2);
   }
 }
 

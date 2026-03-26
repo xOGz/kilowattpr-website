@@ -48,16 +48,16 @@ const thirdColumn = testimonials.slice(4, 6);
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-20 bg-surface">
+    <section className="py-20 section-light-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-title">Lo Que Dicen Nuestros Clientes</h2>
+          <h2 className="font-display text-display-md leading-tight text-[#121240]">Lo Que Dicen Nuestros Clientes</h2>
           <div className="flex items-center justify-center gap-2 mt-5">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="text-primary-container fill-primary-container" size={24} />
             ))}
-            <span className="text-2xl font-display font-bold text-on-surface ml-2">4.9</span>
-            <span className="text-on-surface-variant">/ 147 reseñas</span>
+            <span className="text-2xl font-display font-bold text-[#121240] ml-2">4.9</span>
+            <span className="text-[#4A4A6A]">/ 147 reseñas</span>
           </div>
         </div>
         <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[550px] overflow-hidden">

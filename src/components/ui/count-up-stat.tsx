@@ -49,12 +49,12 @@ export function CountUpStat({
   return (
     <div
       ref={ref}
-      className="flex items-center justify-center gap-2 font-label text-label-lg text-on-surface-variant py-2"
+      className="flex items-center justify-center gap-2 font-label text-label-lg text-[#4A4A6A] py-2"
     >
       {icon && (
-        <span className="text-primary-container">{icon}</span>
+        <span className="text-[#E09500]">{icon}</span>
       )}
-      <motion.span className="font-display font-bold text-on-surface tabular-nums">
+      <motion.span className="font-display font-bold text-[#121240] tabular-nums">
         {display}
       </motion.span>
       <span>{label}</span>
