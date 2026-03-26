@@ -103,7 +103,7 @@ const faqs = [
   {
     question: '¿Cuánto cuesta un sistema solar en Puerto Rico?',
     answer:
-      'Un sistema solar residencial en Puerto Rico tiene un costo promedio de $15,000 a $35,000, dependiendo del consumo eléctrico del hogar y el tamaño del sistema requerido. Los sistemas más populares van de 5kW a 10kW con o sin batería. Ofrecemos opciones de financiamiento que permiten que muchas familias comiencen a ahorrar desde el primer mes sin un desembolso total inicial. Durante la consulta gratis te presentamos un análisis detallado del costo y los ahorros proyectados a 25 años.',
+      'Un sistema solar residencial en Puerto Rico tiene un costo promedio de $13,000 en adelante, dependiendo del consumo eléctrico del hogar y el tamaño del sistema requerido o deseado. Los sistemas más populares comienzan en 4 kW de solar y 10 kWh en batería, y para residencial hemos trabajado hasta 25 kW en solar y 64+ kWh. Durante la consulta gratis te presentamos un análisis detallado del costo y los ahorros proyectados a 7 años.',
   },
   {
     question: '¿Cuánto tiempo tarda la instalación solar en Puerto Rico?',

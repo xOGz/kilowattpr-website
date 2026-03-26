@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'How Much Does Solar Energy Cost in Puerto Rico in 2026?',
   description:
-    'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems $15,000-$35,000, commercial, with and without battery. Available incentives and financing.',
+    'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems from $13,000 and up, commercial, with and without battery. Available incentives and financing.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
     languages: {
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: 'How much does a 5kW solar system cost in Puerto Rico?',
-    answer: 'A 5kW residential solar system in Puerto Rico costs approximately $15,000 to $20,000 installed, including permits and LUMA Energy interconnection. This size is suitable for homes with monthly consumption of 400 to 600 kWh. With the 30% federal tax credit, the net cost after incentives can be significantly lower.',
+    question: 'How much does a solar system cost in Puerto Rico?',
+    answer: 'A residential solar system with 4 kW solar and 10 kWh battery in Puerto Rico costs from $13,000 and up installed, including permits and LUMA Energy interconnection. With the 30% federal tax credit, the net cost after incentives can be significantly lower.',
   },
   {
     question: 'Is it worth installing solar panels in Puerto Rico in 2026?',
@@ -98,8 +98,8 @@ export default function SolarCostPage() {
           <h2>Average Cost of a Residential Solar System in Puerto Rico</h2>
 
           <p>
-            The cost of a residential solar system in Puerto Rico in 2026 ranges between
-            <strong> $15,000 and $35,000</strong>, depending on the system size, equipment type,
+            The cost of a residential solar system in Puerto Rico in 2026 starts from
+            <strong> $13,000 and up</strong>, depending on the system size, equipment type,
             and whether it includes battery storage. According to the{' '}
             <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
               National Renewable Energy Laboratory (NREL)
@@ -111,9 +111,9 @@ export default function SolarCostPage() {
             <h3 className="font-bold text-navy-dark mb-4">Price Ranges by System Type</h3>
             <div className="space-y-3">
               {[
-                { sistema: 'Basic 5kW System (no battery)', precio: '$15,000 – $20,000' },
-                { sistema: 'Mid-Size 8kW System (no battery)', precio: '$20,000 – $27,000' },
-                { sistema: 'Premium 10kW System + Battery', precio: '$28,000 – $35,000' },
+                { sistema: '4 kW Solar + 10 kWh Battery System', precio: 'From $13,000' },
+                { sistema: 'Mid-Size 8kW System + Battery', precio: 'From $20,000' },
+                { sistema: 'Premium 10kW System + Battery', precio: 'From $28,000' },
                 { sistema: 'Commercial 20kW+', precio: 'Custom quote' },
               ].map((row) => (
                 <div key={row.sistema} className="flex justify-between items-center py-2 border-b border-gray-200 last:border-0">
@@ -251,7 +251,7 @@ export default function SolarCostPage() {
             property is through a free consultation. At Kilowatt PR, our licensed electricians
             and electrical engineers with over 3 decades of experience in Puerto Rico analyze your consumption,
             evaluate your roof, and present a detailed design with the exact cost and
-            25-year savings projection — no cost, no obligation.
+            7-year savings projection — no cost, no obligation.
           </p>
         </div>
 
@@ -265,7 +265,7 @@ export default function SolarCostPage() {
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Free Consultation — 25-Year Savings Projection
+            Free Consultation — 7-Year Savings Projection
           </a>
         </div>
       </article>

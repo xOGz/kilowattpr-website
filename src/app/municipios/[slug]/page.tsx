@@ -53,7 +53,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     },
     {
       question: `¿Cuánto cuesta instalar paneles solares en ${municipio.name}?`,
-      answer: `El costo de un sistema solar en ${municipio.name} varía entre $15,000 y $35,000 para instalaciones residenciales, dependiendo del tamaño del sistema y el consumo eléctrico del hogar. El precio exacto se determina durante la consulta gratis, donde analizamos tu consumo y diseñamos el sistema ideal. Ofrecemos opciones de financiamiento para que puedas empezar a ahorrar desde el primer mes.`,
+      answer: `El costo de un sistema solar en ${municipio.name} comienza desde $13,000 en adelante para instalaciones residenciales, dependiendo del tamaño del sistema y el consumo eléctrico del hogar. El precio exacto se determina durante la consulta gratis, donde analizamos tu consumo y diseñamos el sistema ideal. Ofrecemos opciones de financiamiento para que puedas empezar a ahorrar desde el primer mes.`,
     },
     {
       question: `¿Cuánto tiempo tarda la instalación en ${municipio.name}?`,
@@ -162,7 +162,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
               Cotización Gratis en {municipio.name}
             </h2>
             <p className="text-gray-300 mb-6">
-              Análisis de consumo, diseño 3D y proyección de ahorros a 25 años.
+              Análisis de consumo, diseño 3D y proyección de ahorros a 7 años.
               Sin costo y sin compromiso.
             </p>
             <a

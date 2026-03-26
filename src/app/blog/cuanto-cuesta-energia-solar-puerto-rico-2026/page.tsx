@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?',
   description:
-    'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales $15,000–$35,000, comerciales, con y sin batería. Incentivos disponibles y financiamiento.',
+    'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales desde $13,000 en adelante, comerciales, con y sin batería. Incentivos disponibles y financiamiento.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
     languages: {
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: '¿Cuánto cuesta un sistema solar de 5kW en Puerto Rico?',
-    answer: 'Un sistema solar residencial de 5kW en Puerto Rico tiene un costo aproximado de $15,000 a $20,000 instalado, incluyendo permisos y la interconexión con LUMA Energy. Este tamaño es adecuado para hogares con consumo mensual de 400 a 600 kWh. Con el crédito federal del 30%, el costo neto después de incentivos puede ser significativamente menor.',
+    question: '¿Cuánto cuesta un sistema solar en Puerto Rico?',
+    answer: 'Un sistema solar residencial de 4 kW de solar y 10 kWh en batería en Puerto Rico tiene un costo desde $13,000 en adelante instalado, incluyendo permisos y la interconexión con LUMA Energy. Con el crédito federal del 30%, el costo neto después de incentivos puede ser significativamente menor.',
   },
   {
     question: '¿Vale la pena instalar paneles solares en Puerto Rico en 2026?',
@@ -91,8 +91,8 @@ export default function CuantoCuestaPage() {
           <h2>Costo Promedio de un Sistema Solar Residencial en Puerto Rico</h2>
 
           <p>
-            El costo de un sistema solar residencial en Puerto Rico en 2026 oscila entre
-            <strong> $15,000 y $35,000</strong>, dependiendo del tamaño del sistema, el tipo de
+            El costo de un sistema solar residencial en Puerto Rico en 2026 comienza desde
+            <strong> $13,000 en adelante</strong>, dependiendo del tamaño del sistema, el tipo de
             equipo y si incluye almacenamiento de batería. Según datos del{' '}
             <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
               Laboratorio Nacional de Energía Renovable (NREL)
@@ -104,9 +104,9 @@ export default function CuantoCuestaPage() {
             <h3 className="font-bold text-navy-dark mb-4">Rangos de Precio por Tipo de Sistema</h3>
             <div className="space-y-3">
               {[
-                { sistema: 'Sistema Básico 5kW (sin batería)', precio: '$15,000 – $20,000' },
-                { sistema: 'Sistema Mediano 8kW (sin batería)', precio: '$20,000 – $27,000' },
-                { sistema: 'Sistema Premium 10kW + Batería', precio: '$28,000 – $35,000' },
+                { sistema: 'Sistema 4 kW solar + 10 kWh batería', precio: 'Desde $13,000' },
+                { sistema: 'Sistema Mediano 8kW + Batería', precio: 'Desde $20,000' },
+                { sistema: 'Sistema Premium 10kW + Batería', precio: 'Desde $28,000' },
                 { sistema: 'Sistema Comercial 20kW+', precio: 'Cotización personalizada' },
               ].map((row) => (
                 <div key={row.sistema} className="flex justify-between items-center py-2 border-b border-gray-200 last:border-0">
@@ -245,7 +245,7 @@ export default function CuantoCuestaPage() {
             específica es a través de una consulta gratis. En Kilowatt PR, nuestros técnicos
             e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico analizan tu consumo,
             evalúan tu techo y te presentan un diseño detallado con el costo exacto y la
-            proyección de ahorros a 25 años, sin costo ni compromiso.
+            proyección de ahorros a 7 años, sin costo ni compromiso.
           </p>
         </div>
 
@@ -259,7 +259,7 @@ export default function CuantoCuestaPage() {
             rel="noopener noreferrer"
             className="btn-primary"
           >
-            Consulta Gratis — Proyección de Ahorros a 25 Años
+            Consulta Gratis — Proyección de Ahorros a 7 Años
           </a>
         </div>
       </article>

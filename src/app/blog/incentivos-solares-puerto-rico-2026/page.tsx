@@ -89,7 +89,7 @@ export default function IncentivosPage() {
             </a>, el crédito aplica sobre el costo completo del sistema: paneles, inversor,
             batería (si se instala como parte del proyecto), materiales de instalación y mano
             de obra. Para un sistema de $25,000, el crédito es de $7,500. Para un sistema de
-            $35,000 con batería, el crédito sería de $10,500.
+            $30,000 con batería, el crédito sería de $9,000.
           </p>
 
           <div className="not-prose bg-solar-yellow/5 border border-solar-yellow/30 rounded-xl p-6 my-6">
@@ -195,7 +195,7 @@ export default function IncentivosPage() {
             <li>Costo después del crédito federal: $17,500</li>
             <li>Ahorro mensual estimado: $300–$400</li>
             <li>Período de recuperación: aproximadamente 4–5 años</li>
-            <li>Ahorros totales en 25 años: $90,000–$120,000+</li>
+            <li>Ahorros totales en 7 años: $25,000–$34,000+</li>
           </ul>
           <p>
             Estas proyecciones son estimaciones basadas en tarifas actuales de LUMA Energy.
