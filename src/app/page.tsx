@@ -1,17 +1,16 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import dynamic from 'next/dynamic'
 import {
   Sun, Battery, Home, Wrench, Star, CheckCircle, Phone, MessageCircle,
-  ArrowRight, Shield, MapPin, Zap,
+  ArrowRight, Shield, Zap,
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import HeroWithTextRotate from '@/components/HeroWithTextRotate'
 import TestimonialsSection from '@/components/TestimonialsSection'
-
-const HeroDottedSurface = dynamic(() => import('@/components/HeroDottedSurface'), { ssr: false })
+import TrustBar from '@/components/TrustBar'
+import CTAHeading from '@/components/CTAHeading'
 
 export const metadata: Metadata = {
   title: 'Instalación de Paneles Solares en Puerto Rico',
@@ -142,24 +141,8 @@ export default function HomePage() {
       {/* Hero — Enhanced with 21st.dev TextRotate + Three.js dotted surface */}
       <HeroWithTextRotate />
 
-      {/* Trust bar — Subtle tonal shift, no borders */}
-      <section className="bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { icon: Star, label: '4.9★ / 147 Reseñas' },
-              { icon: Shield, label: 'Garantía 25 Años' },
-              { icon: CheckCircle, label: '+10 Años Experiencia' },
-              { icon: MapPin, label: 'Todo Puerto Rico' },
-            ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center justify-center gap-2 font-label text-label-lg text-on-surface-variant py-2">
-                <Icon size={16} className="text-primary-container" />
-                <span>{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Trust bar — Animated count-up stats */}
+      <TrustBar />
 
       {/* Services grid — Floating pane cards */}
       <section className="py-20 bg-surface">
@@ -262,9 +245,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-on-surface mb-5">
-                ¿Listo para la Independencia Energética?
-              </h2>
+              <CTAHeading />
               <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
                 Completa el formulario y te contactamos en menos de 24 horas con tu cotización
                 gratis. Sin compromiso, sin costo.
