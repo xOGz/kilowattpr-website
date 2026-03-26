@@ -13,9 +13,9 @@ import EnglishTestimonialsSection from '@/components/EnglishTestimonialsSection'
 import EnglishCTAHeading from '@/components/EnglishCTAHeading'
 
 export const metadata: Metadata = {
-  title: 'Solar Panel Installation in Puerto Rico',
+  title: 'Solar Panels & Electrical Contractor in Puerto Rico',
   description:
-    'Kilowatt PR LLC: #1 solar panel installation company in Puerto Rico. Licensed electricians and electrical engineers with over 3 decades of experience. Free quote today.',
+    'Solar panel installation from $13,000 in Puerto Rico. Licensed electricians with 30+ years experience. Battery backup, net metering, meter base repairs. Free quote ☎ 787-431-2275',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en',
     languages: {
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Solar Panel Installation in Puerto Rico | Kilowatt PR',
+    title: 'Kilowatt PR | Solar Panels from $13,000 in Puerto Rico',
     description:
-      '#1 solar panel installation company in Puerto Rico. Licensed electricians, 10-year equipment warranty, free consultation.',
+      'Licensed electricians with 30+ years. Solar installation, batteries, electrical contractor. 4.9★ / 147 reviews. Free quote today.',
     url: 'https://www.kilowattpr.com/en',
     locale: 'en_US',
   },

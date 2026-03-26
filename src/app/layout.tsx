@@ -8,11 +8,11 @@ import { OrganizationSchema, WebSiteSchema } from '@/components/SchemaOrg'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kilowattpr.com'),
   title: {
-    default: 'Kilowatt PR — Instalación Solar Puerto Rico',
-    template: '%s | Kilowatt PR — Instalación Solar Puerto Rico',
+    default: 'Kilowatt PR | Instalación Solar y Contratista Eléctrico en Puerto Rico',
+    template: '%s | Kilowatt PR',
   },
   description:
-    'Kilowatt PR LLC: empresa #1 en instalación de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. Cotización gratis.',
+    'Instalación de paneles solares desde $13,000. Peritos electricistas con 30+ años de experiencia en Puerto Rico. Cotización gratis hoy. ☎ 787-431-2275',
   openGraph: {
     type: 'website',
     locale: 'es_PR',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         url: 'https://www.kilowattpr.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kilowatt PR — Instalación de Paneles Solares en Puerto Rico',
+        alt: 'Kilowatt PR — Paneles Solares y Contratista Eléctrico Puerto Rico',
       },
     ],
   },

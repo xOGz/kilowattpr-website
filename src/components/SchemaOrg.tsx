@@ -1,14 +1,14 @@
 export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
-    '@id': 'https://kilowattpr.com/#organization',
+    '@type': ['Organization', 'LocalBusiness', 'Electrician'],
+    '@id': 'https://www.kilowattpr.com/#organization',
     name: 'Kilowatt PR LLC',
     alternateName: 'Kilowatt PR',
-    url: 'https://kilowattpr.com',
-    logo: { '@type': 'ImageObject', url: 'https://kilowattpr.com/logo.png' },
+    url: 'https://www.kilowattpr.com',
+    logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo.png' },
     description:
-      'Kilowatt PR LLC instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia.',
+      'Contratista eléctrico e instalador de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. Sistemas solares residenciales y comerciales, baterías de respaldo, reparación de bases de medidores con certificaciones LUMA.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'HC 3 Box 31767',
@@ -27,7 +27,59 @@ export function OrganizationSchema() {
       'https://www.facebook.com/kilowattpr',
       'https://www.instagram.com/kilowattpr',
     ],
-    areaServed: { '@type': 'State', name: 'Puerto Rico' },
+    areaServed: {
+      '@type': 'State',
+      name: 'Puerto Rico',
+      containedInPlace: { '@type': 'Country', name: 'United States' },
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Servicios de Kilowatt PR',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Instalación de Paneles Solares',
+            description: 'Sistemas fotovoltaicos residenciales y comerciales desde $13,000',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Sistemas de Batería de Respaldo',
+            description: 'Independencia energética durante apagones de LUMA Energy',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Contratista Eléctrico',
+            description: 'Servicios eléctricos residenciales y comerciales, reparación de bases de medidores con certificaciones LUMA',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Mantenimiento y Lavado de Paneles',
+            description: 'Limpieza profesional cada 6-8 meses para máxima eficiencia',
+          },
+        },
+      ],
+    },
+    knowsAbout: [
+      'Solar Energy',
+      'Photovoltaic Systems',
+      'Battery Storage',
+      'Electrical Contracting',
+      'Net Metering',
+      'LUMA Energy Interconnection',
+      'OGPE Permits',
+      'Meter Base Repairs',
+    ],
   }
 
   return (
@@ -42,11 +94,16 @@ export function WebSiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    '@id': 'https://kilowattpr.com/#website',
-    url: 'https://kilowattpr.com',
+    '@id': 'https://www.kilowattpr.com/#website',
+    url: 'https://www.kilowattpr.com',
     name: 'Kilowatt PR',
-    publisher: { '@id': 'https://kilowattpr.com/#organization' },
+    publisher: { '@id': 'https://www.kilowattpr.com/#organization' },
     inLanguage: ['es', 'en'],
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://www.kilowattpr.com/?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
   }
 
   return (
@@ -60,12 +117,12 @@ export function WebSiteSchema() {
 export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    '@id': 'https://kilowattpr.com/#localbusiness',
+    '@type': ['LocalBusiness', 'Electrician'],
+    '@id': 'https://www.kilowattpr.com/#localbusiness',
     name: 'Kilowatt PR LLC',
     description:
-      'Empresa #1 en instalación de placas solares en Puerto Rico. Sistemas solares con batería, sellado de techo, lavado y mantenimiento.',
-    url: 'https://kilowattpr.com',
+      'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $13,000, baterías de respaldo, reparación de bases de medidores. 4.9★ / 147 reseñas.',
+    url: 'https://www.kilowattpr.com',
     telephone: '+1-787-431-2275',
     email: 'kilowattpr@gmail.com',
     address: {
@@ -78,8 +135,8 @@ export function LocalBusinessSchema() {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 18.4655,
-      longitude: -66.1057,
+      latitude: 18.3809,
+      longitude: -67.1886,
     },
     openingHoursSpecification: [
       {
@@ -90,7 +147,13 @@ export function LocalBusinessSchema() {
       },
     ],
     priceRange: '$$',
-    areaServed: { '@type': 'State', name: 'Puerto Rico' },
+    currenciesAccepted: 'USD',
+    paymentAccepted: 'Cash, Credit Card, Financing',
+    areaServed: {
+      '@type': 'State',
+      name: 'Puerto Rico',
+      containedInPlace: { '@type': 'Country', name: 'United States' },
+    },
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: 4.9,
@@ -98,6 +161,7 @@ export function LocalBusinessSchema() {
       bestRating: 5,
       worstRating: 1,
     },
+    slogan: 'The #1 trusted solar company in the island',
   }
 
   return (
@@ -155,12 +219,12 @@ export function PersonSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    '@id': 'https://kilowattpr.com/#julio-santiago-perez',
+    '@id': 'https://www.kilowattpr.com/#julio-santiago-perez',
     name: authorData.name,
     jobTitle: 'Ingeniero Electricista Licenciado / Licensed Electrical Engineer',
     description: authorData.bio.es,
     url: authorData.url,
-    worksFor: { '@id': 'https://kilowattpr.com/#organization' },
+    worksFor: { '@id': 'https://www.kilowattpr.com/#organization' },
     hasCredential: [
       {
         '@type': 'EducationalOccupationalCredential',
@@ -224,12 +288,12 @@ export function ArticleSchema({
     datePublished,
     author: {
       '@type': 'Person',
-      '@id': 'https://kilowattpr.com/#julio-santiago-perez',
+      '@id': 'https://www.kilowattpr.com/#julio-santiago-perez',
       name: authorData.name,
       jobTitle: 'Ingeniero Electricista Licenciado (PE #6083)',
       url: authorData.url,
     },
-    publisher: { '@id': 'https://kilowattpr.com/#organization' },
+    publisher: { '@id': 'https://www.kilowattpr.com/#organization' },
     url,
     speakable: {
       '@type': 'SpeakableSpecification',
