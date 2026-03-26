@@ -67,8 +67,8 @@ const differentiators = [
   },
   {
     icon: Shield,
-    title: '10-Year Equipment Warranty',
-    desc: 'We work with the most reliable manufacturers in the market. Your equipment is backed by a 10-year warranty, plus net metering to maximize your savings.',
+    title: '25-Year Panel Warranty',
+    desc: 'We work with the most reliable manufacturers in the market. Your panels are backed by a 25-year warranty, plus 3-month workmanship warranty. Inverters and batteries with local warranties of 5 to 10 years.',
   },
   {
     icon: Zap,

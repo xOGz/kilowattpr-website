@@ -61,13 +61,13 @@ const services = [
 const differentiators = [
   {
     icon: CheckCircle,
-    title: 'Más de una Década de Experiencia',
+    title: 'Más de 3 Décadas de Experiencia',
     desc: 'Nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de OGPE y el proceso de interconexión con LUMA Energy como nadie.',
   },
   {
     icon: Shield,
     title: 'Garantía de 25 Años en Paneles',
-    desc: 'Trabajamos con los fabricantes más confiables del mercado. Tus paneles están respaldados por una garantía de 25 años, más 2 años de garantía de mano de obra en sellado de techo.',
+    desc: 'Trabajamos con los fabricantes más confiables del mercado. Tus paneles están respaldados por una garantía de 25 años, más 3 meses de garantía de mano de obra. Inversores y baterías con garantías locales de 5 a 10 años.',
   },
   {
     icon: Zap,
