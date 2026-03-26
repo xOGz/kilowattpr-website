@@ -1,7 +1,12 @@
 'use client';
 
-import { DottedSurface } from '@/components/ui/dotted-surface';
+import dynamic from 'next/dynamic';
+
+const SolarEnergyField = dynamic(
+  () => import('@/components/ui/solar-energy-field'),
+  { ssr: false }
+);
 
 export default function HeroDottedSurface() {
-  return <DottedSurface className="absolute inset-0" />;
+  return <SolarEnergyField />;
 }
