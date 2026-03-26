@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { Star, MessageCircle, ArrowRight } from "lucide-react";
+import { Sun, MessageCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
 
 const HeroDottedSurface = dynamic(() => import("@/components/HeroDottedSurface"), { ssr: false });
@@ -15,8 +15,8 @@ export default function HeroWithTextRotate() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
         <div className="max-w-4xl">
           <div className="chip-gold inline-flex items-center gap-2 mb-8">
-            <Star size={12} />
-            4.9★ — 147 RESEÑAS VERIFICADAS
+            <Sun size={12} />
+            THE #1 TRUSTED SOLAR COMPANY IN THE ISLAND
           </div>
           <h1 className="font-display text-display-lg mb-6 text-on-surface">
             Energía Solar para{" "}
