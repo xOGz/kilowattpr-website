@@ -123,12 +123,12 @@ const faqs = [
   {
     question: '¿Qué garantías ofrecen en los sistemas solares?',
     answer:
-      'Los paneles solares que instalamos cuentan con una garantía del fabricante de 25 años que cubre tanto el rendimiento como los defectos de fabricación. Adicionalmente, ofrecemos una garantía de 2 años de mano de obra en todos los trabajos de sellado de techo. Los inversores y baterías tienen garantías específicas según el fabricante, generalmente entre 5 y 10 años. Todos estos detalles te los explicamos con claridad durante la consulta inicial.',
+      'Los paneles solares que instalamos cuentan con una garantía del fabricante de 25 años que cubre tanto el rendimiento como los defectos de fabricación. Adicionalmente, ofrecemos una garantía de 3 meses en mano de obra. Los inversores y baterías tienen garantías mayormente locales generalmente entre 5 y 10 años. Todos estos detalles te los explicamos con claridad durante la consulta inicial.',
   },
   {
     question: '¿Qué incluye la consulta gratis de Kilowatt PR?',
     answer:
-      'Nuestra consulta gratis incluye: análisis completo de tu consumo eléctrico actual, diseño 3D personalizado del sistema solar para tu techo específico, proyección de ahorros a 25 años basada en las tarifas actuales de LUMA Energy, evaluación del estado del techo y recomendaciones, y un estimado detallado de la instalación con opciones de financiamiento. No hay compromiso de compra y toda la información es tuya para tomar la mejor decisión.',
+      'Nuestra consulta gratis incluye: análisis completo de tu consumo eléctrico actual, diseño 3D personalizado del sistema solar para tu techo específico, proyección de ahorros a 7 años basada en las tarifas actuales de LUMA Energy, evaluación del estado del techo y recomendaciones, y un estimado detallado de la instalación. No hay compromiso de compra y toda la información es tuya para tomar la mejor decisión.',
   },
 ]
 

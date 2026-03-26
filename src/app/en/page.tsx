@@ -124,12 +124,12 @@ const faqs = [
   {
     question: 'What warranties do you offer on solar systems?',
     answer:
-      'The equipment we install comes with a 10-year manufacturer warranty. Additionally, we offer a 2-year workmanship warranty on all roof sealing work. We also set up net metering so you get credit for excess energy produced. We explain all these details clearly during the initial consultation.',
+      'The solar panels we install come with a 25-year manufacturer warranty covering both performance and manufacturing defects. Additionally, we offer a 3-month workmanship warranty. Inverters and batteries have mostly local warranties, generally between 5 and 10 years. We explain all these details clearly during the initial consultation.',
   },
   {
     question: 'What does Kilowatt PR\'s free consultation include?',
     answer:
-      'Our free consultation includes: a complete analysis of your current electricity consumption, a personalized 3D solar system design for your specific roof, a 25-year savings projection based on current LUMA Energy rates, roof condition assessment and recommendations, and a detailed installation estimate with financing options. There is no purchase obligation and all the information is yours to make the best decision.',
+      'Our free consultation includes: a complete analysis of your current electricity consumption, a personalized 3D solar system design for your specific roof, a 7-year savings projection based on current LUMA Energy rates, roof condition assessment and recommendations, and a detailed installation estimate. There is no purchase obligation and all the information is yours to make the best decision.',
   },
 ]
 
