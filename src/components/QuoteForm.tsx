@@ -49,6 +49,12 @@ export default function QuoteForm({ defaultService }: { defaultService?: string 
       source: 'website' as const,
     }
 
+    if (!supabase) {
+      console.error('Supabase not configured')
+      setStatus('error')
+      return
+    }
+
     const { error } = await supabase.from('leads').insert(lead)
 
     if (error) {
