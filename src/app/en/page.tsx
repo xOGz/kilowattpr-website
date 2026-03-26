@@ -1,18 +1,21 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import {
   Sun, Battery, Home, Wrench, Star, CheckCircle, Phone, MessageCircle,
-  ArrowRight, Shield, MapPin, Zap,
+  ArrowRight, Shield, Zap,
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import EnglishHero from '@/components/EnglishHero'
+import EnglishTrustBar from '@/components/EnglishTrustBar'
+import EnglishTestimonialsSection from '@/components/EnglishTestimonialsSection'
+import EnglishCTAHeading from '@/components/EnglishCTAHeading'
 
 export const metadata: Metadata = {
   title: 'Solar Panel Installation in Puerto Rico',
   description:
-    'Kilowatt PR LLC: #1 solar panel installation company in Puerto Rico. Certified technicians with over a decade of experience. Free quote today.',
+    'Kilowatt PR LLC: #1 solar panel installation company in Puerto Rico. Licensed electricians and electrical engineers with over 3 decades of experience. Free quote today.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en',
     languages: {
@@ -23,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Solar Panel Installation in Puerto Rico | Kilowatt PR',
     description:
-      '#1 solar panel installation company in Puerto Rico. Certified technicians, 25-year warranty, free consultation.',
+      '#1 solar panel installation company in Puerto Rico. Licensed electricians, 10-year equipment warranty, free consultation.',
     url: 'https://www.kilowattpr.com/en',
     locale: 'en_US',
   },
@@ -59,13 +62,13 @@ const services = [
 const differentiators = [
   {
     icon: CheckCircle,
-    title: 'Over a Decade of Experience',
-    desc: 'Our certified technicians with over a decade of hands-on experience in Puerto Rico know the climate conditions, ARPE permit requirements, and LUMA Energy interconnection process like no one else.',
+    title: 'Over 3 Decades of Experience',
+    desc: 'Our licensed electricians and electrical engineers with over 30 years of hands-on experience in Puerto Rico know the climate conditions, ARPE permit requirements, and LUMA Energy interconnection process like no one else.',
   },
   {
     icon: Shield,
-    title: '25-Year Panel Warranty',
-    desc: 'We work with the most reliable manufacturers in the market. Your panels are backed by a 25-year warranty, plus 2 years of workmanship warranty on roof sealing.',
+    title: '10-Year Equipment Warranty',
+    desc: 'We work with the most reliable manufacturers in the market. Your equipment is backed by a 10-year warranty, plus net metering to maximize your savings.',
   },
   {
     icon: Zap,
@@ -121,7 +124,7 @@ const faqs = [
   {
     question: 'What warranties do you offer on solar systems?',
     answer:
-      'The solar panels we install come with a manufacturer warranty of 25 years covering both performance and manufacturing defects. Additionally, we offer a 2-year workmanship warranty on all roof sealing work. Inverters and batteries have specific warranties depending on the manufacturer, generally between 5 and 10 years. We explain all these details clearly during the initial consultation.',
+      'The equipment we install comes with a 10-year manufacturer warranty. Additionally, we offer a 2-year workmanship warranty on all roof sealing work. We also set up net metering so you get credit for excess energy produced. We explain all these details clearly during the initial consultation.',
   },
   {
     question: 'What does Kilowatt PR\'s free consultation include?',
@@ -136,79 +139,11 @@ export default function EnglishHomePage() {
       <LocalBusinessSchema />
       <FAQSchema faqs={faqs} />
 
-      {/* Hero */}
-      <section className="relative bg-surface overflow-hidden min-h-[90vh] flex items-center">
-        <div className="absolute inset-0">
-          <Image
-            src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1600&q=80"
-            alt="Solar panels installed on a roof in Puerto Rico"
-            fill
-            className="object-cover opacity-20"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-surface/80 via-surface/60 to-surface" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
-          <div className="max-w-4xl">
-            <div className="chip-gold inline-flex items-center gap-2 mb-8">
-              <Star size={12} />
-              4.9★ — 147 VERIFIED REVIEWS
-            </div>
-            <h1 className="font-display text-display-lg mb-6 text-on-surface">
-              Cutting-Edge{' '}
-              <span className="text-primary-container">Solar Energy</span>
-              <br />
-              in Puerto Rico
-            </h1>
-            <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-              Certified technicians with over a decade of hands-on experience in Puerto Rico.
-              Real energy independence for your home or business.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a
-                href="https://wa.me/17874312275"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary text-base px-8 py-4"
-              >
-                <MessageCircle size={20} />
-                Free Quote via WhatsApp
-              </a>
-              <Link href="/servicios" className="btn-secondary text-base px-8 py-4">
-                View Services <ArrowRight size={18} />
-              </Link>
-            </div>
+      {/* Hero — Enhanced with TextRotate + 3D background */}
+      <EnglishHero />
 
-            {/* Language switcher */}
-            <div className="mt-8 flex items-center gap-3 text-sm text-on-surface-variant">
-              <Link href="/" className="hover:text-primary-container transition-colors">
-                Español
-              </Link>
-              <span className="text-outline">|</span>
-              <span className="text-primary-container font-semibold">English</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust bar */}
-      <section className="bg-surface-container-low">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {[
-              { icon: Star, label: '4.9★ / 147 Reviews' },
-              { icon: Shield, label: '25-Year Warranty' },
-              { icon: CheckCircle, label: '10+ Years Experience' },
-              { icon: MapPin, label: 'All of Puerto Rico' },
-            ].map(({ icon: Icon, label }) => (
-              <div key={label} className="flex items-center justify-center gap-2 font-label text-label-lg text-on-surface-variant py-2">
-                <Icon size={16} className="text-primary-container" />
-                <span>{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Trust bar — Animated count-up stats */}
+      <EnglishTrustBar />
 
       {/* Services grid */}
       <section className="py-20 bg-surface">
@@ -268,7 +203,7 @@ export default function EnglishHomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Certified technicians with over a decade of hands-on experience in Puerto Rico
+            Licensed electricians and electrical engineers with over 3 decades of experience in Puerto Rico
           </p>
         </div>
       </section>
@@ -303,62 +238,15 @@ export default function EnglishHomePage() {
       {/* FAQ */}
       <FAQSection faqs={faqs} title="Frequently Asked Questions About Solar Energy in Puerto Rico" />
 
-      {/* Reviews */}
-      <section className="py-20 bg-surface">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="section-title">What Our Customers Say</h2>
-            <div className="flex items-center justify-center gap-2 mt-5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="text-primary-container fill-primary-container" size={24} />
-              ))}
-              <span className="text-2xl font-display font-bold text-on-surface ml-2">4.9</span>
-              <span className="text-on-surface-variant">/ 147 reviews</span>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                name: 'Carlos M.',
-                location: 'Aguada, PR',
-                text: 'Excellent service from start to finish. The Kilowatt PR team handled all the permits and the LUMA interconnection. My bill dropped 90% from month one. 100% recommended.',
-              },
-              {
-                name: 'Maria L.',
-                location: 'San Juan, PR',
-                text: 'After last year\'s blackouts I decided to install the battery system. Kilowatt PR explained everything clearly, the price was fair, and the installation was fast. Now I have peace of mind.',
-              },
-              {
-                name: 'Roberto V.',
-                location: 'Ponce, PR',
-                text: 'I hired them for my business. The team was very professional, arrived on time, and the system works perfectly. It\'s been 8 months with zero issues. The monthly savings are real.',
-              },
-            ].map((review) => (
-              <div key={review.name} className="card">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-primary-container fill-primary-container" size={16} />
-                  ))}
-                </div>
-                <p className="text-on-surface-variant text-body-md leading-relaxed mb-5">&ldquo;{review.text}&rdquo;</p>
-                <div>
-                  <p className="font-headline font-semibold text-on-surface">{review.name}</p>
-                  <p className="text-label-md text-on-surface-variant font-label">{review.location}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Reviews — Auto-scrolling Testimonials */}
+      <EnglishTestimonialsSection />
 
       {/* Quote Form + CTA */}
       <section className="py-20 bg-surface-container-low">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold text-on-surface mb-5">
-                Ready for Energy Independence?
-              </h2>
+              <EnglishCTAHeading />
               <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
                 Fill out the form and we&apos;ll contact you within 24 hours with your
                 free quote. No obligation, no cost.
