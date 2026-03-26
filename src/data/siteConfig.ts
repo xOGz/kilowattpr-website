@@ -13,8 +13,8 @@ export const siteConfig = {
     country: 'US',
   },
   social: {
-    facebook: 'https://www.facebook.com/kilowattpr',
-    instagram: 'https://www.instagram.com/kilowattpr',
+    facebook: 'https://www.facebook.com/kilowattprllc',
+    instagram: 'https://www.instagram.com/kilowatt_pr',
   },
   rating: {
     value: 4.9,

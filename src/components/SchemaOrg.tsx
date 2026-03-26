@@ -24,8 +24,8 @@ export function OrganizationSchema() {
       availableLanguage: ['Spanish', 'English'],
     },
     sameAs: [
-      'https://www.facebook.com/kilowattpr',
-      'https://www.instagram.com/kilowattpr',
+      'https://www.facebook.com/kilowattprllc',
+      'https://www.instagram.com/kilowatt_pr',
     ],
     areaServed: {
       '@type': 'State',

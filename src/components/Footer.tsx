@@ -19,7 +19,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.facebook.com/kilowattpr"
+                href="https://www.facebook.com/kilowattprllc"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook de Kilowatt PR"
@@ -28,7 +28,7 @@ export default function Footer() {
                 <Facebook size={20} />
               </a>
               <a
-                href="https://www.instagram.com/kilowattpr"
+                href="https://www.instagram.com/kilowatt_pr"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram de Kilowatt PR"
