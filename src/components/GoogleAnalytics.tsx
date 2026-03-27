@@ -1,24 +1,31 @@
 'use client'
 
-import Script from 'next/script'
+import { useEffect } from 'react'
 
-const GA_MEASUREMENT_ID = 'G-JPJMGG1M0Z'
+declare global {
+  interface Window {
+    dataLayer: unknown[]
+  }
+}
+
+const GA_TAG_ID = 'G-EBJTJEFNWL'
 
 export default function GoogleAnalytics() {
-  return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${GA_MEASUREMENT_ID}');
-        `}
-      </Script>
-    </>
-  )
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TAG_ID}`
+    script.async = true
+    document.head.appendChild(script)
+
+    script.onload = () => {
+      window.dataLayer = window.dataLayer || []
+      function gtag(...args: unknown[]) {
+        window.dataLayer.push(args)
+      }
+      gtag('js', new Date())
+      gtag('config', GA_TAG_ID)
+    }
+  }, [])
+
+  return null
 }
