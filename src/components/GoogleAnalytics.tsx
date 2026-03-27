@@ -8,10 +8,12 @@ declare global {
   }
 }
 
-const GA_TAG_ID = 'G-EBJTJEFNWL'
+const GA_TAG_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID
 
 export default function GoogleAnalytics() {
   useEffect(() => {
+    if (!GA_TAG_ID) return
+
     const script = document.createElement('script')
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TAG_ID}`
     script.async = true
