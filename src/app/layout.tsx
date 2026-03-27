@@ -4,6 +4,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import { OrganizationSchema, WebSiteSchema } from '@/components/SchemaOrg'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kilowattpr.com'),
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WebSiteSchema />
       </head>
       <body className="bg-surface text-on-surface font-body antialiased">
+        <GoogleAnalytics />
         <Header />
         <main>{children}</main>
         <Footer />
