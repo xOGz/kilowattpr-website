@@ -78,7 +78,7 @@ export default function PrivacidadPage() {
           Si tiene alguna pregunta sobre esta Política de Privacidad, contáctenos:
         </p>
         <ul>
-          <li>Email: kilowattpr@gmail.com</li>
+          <li>Email: info@kilowattpr.com</li>
           <li>Teléfono: +1-787-431-2275</li>
           <li>Dirección: HC 3 Box 31767, Aguada, PR 00602</li>
         </ul>

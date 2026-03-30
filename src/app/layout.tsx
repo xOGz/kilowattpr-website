@@ -3,6 +3,8 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import MobileCTABar from '@/components/MobileCTABar'
+import EmailCaptureBanner from '@/components/EmailCaptureBanner'
 import { OrganizationSchema, WebSiteSchema } from '@/components/SchemaOrg'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 
@@ -13,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Kilowatt PR',
   },
   description:
-    'Instalación de paneles solares desde $13,000. Peritos electricistas con 30+ años de experiencia en Puerto Rico. Cotización gratis hoy. ☎ 787-431-2275',
+    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ / 147 reseñas. Cotización gratis.',
   openGraph: {
     type: 'website',
     locale: 'es_PR',
@@ -47,6 +49,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+          as="style"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+          as="style"
+        />
         <OrganizationSchema />
         <WebSiteSchema />
       </head>
@@ -56,6 +68,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
         <Footer />
         <WhatsAppButton />
+        <MobileCTABar />
+        <EmailCaptureBanner />
       </body>
     </html>
   )

@@ -27,7 +27,7 @@ export default function HeroWithTextRotate() {
             THE #1 TRUSTED SOLAR COMPANY IN THE ISLAND
           </div>
           <h1 className="font-display text-display-lg mb-6 text-on-surface">
-            Energía Solar para{" "}
+            Reduce Tu Factura de LUMA Hasta un 95% con Energía Solar para{" "}
             <span className="inline-flex">
               <TextRotate
                 texts={[
@@ -45,8 +45,8 @@ export default function HeroWithTextRotate() {
             </span>
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-            Peritos electricistas e Ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico.
-            Independencia energética real para tu hogar o negocio.
+            Diseño e instalación por ingeniero eléctrico licenciado con más de 50 años de
+            experiencia en Puerto Rico. 147 familias protegidas contra los apagones de LUMA.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -56,7 +56,7 @@ export default function HeroWithTextRotate() {
               className="btn-primary text-base px-8 py-4"
             >
               <MessageCircle size={20} />
-              Cotización Gratis por WhatsApp
+              Cotización Gratis — Respuesta en 2 Horas
             </a>
             <Link href="/servicios" className="btn-secondary text-base px-8 py-4">
               Ver Servicios <ArrowRight size={18} />

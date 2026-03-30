@@ -1,4 +1,12 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "out"
+  "outputDirectory": "out",
+  "redirects": [
+    { "source": "/about", "destination": "/sobre-nosotros/", "statusCode": 301 },
+    { "source": "/about/", "destination": "/sobre-nosotros/", "statusCode": 301 },
+    { "source": "/services", "destination": "/servicios/", "statusCode": 301 },
+    { "source": "/services/", "destination": "/servicios/", "statusCode": 301 },
+    { "source": "/contact", "destination": "/contacto/", "statusCode": 301 },
+    { "source": "/contact/", "destination": "/contacto/", "statusCode": 301 }
+  ]
 }

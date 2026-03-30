@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: '¿Cuánto cuesta una batería solar en Puerto Rico?',
-    answer: 'El costo de una batería solar en Puerto Rico varía entre $8,000 y $15,000 para una unidad estándar de 10–13.5 kWh instalada. Las baterías de mayor capacidad o múltiples unidades tienen un costo proporcional. El crédito federal del 30% aplica para las baterías cuando se instalan junto con un sistema solar, reduciendo significativamente el costo neto.',
+    answer: 'El costo de una batería solar en Puerto Rico varía entre $8,000 y $15,000 para una unidad estándar de 10–13.5 kWh instalada. Las baterías de mayor capacidad o múltiples unidades tienen un costo proporcional. Opciones de financiamiento están disponibles para reducir el desembolso inicial.',
   },
   {
     question: '¿Qué marcas de baterías son las mejores para Puerto Rico?',
@@ -216,7 +216,7 @@ export default function GuiaBateriaPage() {
             {[
               { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', label: 'Costos de Energía Solar 2026' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'Interconexión con LUMA' },
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Incentivos Solares 2026' },
+              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-solar-yellow font-medium hover:underline text-sm">
                 {l.label}

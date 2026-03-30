@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?',
   description:
-    'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales desde $13,000 en adelante, comerciales, con y sin batería. Incentivos disponibles y financiamiento.',
+    'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales desde $13,000 en adelante, comerciales, con y sin batería. Financiamiento disponible.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
     languages: {
@@ -20,19 +20,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: '¿Cuánto cuesta un sistema solar en Puerto Rico?',
-    answer: 'Un sistema solar residencial de 4 kW de solar y 10 kWh en batería en Puerto Rico tiene un costo desde $13,000 en adelante instalado, incluyendo permisos y la interconexión con LUMA Energy. Con el crédito federal del 30%, el costo neto después de incentivos puede ser significativamente menor.',
+    answer: 'Un sistema solar residencial de 4 kW de solar y 10 kWh en batería en Puerto Rico tiene un costo desde $13,000 en adelante instalado, incluyendo permisos y la interconexión con LUMA Energy. Opciones de financiamiento están disponibles para reducir el desembolso inicial.',
   },
   {
     question: '¿Vale la pena instalar paneles solares en Puerto Rico en 2026?',
-    answer: 'Sí, en 2026 instalar paneles solares en Puerto Rico sigue siendo una de las mejores inversiones disponibles. Las tarifas de LUMA Energy continúan siendo las más altas de todo Estados Unidos, el crédito federal del 30% sigue vigente, y los precios de los sistemas han bajado significativamente. La mayoría de los sistemas se pagan solos en 5 a 8 años, con una garantía de 25 años.',
+    answer: 'Sí, en 2026 instalar paneles solares en Puerto Rico sigue siendo una de las mejores inversiones disponibles. Las tarifas de LUMA Energy continúan siendo las más altas de todo Estados Unidos, los precios de los sistemas han bajado significativamente, y la necesidad de independencia energética ante los apagones frecuentes es mayor que nunca. La mayoría de los sistemas se pagan solos en 5 a 8 años, con una garantía de 25 años.',
   },
   {
     question: '¿Hay financiamiento disponible para paneles solares en Puerto Rico?',
     answer: 'Sí, existen múltiples opciones de financiamiento: préstamos personales, préstamos solares especializados, acuerdos de poder de compra (PPA), y financiamiento a través de cooperativas de crédito. Muchas instituciones financieras en Puerto Rico ofrecen tasas preferenciales para proyectos de energía renovable. En Kilowatt PR te presentamos todas las opciones disponibles durante la consulta.',
   },
   {
-    question: '¿Cuál es el crédito tributario federal para energía solar en 2026?',
-    answer: 'El crédito tributario federal para energía solar en 2026 es del 30% del costo total del sistema, incluyendo instalación y baterías. Este crédito aplica directamente a lo que pagas en impuestos federales, reduciendo significativamente el costo neto de tu sistema solar. Para califcar, el sistema debe instalarse en tu residencia principal o secundaria en Estados Unidos, incluido Puerto Rico.',
+    question: '¿En cuánto tiempo se paga un sistema solar en Puerto Rico?',
+    answer: 'Con las tarifas actuales de LUMA Energy, la mayoría de los sistemas solares residenciales en Puerto Rico se pagan en 5 a 8 años a través del ahorro mensual en la factura eléctrica. Después de ese período, la electricidad que genera tu sistema es esencialmente gratis por los 17 a 20 años restantes de la garantía de los paneles.',
   },
 ]
 
@@ -83,7 +83,7 @@ export default function CuantoCuestaPage() {
             Si estás considerando instalar paneles solares en Puerto Rico, el costo es probablemente
             tu primera pregunta. En esta guía completa te explicamos los precios reales de los
             sistemas solares residenciales y comerciales en 2026, los factores que afectan el costo,
-            y los incentivos disponibles para reducir tu inversión.
+            y las opciones de financiamiento disponibles.
           </p>
         </div>
 
@@ -97,7 +97,7 @@ export default function CuantoCuestaPage() {
             <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
               Laboratorio Nacional de Energía Renovable (NREL)
             </a>, el costo promedio por vatio instalado ha bajado consistentemente en la última
-            década. Esta es la inversión total antes de aplicar incentivos y créditos tributarios.
+            década. Opciones de financiamiento están disponibles para reducir el desembolso inicial.
           </p>
 
           <div className="not-prose bg-gray-50 rounded-xl p-6 my-6">
@@ -159,31 +159,6 @@ export default function CuantoCuestaPage() {
             consulta gratis y te informamos si se necesita trabajo previo.
           </p>
 
-          <h2>Incentivos para Reducir el Costo de tu Sistema Solar</h2>
-
-          <h3>Crédito Tributario Federal del 30%</h3>
-          <p>
-            El{' '}
-            <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener noreferrer">
-              crédito tributario federal para energía solar (ITC)
-            </a>{' '}
-            permite deducir el 30% del costo total de tu sistema solar de lo que debes en
-            impuestos federales. Para un sistema de $25,000, esto representa un ahorro de $7,500.
-            Según el{' '}
-            <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics" target="_blank" rel="noopener noreferrer">
-              Departamento de Energía de EE.UU.
-            </a>, el crédito aplica tanto para paneles como para baterías cuando se instalan
-            junto con el sistema solar.
-          </p>
-
-          <h3>Ley 17 de Puerto Rico — Exención de Impuestos</h3>
-          <p>
-            La Ley Núm. 17 de Puerto Rico ofrece incentivos adicionales para la energía solar,
-            incluyendo exenciones de impuestos sobre la propiedad para el valor añadido por el
-            sistema solar. Consulta con un asesor fiscal para maximizar todos los incentivos
-            disponibles según tu situación específica.
-          </p>
-
           <h2>¿Cuánto Tiempo Tarda en Pagarse un Sistema Solar en Puerto Rico?</h2>
 
           <p>
@@ -200,8 +175,7 @@ export default function CuantoCuestaPage() {
           </p>
           <p>
             Para un sistema de $25,000 con ahorros mensuales de $300–$400 en la factura de
-            LUMA Energy, el período de recuperación es de aproximadamente 6 a 7 años. Con el
-            crédito federal del 30%, ese período se reduce a 4 o 5 años.
+            LUMA Energy, el período de recuperación es de aproximadamente 6 a 7 años.
           </p>
 
           <h2>Opciones de Financiamiento en Puerto Rico</h2>
@@ -228,17 +202,14 @@ export default function CuantoCuestaPage() {
           <h2>Conclusión: ¿Vale la Pena Instalar Solar en Puerto Rico en 2026?</h2>
 
           <p>
-            Con tarifas eléctricas entre las más altas de los Estados Unidos, apagones frecuentes,
-            alta{' '}
+            Con tarifas eléctricas entre las más altas de los Estados Unidos, apagones frecuentes
+            de LUMA Energy, y alta{' '}
             <a href="https://www.nrel.gov/gis/solar-resource-maps.html" target="_blank" rel="noopener noreferrer">
               irradiación solar
             </a>{' '}
-            todo el año y un crédito federal del 30% todavía vigente según el{' '}
-            <a href="https://www.seia.org/initiatives/solar-investment-tax-credit-itc" target="_blank" rel="noopener noreferrer">
-              SEIA (Solar Energy Industries Association)
-            </a>, 2026 sigue siendo un excelente momento para instalar energía solar en Puerto Rico. La
-            inversión se recupera en un período razonable y proporciona décadas de energía
-            limpia y barata.
+            todo el año, 2026 sigue siendo un excelente momento para instalar energía solar en
+            Puerto Rico. La inversión se recupera en un período razonable y proporciona décadas
+            de energía limpia, barata e independiente de la red.
           </p>
           <p>
             La mejor manera de saber exactamente cuánto costaría un sistema para tu propiedad
@@ -271,7 +242,7 @@ export default function CuantoCuestaPage() {
           <h3 className="font-bold text-navy-dark mb-4">Artículos Relacionados</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Incentivos Solares 2026' },
+              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
               { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', label: 'Guía de Baterías' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'Interconexión con LUMA' },
             ].map((l) => (

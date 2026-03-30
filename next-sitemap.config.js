@@ -6,7 +6,7 @@ module.exports = {
   changefreq: 'weekly',
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ['/privacidad'],
+  exclude: ['/privacidad', '/gracias', '/test-components', '/municipios/*', '/en', '/en/*', '/equipo/*'],
   additionalPaths: async (config) => {
     const municipios = [
       'aguada','san-juan','ponce','mayaguez','aguadilla','arecibo',

@@ -27,7 +27,7 @@ export default function EnglishHero() {
             THE #1 TRUSTED SOLAR COMPANY IN THE ISLAND
           </div>
           <h1 className="font-display text-display-lg mb-6 text-on-surface">
-            Solar Energy for{" "}
+            Cut Your LUMA Bill Up to 95% with Solar Energy for{" "}
             <span className="inline-flex">
               <TextRotate
                 texts={[
@@ -45,8 +45,8 @@ export default function EnglishHero() {
             </span>
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-            Licensed electricians and electrical engineers with over 3 decades of experience in Puerto Rico.
-            Real energy independence for your home or business.
+            Designed and installed by a licensed electrical engineer with 50+ years of experience
+            in Puerto Rico. 147 families protected from LUMA outages.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
@@ -56,7 +56,7 @@ export default function EnglishHero() {
               className="btn-primary text-base px-8 py-4"
             >
               <MessageCircle size={20} />
-              Free Quote via WhatsApp
+              Free Quote — Response in 2 Hours
             </a>
             <Link href="/servicios" className="btn-secondary text-base px-8 py-4">
               View Services <ArrowRight size={18} />

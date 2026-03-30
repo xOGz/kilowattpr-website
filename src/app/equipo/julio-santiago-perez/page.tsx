@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Award, BookOpen, Briefcase, GraduationCap, Shield, Sun, Zap } from 'lucide-react'
 import { PersonSchema, authorData } from '@/components/SchemaOrg'
 
 export const metadata: Metadata = {
   title: 'Ing. Julio A. Santiago Pérez — Ingeniero Electricista Licenciado',
   description:
-    'Ingeniero electricista licenciado (PE #6083) con más de 50 años de experiencia. Ex ingeniero de NASA, ex profesor UPR Mayagüez. Instalador certificado de sistemas fotovoltaicos (PPPE-PV-1809).',
+    'Ing. Julio Santiago Pérez (PE #6083), 50+ años de experiencia. Ex NASA, ex profesor UPR Mayagüez. COO de Kilowatt PR.',
   alternates: { canonical: 'https://www.kilowattpr.com/equipo/julio-santiago-perez' },
 }
 
@@ -47,10 +48,15 @@ const experience = [
 ]
 
 const articles = [
-  { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?' },
-  { href: '/blog/como-funciona-interconexion-luma-energia', title: 'Cómo Funciona la Interconexión con LUMA Energy' },
+  { href: '/blog/energia-solar-comercial-roi-negocios', title: 'Energía Solar Comercial: ROI para Negocios Locales' },
+  { href: '/blog/errores-comunes-contratar-instalador-solar', title: 'Errores Comunes al Contratar un Instalador Solar' },
+  { href: '/blog/energia-solar-bateria-esencial-puerto-rico', title: 'Energía Solar con Batería: Por Qué es Esencial en PR' },
+  { href: '/blog/mantenimiento-paneles-solares-clima-tropical', title: 'Mantenimiento de Paneles Solares en Clima Tropical' },
+  { href: '/blog/como-leer-factura-luma-ahorro-solar', title: 'Cómo Leer tu Factura de LUMA y Calcular tu Ahorro' },
+  { href: '/blog/incentivos-solares-puerto-rico-2026', title: 'Cómo Preparar Tu Hogar para Huracanes con Energía Solar' },
   { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', title: 'Guía Completa: Baterías de Respaldo Solar' },
-  { href: '/blog/incentivos-solares-puerto-rico-2026', title: 'Incentivos y Créditos para Energía Solar 2026' },
+  { href: '/blog/como-funciona-interconexion-luma-energia', title: 'Cómo Funciona la Interconexión con LUMA Energy' },
+  { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?' },
 ]
 
 export default function AuthorPage() {
@@ -62,8 +68,13 @@ export default function AuthorPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Author header */}
           <div className="flex flex-col md:flex-row gap-8 items-start mb-12">
-            <div className="w-32 h-32 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
-              <span className="text-4xl font-display font-bold text-primary-container">JS</span>
+            <div className="w-32 h-32 rounded-full overflow-hidden relative shrink-0">
+              <Image
+                src="/team/julio-santiago.png"
+                alt="Ing. Julio A. Santiago Pérez"
+                fill
+                className="object-cover"
+              />
             </div>
             <div>
               <h1 className="font-display text-3xl md:text-4xl font-bold text-on-surface mb-2">

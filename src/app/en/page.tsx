@@ -15,7 +15,7 @@ import EnglishCTAHeading from '@/components/EnglishCTAHeading'
 export const metadata: Metadata = {
   title: 'Solar Panels & Electrical Contractor in Puerto Rico',
   description:
-    'Solar panel installation from $13,000 in Puerto Rico. Licensed electricians with 30+ years experience. Battery backup, net metering, meter base repairs. Free quote ☎ 787-431-2275',
+    'Solar panel installation from $13,000 in Puerto Rico. Licensed electricians, battery backup, net metering. 4.9★ / 147 reviews. Free quote.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en',
     languages: {
@@ -62,23 +62,23 @@ const services = [
 const differentiators = [
   {
     icon: CheckCircle,
-    title: 'Over 3 Decades of Experience',
-    desc: 'Our licensed electricians and electrical engineers with over 30 years of hands-on experience in Puerto Rico know the climate conditions, OGPE permit requirements, and LUMA Energy interconnection process like no one else.',
+    title: 'PE Engineer with 50+ Years',
+    desc: 'Every system is designed by Eng. Julio A. Santiago Pérez (PE #6083), a licensed electrical engineer with 50+ years of experience, former NASA engineer and former professor at UPR Mayagüez. Real engineering, not salespeople.',
   },
   {
     icon: Shield,
-    title: '25-Year Panel Warranty',
-    desc: 'We work with the most reliable manufacturers in the market. Your panels are backed by a 25-year warranty, plus 3-month workmanship warranty. Inverters and batteries with local warranties of 5 to 10 years.',
+    title: 'Hurricane Resistant',
+    desc: 'Systems engineered for Puerto Rico\'s extreme conditions: hurricanes, tropical heat, and Saharan dust. Panels with 25-year warranty, inverters and batteries with 5 to 10-year local warranties.',
   },
   {
     icon: Zap,
-    title: 'Designed for Puerto Rico',
-    desc: 'Every system we install is optimized for Puerto Rico\'s conditions: hurricanes, tropical heat, Saharan dust, and LUMA Energy\'s infrastructure.',
+    title: 'LUMA Independence',
+    desc: 'Battery backup included in our most popular systems. Up to 24 hours of electricity during LUMA Energy outages. Your family protected when the grid fails.',
   },
   {
     icon: Star,
     title: '4.9 Stars / 147 Reviews',
-    desc: 'Our reputation is built by our customers. With 4.9 stars across 147 verified reviews, we are the most trusted solar company in Puerto Rico.',
+    desc: 'Our reputation is built by our customers. With 4.9 stars across 147 verified reviews on Google, we are the most trusted solar company in Puerto Rico.',
   },
 ]
 
@@ -124,7 +124,7 @@ const faqs = [
   {
     question: 'What warranties do you offer on solar systems?',
     answer:
-      'The solar panels we install come with a 25-year manufacturer warranty covering both performance and manufacturing defects. Additionally, we offer a 3-month workmanship warranty. Inverters and batteries have mostly local warranties, generally between 5 and 10 years. We explain all these details clearly during the initial consultation.',
+      'The solar panels we install come with a 25-year manufacturer warranty covering both performance and manufacturing defects. Inverters and batteries have mostly local warranties, generally between 5 and 10 years. We also include a complimentary 3-month quality inspection to verify your system is operating at peak performance. An optional extended service plan is available for those who want additional coverage.',
   },
   {
     question: 'What does Kilowatt PR\'s free consultation include?',
@@ -203,7 +203,7 @@ export default function EnglishHomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Licensed electricians and electrical engineers with over 3 decades of experience in Puerto Rico
+            Solar design and installation by a licensed PE engineer with 50+ years of experience in Puerto Rico
           </p>
         </div>
       </section>

@@ -5,40 +5,40 @@ import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
-  title: 'Incentivos y Créditos para Energía Solar en Puerto Rico 2026',
+  title: 'Cómo Preparar Tu Hogar para Huracanes con Energía Solar en Puerto Rico',
   description:
-    'Guía completa de incentivos solares en Puerto Rico 2026: crédito federal 30%, Ley 17, exenciones de impuestos y opciones de financiamiento disponibles.',
+    'Guía completa para proteger tu hogar de los apagones durante la temporada de huracanes en Puerto Rico con energía solar y batería de respaldo.',
   alternates: { canonical: 'https://www.kilowattpr.com/blog/incentivos-solares-puerto-rico-2026' },
 }
 
 const faqs = [
   {
-    question: '¿Aplica el crédito federal del 30% para residentes de Puerto Rico?',
-    answer: 'Sí, el crédito tributario federal del 30% para energía solar (Investment Tax Credit, ITC) aplica para residentes de Puerto Rico que pagan impuestos federales. El crédito se aplica directamente contra la deuda tributaria federal del año en que se instala el sistema. Es importante consultar con un contador o asesor fiscal para asegurarte de maximizar este beneficio según tu situación específica.',
+    question: '¿Los paneles solares resisten un huracán categoría 5?',
+    answer: 'Los paneles solares que instalamos están certificados para resistir vientos de hasta 160 mph, lo que equivale a un huracán categoría 5. Además, nuestros sistemas de montaje están diseñados específicamente para las condiciones de Puerto Rico, con anclajes reforzados y perfiles de bajo arrastre aerodinámico que reducen la carga de viento sobre los paneles.',
   },
   {
-    question: '¿Qué es la Ley 17 de energía solar en Puerto Rico?',
-    answer: 'La Ley Núm. 17 del Fomento y Desarrollo de las Energías Renovables es la legislación principal de Puerto Rico que regula e incentiva la energía solar. Entre sus beneficios, establece el marco para el net metering (medición neta), las exenciones de impuestos sobre la propiedad para el valor añadido por sistemas solares, y los incentivos para el desarrollo de energías renovables en la isla. Las regulaciones específicas se actualizan periódicamente.',
+    question: '¿Cuánto dura la batería durante un apagón prolongado?',
+    answer: 'Un sistema de batería estándar puede proporcionar entre 12 y 24 horas de electricidad para los electrodomésticos esenciales del hogar (nevera, luces, abanicos, cargadores). Durante el día, los paneles solares recargan la batería, lo que significa que con un sistema bien dimensionado puedes mantener electricidad indefinidamente mientras haya sol — incluso semanas o meses sin LUMA.',
   },
   {
-    question: '¿Puedo deducir una batería solar bajo el crédito federal?',
-    answer: 'Sí, el crédito federal del 30% aplica para baterías de almacenamiento cuando se instalan junto con un sistema solar como parte del mismo proyecto. Desde la actualización de 2023, las baterías instaladas en una segunda fase también pueden calificar bajo ciertas condiciones. Consulta con tu asesor fiscal para determinar cómo aplica en tu caso específico.',
+    question: '¿Qué electrodomésticos puedo mantener encendidos durante un apagón?',
+    answer: 'Con un sistema solar con batería típico (10 kWh), puedes mantener encendidos: la nevera, luces principales, abanicos de techo, cargadores de celulares, router de internet, y un televisor. Sistemas más grandes (20+ kWh) pueden mantener aires acondicionados de ventana y más electrodomésticos. Durante la consulta gratis evaluamos tu consumo para dimensionar el sistema correcto.',
   },
   {
-    question: '¿Hay exención de impuestos sobre la propiedad para sistemas solares en Puerto Rico?',
-    answer: 'Puerto Rico ofrece exención del impuesto sobre la propiedad para el valor añadido por la instalación de sistemas de energía renovable. Esto significa que aunque tu propiedad aumente de valor al instalar paneles solares, ese aumento no se añade a tu base imponible para el impuesto sobre la propiedad. Esta exención es un incentivo adicional que reduce el costo efectivo de tu sistema solar a largo plazo.',
+    question: '¿Cuándo es el mejor momento para instalar solar antes de la temporada de huracanes?',
+    answer: 'La temporada de huracanes en Puerto Rico comienza el 1 de junio. Considerando que el proceso de instalación toma entre 1 y 3 semanas (incluyendo permisos de OGPE e interconexión con LUMA), lo ideal es comenzar el proceso en marzo o abril. La demanda aumenta significativamente en mayo y junio, lo que puede extender los tiempos de espera.',
   },
 ]
 
-export default function IncentivosPage() {
-  const publishDate = '2026-03-01'
+export default function HurricanePreparationPage() {
+  const publishDate = '2026-02-28'
   const url = 'https://www.kilowattpr.com/blog/incentivos-solares-puerto-rico-2026'
 
   return (
     <>
       <ArticleSchema
-        title="Incentivos y Créditos para Energía Solar en Puerto Rico 2026"
-        description="Guía completa de incentivos solares en Puerto Rico 2026: crédito federal 30%, Ley 17, exenciones de impuestos."
+        title="Cómo Preparar Tu Hogar para Huracanes con Energía Solar en Puerto Rico"
+        description="Guía completa para proteger tu hogar de los apagones durante la temporada de huracanes con energía solar y batería de respaldo."
         datePublished={publishDate}
         url={url}
       />
@@ -48,11 +48,11 @@ export default function IncentivosPage() {
         <div className="mb-8">
           <div className="flex items-center gap-3 text-sm text-gray-400 mb-4">
             <span className="bg-solar-yellow/10 text-solar-yellow font-medium px-3 py-1 rounded-full">
-              Incentivos y Ahorro
+              Huracanes y Resiliencia
             </span>
             <div className="flex items-center gap-1">
               <Calendar size={14} />
-              <time dateTime={publishDate}>1 de marzo de 2026</time>
+              <time dateTime={publishDate}>28 de febrero de 2026</time>
             </div>
             <div className="flex items-center gap-1">
               <User size={14} />
@@ -61,169 +61,146 @@ export default function IncentivosPage() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-navy-dark mb-4">
-            Incentivos y Créditos para Energía Solar en Puerto Rico 2026
+            Cómo Preparar Tu Hogar para la Temporada de Huracanes con Energía Solar
           </h1>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
-            Puerto Rico ofrece una combinación única de incentivos federales y locales que
-            pueden reducir el costo de un sistema solar entre el 30% y el 40%. Esta guía
-            explica todos los incentivos disponibles en 2026 y cómo aprovecharlos al máximo
-            antes de instalar tu sistema solar.
+            El huracán María dejó a Puerto Rico sin electricidad por meses. Fiona, cinco años
+            después, demostró que la red eléctrica sigue siendo vulnerable. La pregunta no es
+            si habrá otro huracán — es si tu familia estará protegida cuando llegue.
           </p>
         </div>
 
         <div className="prose prose-lg max-w-none text-gray-600">
-          <h2>El Crédito Tributario Federal del 30% (ITC)</h2>
+          <h2>La Realidad: Puerto Rico y los Apagones</h2>
           <p>
-            El incentivo más significativo para la energía solar en Puerto Rico en 2026 sigue
-            siendo el{' '}
-            <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener noreferrer">
-              Crédito Tributario para Inversiones en Energía Limpia (ITC)
-            </a>, según el IRS. Este crédito federal permite deducir el 30% del costo total
-            del sistema solar de lo que debes en impuestos federales.
+            Después del huracán María en septiembre de 2017, más de 3 millones de puertorriqueños
+            quedaron sin electricidad. Algunos hogares no recuperaron el servicio hasta 11 meses
+            después. El huracán Fiona en 2022 volvió a dejar a toda la isla sin luz, y los
+            apagones regulares de LUMA Energy ya son parte de la vida cotidiana.
           </p>
           <p>
-            Según la{' '}
-            <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics" target="_blank" rel="noopener noreferrer">
-              guía del Departamento de Energía para propietarios
-            </a>, el crédito aplica sobre el costo completo del sistema: paneles, inversor,
-            batería (si se instala como parte del proyecto), materiales de instalación y mano
-            de obra. Para un sistema de $25,000, el crédito es de $7,500. Para un sistema de
-            $30,000 con batería, el crédito sería de $9,000.
+            Un sistema solar con batería de respaldo no solo reduce tu factura de LUMA — te
+            da la capacidad de mantener tu hogar funcionando cuando la red falla, ya sea por
+            un huracán, una tormenta tropical, o simplemente otro apagón de LUMA.
+          </p>
+
+          <h2>¿Cómo Funciona la Energía Solar Durante un Huracán?</h2>
+          <p>
+            Un sistema solar con batería opera de forma inteligente. Cuando LUMA está funcionando,
+            tus paneles generan electricidad, la batería se carga, y el exceso se exporta a la
+            red (net metering). Pero cuando detecta un apagón, el sistema se desconecta
+            automáticamente de la red y entra en modo isla: tus paneles alimentan tu hogar y
+            cargan la batería directamente.
+          </p>
+          <p>
+            Esto significa que mientras haya sol — incluso parcial entre nubes — tu sistema
+            seguirá generando electricidad y recargando la batería. En condiciones normales
+            post-huracán (cielos parcialmente nublados), un sistema bien dimensionado puede
+            mantener los equipos esenciales de tu hogar indefinidamente.
           </p>
 
           <div className="not-prose bg-solar-yellow/5 border border-solar-yellow/30 rounded-xl p-6 my-6">
-            <h3 className="font-bold text-navy-dark mb-3">Ejemplo del Crédito Federal</h3>
-            <div className="space-y-2 text-sm">
+            <h3 className="font-bold text-navy-dark mb-3">Lo Que Un Sistema Solar con Batería Puede Mantener Encendido</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
               {[
-                { concepto: 'Costo total del sistema', valor: '$28,000' },
-                { concepto: 'Crédito federal (30%)', valor: '- $8,400' },
-                { concepto: 'Costo neto después del crédito', valor: '$19,600' },
-              ].map((row) => (
-                <div key={row.concepto} className="flex justify-between py-2 border-b border-gray-200 last:border-0">
-                  <span className={row.concepto.includes('neto') ? 'font-bold text-navy-dark' : 'text-gray-700'}>
-                    {row.concepto}
-                  </span>
-                  <span className={`font-bold ${row.concepto.includes('neto') ? 'text-solar-yellow text-lg' : 'text-gray-600'}`}>
-                    {row.valor}
-                  </span>
+                { equipo: 'Nevera / Freezer', consumo: '150-400W' },
+                { equipo: 'Luces LED (5-10 bombillas)', consumo: '50-100W' },
+                { equipo: 'Abanicos de techo (2-3)', consumo: '150-225W' },
+                { equipo: 'Router de internet', consumo: '10-20W' },
+                { equipo: 'Cargadores de celular (3-4)', consumo: '20-40W' },
+                { equipo: 'Televisor', consumo: '60-150W' },
+                { equipo: 'Máquina CPAP (uso médico)', consumo: '30-60W' },
+                { equipo: 'Bomba de agua (cisterna)', consumo: '500-1000W' },
+              ].map((item) => (
+                <div key={item.equipo} className="flex justify-between py-2 border-b border-gray-200">
+                  <span className="text-gray-700">{item.equipo}</span>
+                  <span className="font-semibold text-gray-600">{item.consumo}</span>
                 </div>
               ))}
             </div>
             <p className="text-xs text-gray-400 mt-3">
-              * Ejemplo ilustrativo. Consulta un asesor fiscal para tu situación específica.
+              * Consumo aproximado. El dimensionamiento final depende de tus equipos específicos.
             </p>
           </div>
 
-          <h3>Requisitos para Calificar para el ITC</h3>
-          <p>Para calificar para el crédito federal del 30%, el sistema solar debe:</p>
-          <ul>
-            <li>Instalarse en tu residencia principal o secundaria ubicada en Estados Unidos o sus territorios (incluyendo Puerto Rico)</li>
-            <li>Ser un sistema nuevo (no usado o reacondicionado)</li>
-            <li>Completarse en el año fiscal para el que reclamas el crédito</li>
-            <li>Ser de tu propiedad (no un sistema en arriendo o PPA para el propietario)</li>
-          </ul>
-
-          <h2>Ley Núm. 17 — Marco Regulatorio Solar de Puerto Rico</h2>
+          <h2>¿Resisten los Paneles Solares un Huracán?</h2>
           <p>
-            La{' '}
-            <a href="https://energia.pr.gov" target="_blank" rel="noopener noreferrer">
-              Ley de Política Pública Energética de Puerto Rico
-            </a>, administrada por la PREB (Puerto Rico Energy Bureau), establece el marco
-            para los incentivos locales de energía renovable. Incluye disposiciones importantes
-            para los propietarios de sistemas solares:
-          </p>
-
-          <h3>Medición Neta (Net Metering)</h3>
-          <p>
-            El programa de{' '}
-            <a href="https://www.energy.gov/eere/solar/net-metering" target="_blank" rel="noopener noreferrer">
-              medición neta (net metering)
-            </a>{' '}
-            permite a los clientes solares recibir crédito en su cuenta de{' '}
-            <a href="https://lumaenergy.com/generacion-distribuida/" target="_blank" rel="noopener noreferrer">
-              LUMA Energy
-            </a>{' '}
-            por la energía que exportan a la red cuando su sistema produce más de lo que
-            consumen. Este crédito reduce las facturas futuras de LUMA. El valor exacto del
-            crédito por kWh exportado y las reglas específicas del programa están sujetos a
-            las regulaciones de la PREB.
-          </p>
-
-          <h3>Exención del Impuesto sobre la Propiedad</h3>
-          <p>
-            Los sistemas de energía renovable instalados en propiedades en Puerto Rico están
-            exentos del impuesto sobre la propiedad sobre el valor añadido por el sistema.
-            Si tu propiedad vale $200,000 y el sistema solar añade $25,000 de valor, sigues
-            pagando impuesto sobre los $200,000 originales, no sobre los $225,000.
-          </p>
-
-          <h2>Opciones de Financiamiento para Maximizar Incentivos</h2>
-          <p>
-            Para aprovechar al máximo el crédito federal del 30%, lo ideal es financiar el
-            sistema con un préstamo y usar el crédito fiscal para pagar adelantado el préstamo.
-            Esta estrategia te permite:
+            Sí. Los paneles solares modernos están certificados para resistir vientos de hasta
+            160 mph según las normas IEC 61215 y UL 1703 — suficiente para soportar un huracán
+            categoría 5. Pero el panel es solo una parte del sistema. Lo que realmente importa
+            es cómo se instala:
           </p>
           <ul>
-            <li>Instalar el sistema con mínimo desembolso inicial</li>
-            <li>Usar el crédito fiscal para reducir el principal del préstamo</li>
-            <li>Empezar a ahorrar desde el primer mes</li>
-            <li>Acelerar el período de recuperación de la inversión</li>
+            <li><strong>Montaje reforzado:</strong> Utilizamos rieles y anclajes de aluminio anodizado con tornillería de acero inoxidable, diseñados para las cargas de viento específicas de Puerto Rico.</li>
+            <li><strong>Perfil aerodinámico:</strong> Los paneles se instalan con ángulo bajo y mínima separación del techo, reduciendo la superficie de arrastre del viento.</li>
+            <li><strong>Sellado del punto de penetración:</strong> Cada anclaje se sella con masilla elastomérica para prevenir filtraciones, incluso bajo lluvia horizontal de huracán.</li>
+            <li><strong>Microinversores o rapid shutdown:</strong> En caso de daño parcial, el sistema aísla los paneles afectados sin apagar el sistema completo.</li>
           </ul>
+
+          <h2>Paso a Paso: Preparación Solar Antes de la Temporada de Huracanes</h2>
+
+          <h3>1. Evalúa Tu Consumo Esencial (Marzo)</h3>
           <p>
-            Las cooperativas de crédito de Puerto Rico (Coop) frecuentemente ofrecen préstamos
-            personales con tasas preferenciales para proyectos de energía renovable. El BDE
-            (Banco de Desarrollo Económico de Puerto Rico) también ofrece productos de
-            financiamiento para energía renovable.
+            Identifica qué equipos necesitas mantener encendidos durante un apagón prolongado.
+            La nevera, luces, abanicos y cargadores son lo mínimo. Si tienes equipos médicos
+            (CPAP, concentrador de oxígeno) o una bomba de agua para cisterna, estos son
+            prioritarios.
           </p>
 
-          <h2>¿Cómo Calcular el Retorno de Inversión con Incentivos?</h2>
+          <h3>2. Dimensiona Tu Sistema (Marzo-Abril)</h3>
           <p>
-            Con el crédito federal del 30% y los ahorros mensuales en la factura de LUMA Energy
-            — cuyas{' '}
-            <a href="https://www.eia.gov/electricity/monthly/epm_table_5_6_a.html" target="_blank" rel="noopener noreferrer">
-              tarifas están entre las más altas de EE.UU. según la EIA
-            </a>{' '}
-            — la mayoría de los sistemas solares en Puerto Rico se pagan en 4 a 6 años. Según
-            la{' '}
-            <a href="https://www.seia.org/solar-industry-research-data" target="_blank" rel="noopener noreferrer">
-              SEIA (Solar Energy Industries Association)
-            </a>, Puerto Rico es uno de los mercados con mejor retorno de inversión solar.
-            Para un sistema de $25,000:
+            Basado en tu consumo esencial, un ingeniero eléctrico dimensiona el tamaño de la
+            batería y los paneles necesarios. Un sistema típico para resiliencia ante huracanes
+            incluye 8-12 kW de paneles y 10-20 kWh de batería. En Kilowatt PR, el Ing. Julio
+            Santiago (PE #6083) supervisa personalmente cada diseño.
+          </p>
+
+          <h3>3. Instala Antes de Mayo (Abril-Mayo)</h3>
+          <p>
+            El proceso de instalación toma entre 1 y 3 semanas, incluyendo permisos de OGPE e
+            interconexión con LUMA Energy. La demanda de sistemas solares aumenta dramáticamente
+            en mayo y junio cuando la gente recuerda que viene la temporada de huracanes. Instalar
+            en marzo o abril te asegura los mejores tiempos de respuesta y disponibilidad de equipos.
+          </p>
+
+          <h3>4. Mantenimiento Pre-Temporada (Mayo)</h3>
+          <p>
+            Antes de que comience la temporada el 1 de junio, verifica que tu sistema esté
+            funcionando correctamente: limpia los paneles, verifica que la batería está cargando
+            al 100%, y confirma que el sistema de transferencia automática funciona. En Kilowatt PR
+            ofrecemos inspecciones de calidad para clientes existentes.
+          </p>
+
+          <h2>El Costo de NO Tener Solar Cuando Llega un Huracán</h2>
+          <p>
+            Después de María, las familias sin electricidad gastaron miles de dólares en:
           </p>
           <ul>
-            <li>Costo después del crédito federal: $17,500</li>
-            <li>Ahorro mensual estimado: $300–$400</li>
-            <li>Período de recuperación: aproximadamente 4–5 años</li>
-            <li>Ahorros totales en 7 años: $25,000–$34,000+</li>
+            <li><strong>Generadores de gasolina:</strong> $500-$2,000 de compra + $20-$50 diarios en gasolina (cuando había disponible)</li>
+            <li><strong>Alimentos perdidos:</strong> $200-$500 en comida echada a perder sin refrigeración</li>
+            <li><strong>Hoteles/hospedaje:</strong> Familias que se mudaron temporalmente por semanas o meses</li>
+            <li><strong>Equipos médicos:</strong> Pacientes que dependían de electricidad para CPAP, oxígeno o insulina refrigerada enfrentaron emergencias de salud</li>
           </ul>
           <p>
-            Estas proyecciones son estimaciones basadas en tarifas actuales de LUMA Energy.
-            Durante la consulta gratis de Kilowatt PR, preparamos un análisis financiero
-            personalizado para tu hogar específico.
+            Un sistema solar con batería que cuesta $15,000-$25,000 se paga solo durante el
+            primer huracán en tranquilidad, seguridad y alimentos que no se pierden — además
+            de reducir tu factura de LUMA hasta un 95% cada mes del año.
           </p>
 
-          <h2>Importante: Consulta con un Asesor Fiscal</h2>
+          <h2>¿Cuándo es el Mejor Momento para Instalar?</h2>
           <p>
-            Los detalles de los incentivos fiscales cambian con las actualizaciones de ley.
-            Este artículo proporciona información general sobre los incentivos disponibles en
-            2026, pero no constituye asesoramiento fiscal. Te recomendamos trabajar con un
-            contador o asesor fiscal certificado en Puerto Rico para determinar exactamente
-            cómo aplican estos incentivos a tu situación y para asegurarte de reclamar el
-            máximo beneficio disponible.
-          </p>
-          <p>
-            Lo que sí podemos garantizarte es que en Kilowatt PR, nuestros peritos electricistas e ingenieros eléctricos
-            con más de 3 décadas de experiencia en Puerto Rico instalarán tu sistema de forma
-            que califique para todos los incentivos aplicables. Preparamos toda la documentación
-            necesaria para que tu asesor fiscal pueda reclamar el crédito federal sin ningún
-            contratiempo.
+            Ahora. La temporada de huracanes en Puerto Rico es del 1 de junio al 30 de noviembre.
+            El proceso completo (consulta, diseño, permisos, instalación, interconexión) toma
+            entre 1 y 3 semanas. Si comienzas en marzo o abril, tu sistema estará listo y
+            produciendo antes de que llegue el primer sistema tropical. Si esperas hasta mayo
+            o junio, te arriesgas a que la alta demanda extienda los tiempos de espera.
           </p>
         </div>
 
         <div className="mt-12 bg-solar-yellow/10 border border-solar-yellow/30 rounded-xl p-6 text-center">
           <p className="text-navy-dark font-bold text-lg mb-4">
-            Aprovecha el crédito del 30% antes de que cambie. Consulta gratis hoy.
+            Protege a tu familia antes de la temporada de huracanes. Consulta gratis hoy.
           </p>
           <a
             href="https://wa.me/17874312275"
@@ -236,7 +213,7 @@ export default function IncentivosPage() {
         </div>
       </article>
 
-      <FAQSection faqs={faqs} title="Preguntas sobre Incentivos Solares en Puerto Rico" />
+      <FAQSection faqs={faqs} title="Preguntas sobre Energía Solar y Huracanes en Puerto Rico" />
 
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

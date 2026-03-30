@@ -1,10 +1,10 @@
 export const siteConfig = {
   name: 'Kilowatt PR LLC',
-  tagline: 'La empresa #1 en instalación de paneles solares en Puerto Rico',
+  tagline: 'Ingeniería solar profesional para Puerto Rico — 50+ años de experiencia, 147 familias protegidas',
   url: 'https://www.kilowattpr.com',
   phone: '+1-787-431-2275',
   whatsapp: 'https://wa.me/17874312275',
-  email: 'kilowattpr@gmail.com',
+  email: 'info@kilowattpr.com',
   address: {
     street: 'HC 3 Box 31767',
     city: 'Aguada',
@@ -21,8 +21,8 @@ export const siteConfig = {
     count: 147,
   },
   trustAnchor: {
-    es: 'peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico',
-    en: 'licensed electricians and electrical engineers with over 3 decades of experience in Puerto Rico',
+    es: 'diseño e instalación solar por ingeniero PE licenciado con más de 50 años de experiencia en Puerto Rico',
+    en: 'solar design and installation by a licensed PE engineer with 50+ years of experience in Puerto Rico',
   },
   hours: 'Lunes–Viernes, 8:00 AM – 5:00 PM',
 }

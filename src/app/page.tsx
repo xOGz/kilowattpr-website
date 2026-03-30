@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   Sun, Battery, Wrench, Star, CheckCircle, Phone, MessageCircle,
-  ArrowRight, Shield, Zap,
+  ArrowRight, Shield, Zap, DollarSign,
 } from 'lucide-react'
 import QuoteForm from '@/components/QuoteForm'
+import SolarCalculator from '@/components/SolarCalculator'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import HeroWithTextRotate from '@/components/HeroWithTextRotate'
@@ -15,7 +16,7 @@ import CTAHeading from '@/components/CTAHeading'
 export const metadata: Metadata = {
   title: 'Paneles Solares y Contratista Eléctrico en Puerto Rico',
   description:
-    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años de experiencia. Batería de respaldo, medición neta, reparación de bases de medidores. Cotización gratis ☎ 787-431-2275',
+    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ / 147 reseñas. Cotización gratis.',
   alternates: {
     canonical: 'https://www.kilowattpr.com',
     languages: {
@@ -61,23 +62,23 @@ const services = [
 const differentiators = [
   {
     icon: CheckCircle,
-    title: 'Más de 3 Décadas de Experiencia',
-    desc: 'Nuestros peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico conocen las condiciones climáticas, los requisitos de OGPE y el proceso de interconexión con LUMA Energy como nadie.',
+    title: 'Ingeniero PE con 50+ Años',
+    desc: 'Cada sistema es diseñado por el Ing. Julio A. Santiago Pérez (PE #6083), ingeniero eléctrico licenciado con más de 50 años de experiencia, ex ingeniero de NASA y ex profesor de la UPR Mayagüez. No vendedores — ingeniería real.',
   },
   {
     icon: Shield,
-    title: 'Garantía de 25 Años en Paneles',
-    desc: 'Trabajamos con los fabricantes más confiables del mercado. Tus paneles están respaldados por una garantía de 25 años, más 3 meses de garantía de mano de obra. Inversores y baterías con garantías locales de 5 a 10 años.',
+    title: 'Resistente a Huracanes',
+    desc: 'Sistemas diseñados para las condiciones extremas de Puerto Rico: huracanes, calor tropical y polvo del Sahara. Paneles con garantía de 25 años, inversores y baterías con 5 a 10 años de garantía local.',
   },
   {
     icon: Zap,
-    title: 'Diseñado para Puerto Rico',
-    desc: 'Cada sistema que instalamos está optimizado para las condiciones de Puerto Rico: huracanes, calor tropical, polvo del Sahara y la infraestructura de LUMA Energy.',
+    title: 'Independencia de LUMA',
+    desc: 'Batería de respaldo incluida en nuestros sistemas más populares. Hasta 24 horas de electricidad durante apagones de LUMA Energy. Tu familia protegida cuando la red falla.',
   },
   {
     icon: Star,
     title: '4.9 Estrellas / 147 Reseñas',
-    desc: 'Nuestra reputación la construyen nuestros clientes. Con 4.9 estrellas en 147 reseñas verificadas, somos la empresa solar de mayor confianza en Puerto Rico.',
+    desc: 'Nuestra reputación la construyen nuestros clientes. Con 4.9 estrellas en 147 reseñas verificadas en Google, somos la empresa solar de mayor confianza en Puerto Rico.',
   },
 ]
 
@@ -123,7 +124,7 @@ const faqs = [
   {
     question: '¿Qué garantías ofrecen en los sistemas solares?',
     answer:
-      'Los paneles solares que instalamos cuentan con una garantía del fabricante de 25 años que cubre tanto el rendimiento como los defectos de fabricación. Adicionalmente, ofrecemos una garantía de 3 meses en mano de obra. Los inversores y baterías tienen garantías mayormente locales generalmente entre 5 y 10 años. Todos estos detalles te los explicamos con claridad durante la consulta inicial.',
+      'Los paneles solares que instalamos cuentan con una garantía del fabricante de 25 años que cubre tanto el rendimiento como los defectos de fabricación. Los inversores y baterías tienen garantías mayormente locales generalmente entre 5 y 10 años. Además, incluimos una inspección de calidad a los 3 meses sin costo adicional para verificar que tu sistema está operando al máximo rendimiento. También ofrecemos un plan de servicio extendido opcional para quienes desean cobertura adicional.',
   },
   {
     question: '¿Qué incluye la consulta gratis de Kilowatt PR?',
@@ -176,6 +177,34 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Solar Calculator — LIGHT */}
+      <section className="py-20 section-light">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <h2 className="font-display text-display-md leading-tight text-[#121240] mb-4">
+                ¿Cuánto Puedes Ahorrar con Energía Solar?
+              </h2>
+              <p className="font-body text-body-lg text-[#4A4A6A] mb-6 leading-relaxed">
+                Ingresa tu factura mensual de LUMA Energy y descubre cuánto puedes ahorrar
+                con un sistema solar diseñado por un ingeniero PE licenciado.
+              </p>
+              <div className="flex items-center gap-4 text-sm text-[#4A4A6A]">
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle size={14} className="text-[#E09500]" /> Estimado gratuito
+                </span>
+                <span className="flex items-center gap-1.5">
+                  <CheckCircle size={14} className="text-[#E09500]" /> Sin compromiso
+                </span>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <SolarCalculator />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Kilowatt — DARK */}
       <section className="py-20 bg-surface">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -202,10 +231,13 @@ export default function HomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico
+            Diseño e instalación solar por ingeniero PE licenciado con más de 50 años de experiencia en Puerto Rico
           </p>
         </div>
       </section>
+
+      {/* Reviews — LIGHT (moved up for social proof before process/FAQ) */}
+      <TestimonialsSection />
 
       {/* How it works — LIGHT */}
       <section className="py-20 section-light">
@@ -237,9 +269,6 @@ export default function HomePage() {
       {/* FAQ — LIGHT WHITE */}
       <FAQSection faqs={faqs} title="Preguntas Frecuentes sobre Energía Solar en Puerto Rico" />
 
-      {/* Reviews — LIGHT */}
-      <TestimonialsSection />
-
       {/* Quote Form + CTA — AMBER GRADIENT */}
       <section className="py-20 section-cta">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -249,10 +278,10 @@ export default function HomePage() {
                 ¿Listo para la Independencia Energética?
               </h2>
               <p className="text-lg text-[#6B4400] mb-6 leading-relaxed">
-                Completa el formulario y te contactamos en menos de 24 horas con tu cotización
+                Completa el formulario y te contactamos en menos de 2 horas con tu cotización
                 gratis. Sin compromiso, sin costo.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <a
                   href="https://wa.me/17874312275"
                   target="_blank"
@@ -260,7 +289,7 @@ export default function HomePage() {
                   className="btn-whatsapp text-base px-6 py-4"
                 >
                   <MessageCircle size={20} />
-                  WhatsApp — Respuesta Inmediata
+                  WhatsApp — Respuesta en 2 Horas
                 </a>
                 <a
                   href="tel:+17874312275"
@@ -269,6 +298,18 @@ export default function HomePage() {
                   <Phone size={20} />
                   787-431-2275
                 </a>
+              </div>
+              {/* Trust badges near CTA */}
+              <div className="flex flex-wrap gap-3">
+                <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
+                  <Shield size={14} /> PE #6083
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
+                  <Star size={14} /> 4.9★ / 147 Reseñas
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
+                  <CheckCircle size={14} /> Garantía 25 Años
+                </span>
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">

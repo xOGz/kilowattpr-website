@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-body-md leading-relaxed mb-5 text-on-surface-variant">
-              La empresa #1 en instalación de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia.
+              Ingeniería solar profesional para Puerto Rico. Diseño e instalación por ingeniero PE licenciado con más de 50 años de experiencia. 147 familias protegidas.
             </p>
             <div className="flex gap-4">
               <a
@@ -80,7 +80,19 @@ export default function Footer() {
                 <Link href="/proyectos" className="hover:text-primary-container transition-colors duration-200">Proyectos</Link>
               </li>
               <li>
+                <Link href="/calculadora-solar" className="hover:text-primary-container transition-colors duration-200">Calculadora Solar</Link>
+              </li>
+              <li>
+                <Link href="/resenas" className="hover:text-primary-container transition-colors duration-200">Reseñas</Link>
+              </li>
+              <li>
                 <Link href="/blog" className="hover:text-primary-container transition-colors duration-200">Blog Solar</Link>
+              </li>
+              <li>
+                <Link href="/programa-de-referidos" className="hover:text-primary-container transition-colors duration-200">Programa de Referidos</Link>
+              </li>
+              <li>
+                <Link href="/comparacion/kilowatt-pr-vs-sunnova" className="hover:text-primary-container transition-colors duration-200">Kilowatt PR vs Sunnova</Link>
               </li>
               <li>
                 <Link href="/contacto" className="hover:text-primary-container transition-colors duration-200">Contacto</Link>
@@ -107,8 +119,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary-container shrink-0" />
-                <a href="mailto:kilowattpr@gmail.com" className="hover:text-primary-container transition-colors duration-200">
-                  kilowattpr@gmail.com
+                <a href="mailto:info@kilowattpr.com" className="hover:text-primary-container transition-colors duration-200">
+                  info@kilowattpr.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

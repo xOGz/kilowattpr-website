@@ -37,7 +37,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     '@type': 'LocalBusiness',
     name: 'Kilowatt PR LLC',
     description: `Instalación de paneles solares en ${municipio.name}, Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia.`,
-    url: `https://kilowattpr.com/municipios/${municipio.slug}`,
+    url: `https://www.kilowattpr.com/municipios/${municipio.slug}`,
     telephone: '+1-787-431-2275',
     areaServed: {
       '@type': 'City',

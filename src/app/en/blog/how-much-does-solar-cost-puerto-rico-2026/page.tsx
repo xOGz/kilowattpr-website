@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'How Much Does Solar Energy Cost in Puerto Rico in 2026?',
   description:
-    'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems from $13,000 and up, commercial, with and without battery. Available incentives and financing.',
+    'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems from $13,000 and up, commercial, with and without battery. Financing available.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
     languages: {
@@ -27,19 +27,19 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much does a solar system cost in Puerto Rico?',
-    answer: 'A residential solar system with 4 kW solar and 10 kWh battery in Puerto Rico costs from $13,000 and up installed, including permits and LUMA Energy interconnection. With the 30% federal tax credit, the net cost after incentives can be significantly lower.',
+    answer: 'A residential solar system with 4 kW solar and 10 kWh battery in Puerto Rico costs from $13,000 and up installed, including permits and LUMA Energy interconnection. Financing options are available to reduce the upfront cost.',
   },
   {
     question: 'Is it worth installing solar panels in Puerto Rico in 2026?',
-    answer: 'Yes, installing solar panels in Puerto Rico in 2026 remains one of the best investments available. LUMA Energy rates continue to be among the highest in the entire United States, the 30% federal tax credit is still available, and system prices have dropped significantly. Most systems pay for themselves in 5 to 8 years, with a 25-year warranty.',
+    answer: 'Yes, installing solar panels in Puerto Rico in 2026 remains one of the best investments available. LUMA Energy rates continue to be among the highest in the entire United States, system prices have dropped significantly, and the need for energy independence from frequent outages is greater than ever. Most systems pay for themselves in 5 to 8 years, with a 25-year warranty.',
   },
   {
     question: 'Is financing available for solar panels in Puerto Rico?',
     answer: 'Yes, there are multiple financing options: personal loans, specialized solar loans, power purchase agreements (PPAs), and financing through credit unions. Many financial institutions in Puerto Rico offer preferential rates for renewable energy projects. At Kilowatt PR we present all available options during the consultation.',
   },
   {
-    question: 'What is the federal tax credit for solar energy in 2026?',
-    answer: 'The federal solar energy tax credit in 2026 is 30% of the total system cost, including installation and batteries. This credit applies directly to what you owe in federal taxes, significantly reducing the net cost of your solar system. To qualify, the system must be installed on your primary or secondary residence in the United States, including Puerto Rico.',
+    question: 'How long does it take for a solar system to pay for itself in Puerto Rico?',
+    answer: 'With current LUMA Energy rates, most residential solar systems in Puerto Rico pay for themselves in 5 to 8 years through monthly electricity bill savings. After that period, the electricity your system generates is essentially free for the remaining 17 to 20 years of the panel warranty.',
   },
 ]
 
@@ -90,7 +90,7 @@ export default function SolarCostPage() {
             If you&apos;re considering installing solar panels in Puerto Rico, cost is probably
             your first question. In this complete guide we explain the real prices of
             residential and commercial solar systems in 2026, the factors that affect cost,
-            and the incentives available to reduce your investment.
+            and the financing options available.
           </p>
         </div>
 
@@ -104,7 +104,7 @@ export default function SolarCostPage() {
             <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
               National Renewable Energy Laboratory (NREL)
             </a>, the average cost per installed watt has dropped consistently over the past
-            decade. This is the total investment before applying incentives and tax credits.
+            decade. Financing options are available to reduce the upfront investment.
           </p>
 
           <div className="not-prose bg-gray-50 rounded-xl p-6 my-6">
@@ -166,31 +166,6 @@ export default function SolarCostPage() {
             the free consultation and inform you if any prior work is needed.
           </p>
 
-          <h2>Incentives to Reduce the Cost of Your Solar System</h2>
-
-          <h3>30% Federal Tax Credit</h3>
-          <p>
-            The{' '}
-            <a href="https://www.irs.gov/credits-deductions/residential-clean-energy-credit" target="_blank" rel="noopener noreferrer">
-              federal solar energy tax credit (ITC)
-            </a>{' '}
-            allows you to deduct 30% of the total cost of your solar system from your federal
-            tax liability. For a $25,000 system, this represents $7,500 in savings. According
-            to the{' '}
-            <a href="https://www.energy.gov/eere/solar/homeowners-guide-federal-tax-credit-solar-photovoltaics" target="_blank" rel="noopener noreferrer">
-              U.S. Department of Energy
-            </a>, the credit applies to both panels and batteries when installed together
-            with the solar system.
-          </p>
-
-          <h3>Puerto Rico Law 17 — Tax Exemptions</h3>
-          <p>
-            Puerto Rico Law No. 17 offers additional incentives for solar energy,
-            including property tax exemptions for the value added by the solar system.
-            Consult with a tax advisor to maximize all available incentives for your
-            specific situation.
-          </p>
-
           <h2>How Long Does It Take for a Solar System to Pay for Itself in Puerto Rico?</h2>
 
           <p>
@@ -206,8 +181,7 @@ export default function SolarCostPage() {
           </p>
           <p>
             For a $25,000 system with monthly savings of $300-$400 on your LUMA Energy
-            bill, the payback period is approximately 6 to 7 years. With the 30% federal
-            credit, that period drops to 4 or 5 years.
+            bill, the payback period is approximately 6 to 7 years.
           </p>
 
           <h2>Financing Options in Puerto Rico</h2>
@@ -234,17 +208,14 @@ export default function SolarCostPage() {
           <h2>Conclusion: Is It Worth Installing Solar in Puerto Rico in 2026?</h2>
 
           <p>
-            With electricity rates among the highest in the United States, frequent outages,
-            high{' '}
+            With electricity rates among the highest in the United States, frequent LUMA Energy
+            outages, and high{' '}
             <a href="https://www.nrel.gov/gis/solar-resource-maps.html" target="_blank" rel="noopener noreferrer">
               solar irradiation
             </a>{' '}
-            year-round, and a 30% federal credit still in effect per the{' '}
-            <a href="https://www.seia.org/initiatives/solar-investment-tax-credit-itc" target="_blank" rel="noopener noreferrer">
-              SEIA (Solar Energy Industries Association)
-            </a>, 2026 remains an excellent time to install solar energy in Puerto Rico. The investment
-            pays for itself in a reasonable period and provides decades of clean,
-            affordable energy.
+            year-round, 2026 remains an excellent time to install solar energy in Puerto Rico.
+            The investment pays for itself in a reasonable period and provides decades of clean,
+            affordable, grid-independent energy.
           </p>
           <p>
             The best way to know exactly how much a system would cost for your specific
@@ -277,7 +248,7 @@ export default function SolarCostPage() {
           <h3 className="font-bold text-navy-dark mb-4">Related Articles</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Solar Incentives 2026' },
+              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Hurricane Preparation' },
               { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', label: 'Battery Guide' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'LUMA Interconnection' },
             ].map((l) => (
