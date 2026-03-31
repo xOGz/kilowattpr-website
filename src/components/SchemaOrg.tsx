@@ -6,7 +6,7 @@ export function OrganizationSchema() {
     name: 'Kilowatt PR LLC',
     alternateName: 'Kilowatt PR',
     url: 'https://www.kilowattpr.com',
-    logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo.png' },
+    logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo_transparent.png' },
     description:
       'Contratista eléctrico e instalador de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. Sistemas solares residenciales y comerciales, baterías de respaldo, reparación de bases de medidores con certificaciones LUMA.',
     address: {
