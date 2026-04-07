@@ -4,11 +4,20 @@ export function OrganizationSchema() {
     '@type': ['Organization', 'LocalBusiness', 'Electrician'],
     '@id': 'https://www.kilowattpr.com/#organization',
     name: 'Kilowatt PR LLC',
-    alternateName: 'Kilowatt PR',
+    alternateName: ['Kilowatt PR', 'Kilowatt Puerto Rico'],
     url: 'https://www.kilowattpr.com',
     logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo_transparent.png' },
     description:
-      'Contratista eléctrico e instalador de paneles solares en Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. Sistemas solares residenciales y comerciales, baterías de respaldo, reparación de bases de medidores con certificaciones LUMA.',
+      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Over 30 years of experience installing residential and commercial solar energy systems, battery backup, and electrical services across all 78 municipalities of Puerto Rico.',
+    knowsAbout: [
+      'Solar panel installation',
+      'Solar energy systems',
+      'Battery backup systems',
+      'Electrical contracting',
+      'Puerto Rico energy grid',
+      'LUMA Energy',
+      'Net metering Puerto Rico',
+    ],
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'HC 3 Box 31767',
@@ -70,16 +79,6 @@ export function OrganizationSchema() {
         },
       ],
     },
-    knowsAbout: [
-      'Solar Energy',
-      'Photovoltaic Systems',
-      'Battery Storage',
-      'Electrical Contracting',
-      'Net Metering',
-      'LUMA Energy Interconnection',
-      'OGPE Permits',
-      'Meter Base Repairs',
-    ],
   }
 
   return (
