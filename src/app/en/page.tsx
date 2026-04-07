@@ -37,13 +37,13 @@ const services = [
     icon: Sun,
     title: 'Solar Panel Installation',
     desc: 'Residential and commercial photovoltaic systems designed for Puerto Rico\'s climate conditions.',
-    href: '/servicios/instalacion-paneles-solares',
+    href: '/en/services/solar-panel-installation',
   },
   {
     icon: Battery,
     title: 'Battery Backup Systems',
     desc: 'Full energy independence during LUMA Energy outages. Up to 24 hours of backup power.',
-    href: '/servicios/sistemas-con-bateria',
+    href: '/en/services/battery-backup-systems',
   },
   {
     icon: Zap,
@@ -55,7 +55,7 @@ const services = [
     icon: Wrench,
     title: 'Maintenance & Cleaning',
     desc: 'Professional cleaning every 6-8 months to maintain maximum solar panel efficiency.',
-    href: '/servicios/mantenimiento-lavado',
+    href: '/en/services/maintenance',
   },
 ]
 
