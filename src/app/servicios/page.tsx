@@ -15,7 +15,7 @@ const services = [
     title: 'Instalación de Paneles Solares',
     desc: 'Instalamos sistemas fotovoltaicos residenciales y comerciales diseñados para las condiciones climáticas de Puerto Rico. Incluimos todo: consulta, diseño 3D, permisos OGPE, interconexión LUMA y instalación.',
     href: '/servicios/instalacion-paneles-solares',
-    features: ['Sistemas residenciales 5kW–10kW', 'Sistemas comerciales a medida', 'Gestión de permisos OGPE', 'Interconexión con LUMA Energy'],
+    features: ['Sistemas residenciales 4kW–25kW', 'Sistemas comerciales a medida', 'Gestión de permisos OGPE', 'Interconexión con LUMA Energy'],
   },
   {
     icon: Battery,
@@ -103,7 +103,7 @@ export default function ServicesPage() {
             {[
               {
                 name: 'Sistema Solar Básico',
-                size: '5kW Residencial',
+                size: '4kW–8kW Residencial',
                 desc: 'Ideal para hogares con consumo mensual de hasta 500–700 kWh. Reduce tu factura de LUMA Energy significativamente.',
                 features: ['Paneles solares de alta eficiencia', 'Inversor de string', 'Gestión de permisos', 'Garantía 25 años paneles'],
                 cta: 'Cotizar Sistema Básico',

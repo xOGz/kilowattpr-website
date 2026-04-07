@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: '¿Qué tamaño de sistema solar necesito en Puerto Rico?',
-    answer: 'El tamaño de tu sistema solar depende de tu consumo eléctrico mensual medido en kWh. La mayoría de los hogares residenciales en Puerto Rico necesitan entre 5kW y 10kW. Para determinarlo con precisión, analizamos tus últimas 12 facturas de LUMA Energy durante la consulta gratis. Un sistema bien dimensionado puede eliminar entre el 80% y el 100% de tu factura eléctrica.',
+    answer: 'El tamaño de tu sistema solar depende de tu consumo eléctrico mensual medido en kWh. Los hogares residenciales en Puerto Rico típicamente necesitan entre 4kW y 25kW. Para determinarlo con precisión, analizamos tus últimas 12 facturas de LUMA Energy durante la consulta gratis. Un sistema bien dimensionado puede eliminar entre el 80% y el 100% de tu factura eléctrica.',
   },
   {
     question: '¿Cómo funciona la interconexión con LUMA Energy en Puerto Rico?',
