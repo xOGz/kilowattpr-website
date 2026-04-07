@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Kilowatt PR',
   },
   description:
-    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ / 147 reseñas. Cotización gratis.',
+    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
   openGraph: {
     type: 'website',
     locale: 'es_PR',

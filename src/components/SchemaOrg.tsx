@@ -120,7 +120,7 @@ export function LocalBusinessSchema() {
     '@id': 'https://www.kilowattpr.com/#localbusiness',
     name: 'Kilowatt PR LLC',
     description:
-      'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $13,000, baterías de respaldo, reparación de bases de medidores. 4.9★ / 147 reseñas.',
+      'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $13,000, baterías de respaldo, reparación de bases de medidores. 4.9★ en Google.',
     url: 'https://www.kilowattpr.com',
     telephone: '+1-787-431-2275',
     email: 'info@kilowattpr.com',
@@ -156,11 +156,11 @@ export function LocalBusinessSchema() {
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: 4.9,
-      reviewCount: 147,
+      reviewCount: 10,
       bestRating: 5,
       worstRating: 1,
     },
-    slogan: 'Professional solar engineering for Puerto Rico — 50+ years of experience, 147 families protected',
+    slogan: 'Professional solar engineering for Puerto Rico — 50+ years of experience, families protected across the island',
   }
 
   return (

@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: '¿Por Qué Elegir Kilowatt PR? — Comparación con la Competencia',
   description:
-    'Compara a Kilowatt PR con cadenas nacionales e instaladores locales típicos. Perito electricista licenciado, ingeniero PE, precios transparentes desde $13K, batería incluida, 4.9★ / 147 reseñas.',
+    'Compara a Kilowatt PR con cadenas nacionales e instaladores locales típicos. Perito electricista licenciado, ingeniero PE, precios transparentes desde $13K, batería incluida, 4.9★ en Google.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/comparacion/por-que-kilowatt-pr',
   },
@@ -105,7 +105,7 @@ const features: readonly ComparisonFeature[] = [
     instaladorLocal: false,
   },
   {
-    label: 'Reseñas verificadas (4.9★ / 147)',
+    label: 'Reseñas verificadas (4.9★ en Google)',
     kilowatt: true,
     cadenaNacional: false,
     instaladorLocal: false,
@@ -274,7 +274,7 @@ export default function PorQueKilowattPage() {
               <Star className="text-solar-yellow fill-solar-yellow" size={20} />
             </div>
             <p className="text-center text-gray-300 text-sm">
-              4.9 estrellas / 147 reseñas verificadas — Google Business Profile
+              4.9 estrellas en Google — reseñas verificadas en Google Business Profile
             </p>
           </div>
         </div>

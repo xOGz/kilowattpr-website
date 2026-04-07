@@ -16,7 +16,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'Prepara tu Hogar Antes de la Temporada de Huracanes 2026 | Kilowatt PR',
   description:
-    'La temporada de huracanes 2026 comienza el 1 de junio. Instala paneles solares con batería de respaldo para proteger tu familia. Sistemas desde $13,000. Kilowatt PR — 4.9★ / 147 reseñas.',
+    'La temporada de huracanes 2026 comienza el 1 de junio. Instala paneles solares con batería de respaldo para proteger tu familia. Sistemas desde $13,000. Kilowatt PR — 4.9★ en Google.',
   keywords:
     'temporada huracanes puerto rico 2026 solar, huracanes puerto rico, batería respaldo huracanes, paneles solares huracanes, energía solar Puerto Rico',
   alternates: {

@@ -335,8 +335,8 @@ export default function LocalVsNacionalPage() {
               un evento, estamos aquí para evaluar y reparar.
             </li>
             <li>
-              <strong>Confianza verificable:</strong> 4.9 estrellas con 147 reseñas
-              verificadas en Google. Nuestros clientes son tus vecinos.
+              <strong>Confianza verificable:</strong> 4.9 estrellas en Google con
+              reseñas verificadas de clientes reales. Nuestros clientes son tus vecinos.
             </li>
           </ul>
         </div>
@@ -344,7 +344,7 @@ export default function LocalVsNacionalPage() {
         {/* Trust bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
           {[
-            { value: '4.9★', label: '147 reseñas' },
+            { value: '4.9★', label: '10+ reseñas' },
             { value: '10+', label: 'años en PR' },
             { value: '78', label: 'municipios servidos' },
             { value: '24h', label: 'tiempo de respuesta' },

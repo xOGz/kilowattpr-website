@@ -57,7 +57,7 @@ export default function EnglishTestimonialsSection() {
               <Star key={i} className="text-primary-container fill-primary-container" size={24} />
             ))}
             <span className="text-2xl font-display font-bold text-[#121240] ml-2">4.9</span>
-            <span className="text-[#4A4A6A]">/ 147 reviews</span>
+            <span className="text-[#4A4A6A]">/ 10+ reviews on Google</span>
           </div>
         </div>
         <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[550px] overflow-hidden">

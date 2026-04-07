@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-body-md leading-relaxed mb-5 text-on-surface-variant">
-              Ingeniería solar profesional para Puerto Rico. Diseño e instalación por ingeniero PE licenciado con más de 50 años de experiencia. 147 familias protegidas.
+              Ingeniería solar profesional para Puerto Rico. Diseño e instalación por ingeniero PE licenciado con más de 50 años de experiencia. Familias protegidas en toda la isla.
             </p>
             <div className="flex gap-4">
               <a

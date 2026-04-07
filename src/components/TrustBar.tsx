@@ -18,7 +18,7 @@ export default function TrustBar() {
           >
             <span className="text-[#E09500]"><Star size={16} /></span>
             <span className="font-display font-bold text-[#121240] group-hover:text-[#E09500] transition-colors duration-200">4.9★</span>
-            <span>/ 147 Reseñas</span>
+            <span>/ 10+ Reseñas</span>
           </a>
 
           {/* PE License */}

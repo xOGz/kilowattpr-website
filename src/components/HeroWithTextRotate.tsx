@@ -46,7 +46,7 @@ export default function HeroWithTextRotate() {
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
             Diseño e instalación por ingeniero eléctrico licenciado con más de 50 años de
-            experiencia en Puerto Rico. 147 familias protegidas contra los apagones de LUMA.
+            experiencia en Puerto Rico. Familias protegidas contra los apagones de LUMA en toda la isla.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

@@ -6,12 +6,12 @@ import { PersonSchema } from '@/components/SchemaOrg'
 export const metadata: Metadata = {
   title: 'Sobre Nosotros — Perito Electricista Licenciado con Década de Experiencia',
   description:
-    'Kilowatt PR: fundada por Xavier Acevedo Santiago, perito electricista lic. #21309. Asesoría PE #6083. 4.9★ / 147 reseñas en Puerto Rico.',
+    'Kilowatt PR: fundada por Xavier Acevedo Santiago, perito electricista lic. #21309. Asesoría PE #6083. 4.9★ en Google en Puerto Rico.',
   alternates: { canonical: 'https://www.kilowattpr.com/sobre-nosotros' },
   openGraph: {
     title: 'Sobre Nosotros | Kilowatt PR',
     description:
-      'Fundada por Xavier Acevedo Santiago, perito electricista licenciado #21309. Asesoría de ingeniería PE #6083. 147 familias protegidas en Puerto Rico.',
+      'Fundada por Xavier Acevedo Santiago, perito electricista licenciado #21309. Asesoría de ingeniería PE #6083. Familias protegidas en toda la isla.',
     url: 'https://www.kilowattpr.com/sobre-nosotros',
   },
 }
@@ -317,7 +317,7 @@ export default function AboutPage() {
             <div className="bg-surface-container-high rounded-xl px-6 py-5 flex items-center gap-3">
               <Shield className="text-primary-container shrink-0" size={28} />
               <div className="text-left">
-                <p className="font-headline font-semibold text-on-surface">4.9★ / 147 Reseñas</p>
+                <p className="font-headline font-semibold text-on-surface">4.9★ / 10+ Reseñas</p>
                 <p className="text-on-surface-variant text-sm">Verificadas en Google Business</p>
               </div>
             </div>

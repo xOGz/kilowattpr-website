@@ -165,10 +165,10 @@ export default function ReferralPage() {
       <section className="py-16 section-light">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-2xl font-bold text-[#121240] mb-4">
-            147 Familias Ya Confían en Nosotros
+            Familias en Toda la Isla Ya Confían en Nosotros
           </h2>
           <p className="text-[#4A4A6A] text-lg leading-relaxed mb-8">
-            Con 4.9 estrellas en 147 reseñas verificadas, nuestros clientes son nuestros
+            Con 4.9 estrellas en Google, nuestros clientes son nuestros
             mejores embajadores. Cada referido es una familia más protegida contra los
             apagones de LUMA.
           </p>

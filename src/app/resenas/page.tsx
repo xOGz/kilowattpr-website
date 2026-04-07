@@ -3,14 +3,14 @@ import Image from 'next/image'
 import { Star } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Reseñas y Testimonios — 4.9★ / 147 Reseñas Verificadas',
+  title: 'Reseñas y Testimonios — 4.9★ en Google',
   description:
-    'Lee las experiencias reales de familias y negocios en Puerto Rico que confiaron en Kilowatt PR para su sistema solar. 4.9★ promedio en 147 reseñas verificadas en Google.',
+    'Lee las experiencias reales de familias y negocios en Puerto Rico que confiaron en Kilowatt PR para su sistema solar. 4.9★ en Google — reseñas verificadas de clientes reales.',
   alternates: { canonical: 'https://www.kilowattpr.com/resenas' },
   openGraph: {
     title: 'Reseñas y Testimonios | Kilowatt PR',
     description:
-      '4.9★ promedio en 147 reseñas verificadas. Familias y negocios en Puerto Rico comparten su experiencia con Kilowatt PR.',
+      '4.9★ en Google. Familias y negocios en Puerto Rico comparten su experiencia con Kilowatt PR.',
     url: 'https://www.kilowattpr.com/resenas',
   },
 }
@@ -116,7 +116,7 @@ function RatingDisplay() {
             <Star key={i} size={24} className="fill-[#F5A623] text-[#F5A623]" />
           ))}
         </div>
-        <p className="text-on-surface-variant text-sm">Promedio de 147 reseñas</p>
+        <p className="text-on-surface-variant text-sm">Promedio en 10+ reseñas de Google</p>
       </div>
     </div>
   )
@@ -144,7 +144,7 @@ export default function ResenasPage() {
               rel="noopener noreferrer"
               className="inline-block mt-4 text-[#E09500] font-label text-label-lg hover:underline"
             >
-              147 Reseñas Verificadas en Google →
+              Ver Nuestras Reseñas en Google →
             </a>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function ResenasPage() {
       <section className="py-16 section-cta">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-3xl font-bold text-[#3A2400] mb-4">
-            ¿Listo para Unirte a Nuestros 147 Clientes Satisfechos?
+            ¿Listo para Unirte a Nuestros Clientes Satisfechos?
           </h2>
           <p className="text-lg text-[#6B4400] mb-8 leading-relaxed">
             Consulta y cotización gratis, sin compromiso. Habla directamente con nuestro

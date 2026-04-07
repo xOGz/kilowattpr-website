@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'Kilowatt PR vs Tesla Solar Puerto Rico: Comparación Completa',
   description:
-    'Comparación detallada entre Kilowatt PR y Tesla Solar en Puerto Rico. Presencia local, instalación directa, soporte post-venta, precios transparentes y más. 4.9★ / 147 reseñas.',
+    'Comparación detallada entre Kilowatt PR y Tesla Solar en Puerto Rico. Presencia local, instalación directa, soporte post-venta, precios transparentes y más. 4.9★ en Google.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-tesla-solar',
   },
@@ -103,7 +103,7 @@ const comparaciones: readonly ComparisonRow[] = [
   },
   {
     categoria: 'Reseñas verificadas',
-    kilowatt: '4.9★ con 147 reseñas en Google Business Profile',
+    kilowatt: '4.9★ con 10+ reseñas en Google Business Profile',
     tesla: 'Reseñas mixtas para operaciones en Puerto Rico',
     kilowattPositive: true,
     teslaPositive: false,
@@ -293,7 +293,7 @@ export default function KilowattVsTeslaPage() {
             <Shield className="text-green-600 mx-auto mb-3" size={32} />
             <p className="font-bold text-navy-dark text-lg">Kilowatt PR</p>
             <p className="text-3xl font-bold text-green-600 my-2">4.9 ★</p>
-            <p className="text-sm text-gray-600">147 reseñas verificadas</p>
+            <p className="text-sm text-gray-600">10+ reseñas verificadas</p>
             <p className="text-xs text-gray-400 mt-1">Google Business Profile</p>
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">

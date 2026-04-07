@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'Kilowatt PR vs Sunnova: ¿Cuál Instalador Solar es Mejor en Puerto Rico?',
   description:
-    'Comparación objetiva entre Kilowatt PR y Sunnova en Puerto Rico. Instalador local con 4.9★ y 147 reseñas vs cadena nacional en Chapter 11. Precios, garantía, servicio y más.',
+    'Comparación objetiva entre Kilowatt PR y Sunnova en Puerto Rico. Instalador local con 4.9★ en Google vs cadena nacional en Chapter 11. Precios, garantía, servicio y más.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-sunnova',
   },
@@ -96,7 +96,7 @@ const comparaciones: readonly ComparisonRow[] = [
   },
   {
     categoria: 'Reseñas verificadas',
-    kilowatt: '4.9★ con 147 reseñas verificadas',
+    kilowatt: '4.9★ con 10+ reseñas verificadas en Google',
     sunnova: 'Múltiples quejas de servicio al cliente en plataformas públicas',
     kilowattPositive: true,
     sunnovaPositive: false,
@@ -300,7 +300,7 @@ export default function KilowattVsSunnovaPage() {
             <Shield className="text-green-600 mx-auto mb-3" size={32} />
             <p className="font-bold text-navy-dark text-lg">Kilowatt PR</p>
             <p className="text-3xl font-bold text-green-600 my-2">4.9 ★</p>
-            <p className="text-sm text-gray-600">147 reseñas verificadas</p>
+            <p className="text-sm text-gray-600">10+ reseñas verificadas</p>
             <p className="text-xs text-gray-400 mt-1">Google Business Profile</p>
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">

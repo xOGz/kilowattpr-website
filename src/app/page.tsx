@@ -16,7 +16,7 @@ import CTAHeading from '@/components/CTAHeading'
 export const metadata: Metadata = {
   title: 'Paneles Solares y Contratista Eléctrico en Puerto Rico',
   description:
-    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ / 147 reseñas. Cotización gratis.',
+    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
   alternates: {
     canonical: 'https://www.kilowattpr.com',
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kilowatt PR | Paneles Solares desde $13,000 en Puerto Rico',
     description:
-      'Peritos electricistas con 30+ años. Instalación solar, baterías, contratista eléctrico. 4.9★ / 147 reseñas. Cotización gratis hoy.',
+      'Peritos electricistas con 30+ años. Instalación solar, baterías, contratista eléctrico. 4.9★ en Google. Cotización gratis hoy.',
     url: 'https://www.kilowattpr.com',
   },
 }
@@ -77,8 +77,8 @@ const differentiators = [
   },
   {
     icon: Star,
-    title: '4.9 Estrellas / 147 Reseñas',
-    desc: 'Nuestra reputación la construyen nuestros clientes. Con 4.9 estrellas en 147 reseñas verificadas en Google, somos la empresa solar de mayor confianza en Puerto Rico.',
+    title: '4.9 Estrellas en Google',
+    desc: 'Nuestra reputación la construyen nuestros clientes. Con 4.9 estrellas en Google, somos la empresa solar de mayor confianza en Puerto Rico.',
   },
 ]
 
@@ -305,7 +305,7 @@ export default function HomePage() {
                   <Shield size={14} /> PE #6083
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
-                  <Star size={14} /> 4.9★ / 147 Reseñas
+                  <Star size={14} /> 4.9★ / 10+ Reseñas
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
                   <CheckCircle size={14} /> Garantía 25 Años

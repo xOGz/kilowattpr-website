@@ -46,7 +46,7 @@ export default function EnglishHero() {
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
             Designed and installed by a licensed electrical engineer with 50+ years of experience
-            in Puerto Rico. 147 families protected from LUMA outages.
+            in Puerto Rico. Families across the island protected from LUMA outages.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

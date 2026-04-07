@@ -123,7 +123,7 @@ export default function TestComponentsPage() {
             as="p"
             className="text-on-surface-variant text-body-lg mt-6 max-w-2xl mx-auto"
           >
-            Somos la empresa solar de mayor confianza en Puerto Rico. 4.9 estrellas en 147 reseñas verificadas.
+            Somos la empresa solar de mayor confianza en Puerto Rico. 4.9 estrellas en Google.
           </TextEffect>
 
           <AnimatedGroup
@@ -172,7 +172,7 @@ export default function TestComponentsPage() {
                 <Star key={i} className="text-primary-container fill-primary-container" size={24} />
               ))}
               <span className="text-2xl font-display font-bold text-on-surface ml-2">4.9</span>
-              <span className="text-on-surface-variant">/ 147 reseñas</span>
+              <span className="text-on-surface-variant">/ 10+ reseñas en Google</span>
             </div>
           </div>
           <div className="flex justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[600px] overflow-hidden">

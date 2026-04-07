@@ -340,7 +340,7 @@ export default function PreguntasAntesInstalarPage() {
             <li><strong>Timeline:</strong> Comunicación constante en cada etapa del proceso.</li>
             <li><strong>Monitoreo:</strong> Incluido en todos nuestros sistemas.</li>
             <li><strong>Mantenimiento:</strong> Planes preventivos diseñados para el clima de Puerto Rico.</li>
-            <li><strong>Reseñas:</strong> 4.9 estrellas en 147 reseñas verificadas de clientes reales.</li>
+            <li><strong>Reseñas:</strong> 4.9 estrellas en Google con reseñas verificadas de clientes reales.</li>
           </ul>
 
           <p>
