@@ -35,7 +35,18 @@ export function OrganizationSchema() {
     sameAs: [
       'https://www.facebook.com/kilowattprllc',
       'https://www.instagram.com/kilowatt_pr',
+      'https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0525-901131063',
     ],
+    hasCredential: {
+      '@type': 'EducationalOccupationalCredential',
+      credentialCategory: 'Accreditation',
+      name: 'BBB Accredited Business',
+      recognizedBy: {
+        '@type': 'Organization',
+        name: 'Better Business Bureau',
+        url: 'https://www.bbb.org',
+      },
+    },
     areaServed: {
       '@type': 'State',
       name: 'Puerto Rico',

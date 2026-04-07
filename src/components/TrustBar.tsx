@@ -35,12 +35,17 @@ export default function TrustBar() {
             label="Experiencia"
             icon={<CheckCircle size={16} />}
           />
-          <CountUpStat
-            value={25}
-            suffix=" Años"
-            label="Garantía Paneles"
-            icon={<Shield size={16} />}
-          />
+          <a
+            href="https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0525-901131063"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 font-label text-label-lg text-[#4A4A6A] py-2 hover:text-[#E09500] transition-colors duration-200 group"
+            title="Ver nuestro perfil en BBB"
+          >
+            <span className="text-[#E09500]"><Shield size={16} /></span>
+            <span className="font-display font-bold text-[#121240] group-hover:text-[#E09500] transition-colors duration-200">BBB</span>
+            <span>Acreditado</span>
+          </a>
         </div>
       </div>
     </section>

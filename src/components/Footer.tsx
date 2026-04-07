@@ -134,9 +134,20 @@ export default function Footer() {
         {/* Bottom bar — no border, use tonal shift */}
         <div className="mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-body-md" style={{ background: 'transparent' }}>
           <p className="text-on-surface-variant opacity-60">© {new Date().getFullYear()} Kilowatt PR LLC. Todos los derechos reservados.</p>
-          <Link href="/privacidad" className="text-on-surface-variant opacity-60 hover:text-primary-container hover:opacity-100 transition-all duration-200">
-            Política de Privacidad
-          </Link>
+          <div className="flex items-center gap-6">
+            <a
+              href="https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0525-901131063"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-on-surface-variant opacity-60 hover:opacity-100 transition-all duration-200 text-xs font-semibold"
+              title="BBB Accredited Business"
+            >
+              BBB Accredited
+            </a>
+            <Link href="/privacidad" className="text-on-surface-variant opacity-60 hover:text-primary-container hover:opacity-100 transition-all duration-200">
+              Política de Privacidad
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
