@@ -36,7 +36,7 @@ export default function EnglishTrustBar() {
             icon={<CheckCircle size={16} />}
           />
           <a
-            href="https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0525-901131063"
+            href="https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0633-92054804"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 font-label text-label-lg text-[#4A4A6A] py-2 hover:text-[#E09500] transition-colors duration-200 group"

@@ -136,7 +136,7 @@ export default function Footer() {
           <p className="text-on-surface-variant opacity-60">© {new Date().getFullYear()} Kilowatt PR LLC. Todos los derechos reservados.</p>
           <div className="flex items-center gap-6">
             <a
-              href="https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0525-901131063"
+              href="https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0633-92054804"
               target="_blank"
               rel="noopener noreferrer"
               className="text-on-surface-variant opacity-60 hover:opacity-100 transition-all duration-200 text-xs font-semibold"

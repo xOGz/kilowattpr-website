@@ -35,7 +35,7 @@ export function OrganizationSchema() {
     sameAs: [
       'https://www.facebook.com/kilowattprllc',
       'https://www.instagram.com/kilowatt_pr',
-      'https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0525-901131063',
+      'https://www.bbb.org/us/pr/aguada/profile/solar-energy-contractors/kilowatt-pr-llc-0633-92054804',
     ],
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
