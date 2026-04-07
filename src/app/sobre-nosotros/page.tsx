@@ -34,10 +34,10 @@ export default function AboutPage() {
               <span className="text-primary-container">Electricistas con Experiencia Real en Puerto Rico</span>
             </h1>
             <p className="text-xl text-on-surface-variant leading-relaxed">
-              Kilowatt PR no es otra empresa solar más. Fundada por un perito electricista
-              licenciado con más de una década de experiencia en el campo, y asesorada por un
-              ingeniero eléctrico PE con más de 50 años de trayectoria profesional — incluyendo
-              NASA y la Universidad de Puerto Rico en Mayagüez.
+              Kilowatt PR no es otra empresa solar más. Fundada por electricistas con
+              experiencia real en el campo, y asesorada por un ingeniero eléctrico PE con
+              más de 50 años de trayectoria profesional — incluyendo NASA y la Universidad
+              de Puerto Rico en Mayagüez.
             </p>
           </div>
         </div>
@@ -53,8 +53,7 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-[#4A4A6A] leading-relaxed">
                 <p>
-                  Xavier Acevedo Santiago es un <strong className="text-[#121240]">perito electricista
-                  licenciado (#21309)</strong> con más de una década de experiencia instalando
+                  Xavier Acevedo Santiago tiene más de una década de experiencia instalando
                   sistemas solares en Puerto Rico. Conoce de primera mano las condiciones
                   climáticas de la isla, los requisitos de OGPE, y el proceso de interconexión
                   con LUMA Energy.
@@ -148,7 +147,7 @@ export default function AboutPage() {
                   Xavier Acevedo Santiago
                 </p>
                 <p className="text-[#E09500] font-label text-label-lg">
-                  Fundador y CEO — Perito Electricista Lic. #21309
+                  Fundador y CEO, Kilowatt PR
                 </p>
               </div>
             </div>
@@ -250,7 +249,7 @@ export default function AboutPage() {
                 role: 'Fundador y CEO',
                 name: 'Xavier Acevedo Santiago',
                 credentials: 'Perito Electricista Lic. #21309',
-                desc: 'Perito electricista licenciado con más de una década de experiencia instalando sistemas fotovoltaicos residenciales y comerciales en Puerto Rico. Fundó Kilowatt PR para proteger a las familias puertorriqueñas de los apagones.',
+                desc: 'Más de una década instalando sistemas fotovoltaicos residenciales y comerciales en Puerto Rico. Fundó Kilowatt PR para proteger a las familias puertorriqueñas de los apagones de LUMA.',
                 photo: '/team/xavier-acevedo.png',
               },
               {
