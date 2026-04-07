@@ -96,8 +96,8 @@ export default function AboutPage() {
             </div>
             <div className="relative h-80 lg:h-full min-h-[400px] rounded-2xl overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80"
-                alt="Xavier Acevedo Santiago, fundador de Kilowatt PR, instalando paneles solares en Puerto Rico"
+                src="/team/xavier-acevedo.png"
+                alt="Xavier Acevedo Santiago, fundador de Kilowatt PR, perito electricista licenciado #21309"
                 fill
                 className="object-cover"
               />
