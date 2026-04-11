@@ -3,22 +3,17 @@
 import Link from "next/link";
 import { Sun, MessageCircle, ArrowRight } from "lucide-react";
 import { TextRotate } from "@/components/ui/text-rotate";
-import { GradientBackground } from "@/components/ui/gradient-background";
+import { GridGlowBackground } from "@/components/ui/grid-glow-background";
 
 export default function HeroWithTextRotate() {
   return (
-    <GradientBackground
+    <GridGlowBackground
       className="min-h-[90vh]"
-      gradients={[
-        "linear-gradient(135deg, #0A0A2E 0%, #1B1B5E 40%, #121240 100%)",
-        "linear-gradient(135deg, #121240 0%, #2D2D75 30%, #0E0E35 100%)",
-        "linear-gradient(135deg, #0E0E35 0%, #1B1B5E 50%, #121240 100%)",
-        "linear-gradient(135deg, #1B1B5E 0%, #121240 40%, #0A0A2E 100%)",
-        "linear-gradient(135deg, #0A0A2E 0%, #1B1B5E 40%, #121240 100%)",
-      ]}
-      animationDuration={12}
-      overlay={true}
-      overlayOpacity={0.15}
+      backgroundColor="#121240"
+      gridColor="rgba(245, 166, 35, 0.05)"
+      gridSize={60}
+      glowColors={["#F5A623", "#E09500", "#3DD8F5", "#F5A623"]}
+      glowCount={8}
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
         <div className="max-w-4xl">
@@ -64,6 +59,6 @@ export default function HeroWithTextRotate() {
           </div>
         </div>
       </div>
-    </GradientBackground>
+    </GridGlowBackground>
   );
 }
