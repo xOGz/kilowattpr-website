@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Sun, Battery, Home, Wrench, ArrowRight } from 'lucide-react'
+import { Sun, Battery, Home, Wrench, Zap, Car, Building, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Servicios de Energía Solar en Puerto Rico',
@@ -37,6 +37,27 @@ const services = [
     desc: 'Mantén tus paneles operando al máximo de su eficiencia. El polvo del Sahara, la sal marina y los residuos tropicales pueden reducir la producción solar hasta un 25% sin mantenimiento regular.',
     href: '/servicios/mantenimiento-lavado',
     features: ['Limpieza con agua purificada', 'Inspección visual de paneles e inversores', 'Reporte de producción', 'Plan de mantenimiento personalizado'],
+  },
+  {
+    icon: Zap,
+    title: 'Contratista Eléctrico',
+    desc: 'Servicios eléctricos residenciales y comerciales. Reparación de bases de medidores con certificaciones LUMA, mejoras de paneles eléctricos y cableado profesional.',
+    href: '/servicios/contratista-electrico',
+    features: ['Reparación de bases de medidores', 'Certificaciones LUMA', 'Mejoras de panel eléctrico', 'Cableado residencial y comercial'],
+  },
+  {
+    icon: Building,
+    title: 'Energía Solar Comercial',
+    desc: 'Sistemas solares para negocios: restaurantes, farmacias, almacenes, hoteles. Sistemas de 10kW a 100kW+ con retorno de inversión en 3 a 5 años.',
+    href: '/servicios/energia-solar-comercial',
+    features: ['Sistemas 10kW–100kW+', 'ROI en 3–5 años', 'Net metering comercial', 'Reducción de cargos por demanda'],
+  },
+  {
+    icon: Car,
+    title: 'Cargadores de Vehículos Eléctricos',
+    desc: 'Instalación de cargadores EV Level 2 y Level 3 para residencias y comercios. Combina solar + EV para máximo ahorro en combustible y electricidad.',
+    href: '/servicios/cargadores-ev',
+    features: ['Level 2 residencial', 'Level 3 comercial', 'Combo solar + EV', 'Evaluación de capacidad eléctrica'],
   },
 ]
 

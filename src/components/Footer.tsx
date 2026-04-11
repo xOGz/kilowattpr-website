@@ -108,6 +108,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href={isEnglish ? '/en/blog' : '/preguntas-frecuentes'} className="hover:text-primary-container transition-colors duration-200">
+                  {isEnglish ? 'FAQ' : 'Preguntas Frecuentes'}
+                </Link>
+              </li>
+              <li>
                 <Link href={isEnglish ? '/en/blog' : '/blog'} className="hover:text-primary-container transition-colors duration-200">
                   {isEnglish ? 'Solar Blog' : 'Blog Solar'}
                 </Link>

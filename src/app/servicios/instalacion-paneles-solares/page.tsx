@@ -161,6 +161,28 @@ export default function InstalacionPanelesSolaresPage() {
               </Link>
             ))}
           </div>
+          <h3 className="font-bold text-navy-dark mt-8 mb-4">Instalamos en Toda Puerto Rico</h3>
+          <div className="flex flex-wrap gap-2">
+            {[
+              { href: '/municipios/san-juan', label: 'San Juan' },
+              { href: '/municipios/bayamon', label: 'Bayamón' },
+              { href: '/municipios/ponce', label: 'Ponce' },
+              { href: '/municipios/carolina', label: 'Carolina' },
+              { href: '/municipios/mayaguez', label: 'Mayagüez' },
+              { href: '/municipios/guaynabo', label: 'Guaynabo' },
+              { href: '/municipios/aguada', label: 'Aguada' },
+              { href: '/municipios/caguas', label: 'Caguas' },
+              { href: '/municipios/arecibo', label: 'Arecibo' },
+              { href: '/municipios/cabo-rojo', label: 'Cabo Rojo' },
+            ].map((m) => (
+              <Link key={m.href} href={m.href} className="text-sm bg-gray-100 hover:bg-solar-yellow hover:text-navy-dark text-gray-700 px-3 py-1.5 rounded-full transition-colors">
+                {m.label}
+              </Link>
+            ))}
+            <Link href="/municipios" className="text-sm text-solar-yellow hover:underline px-3 py-1.5">
+              Ver todos →
+            </Link>
+          </div>
         </div>
       </section>
     </>

@@ -307,11 +307,13 @@ export function ArticleSchema({
   title,
   description,
   datePublished,
+  dateModified,
   url,
 }: {
   title: string
   description: string
   datePublished: string
+  dateModified?: string
   url: string
 }) {
   const schema = {
@@ -320,6 +322,7 @@ export function ArticleSchema({
     headline: title,
     description,
     datePublished,
+    ...(dateModified ? { dateModified } : {}),
     author: {
       '@type': 'Person',
       '@id': 'https://www.kilowattpr.com/#julio-santiago-perez',

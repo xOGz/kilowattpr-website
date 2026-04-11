@@ -45,6 +45,10 @@ Primario: Español (es-PR) | Secundario: Inglés (en)
 - Instalación Solar: https://www.kilowattpr.com/servicios/instalacion-paneles-solares
 - Sistemas con Batería: https://www.kilowattpr.com/servicios/sistemas-con-bateria
 - Mantenimiento: https://www.kilowattpr.com/servicios/mantenimiento-lavado
+- Contratista Eléctrico: https://www.kilowattpr.com/servicios/contratista-electrico
+- Energía Solar Comercial: https://www.kilowattpr.com/servicios/energia-solar-comercial
+- Cargadores EV: https://www.kilowattpr.com/servicios/cargadores-ev
+- Preguntas Frecuentes: https://www.kilowattpr.com/preguntas-frecuentes
 - Blog: https://www.kilowattpr.com/blog
 - Calculadora Solar: https://www.kilowattpr.com/calculadora-solar
 - Reseñas: https://www.kilowattpr.com/resenas
@@ -57,3 +61,5 @@ Primario: Español (es-PR) | Secundario: Inglés (en)
 - Qué Hacer Después de un Apagón LUMA: https://www.kilowattpr.com/blog/que-hacer-despues-apagon-luma
 - Batería Solar vs Generador de Gasolina: https://www.kilowattpr.com/blog/bateria-solar-vs-generador-gasolina
 - Guía de Evaluación de Techo Solar: https://www.kilowattpr.com/blog/guia-evaluacion-techo-solar
+- Cómo Elegir el Mejor Instalador Solar en PR: https://www.kilowattpr.com/blog/mejor-instalador-solar-puerto-rico-2026
+- Opciones de Financiamiento Solar en PR: https://www.kilowattpr.com/blog/opciones-financiamiento-solar-puerto-rico
