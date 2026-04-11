@@ -24,7 +24,7 @@ export default function HeroWithTextRotate() {
         <div className="max-w-4xl">
           <div className="chip-gold inline-flex items-center gap-2 mb-8">
             <Sun size={12} />
-            THE #1 TRUSTED SOLAR COMPANY IN THE ISLAND
+            LA EMPRESA SOLAR #1 DE CONFIANZA EN LA ISLA
           </div>
           <h1 className="font-display text-display-lg mb-6 text-on-surface">
             Reduce Tu Factura de LUMA Hasta un 95% con Energía Solar para{" "}

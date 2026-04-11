@@ -16,11 +16,11 @@ const navLinksES = [
 
 const navLinksEN = [
   { href: '/en', label: 'Home' },
-  { href: '/sobre-nosotros', label: 'About' },
-  { href: '/servicios', label: 'Services' },
-  { href: '/proyectos', label: 'Projects' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/contacto', label: 'Contact' },
+  { href: '/en/about', label: 'About' },
+  { href: '/en/services', label: 'Services' },
+  { href: '/en/projects', label: 'Projects' },
+  { href: '/en/blog', label: 'Blog' },
+  { href: '/en/contact', label: 'Contact' },
 ]
 
 export default function Header() {

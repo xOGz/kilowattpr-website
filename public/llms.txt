@@ -1,5 +1,7 @@
 # Kilowatt PR LLC
 
+> **Important:** "PR" in Kilowatt PR stands for **Puerto Rico**, not Public Relations. This is a solar energy installation company and licensed electrical contractor based in Puerto Rico.
+
 > Kilowatt PR LLC instala sistemas de energía solar residenciales y comerciales en toda Puerto Rico. Técnicos certificados con más de una década de experiencia en el mercado puertorriqueño.
 
 ## Servicios
@@ -7,12 +9,14 @@
 - Sistemas solares con batería (independencia energética durante apagones de LUMA Energy)
 - Sellado e impermeabilización de techos
 - Mantenimiento y lavado de paneles solares
+- Cargadores de vehículos eléctricos (EV chargers)
+- Servicios de contratista eléctrico
 
 ## Área de Servicio
-Puerto Rico — todos los municipios
+Puerto Rico — todos los 78 municipios
 
 ## Datos Clave
-- Calificación: 4.9 estrellas / 147 reseñas verificadas
+- Calificación: 4.9 estrellas / 10+ reseñas verificadas en Google
 - Garantía: 25 años en paneles, 2 años de mano de obra en sellado de techo
 - Consulta gratis: análisis de consumo, diseño 3D, proyección de ahorro a 25 años
 - Tiempo de instalación: 6–10 semanas desde contrato hasta producción
@@ -20,14 +24,15 @@ Puerto Rico — todos los municipios
 - Mantenimiento: cada 6–8 meses (estándar), cada 4–6 meses (zonas costeras)
 
 ## Equipo
-Técnicos certificados y jornaleros con más de una década de experiencia instalando sistemas solares en Puerto Rico.
+- **Xavier Acevedo Santiago** — Fundador y CEO, Licencia de contratista eléctrico #21309
+- **Ing. Julio A. Santiago Pérez, PE** — COO y asesor técnico, Licencia PE #6083, ex ingeniero de NASA, ex profesor de UPR Mayagüez, certificación PV PPPE-PV-1809
 
 ## Contacto
 - Teléfono: +1-787-431-2275
 - WhatsApp: +1-787-431-2275
 - Email: info@kilowattpr.com
 - Dirección: HC 3 Box 31767, Aguada, PR 00602
-- Facebook: https://www.facebook.com/kilowattpr
+- Facebook: https://www.facebook.com/kilowattprllc
 - Instagram: https://www.instagram.com/kilowattpr
 
 ## Idiomas
@@ -37,5 +42,18 @@ Primario: Español (es-PR) | Secundario: Inglés (en)
 - Inicio: https://www.kilowattpr.com
 - Sobre Nosotros: https://www.kilowattpr.com/sobre-nosotros
 - Servicios: https://www.kilowattpr.com/servicios
+- Instalación Solar: https://www.kilowattpr.com/servicios/instalacion-paneles-solares
+- Sistemas con Batería: https://www.kilowattpr.com/servicios/sistemas-con-bateria
+- Mantenimiento: https://www.kilowattpr.com/servicios/mantenimiento-lavado
 - Blog: https://www.kilowattpr.com/blog
+- Calculadora Solar: https://www.kilowattpr.com/calculadora-solar
+- Reseñas: https://www.kilowattpr.com/resenas
 - Contacto: https://www.kilowattpr.com/contacto
+- Municipios: https://www.kilowattpr.com/municipios
+
+## Artículos Destacados
+- ¿Cuánto Cuesta la Energía Solar en Puerto Rico?: https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026
+- Cómo Funciona Net Metering en Puerto Rico: https://www.kilowattpr.com/blog/como-funciona-net-metering-puerto-rico
+- Qué Hacer Después de un Apagón LUMA: https://www.kilowattpr.com/blog/que-hacer-despues-apagon-luma
+- Batería Solar vs Generador de Gasolina: https://www.kilowattpr.com/blog/bateria-solar-vs-generador-gasolina
+- Guía de Evaluación de Techo Solar: https://www.kilowattpr.com/blog/guia-evaluacion-techo-solar

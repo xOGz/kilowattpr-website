@@ -28,5 +28,6 @@ Allow: /
 User-agent: *
 Disallow: /api/
 Disallow: /admin/
+Disallow: /test-components/
 
 Sitemap: https://www.kilowattpr.com/sitemap.xml
