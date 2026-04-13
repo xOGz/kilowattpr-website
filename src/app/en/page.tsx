@@ -49,7 +49,7 @@ const services = [
     icon: Zap,
     title: 'Electrical Contractor',
     desc: 'Residential & commercial electrical contractor services. Meter base repairs with LUMA certifications.',
-    href: '/servicios/contratista-electrico',
+    href: '/en/services',
   },
   {
     icon: Wrench,
