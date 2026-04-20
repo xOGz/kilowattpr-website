@@ -38,6 +38,7 @@ const faqs = [
 
 export default function FinanciamientoSolarPage() {
   const publishDate = '2026-04-10'
+  const modifyDate = '2026-04-10'
   const url = 'https://www.kilowattpr.com/blog/opciones-financiamiento-solar-puerto-rico'
 
   return (
@@ -46,6 +47,7 @@ export default function FinanciamientoSolarPage() {
         title="Opciones de Financiamiento para Paneles Solares en Puerto Rico en 2026"
         description="Guía completa de financiamiento solar en Puerto Rico. Préstamos verdes, cooperativas, financiamiento directo."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

@@ -180,9 +180,9 @@ const TextRotate = forwardRef<TextRotateRef, TextRotateProps>(
         {...props}
         layout
         transition={transition}
+        role="text"
+        aria-label={texts[currentTextIndex]}
       >
-        <span className="sr-only">{texts[currentTextIndex]}</span>
-
         <AnimatePresence
           mode={animatePresenceMode}
           initial={animatePresenceInitial}
@@ -194,7 +194,6 @@ const TextRotate = forwardRef<TextRotateRef, TextRotateProps>(
               splitBy === "lines" && "flex-col w-full"
             )}
             layout
-            aria-hidden="true"
           >
             {(splitBy === "characters"
               ? (elements as WordObject[])

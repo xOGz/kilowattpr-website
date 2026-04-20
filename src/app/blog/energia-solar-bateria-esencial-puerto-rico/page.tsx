@@ -32,6 +32,7 @@ const faqs = [
 
 export default function BateriaEsencialPage() {
   const publishDate = '2026-03-20'
+  const modifyDate = '2026-03-20'
   const url = 'https://www.kilowattpr.com/blog/energia-solar-bateria-esencial-puerto-rico'
 
   return (
@@ -40,6 +41,7 @@ export default function BateriaEsencialPage() {
         title="Energía Solar con Batería: Por Qué es Esencial en Puerto Rico"
         description="Descubre por qué un sistema solar sin batería no es suficiente en Puerto Rico. Guía completa de baterías de respaldo."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

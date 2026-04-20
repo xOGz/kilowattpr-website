@@ -32,6 +32,7 @@ const faqs = [
 
 export default function PreguntasAntesInstalarPage() {
   const publishDate = '2026-03-24'
+  const modifyDate = '2026-03-24'
   const url = 'https://www.kilowattpr.com/blog/preguntas-antes-instalar-solar'
 
   return (
@@ -40,6 +41,7 @@ export default function PreguntasAntesInstalarPage() {
         title="10 Preguntas que Debes Hacer Antes de Instalar Paneles Solares en Puerto Rico"
         description="Las 10 preguntas críticas antes de contratar un instalador solar en Puerto Rico. Licencias, garantías, baterías, permisos OGPE y señales de alerta."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

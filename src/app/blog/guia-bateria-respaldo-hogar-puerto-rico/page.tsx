@@ -32,6 +32,7 @@ const faqs = [
 
 export default function GuiaBateriaPage() {
   const publishDate = '2026-02-15'
+  const modifyDate = '2026-02-15'
   const url = 'https://www.kilowattpr.com/blog/guia-bateria-respaldo-hogar-puerto-rico'
 
   return (
@@ -40,6 +41,7 @@ export default function GuiaBateriaPage() {
         title="Guía Completa: Baterías de Respaldo Solar en Puerto Rico"
         description="Todo sobre sistemas de almacenamiento solar en Puerto Rico. Tipos de baterías, capacidad, costo y cómo elegir."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

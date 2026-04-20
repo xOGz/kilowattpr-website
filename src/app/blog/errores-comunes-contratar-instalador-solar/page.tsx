@@ -37,6 +37,7 @@ const faqs = [
 
 export default function ErroresComunesPage() {
   const publishDate = '2026-03-22'
+  const modifyDate = '2026-03-22'
   const url = 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar'
 
   return (
@@ -45,6 +46,7 @@ export default function ErroresComunesPage() {
         title="Errores Comunes al Contratar un Instalador Solar en Puerto Rico (y Cómo Evitarlos)"
         description="Evita los 6 errores más costosos al contratar un instalador de paneles solares en Puerto Rico. Guía del consumidor con consejos prácticos."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />
