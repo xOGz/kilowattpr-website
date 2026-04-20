@@ -38,6 +38,7 @@ const faqs = [
 
 export default function CuantoCuestaPage() {
   const publishDate = '2026-01-15'
+  const modifyDate = '2026-01-15'
   const url = 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026'
 
   return (
@@ -46,6 +47,7 @@ export default function CuantoCuestaPage() {
         title="¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?"
         description="Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales, comerciales, con y sin batería."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

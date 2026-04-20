@@ -32,6 +32,7 @@ const faqs = [
 
 export default function GuiaEvaluacionTechoPage() {
   const publishDate = '2026-03-12'
+  const modifyDate = '2026-03-12'
   const url = 'https://www.kilowattpr.com/blog/guia-evaluacion-techo-solar'
 
   return (
@@ -40,6 +41,7 @@ export default function GuiaEvaluacionTechoPage() {
         title="Guía de Evaluación de Techo para Energía Solar en Puerto Rico"
         description="Aprende qué hace un techo apto para paneles solares en Puerto Rico. Orientación, inclinación, material, edad, capacidad estructural y anclaje para huracanes."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

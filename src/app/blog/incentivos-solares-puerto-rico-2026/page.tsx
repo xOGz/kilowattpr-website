@@ -32,6 +32,7 @@ const faqs = [
 
 export default function HurricanePreparationPage() {
   const publishDate = '2026-02-28'
+  const modifyDate = '2026-02-28'
   const url = 'https://www.kilowattpr.com/blog/incentivos-solares-puerto-rico-2026'
 
   return (
@@ -40,6 +41,7 @@ export default function HurricanePreparationPage() {
         title="Cómo Preparar Tu Hogar para Huracanes con Energía Solar en Puerto Rico"
         description="Guía completa para proteger tu hogar de los apagones durante la temporada de huracanes con energía solar y batería de respaldo."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

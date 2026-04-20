@@ -37,6 +37,7 @@ const faqs = [
 
 export default function SolarComercialPage() {
   const publishDate = '2026-03-25'
+  const modifyDate = '2026-03-25'
   const url = 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios'
 
   return (
@@ -45,6 +46,7 @@ export default function SolarComercialPage() {
         title="Energía Solar Comercial en Puerto Rico: ROI para Negocios Locales"
         description="Guía de energía solar comercial para negocios en Puerto Rico. Sistemas de 15-50kW+, análisis de ROI real basado en tarifas de LUMA Energy."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

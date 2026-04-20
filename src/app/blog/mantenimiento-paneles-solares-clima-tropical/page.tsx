@@ -32,6 +32,7 @@ const faqs = [
 
 export default function MantenimientoPanelesPage() {
   const publishDate = '2026-03-15'
+  const modifyDate = '2026-03-15'
   const url = 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical'
 
   return (
@@ -40,6 +41,7 @@ export default function MantenimientoPanelesPage() {
         title="Mantenimiento de Paneles Solares en Clima Tropical: Lo Que Necesitas Saber"
         description="Guía completa de mantenimiento de paneles solares en Puerto Rico. Frecuencia de limpieza, salitre, polvo del Sahara y cuándo llamar a un profesional."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

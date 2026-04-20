@@ -32,6 +32,7 @@ const faqs = [
 
 export default function InterconexionLumaPage() {
   const publishDate = '2026-02-01'
+  const modifyDate = '2026-02-01'
   const url = 'https://www.kilowattpr.com/blog/como-funciona-interconexion-luma-energia'
 
   return (
@@ -40,6 +41,7 @@ export default function InterconexionLumaPage() {
         title="Cómo Funciona la Interconexión con LUMA Energy en Puerto Rico"
         description="Guía completa del proceso de interconexión solar con LUMA Energy en Puerto Rico."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

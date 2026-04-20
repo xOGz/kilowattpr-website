@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     languages: {
       'es': 'https://www.kilowattpr.com',
       'en': 'https://www.kilowattpr.com/en',
+      'x-default': 'https://www.kilowattpr.com',
     },
   },
   openGraph: {

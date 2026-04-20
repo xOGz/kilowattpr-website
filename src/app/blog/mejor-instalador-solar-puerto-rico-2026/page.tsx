@@ -38,6 +38,7 @@ const faqs = [
 
 export default function MejorInstaladorPage() {
   const publishDate = '2026-04-10'
+  const modifyDate = '2026-04-10'
   const url = 'https://www.kilowattpr.com/blog/mejor-instalador-solar-puerto-rico-2026'
 
   return (
@@ -46,6 +47,7 @@ export default function MejorInstaladorPage() {
         title="¿Cómo Elegir el Mejor Instalador Solar en Puerto Rico en 2026?"
         description="Guía para elegir el mejor instalador de paneles solares en Puerto Rico en 2026. Qué verificar: licencias, experiencia, garantías, reseñas."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

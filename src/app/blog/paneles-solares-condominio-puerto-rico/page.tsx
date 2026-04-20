@@ -34,6 +34,7 @@ const faqs = [
 
 export default function PanelesSolaresCondominioPage() {
   const publishDate = '2026-04-10'
+  const modifyDate = '2026-04-10'
   const url = 'https://www.kilowattpr.com/blog/paneles-solares-condominio-puerto-rico'
 
   return (
@@ -42,6 +43,7 @@ export default function PanelesSolaresCondominioPage() {
         title="Paneles Solares en Condominios de Puerto Rico — ¿Es Posible?"
         description="Cómo instalar paneles solares en tu condominio en Puerto Rico. Proceso de aprobación, opciones para techos compartidos, beneficios y costos."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />

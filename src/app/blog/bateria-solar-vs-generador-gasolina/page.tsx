@@ -32,6 +32,7 @@ const faqs = [
 
 export default function BateriaSolarVsGeneradorPage() {
   const publishDate = '2026-03-14'
+  const modifyDate = '2026-03-14'
   const url = 'https://www.kilowattpr.com/blog/bateria-solar-vs-generador-gasolina'
 
   return (
@@ -40,6 +41,7 @@ export default function BateriaSolarVsGeneradorPage() {
         title="Batería Solar vs Generador de Gasolina: ¿Cuál es Mejor para Puerto Rico?"
         description="Comparación detallada entre baterías solares y generadores de gasolina para Puerto Rico. Costos a 10 años, seguridad, ruido y rendimiento durante huracanes."
         datePublished={publishDate}
+        dateModified={modifyDate}
         url={url}
       />
       <FAQSchema faqs={faqs} />
