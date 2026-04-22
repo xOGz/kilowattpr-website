@@ -6,7 +6,7 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import MobileCTABar from '@/components/MobileCTABar'
 import EmailCaptureBanner from '@/components/EmailCaptureBanner'
 import { OrganizationSchema, WebSiteSchema } from '@/components/SchemaOrg'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
+import SiteTracking, { MetaPixelNoscript } from '@/components/SiteTracking'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kilowattpr.com'),
@@ -34,8 +34,14 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      { url: '/favicon.ico?v=2', sizes: 'any' },
+      { url: '/icon-192.png?v=2', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png?v=2', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico?v=2',
   },
   alternates: {
     canonical: 'https://www.kilowattpr.com',
@@ -51,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es-PR">
       <head>
-        <GoogleAnalytics />
+        <SiteTracking />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -68,6 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WebSiteSchema />
       </head>
       <body className="bg-surface text-on-surface font-body antialiased">
+        <MetaPixelNoscript />
         <Header />
         <main>{children}</main>
         <Footer />
