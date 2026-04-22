@@ -6,7 +6,7 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import MobileCTABar from '@/components/MobileCTABar'
 import EmailCaptureBanner from '@/components/EmailCaptureBanner'
 import { OrganizationSchema, WebSiteSchema } from '@/components/SchemaOrg'
-import SiteTracking, { MetaPixelNoscript } from '@/components/SiteTracking'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kilowattpr.com'),
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es-PR">
       <head>
-        <SiteTracking />
+        <GoogleAnalytics />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -74,7 +74,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WebSiteSchema />
       </head>
       <body className="bg-surface text-on-surface font-body antialiased">
-        <MetaPixelNoscript />
         <Header />
         <main>{children}</main>
         <Footer />
