@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Sun, Battery, Home, Wrench, Zap, Car, Building, ArrowRight } from 'lucide-react'
 
@@ -16,6 +17,8 @@ const services = [
     desc: 'Instalamos sistemas fotovoltaicos residenciales y comerciales diseñados para las condiciones climáticas de Puerto Rico. Incluimos todo: consulta, diseño 3D, permisos OGPE, interconexión LUMA y instalación.',
     href: '/servicios/instalacion-paneles-solares',
     features: ['Sistemas residenciales 4kW–25kW', 'Sistemas comerciales a medida', 'Gestión de permisos OGPE', 'Interconexión con LUMA Energy'],
+    image: '/servicios/instalacion-paneles.jpg',
+    imageAlt: 'Sistema de paneles solares instalado sobre techo residencial en Puerto Rico por Kilowatt PR',
   },
   {
     icon: Battery,
@@ -23,6 +26,8 @@ const services = [
     desc: 'La solución para la independencia energética total durante los apagones de LUMA Energy. Hasta 24 horas de respaldo para los electrodomésticos esenciales de tu hogar o negocio.',
     href: '/servicios/sistemas-con-bateria',
     features: ['Hasta 24 horas de respaldo', 'Desconexión automática en apagones', 'Compatible con paneles existentes', 'Monitoreo remoto del sistema'],
+    image: '/servicios/sistemas-bateria.webp',
+    imageAlt: 'Inversor híbrido EG4 18KPV con batería de respaldo instalado por Kilowatt PR',
   },
   {
     icon: Home,
@@ -30,6 +35,8 @@ const services = [
     desc: 'Antes de instalar los paneles, evaluamos e impermeabilizamos tu techo. Un techo sellado protege tu hogar del agua y garantiza que la instalación solar sea segura y duradera.',
     href: '/servicios/sellado-de-techo',
     features: ['Evaluación estructural del techo', 'Impermeabilización profesional', 'Garantía de 2 años de mano de obra', 'Compatible con todos los tipos de techo'],
+    image: '/servicios/sellado-techo.webp',
+    imageAlt: 'Paneles solares instalados sobre techo sellado e impermeabilizado en Puerto Rico',
   },
   {
     icon: Wrench,
@@ -37,6 +44,8 @@ const services = [
     desc: 'Mantén tus paneles operando al máximo de su eficiencia. El polvo del Sahara, la sal marina y los residuos tropicales pueden reducir la producción solar hasta un 25% sin mantenimiento regular.',
     href: '/servicios/mantenimiento-lavado',
     features: ['Limpieza con agua purificada', 'Inspección visual de paneles e inversores', 'Reporte de producción', 'Plan de mantenimiento personalizado'],
+    image: '/servicios/mantenimiento-lavado.webp',
+    imageAlt: 'Paneles solares limpios y mantenidos para máxima eficiencia en Puerto Rico',
   },
   {
     icon: Zap,
@@ -44,6 +53,8 @@ const services = [
     desc: 'Servicios eléctricos residenciales y comerciales. Reparación de bases de medidores con certificaciones LUMA, mejoras de paneles eléctricos y cableado profesional.',
     href: '/servicios/contratista-electrico',
     features: ['Reparación de bases de medidores', 'Certificaciones LUMA', 'Mejoras de panel eléctrico', 'Cableado residencial y comercial'],
+    image: '/servicios/contratista-electrico.webp',
+    imageAlt: 'Paneles eléctricos y disconnects instalados por peritos electricistas licenciados en Puerto Rico',
   },
   {
     icon: Building,
@@ -51,6 +62,8 @@ const services = [
     desc: 'Sistemas solares para negocios: restaurantes, farmacias, almacenes, hoteles. Sistemas de 10kW a 100kW+ con retorno de inversión en 3 a 5 años.',
     href: '/servicios/energia-solar-comercial',
     features: ['Sistemas 10kW–100kW+', 'ROI en 3–5 años', 'Net metering comercial', 'Reducción de cargos por demanda'],
+    image: '/servicios/solar-comercial.webp',
+    imageAlt: 'Trabajo de servicio eléctrico comercial por Kilowatt PR en Puerto Rico',
   },
   {
     icon: Car,
@@ -58,6 +71,8 @@ const services = [
     desc: 'Instalación de cargadores EV Level 2 y Level 3 para residencias y comercios. Combina solar + EV para máximo ahorro en combustible y electricidad.',
     href: '/servicios/cargadores-ev',
     features: ['Level 2 residencial', 'Level 3 comercial', 'Combo solar + EV', 'Evaluación de capacidad eléctrica'],
+    image: '/servicios/cargadores-ev.webp',
+    imageAlt: 'Técnico electricista licenciado de Kilowatt PR trabajando en instalación eléctrica',
   },
 ]
 
@@ -104,8 +119,24 @@ export default function ServicesPage() {
                     Más información <ArrowRight size={18} />
                   </Link>
                 </div>
-                <div className="bg-gray-100 rounded-2xl h-64 flex items-center justify-center">
-                  <svc.icon className="text-gray-300" size={80} />
+                <div className="relative rounded-2xl h-72 md:h-96 overflow-hidden shadow-xl group">
+                  <Image
+                    src={svc.image}
+                    alt={svc.imageAlt}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    priority={i < 2}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/40 via-transparent to-transparent pointer-events-none" />
+                  <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3 text-white">
+                    <div className="w-10 h-10 bg-solar-yellow rounded-lg flex items-center justify-center shadow-lg">
+                      <svc.icon className="text-navy-dark" size={20} />
+                    </div>
+                    <span className="font-headline font-semibold text-sm drop-shadow-lg">
+                      {svc.title}
+                    </span>
+                  </div>
                 </div>
               </div>
             ))}

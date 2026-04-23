@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   Sun, Battery, Wrench, Star, CheckCircle, Phone, MessageCircle,
@@ -174,6 +175,112 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery — Instalaciones Reales — LIGHT WHITE */}
+      <section className="py-20 section-light-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <span className="chip-gold inline-flex items-center gap-2 mb-5">
+              <Sun size={12} />
+              TRABAJO REAL, NO RENDERS
+            </span>
+            <h2 className="font-display text-display-md leading-tight text-[#121240]">
+              Instalaciones Recientes en Puerto Rico
+            </h2>
+            <p className="font-body text-body-lg mt-4 max-w-2xl mx-auto text-[#4A4A6A]">
+              Cada sistema es diseñado por ingeniería y ejecutado por peritos electricistas
+              licenciados con más de una década de experiencia en Puerto Rico.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+            <div className="relative lg:col-span-2 lg:row-span-2 h-64 md:h-80 lg:h-full rounded-2xl overflow-hidden group shadow-xl">
+              <Image
+                src="/gallery/instalacion-panoramica.webp"
+                alt="Vista panorámica de paneles solares instalados sobre techo en Puerto Rico por Kilowatt PR"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-navy-dark/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                <span className="text-xs font-label uppercase tracking-wider text-solar-yellow">
+                  Sistema Residencial
+                </span>
+                <h3 className="font-display text-2xl md:text-3xl font-bold mt-1 drop-shadow-lg">
+                  Paneles de alta eficiencia sobre techo sellado
+                </h3>
+              </div>
+            </div>
+
+            <div className="relative h-64 rounded-2xl overflow-hidden group shadow-lg">
+              <Image
+                src="/gallery/inversor-solark.webp"
+                alt="Inversor híbrido Sol-Ark instalado por Kilowatt PR"
+                fill
+                sizes="(max-width: 1024px) 100vw, 25vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/75 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <span className="text-xs font-label uppercase tracking-wider text-solar-yellow">
+                  Inversor Híbrido
+                </span>
+                <h3 className="font-headline text-lg font-semibold mt-1 drop-shadow-lg">
+                  Sol-Ark — respaldo total
+                </h3>
+              </div>
+            </div>
+
+            <div className="relative h-64 rounded-2xl overflow-hidden group shadow-lg">
+              <Image
+                src="/gallery/paneles-residencial.webp"
+                alt="Paneles solares residenciales instalados por Kilowatt PR en Puerto Rico"
+                fill
+                sizes="(max-width: 1024px) 100vw, 25vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/75 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <span className="text-xs font-label uppercase tracking-wider text-solar-yellow">
+                  Residencial
+                </span>
+                <h3 className="font-headline text-lg font-semibold mt-1 drop-shadow-lg">
+                  Listo para la próxima factura
+                </h3>
+              </div>
+            </div>
+
+            <div className="relative h-64 md:col-span-2 rounded-2xl overflow-hidden group shadow-lg">
+              <Image
+                src="/gallery/tecnico-trabajando.webp"
+                alt="Perito electricista licenciado de Kilowatt PR trabajando en instalación en Puerto Rico"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/75 via-transparent to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-5 text-white">
+                <span className="text-xs font-label uppercase tracking-wider text-solar-yellow">
+                  Equipo Licenciado
+                </span>
+                <h3 className="font-headline text-xl font-semibold mt-1 drop-shadow-lg">
+                  Peritos electricistas — Más de una década en Puerto Rico
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/proyectos"
+              className="btn-secondary-light text-base px-6 py-3 inline-flex"
+            >
+              Ver todos los proyectos <ArrowRight size={16} />
+            </Link>
           </div>
         </div>
       </section>
