@@ -227,6 +227,43 @@ export const authorData = {
   url: 'https://www.kilowattpr.com/equipo/julio-santiago-perez',
 }
 
+export const xavierData = {
+  name: 'Xavier Acevedo Santiago',
+  slug: 'xavier-acevedo',
+  title: {
+    es: 'Fundador y CEO · Perito Electricista Licenciado',
+    en: 'Founder and CEO · Licensed Electrical Contractor',
+  },
+  credentials: {
+    electricianLicense: '21309',
+    role: 'Founder / CEO',
+  },
+  experience: 'más de una década',
+  bio: {
+    es: 'Fundador y director ejecutivo de Kilowatt PR LLC. Perito electricista licenciado #21309 con más de una década de experiencia instalando sistemas solares residenciales y comerciales en Puerto Rico. Fundó la empresa después del huracán María con la misión de proveer energía confiable y resiliente a familias y negocios puertorriqueños frente a la crisis de LUMA Energy.',
+    en: 'Founder and CEO of Kilowatt PR LLC. Licensed electrical contractor #21309 with over a decade of experience installing residential and commercial solar energy systems in Puerto Rico. Founded the company after Hurricane María with the mission of bringing reliable, resilient power to Puerto Rican families and businesses amid the LUMA Energy crisis.',
+  },
+  url: 'https://www.kilowattpr.com/equipo/xavier-acevedo',
+}
+
+export const kristenData = {
+  name: 'Kristen S. Román',
+  slug: 'kristen-roman',
+  title: {
+    es: 'Coordinadora de Proyectos y Servicio al Cliente',
+    en: 'Project Coordinator and Customer Service Lead',
+  },
+  credentials: {
+    role: 'Project Coordinator',
+  },
+  experience: '',
+  bio: {
+    es: 'Coordinadora de proyectos y servicio al cliente en Kilowatt PR. Primer punto de contacto para cada lead, gestiona la agenda de consultas, coordinación con los técnicos de instalación y el seguimiento post-instalación. Responsable de que cada cliente reciba respuesta en menos de 2 horas durante horario laboral.',
+    en: 'Project coordinator and customer service lead at Kilowatt PR. First point of contact for every lead, handling consultation scheduling, coordination with the install crew, and post-install follow-up. Responsible for ensuring every customer gets a response within 2 hours during business hours.',
+  },
+  url: 'https://www.kilowattpr.com/equipo/kristen-roman',
+}
+
 export function PersonSchema() {
   const schema = {
     '@context': 'https://schema.org',
@@ -270,6 +307,72 @@ export function PersonSchema() {
       'Electrical Engineering',
       'Battery Storage Systems',
       'LUMA Energy Interconnection',
+    ],
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+export function XavierPersonSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': 'https://www.kilowattpr.com/#xavier-acevedo',
+    name: xavierData.name,
+    jobTitle: 'Founder and CEO, Licensed Electrical Contractor',
+    description: xavierData.bio.es,
+    url: xavierData.url,
+    worksFor: { '@id': 'https://www.kilowattpr.com/#organization' },
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'Professional License',
+        name: 'Perito Electricista Licenciado — Licensed Electrical Contractor',
+        recognizedBy: {
+          '@type': 'Organization',
+          name: 'Junta Examinadora de Ingenieros y Agrimensores de Puerto Rico',
+        },
+        identifier: xavierData.credentials.electricianLicense,
+      },
+    ],
+    knowsAbout: [
+      'Solar Panel Installation',
+      'Residential Solar Systems',
+      'Commercial Solar Systems',
+      'Electrical Contracting',
+      'LUMA Energy Interconnection',
+      'OGPe Permitting',
+    ],
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+export function KristenPersonSchema() {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': 'https://www.kilowattpr.com/#kristen-roman',
+    name: kristenData.name,
+    jobTitle: 'Project Coordinator and Customer Service Lead',
+    description: kristenData.bio.es,
+    url: kristenData.url,
+    worksFor: { '@id': 'https://www.kilowattpr.com/#organization' },
+    knowsAbout: [
+      'Customer Service',
+      'Project Coordination',
+      'Consultation Scheduling',
+      'Post-Installation Follow-up',
     ],
   }
 

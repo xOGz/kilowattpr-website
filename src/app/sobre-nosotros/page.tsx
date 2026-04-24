@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { CheckCircle, Award, Users, MapPin, Shield, Zap } from 'lucide-react'
 import { PersonSchema } from '@/components/SchemaOrg'
 import { buildAlternates } from '@/lib/alternates'
@@ -254,6 +255,7 @@ export default function AboutPage() {
                 credentials: 'Perito Electricista Lic. #21309',
                 desc: 'Más de una década instalando sistemas fotovoltaicos residenciales y comerciales en Puerto Rico. Fundó Kilowatt PR para proteger a las familias puertorriqueñas de los apagones de LUMA.',
                 photo: '/team/xavier-acevedo.png',
+                href: '/equipo/xavier-acevedo',
               },
               {
                 role: 'COO y Asesor de Ingeniería',
@@ -261,6 +263,7 @@ export default function AboutPage() {
                 credentials: 'PE #6083 · PPPE-PV-1809',
                 desc: 'Ingeniero eléctrico licenciado con 50+ años de experiencia. Ex ingeniero de NASA y ex profesor de la UPR Mayagüez. Asesora en el diseño de ingeniería de cada sistema solar.',
                 photo: '/team/julio-santiago.png',
+                href: '/equipo/julio-santiago-perez',
               },
               {
                 role: 'Servicio al Cliente',
@@ -268,9 +271,14 @@ export default function AboutPage() {
                 credentials: 'Coordinadora de Proyectos',
                 desc: 'Tu punto de contacto durante todo el proceso. Coordina permisos de OGPE, interconexión con LUMA Energy, y se asegura de que cada cliente quede completamente satisfecho.',
                 photo: '/team/kristen-roman.png',
+                href: '/equipo/kristen-roman',
               },
             ].map((member) => (
-              <div key={member.name} className="card-light text-center">
+              <Link
+                key={member.name}
+                href={member.href}
+                className="card-light text-center block transition-transform duration-200 hover:-translate-y-1"
+              >
                 {member.photo ? (
                   <div className="w-28 h-28 rounded-full mx-auto mb-4 p-1 bg-gradient-to-br from-[#E09500] to-[#F5A623]">
                     <div className="w-full h-full rounded-full overflow-hidden relative bg-white">
@@ -291,7 +299,8 @@ export default function AboutPage() {
                 <p className="text-[#E09500] font-label text-label-lg mb-1">{member.role}</p>
                 <p className="text-[#4A4A6A] text-xs font-label mb-3">{member.credentials}</p>
                 <p className="text-[#4A4A6A] text-body-md leading-relaxed">{member.desc}</p>
-              </div>
+                <p className="text-[#E09500] font-label text-label-md mt-4">Ver perfil →</p>
+              </Link>
             ))}
           </div>
         </div>
