@@ -5,6 +5,7 @@ import {
   Sun, Battery, Wrench, Star, CheckCircle, Phone, MessageCircle,
   ArrowRight, Shield, Zap, DollarSign,
 } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 import QuoteForm from '@/components/QuoteForm'
 import SolarCalculator from '@/components/SolarCalculator'
 import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
@@ -18,14 +19,7 @@ export const metadata: Metadata = {
   title: 'Paneles Solares y Contratista Eléctrico en Puerto Rico',
   description:
     'Instalación de paneles solares desde $13,000 en Puerto Rico. Ingeniero PE con más de 50 años, equipo con más de una década instalando solar. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
-  alternates: {
-    canonical: 'https://www.kilowattpr.com',
-    languages: {
-      'es': 'https://www.kilowattpr.com',
-      'en': 'https://www.kilowattpr.com/en',
-      'x-default': 'https://www.kilowattpr.com',
-    },
-  },
+  ...buildAlternates({ es: '/', en: '/en' }),
   openGraph: {
     title: 'Kilowatt PR | Paneles Solares desde $13,000 en Puerto Rico',
     description:

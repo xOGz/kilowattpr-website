@@ -2,12 +2,14 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Sun, Battery, Home, Wrench, Zap, Car, Building, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Servicios de Energía Solar en Puerto Rico',
   description:
     'Kilowatt PR ofrece instalación de paneles solares, sistemas con batería, sellado de techo y mantenimiento en toda Puerto Rico. Técnicos certificados, garantía 25 años.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios' },
+  ...buildAlternates({ es: '/servicios', en: '/en/services' }),
 }
 
 const services = [
@@ -79,6 +81,7 @@ const services = [
 export default function ServicesPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Servicios', path: '/servicios' }]} />
       <section className="bg-navy-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">

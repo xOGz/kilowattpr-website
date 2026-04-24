@@ -4,12 +4,16 @@ import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import QuoteForm from '@/components/QuoteForm'
 import { CheckCircle, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Instalación de Paneles Solares en Puerto Rico',
   description:
     'Kilowatt PR instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Técnicos certificados, gestión de permisos OGPE y LUMA. Cotización gratis.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios/instalacion-paneles-solares' },
+  ...buildAlternates({
+    es: '/servicios/instalacion-paneles-solares',
+    en: '/en/services/solar-panel-installation',
+  }),
 }
 
 const faqs = [

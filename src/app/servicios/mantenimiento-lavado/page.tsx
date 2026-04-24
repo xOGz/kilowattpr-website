@@ -4,12 +4,16 @@ import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import QuoteForm from '@/components/QuoteForm'
 import { Wrench, CheckCircle, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Mantenimiento y Lavado de Paneles Solares en Puerto Rico',
   description:
     'Servicio de mantenimiento y lavado de paneles solares en Puerto Rico. Kilowatt PR: cada 6–8 meses estándar, cada 4–6 meses en zonas costeras. Técnicos certificados.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios/mantenimiento-lavado' },
+  ...buildAlternates({
+    es: '/servicios/mantenimiento-lavado',
+    en: '/en/services/maintenance',
+  }),
 }
 
 const faqs = [

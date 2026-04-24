@@ -4,12 +4,16 @@ import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import QuoteForm from '@/components/QuoteForm'
 import { Home, CheckCircle, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Sellado de Techo en Puerto Rico',
   description:
     'Kilowatt PR ofrece sellado e impermeabilización profesional de techos en Puerto Rico. Garantía de 2 años de mano de obra. Servicio previo a instalación solar.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios/sellado-de-techo' },
+  ...buildAlternates({
+    es: '/servicios/sellado-de-techo',
+    en: '/en/services/roof-sealing',
+  }),
 }
 
 const faqs = [

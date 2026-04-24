@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Política de Privacidad',
   description: 'Política de privacidad de Kilowatt PR LLC.',
-  alternates: { canonical: 'https://www.kilowattpr.com/privacidad' },
+  ...buildAlternates({ es: '/privacidad', en: '/en/privacy' }),
 }
 
 export default function PrivacidadPage() {

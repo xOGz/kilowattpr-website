@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import { BookOpen, CheckCircle, Sun, Battery, Shield, Zap } from 'lucide-react'
 import LeadCaptureForm from '@/components/LeadCaptureForm'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Guía Completa: Energía Solar en Puerto Rico 2026 — Descarga Gratis',
   description:
     'Descarga gratis la guía definitiva de energía solar en Puerto Rico. Costos, proceso, baterías, LUMA, mantenimiento y más. Todo en un solo documento.',
-  alternates: { canonical: 'https://www.kilowattpr.com/guia-solar' },
+  ...buildAlternates({ es: '/guia-solar', en: '/en/solar-guide' }),
   openGraph: {
     title: 'Guía Solar Puerto Rico 2026 | Kilowatt PR',
     description:

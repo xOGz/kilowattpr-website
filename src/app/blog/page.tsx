@@ -1,12 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Calendar, User, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Blog Solar — Guías y Consejos sobre Energía Solar en Puerto Rico',
   description:
     'Artículos, guías y consejos sobre energía solar en Puerto Rico. Costos, LUMA Energy, baterías, mantenimiento, huracanes y más. Por el equipo de Kilowatt PR.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog' },
+  ...buildAlternates({ es: '/blog', en: '/en/blog' }),
 }
 
 const posts = [
@@ -113,6 +115,7 @@ const posts = [
 export default function BlogPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Blog', path: '/blog' }]} />
       <section className="bg-navy-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">

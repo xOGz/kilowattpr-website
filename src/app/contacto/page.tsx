@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Contacto — Cotización Gratis de Paneles Solares',
   description:
     'Contacta a Kilowatt PR para tu cotización gratis de paneles solares en Puerto Rico. WhatsApp, teléfono, email. Servicio en todo Puerto Rico.',
-  alternates: { canonical: 'https://www.kilowattpr.com/contacto' },
+  ...buildAlternates({ es: '/contacto', en: '/en/contact' }),
 }
 
 const municipiosList = [
@@ -26,6 +28,7 @@ const serviciosList = [
 export default function ContactoPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Contacto', path: '/contacto' }]} />
       <section className="bg-navy-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">

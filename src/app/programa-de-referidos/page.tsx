@@ -2,12 +2,13 @@ import type { Metadata } from 'next'
 import { Gift, MessageCircle, CheckCircle, Users, DollarSign, ArrowRight } from 'lucide-react'
 import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Programa de Referidos — Gana $500 por Cada Referido',
   description:
     'Refiere a un amigo o familiar a Kilowatt PR y gana $500 por cada instalación completada. Sin límite de referidos. Programa exclusivo para clientes.',
-  alternates: { canonical: 'https://www.kilowattpr.com/programa-de-referidos' },
+  ...buildAlternates({ es: '/programa-de-referidos', en: '/en/referral-program' }),
   openGraph: {
     title: 'Programa de Referidos | Kilowatt PR — Gana $500',
     description:

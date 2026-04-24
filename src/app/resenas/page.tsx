@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Reseñas y Testimonios — 4.9★ en Google',
   description:
     'Lee las experiencias reales de familias y negocios en Puerto Rico que confiaron en Kilowatt PR para su sistema solar. 4.9★ en Google — reseñas verificadas de clientes reales.',
-  alternates: { canonical: 'https://www.kilowattpr.com/resenas' },
+  ...buildAlternates({ es: '/resenas', en: '/en/reviews' }),
   openGraph: {
     title: 'Reseñas y Testimonios | Kilowatt PR',
     description:

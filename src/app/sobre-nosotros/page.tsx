@@ -2,12 +2,14 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { CheckCircle, Award, Users, MapPin, Shield, Zap } from 'lucide-react'
 import { PersonSchema } from '@/components/SchemaOrg'
+import { buildAlternates } from '@/lib/alternates'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Sobre Nosotros — Perito Electricista Licenciado con Década de Experiencia',
   description:
     'Kilowatt PR: fundada por Xavier Acevedo Santiago, perito electricista lic. #21309. Asesoría PE #6083. 4.9★ en Google en Puerto Rico.',
-  alternates: { canonical: 'https://www.kilowattpr.com/sobre-nosotros' },
+  ...buildAlternates({ es: '/sobre-nosotros', en: '/en/about' }),
   openGraph: {
     title: 'Sobre Nosotros | Kilowatt PR',
     description:
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Sobre Nosotros', path: '/sobre-nosotros' }]} />
       <PersonSchema />
 
       {/* Hero */}

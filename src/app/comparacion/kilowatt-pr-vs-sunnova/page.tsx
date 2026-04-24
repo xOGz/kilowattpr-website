@@ -3,11 +3,12 @@ import Link from 'next/link'
 import { CheckCircle, XCircle, AlertTriangle, Shield, Phone, Star } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Kilowatt PR vs Sunnova: ¿Cuál Instalador Solar es Mejor en Puerto Rico?',
   description:
-    'Comparación objetiva entre Kilowatt PR y Sunnova en Puerto Rico. Instalador local con 4.9★ en Google vs cadena nacional en Chapter 11. Precios, garantía, servicio y más.',
+    'Comparación objetiva entre Kilowatt PR y Sunnova en Puerto Rico. Instalador local con 4.9★ en Google vs cadena nacional en Chapter 11 (junio 2025). Precios, garantía, servicio y más.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-sunnova',
   },
@@ -17,7 +18,7 @@ const faqs = [
   {
     question: '¿Qué pasó con Sunnova en Puerto Rico?',
     answer:
-      'Sunnova Energy International se acogió al Capítulo 11 de bancarrota en 2024. Para clientes existentes en Puerto Rico, esto puede significar incertidumbre sobre garantías, servicio post-venta y mantenimiento de sus sistemas. Los contratos de arrendamiento (lease) y PPA pueden verse afectados dependiendo del proceso de reestructuración.',
+      'Sunnova Energy International se acogió al Capítulo 11 de bancarrota el 8 de junio de 2025 (Caso 25-90160, Corte del Distrito Sur de Texas). El plan de reestructuración fue confirmado el 12 de noviembre de 2025. Para clientes existentes en Puerto Rico, esto puede significar incertidumbre sobre garantías, servicio post-venta y mantenimiento de sus sistemas. Los contratos de arrendamiento (lease) y PPA pueden verse afectados dependiendo del proceso de reestructuración.',
   },
   {
     question: '¿Puedo cambiar de Sunnova a Kilowatt PR?',
@@ -55,7 +56,7 @@ const comparaciones: readonly ComparisonRow[] = [
   {
     categoria: 'Estabilidad financiera',
     kilowatt: 'Empresa operativa y en crecimiento',
-    sunnova: 'Se acogió al Capítulo 11 de bancarrota (2024)',
+    sunnova: 'Se acogió al Capítulo 11 de bancarrota (junio 2025)',
     kilowattPositive: true,
     sunnovaPositive: false,
   },
@@ -138,6 +139,12 @@ export default function KilowattVsSunnovaPage() {
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Comparación', path: '/comparacion/por-que-kilowatt-pr' },
+          { name: 'Kilowatt PR vs Sunnova', path: '/comparacion/kilowatt-pr-vs-sunnova' },
+        ]}
+      />
       <ArticleSchema
         title="Kilowatt PR vs Sunnova: ¿Cuál Instalador Solar es Mejor en Puerto Rico?"
         description="Comparación objetiva entre Kilowatt PR y Sunnova en Puerto Rico. Instalador local vs cadena nacional."
@@ -170,10 +177,20 @@ export default function KilowattVsSunnovaPage() {
           <div>
             <p className="font-semibold text-amber-900 mb-1">Nota importante sobre Sunnova</p>
             <p className="text-amber-800 text-sm leading-relaxed">
-              En 2024, Sunnova Energy International Inc. se acogió al Capítulo 11 de bancarrota
-              federal (Chapter 11 bankruptcy). Este es un hecho de registro público. Los clientes
-              existentes de Sunnova en Puerto Rico pueden enfrentar incertidumbre sobre la
-              continuidad de garantías y servicio post-venta durante el proceso de reestructuración.
+              El 8 de junio de 2025, Sunnova Energy International Inc. se acogió al{' '}
+              <a
+                href="https://restructuring.ra.kroll.com/Sunnova/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline font-medium hover:text-amber-900"
+              >
+                Capítulo 11 de bancarrota federal
+              </a>{' '}
+              (Caso No. 25-90160, Corte del Distrito Sur de Texas). El plan de
+              reestructuración fue confirmado el 12 de noviembre de 2025 con fecha
+              efectiva del 14 de noviembre de 2025. Los clientes existentes de Sunnova
+              en Puerto Rico pueden enfrentar incertidumbre sobre la continuidad de
+              garantías y servicio post-venta durante este proceso.
             </p>
           </div>
         </div>

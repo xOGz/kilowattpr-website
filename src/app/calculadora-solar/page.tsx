@@ -2,12 +2,13 @@ import type { Metadata } from 'next'
 import { FAQSchema } from '@/components/SchemaOrg'
 import SolarCalculator from '@/components/SolarCalculator'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Calculadora Solar — ¿Cuánto Puedes Ahorrar con Energía Solar?',
   description:
     'Calcula tu ahorro solar en Puerto Rico. Ingresa tu factura de LUMA y descubre el tamaño de sistema recomendado, costo estimado y retorno de inversión.',
-  alternates: { canonical: 'https://www.kilowattpr.com/calculadora-solar' },
+  ...buildAlternates({ es: '/calculadora-solar', en: '/en/solar-calculator' }),
   openGraph: {
     title: 'Calculadora Solar | Kilowatt PR',
     description:

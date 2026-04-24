@@ -3,18 +3,17 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?',
   description:
     'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales desde $13,000 en adelante, comerciales, con y sin batería. Financiamiento disponible.',
-  alternates: {
-    canonical: 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
-    languages: {
-      'es': 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
-      'en': 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
-    },
-  },
+  ...buildAlternates({
+    es: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
+    en: '/en/blog/how-much-does-solar-cost-puerto-rico-2026',
+  }),
 }
 
 const faqs = [
@@ -37,12 +36,24 @@ const faqs = [
 ]
 
 export default function CuantoCuestaPage() {
-  const publishDate = '2026-01-15'
-  const modifyDate = '2026-01-15'
+  const publishDate: string = '2026-01-15'
+  const modifyDate: string = '2026-04-23'
   const url = 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026'
+  const wasUpdated = modifyDate !== publishDate
+  const modifyDateFormatted = new Date(modifyDate).toLocaleDateString('es-PR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: 'Blog', path: '/blog' },
+          { name: '¿Cuánto cuesta la energía solar en Puerto Rico en 2026?', path: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026' },
+        ]}
+      />
       <ArticleSchema
         title="¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?"
         description="Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales, comerciales, con y sin batería."
@@ -67,6 +78,12 @@ export default function CuantoCuestaPage() {
               <Link href="/equipo/julio-santiago-perez" className="hover:text-solar-yellow transition-colors">Ing. Julio A. Santiago Pérez, PE</Link>
             </div>
           </div>
+
+          {wasUpdated && (
+            <div className="text-xs text-gray-500 mb-4">
+              Última actualización: <time dateTime={modifyDate}>{modifyDateFormatted}</time>
+            </div>
+          )}
 
           {/* Language switcher */}
           <div className="flex items-center gap-3 text-sm text-on-surface-variant mb-4">

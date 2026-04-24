@@ -1,14 +1,15 @@
 export function OrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': ['Organization', 'LocalBusiness', 'Electrician'],
+    '@type': ['Organization', 'LocalBusiness', 'Electrician', 'SolarEnergyContractor'],
     '@id': 'https://www.kilowattpr.com/#organization',
     name: 'Kilowatt PR LLC',
     alternateName: ['Kilowatt PR', 'Kilowatt Puerto Rico'],
     url: 'https://www.kilowattpr.com',
     logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo_transparent.png' },
     description:
-      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Over 30 years of experience installing residential and commercial solar energy systems, battery backup, and electrical services across all 78 municipalities of Puerto Rico.',
+      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Engineering led by a licensed PE with over 50 years of experience; install team with over a decade of on-the-ground installation experience across all 78 municipalities of Puerto Rico. Services include residential and commercial solar energy systems, battery backup, and electrical contracting.',
+    priceRange: '$$$',
     knowsAbout: [
       'Solar panel installation',
       'Solar energy systems',

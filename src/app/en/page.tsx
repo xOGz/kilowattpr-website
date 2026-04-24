@@ -11,23 +11,17 @@ import EnglishHero from '@/components/EnglishHero'
 import EnglishTrustBar from '@/components/EnglishTrustBar'
 import EnglishTestimonialsSection from '@/components/EnglishTestimonialsSection'
 import EnglishCTAHeading from '@/components/EnglishCTAHeading'
+import { buildEnAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Solar Panels & Electrical Contractor in Puerto Rico',
   description:
-    'Solar panel installation from $13,000 in Puerto Rico. Licensed electricians, battery backup, net metering. 4.9★ on Google — 10+ verified reviews. Free quote.',
-  alternates: {
-    canonical: 'https://www.kilowattpr.com/en',
-    languages: {
-      'es': 'https://www.kilowattpr.com',
-      'en': 'https://www.kilowattpr.com/en',
-      'x-default': 'https://www.kilowattpr.com',
-    },
-  },
+    'Solar panel installation from $13,000 in Puerto Rico. Licensed PE engineer with 50+ years of experience, install team with over a decade on the island. 4.9★ on Google — 10+ verified reviews. Free quote.',
+  ...buildEnAlternates({ es: '/', en: '/en' }),
   openGraph: {
     title: 'Kilowatt PR | Solar Panels from $13,000 in Puerto Rico',
     description:
-      'Licensed electricians with 30+ years. Solar installation, batteries, electrical contractor. 4.9★ on Google. Free quote today.',
+      'Solar engineering by a PE with 50+ years of experience, licensed electricians with over a decade installing in Puerto Rico. Batteries, electrical contractor. 4.9★ on Google. Free quote today.',
     url: 'https://www.kilowattpr.com/en',
     locale: 'en_US',
   },

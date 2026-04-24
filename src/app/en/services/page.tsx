@@ -1,18 +1,13 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Sun, Battery, Home, Wrench, ArrowRight } from 'lucide-react'
+import { buildEnAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Solar Energy Services in Puerto Rico',
   description:
     'Kilowatt PR offers solar panel installation, battery backup systems, roof sealing, and maintenance across Puerto Rico. Certified technicians, 25-year warranty.',
-  alternates: {
-    canonical: 'https://www.kilowattpr.com/en/services',
-    languages: {
-      'es': 'https://www.kilowattpr.com/servicios',
-      'en': 'https://www.kilowattpr.com/en/services',
-    },
-  },
+  ...buildEnAlternates({ es: '/servicios', en: '/en/services' }),
 }
 
 const services = [

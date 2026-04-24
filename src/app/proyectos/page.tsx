@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 import { MapPin } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Proyectos Solares en Puerto Rico',
   description:
     'Galería de proyectos de instalación de paneles solares en Puerto Rico completados por Kilowatt PR LLC. Residencial, comercial y sistemas con batería.',
-  alternates: { canonical: 'https://www.kilowattpr.com/proyectos' },
+  ...buildAlternates({ es: '/proyectos', en: '/en/projects' }),
 }
 
 const proyectos = [

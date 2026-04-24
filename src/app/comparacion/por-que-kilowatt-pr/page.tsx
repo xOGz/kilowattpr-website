@@ -3,14 +3,16 @@ import Link from 'next/link'
 import { Check, X, Star, Shield, Clock, MapPin, Phone } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: '¿Por Qué Elegir Kilowatt PR? — Comparación con la Competencia',
   description:
     'Compara a Kilowatt PR con cadenas nacionales e instaladores locales típicos. Perito electricista licenciado, ingeniero PE, precios transparentes desde $13K, batería incluida, 4.9★ en Google.',
-  alternates: {
-    canonical: 'https://www.kilowattpr.com/comparacion/por-que-kilowatt-pr',
-  },
+  ...buildAlternates({
+    es: '/comparacion/por-que-kilowatt-pr',
+    en: '/en/comparison/why-kilowatt-pr',
+  }),
 }
 
 const faqs = [

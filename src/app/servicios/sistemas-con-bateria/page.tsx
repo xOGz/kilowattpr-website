@@ -4,12 +4,16 @@ import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import QuoteForm from '@/components/QuoteForm'
 import { Battery, CheckCircle, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Sistemas Solares con Batería en Puerto Rico',
   description:
     'Independencia energética total durante los apagones de LUMA Energy. Sistemas solares con batería instalados por Kilowatt PR en toda Puerto Rico. Hasta 24 horas de respaldo.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios/sistemas-con-bateria' },
+  ...buildAlternates({
+    es: '/servicios/sistemas-con-bateria',
+    en: '/en/services/battery-backup-systems',
+  }),
 }
 
 const faqs = [

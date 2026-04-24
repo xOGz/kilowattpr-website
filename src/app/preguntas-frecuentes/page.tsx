@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { MessageCircle, Phone } from 'lucide-react'
 import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Preguntas Frecuentes sobre Energía Solar en Puerto Rico',
@@ -167,6 +168,7 @@ const allFaqs = [
 export default function PreguntasFrecuentesPage() {
   return (
     <>
+      <BreadcrumbSchema items={[{ name: 'Preguntas Frecuentes', path: '/preguntas-frecuentes' }]} />
       <FAQSchema faqs={allFaqs} />
 
       {/* Hero */}
