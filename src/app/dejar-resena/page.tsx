@@ -12,11 +12,10 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 }
 
-// TODO: reemplaza con el link directo desde Google Business Profile → "Share review form"
-// El formato recomendado es: https://g.page/r/XXXXXXXXXXX/review
-// Mientras tanto este link abre el perfil de Google Maps de Kilowatt PR donde el
-// usuario puede dejar su reseña desde ahí.
-const GOOGLE_REVIEW_URL = 'https://www.google.com/maps/place/Kilowatt+PR+LLC'
+// Direct deep-link to Google Business Profile write-review form.
+// Tapping this opens the 5-star review form for Kilowatt PR LLC immediately,
+// no extra clicks. Source: GBP → "Solicitar más reseñas" → "Copiar enlace".
+const GOOGLE_REVIEW_URL = 'https://g.page/r/CTlRehNeXdFFEBM/review'
 
 export default function DejarResenaPage() {
   return (
@@ -47,7 +46,8 @@ export default function DejarResenaPage() {
               Deja tu reseña en Google
             </h2>
             <p className="text-on-surface-variant mb-6">
-              Al dar clic te lleva directo a nuestro perfil de Google Maps donde puedes dejar tu reseña y estrellas.
+              Al dar clic se abre directamente el formulario de reseña de Google. Selecciona
+              las estrellas, escribe tu experiencia y listo — toma menos de 1 minuto.
             </p>
             <a
               href={GOOGLE_REVIEW_URL}
