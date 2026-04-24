@@ -17,7 +17,7 @@ import CTAHeading from '@/components/CTAHeading'
 export const metadata: Metadata = {
   title: 'Paneles Solares y Contratista Eléctrico en Puerto Rico',
   description:
-    'Instalación de paneles solares desde $13,000 en Puerto Rico. Contratista eléctrico con 30+ años. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
+    'Instalación de paneles solares desde $13,000 en Puerto Rico. Ingeniero PE con más de 50 años, equipo con más de una década instalando solar. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
   alternates: {
     canonical: 'https://www.kilowattpr.com',
     languages: {
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kilowatt PR | Paneles Solares desde $13,000 en Puerto Rico',
     description:
-      'Peritos electricistas con 30+ años. Instalación solar, baterías, contratista eléctrico. 4.9★ en Google. Cotización gratis hoy.',
+      'Ingeniería solar por PE con más de 50 años, peritos electricistas con más de una década instalando en Puerto Rico. Baterías, contratista eléctrico. 4.9★ en Google. Cotización gratis hoy.',
     url: 'https://www.kilowattpr.com',
   },
 }

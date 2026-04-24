@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Facebook, Instagram, Clock } from 'lucide-react'
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Clock } from 'lucide-react'
 
 export default function Footer() {
   const pathname = usePathname()
@@ -43,6 +43,15 @@ export default function Footer() {
                 className="text-on-surface-variant hover:text-primary-container transition-colors duration-200"
               >
                 <Instagram size={20} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/kilowatt-pr-llc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="text-on-surface-variant hover:text-primary-container transition-colors duration-200"
+              >
+                <Linkedin size={20} />
               </a>
             </div>
           </div>
