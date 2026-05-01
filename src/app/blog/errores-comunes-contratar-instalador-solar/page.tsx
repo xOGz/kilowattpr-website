@@ -84,7 +84,7 @@ export default function ErroresComunesPage() {
           <h2>Error #1: Elegir al Instalador Más Barato</h2>
 
           <p>
-            Es comprensible querer ahorrar dinero, especialmente en una inversión de $15,000
+            Es comprensible querer ahorrar dinero, especialmente en una inversión de $11,950
             a $35,000. Pero en la industria solar de Puerto Rico, la cotización más barata
             casi siempre es la más cara a largo plazo.
           </p>

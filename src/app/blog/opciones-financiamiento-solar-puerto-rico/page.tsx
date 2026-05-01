@@ -87,7 +87,7 @@ export default function FinanciamientoSolarPage() {
           <p>
             Antes de hablar de financiamiento, es importante entender los rangos de precio. Un
             sistema solar residencial en Puerto Rico en 2026 cuesta entre{' '}
-            <strong>$13,000 y $35,000</strong>, dependiendo del tamaño del sistema, si incluye
+            <strong>$11,950 y $35,000</strong>, dependiendo del tamaño del sistema, si incluye
             batería de respaldo y las condiciones específicas de tu propiedad. Para una guía
             detallada de precios, consulta nuestro artículo sobre{' '}
             <Link href="/blog/cuanto-cuesta-energia-solar-puerto-rico-2026" className="text-solar-yellow hover:underline">
@@ -99,7 +99,7 @@ export default function FinanciamientoSolarPage() {
             <h3 className="font-bold text-navy-dark mb-4">Rangos de Precio Referenciales</h3>
             <div className="space-y-3">
               {[
-                { sistema: 'Sistema básico (4 kW + 10 kWh batería)', precio: 'Desde $13,000' },
+                { sistema: 'Sistema básico (4 kW + 10 kWh batería)', precio: 'Desde $11,950' },
                 { sistema: 'Sistema mediano (8 kW + batería)', precio: 'Desde $20,000' },
                 { sistema: 'Sistema premium (10 kW + batería)', precio: 'Desde $28,000' },
                 { sistema: 'Sistema comercial (20 kW+)', precio: 'Cotización personalizada' },

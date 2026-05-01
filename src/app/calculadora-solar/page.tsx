@@ -26,7 +26,7 @@ const faqs = [
   {
     question: '¿El costo estimado incluye batería?',
     answer:
-      'Los sistemas desde $13,000 incluyen batería de respaldo básica. Sistemas más grandes pueden requerir baterías adicionales. Durante la consulta gratis te presentamos opciones con diferentes capacidades de respaldo (12, 24, o 48 horas).',
+      'Los sistemas desde $11,950 incluyen batería de respaldo básica. Sistemas más grandes pueden requerir baterías adicionales. Durante la consulta gratis te presentamos opciones con diferentes capacidades de respaldo (12, 24, o 48 horas).',
   },
   {
     question: '¿Cómo se calcula el retorno de inversión?',

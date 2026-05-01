@@ -9,7 +9,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?',
   description:
-    'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales desde $13,000 en adelante, comerciales, con y sin batería. Financiamiento disponible.',
+    'Guía completa de costos de energía solar en Puerto Rico 2026. Sistemas residenciales desde $11,950 en adelante, comerciales, con y sin batería. Financiamiento disponible.',
   ...buildAlternates({
     es: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
     en: '/en/blog/how-much-does-solar-cost-puerto-rico-2026',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: '¿Cuánto cuesta un sistema solar en Puerto Rico?',
-    answer: 'Un sistema solar residencial de 4 kW de solar y 10 kWh en batería en Puerto Rico tiene un costo desde $13,000 en adelante instalado, incluyendo permisos y la interconexión con LUMA Energy. Opciones de financiamiento están disponibles para reducir el desembolso inicial.',
+    answer: 'Un sistema solar residencial de 4 kW de solar y 10 kWh en batería en Puerto Rico tiene un costo desde $11,950 en adelante instalado, incluyendo permisos y la interconexión con LUMA Energy. Opciones de financiamiento están disponibles para reducir el desembolso inicial.',
   },
   {
     question: '¿Vale la pena instalar paneles solares en Puerto Rico en 2026?',
@@ -111,7 +111,7 @@ export default function CuantoCuestaPage() {
 
           <p>
             El costo de un sistema solar residencial en Puerto Rico en 2026 comienza desde
-            <strong> $13,000 en adelante</strong>, dependiendo del tamaño del sistema, el tipo de
+            <strong> $11,950 en adelante</strong>, dependiendo del tamaño del sistema, el tipo de
             equipo y si incluye almacenamiento de batería. Según datos del{' '}
             <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
               Laboratorio Nacional de Energía Renovable (NREL)
@@ -123,7 +123,7 @@ export default function CuantoCuestaPage() {
             <h3 className="font-bold text-navy-dark mb-4">Rangos de Precio por Tipo de Sistema</h3>
             <div className="space-y-3">
               {[
-                { sistema: 'Sistema 4 kW solar + 10 kWh batería', precio: 'Desde $13,000' },
+                { sistema: 'Sistema 4 kW solar + 10 kWh batería', precio: 'Desde $11,950' },
                 { sistema: 'Sistema Mediano 8kW + Batería', precio: 'Desde $20,000' },
                 { sistema: 'Sistema Premium 10kW + Batería', precio: 'Desde $28,000' },
                 { sistema: 'Sistema Comercial 20kW+', precio: 'Cotización personalizada' },

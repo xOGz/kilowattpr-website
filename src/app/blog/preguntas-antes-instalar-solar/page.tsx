@@ -67,7 +67,7 @@ export default function PreguntasAntesInstalarPage() {
           </h1>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
-            Instalar paneles solares es una inversión de $15,000 a $35,000. No es una
+            Instalar paneles solares es una inversión de $11,950 a $35,000. No es una
             decisión que debas tomar a la ligera ni basándote únicamente en el precio
             más bajo. Antes de firmar con cualquier empresa solar en Puerto Rico, haz
             estas 10 preguntas. Las respuestas te dirán si estás frente a un
@@ -206,7 +206,7 @@ export default function PreguntasAntesInstalarPage() {
           <h2>6. ¿Qué opciones de financiamiento tienen?</h2>
 
           <p>
-            No todos pueden pagar $15,000–$35,000 de contado, y no deberían tener
+            No todos pueden pagar $11,950–$35,000 de contado, y no deberían tener
             que hacerlo. Un instalador serio ofrece opciones de financiamiento claras
             y transparentes. Pregunta por las tasas de interés, los plazos disponibles,
             si hay penalidad por pago adelantado y cuál es el pago mensual estimado.

@@ -63,7 +63,7 @@ export function OrganizationSchema() {
           itemOffered: {
             '@type': 'Service',
             name: 'Instalación de Paneles Solares',
-            description: 'Sistemas fotovoltaicos residenciales y comerciales desde $13,000',
+            description: 'Sistemas fotovoltaicos residenciales y comerciales desde $11,950',
             areaServed: { '@type': 'State', name: 'Puerto Rico' },
             provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
@@ -147,7 +147,7 @@ export function LocalBusinessSchema() {
     '@id': 'https://www.kilowattpr.com/#localbusiness',
     name: 'Kilowatt PR LLC',
     description:
-      'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $13,000, baterías de respaldo, reparación de bases de medidores. 4.9★ en Google.',
+      'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $11,950, baterías de respaldo, reparación de bases de medidores. 4.9★ en Google.',
     url: 'https://www.kilowattpr.com',
     telephone: '+1-787-431-2275',
     email: 'info@kilowattpr.com',

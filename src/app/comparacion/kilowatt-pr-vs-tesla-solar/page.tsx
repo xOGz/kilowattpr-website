@@ -27,7 +27,7 @@ const faqs = [
   {
     question: '¿Cuál es la diferencia de precio entre Tesla Solar y Kilowatt PR?',
     answer:
-      'Kilowatt PR ofrece sistemas solares con batería incluida desde $13,000, con cotización detallada y desglose completo de costos. Tesla utiliza un modelo de precio fijo por vatio que puede variar significativamente según disponibilidad y logística a Puerto Rico. Con Kilowatt PR, sabes exactamente lo que pagas desde el primer día.',
+      'Kilowatt PR ofrece sistemas solares con batería incluida desde $11,950, con cotización detallada y desglose completo de costos. Tesla utiliza un modelo de precio fijo por vatio que puede variar significativamente según disponibilidad y logística a Puerto Rico. Con Kilowatt PR, sabes exactamente lo que pagas desde el primer día.',
   },
   {
     question: '¿Qué pasa si necesito servicio técnico después de instalar con Tesla en Puerto Rico?',
@@ -272,7 +272,7 @@ export default function KilowattVsTeslaPage() {
           <h3>Precios Transparentes con Batería Incluida</h3>
           <p>
             Kilowatt PR ofrece sistemas solares completos con batería de respaldo incluida
-            desde $13,000. Cada cotización incluye un desglose detallado de todos los costos.
+            desde $11,950. Cada cotización incluye un desglose detallado de todos los costos.
             Sin sorpresas, sin cargos ocultos, sin escaladores de precio. Tesla maneja un
             modelo de precio por vatio que puede variar y donde la batería se cotiza por
             separado.

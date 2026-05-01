@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'How Much Does Solar Energy Cost in Puerto Rico in 2026?',
   description:
-    'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems from $13,000 and up, commercial, with and without battery. Financing available.',
+    'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems from $11,950 and up, commercial, with and without battery. Financing available.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
     languages: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'How much does a solar system cost in Puerto Rico?',
-    answer: 'A residential solar system with 4 kW solar and 10 kWh battery in Puerto Rico costs from $13,000 and up installed, including permits and LUMA Energy interconnection. Financing options are available to reduce the upfront cost.',
+    answer: 'A residential solar system with 4 kW solar and 10 kWh battery in Puerto Rico costs from $11,950 and up installed, including permits and LUMA Energy interconnection. Financing options are available to reduce the upfront cost.',
   },
   {
     question: 'Is it worth installing solar panels in Puerto Rico in 2026?',
@@ -101,7 +101,7 @@ export default function SolarCostPage() {
 
           <p>
             The cost of a residential solar system in Puerto Rico in 2026 starts from
-            <strong> $13,000 and up</strong>, depending on the system size, equipment type,
+            <strong> $11,950 and up</strong>, depending on the system size, equipment type,
             and whether it includes battery storage. According to the{' '}
             <a href="https://www.nrel.gov/solar/market-research-analysis.html" target="_blank" rel="noopener noreferrer">
               National Renewable Energy Laboratory (NREL)
@@ -113,7 +113,7 @@ export default function SolarCostPage() {
             <h3 className="font-bold text-navy-dark mb-4">Price Ranges by System Type</h3>
             <div className="space-y-3">
               {[
-                { sistema: '4 kW Solar + 10 kWh Battery System', precio: 'From $13,000' },
+                { sistema: '4 kW Solar + 10 kWh Battery System', precio: 'From $11,950' },
                 { sistema: 'Mid-Size 8kW System + Battery', precio: 'From $20,000' },
                 { sistema: 'Premium 10kW System + Battery', precio: 'From $28,000' },
                 { sistema: 'Commercial 20kW+', precio: 'Custom quote' },

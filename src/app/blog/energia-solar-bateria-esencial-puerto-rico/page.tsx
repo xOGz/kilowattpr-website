@@ -113,7 +113,7 @@ export default function BateriaEsencialPage() {
           </p>
 
           <p>
-            Esto significa que sin batería, tu inversión solar de $15,000 a $30,000 no te
+            Esto significa que sin batería, tu inversión solar de $11,950 a $30,000 no te
             protege durante los apagones, que es precisamente cuando más necesitas la energía.
             En un lugar como Puerto Rico, esto hace que un sistema sin batería sea incompleto.
           </p>

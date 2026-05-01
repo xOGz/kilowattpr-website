@@ -52,8 +52,7 @@ export default function ContactPage() {
 
               <div className="space-y-5 mb-8">
                 {[
-                  { icon: Phone, label: 'Phone', value: '+1-787-431-2275', href: 'tel:+17874312275' },
-                  { icon: MessageCircle, label: 'WhatsApp (preferred)', value: '+1-787-431-2275', href: 'https://wa.me/17874312275' },
+                  { icon: MessageCircle, label: 'Phone / WhatsApp (preferred)', value: '+1-787-431-2275', href: 'https://wa.me/17874312275' },
                   { icon: Mail, label: 'Email', value: 'info@kilowattpr.com', href: 'mailto:info@kilowattpr.com' },
                   { icon: MapPin, label: 'Address', value: 'HC 3 Box 31767, Aguada, PR 00602', href: '#map' },
                   { icon: Clock, label: 'Hours', value: 'Monday\u2013Friday, 8:00 AM \u2013 5:00 PM', href: null },

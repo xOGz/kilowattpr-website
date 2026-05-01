@@ -32,7 +32,7 @@ const faqs = [
   {
     question: 'Does the estimated cost include a battery?',
     answer:
-      'Systems starting at $13,000 include a basic backup battery. Larger systems may require additional batteries. During the free consultation, we present options with different backup capacities (12, 24, or 48 hours).',
+      'Systems starting at $11,950 include a basic backup battery. Larger systems may require additional batteries. During the free consultation, we present options with different backup capacities (12, 24, or 48 hours).',
   },
   {
     question: 'How is the return on investment calculated?',

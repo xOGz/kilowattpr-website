@@ -25,12 +25,12 @@ import CTAHeading from '@/components/CTAHeading'
 export const metadata: Metadata = {
   title: 'Paneles Solares en Puerto Rico — Kilowatt PR | Aguada · 78 Municipios',
   description:
-    'Kilowatt PR LLC — instalación de paneles solares y contratista eléctrico en Puerto Rico. Basados en Aguada, atendemos los 78 municipios. Sistemas desde $13,000, ingeniería por PE #6083 (50+ años), instalación por Lic. #21309. 4.9★ en Google. Cotización gratis.',
+    'Instalación solar en Puerto Rico desde $11,950. Contratista eléctrico licenciado. PE #6083 · Lic. #21309. 78 municipios desde Aguada. 4.9★ en Google.',
   ...buildAlternates({ es: '/', en: '/en' }),
   openGraph: {
     title: 'Kilowatt PR | Paneles Solares en Puerto Rico — Aguada · 78 Municipios',
     description:
-      'Empresa solar #1 en Puerto Rico desde Aguada. Sistemas desde $13,000, ingeniería por PE licenciado con 50+ años, instalación por perito electricista licenciado con más de una década. 4.9★ en Google. Cotización gratis.',
+      'Empresa solar #1 en Puerto Rico desde Aguada. Sistemas desde $11,950, ingeniería por PE licenciado con 50+ años, instalación por perito electricista licenciado con más de una década. 4.9★ en Google. Cotización gratis.',
     url: 'https://www.kilowattpr.com',
   },
 }
@@ -107,7 +107,7 @@ const faqs = [
   {
     question: '¿Cuánto cuesta un sistema solar en Puerto Rico?',
     answer:
-      'Un sistema solar residencial en Puerto Rico tiene un costo promedio de $13,000 en adelante, dependiendo del consumo eléctrico del hogar y el tamaño del sistema requerido o deseado. Los sistemas más populares comienzan en 4 kW de solar y 10 kWh en batería, y para residencial hemos trabajado hasta 25 kW en solar y 64+ kWh. Durante la consulta gratis te presentamos un análisis detallado del costo y los ahorros proyectados a 7 años.',
+      'Un sistema solar residencial en Puerto Rico tiene un costo promedio de $11,950 en adelante, dependiendo del consumo eléctrico del hogar y el tamaño del sistema requerido o deseado. Los sistemas más populares comienzan en 4 kW de solar y 10 kWh en batería, y para residencial hemos trabajado hasta 25 kW en solar y 64+ kWh. Durante la consulta gratis te presentamos un análisis detallado del costo y los ahorros proyectados a 7 años.',
   },
   {
     question: '¿Cuánto tiempo tarda la instalación solar en Puerto Rico?',

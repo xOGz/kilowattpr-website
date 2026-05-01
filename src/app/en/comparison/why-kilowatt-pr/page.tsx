@@ -26,7 +26,7 @@ const faqs = [
   {
     question: 'Why do you include battery in all systems?',
     answer:
-      'In Puerto Rico, battery backup is not a luxury — it is a necessity. With the instability of the LUMA Energy grid and hurricane season, a solar system without a battery leaves you without power during outages. That is why all our systems starting at $13,000 include battery backup.',
+      'In Puerto Rico, battery backup is not a luxury — it is a necessity. With the instability of the LUMA Energy grid and hurricane season, a solar system without a battery leaves you without power during outages. That is why all our systems starting at $11,950 include battery backup.',
   },
   {
     question: 'What does "free 3-month inspection" mean?',
@@ -314,7 +314,7 @@ export default function WhyKilowattPage() {
           </h2>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Request a free quote with a complete cost breakdown. Solar systems
-            with battery included starting at $13,000. No commitments, no fine print.
+            with battery included starting at $11,950. No commitments, no fine print.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

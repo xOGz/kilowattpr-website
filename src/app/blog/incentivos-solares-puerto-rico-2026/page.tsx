@@ -185,7 +185,7 @@ export default function HurricanePreparationPage() {
             <li><strong>Equipos médicos:</strong> Pacientes que dependían de electricidad para CPAP, oxígeno o insulina refrigerada enfrentaron emergencias de salud</li>
           </ul>
           <p>
-            Un sistema solar con batería que cuesta $15,000-$25,000 se paga solo durante el
+            Un sistema solar con batería que cuesta $11,950-$25,000 se paga solo durante el
             primer huracán en tranquilidad, seguridad y alimentos que no se pierden — además
             de reducir tu factura de LUMA hasta un 95% cada mes del año.
           </p>

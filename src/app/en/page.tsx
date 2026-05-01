@@ -16,10 +16,10 @@ import { buildEnAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Solar Panels & Electrical Contractor in Puerto Rico',
   description:
-    'Solar panel installation from $13,000 in Puerto Rico. Licensed PE engineer with 50+ years of experience, install team with over a decade on the island. 4.9★ on Google — 10+ verified reviews. Free quote.',
+    'Solar panel installation from $11,950 in Puerto Rico. Licensed PE engineer with 50+ years of experience, install team with over a decade on the island. 4.9★ on Google — 10+ verified reviews. Free quote.',
   ...buildEnAlternates({ es: '/', en: '/en' }),
   openGraph: {
-    title: 'Kilowatt PR | Solar Panels from $13,000 in Puerto Rico',
+    title: 'Kilowatt PR | Solar Panels from $11,950 in Puerto Rico',
     description:
       'Solar engineering by a PE with 50+ years of experience, licensed electricians with over a decade installing in Puerto Rico. Batteries, electrical contractor. 4.9★ on Google. Free quote today.',
     url: 'https://www.kilowattpr.com/en',
@@ -99,7 +99,7 @@ const faqs = [
   {
     question: 'How much does a solar system cost in Puerto Rico?',
     answer:
-      'A residential solar system in Puerto Rico starts at $13,000 and up, depending on your home\'s electricity consumption and the system size required or desired. The most popular systems start at 4 kW solar and 10 kWh battery, and for residential we\'ve worked up to 25 kW solar and 64+ kWh. During the free consultation, we present a detailed analysis of the cost and projected savings over 7 years.',
+      'A residential solar system in Puerto Rico starts at $11,950 and up, depending on your home\'s electricity consumption and the system size required or desired. The most popular systems start at 4 kW solar and 10 kWh battery, and for residential we\'ve worked up to 25 kW solar and 64+ kWh. During the free consultation, we present a detailed analysis of the cost and projected savings over 7 years.',
   },
   {
     question: 'How long does solar installation take in Puerto Rico?',

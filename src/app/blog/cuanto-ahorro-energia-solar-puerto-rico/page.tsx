@@ -110,7 +110,7 @@ export default function CuantoAhorroPage() {
               {[
                 { concepto: 'Factura actual de LUMA', valor: '$200/mes' },
                 { concepto: 'Tamaño del sistema recomendado', valor: '~6 kW' },
-                { concepto: 'Costo estimado del sistema', valor: 'Desde $15,000' },
+                { concepto: 'Costo estimado del sistema', valor: 'Desde $11,950' },
                 { concepto: 'Nueva factura estimada de LUMA', valor: '~$30/mes' },
                 { concepto: 'Ahorro mensual estimado', valor: '~$170/mes' },
                 { concepto: 'Ahorro anual estimado', valor: '~$2,040/año' },

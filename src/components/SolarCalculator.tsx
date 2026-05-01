@@ -6,7 +6,7 @@ import { Sun, Battery, DollarSign, Clock, MessageCircle } from 'lucide-react'
 const LUMA_RATE_PER_KWH = 0.27
 const SOLAR_PRODUCTION_KWH_PER_KW_YEAR = 1600
 const PANEL_COST_PER_KW = 1625
-const BASE_SYSTEM_COST = 13000
+const BASE_SYSTEM_COST = 11950
 const ANNUAL_LUMA_INCREASE = 0.03
 
 interface CalculatorResult {

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Preguntas Frecuentes | Kilowatt PR',
     description:
-      'Todo lo que necesitas saber sobre energía solar en Puerto Rico: costos desde $13,000, proceso de instalación, LUMA y más.',
+      'Todo lo que necesitas saber sobre energía solar en Puerto Rico: costos desde $11,950, proceso de instalación, LUMA y más.',
     url: 'https://www.kilowattpr.com/preguntas-frecuentes',
   },
 }
@@ -21,7 +21,7 @@ const costosFinanciamiento = [
   {
     question: '¿Cuánto cuesta un sistema de paneles solares en Puerto Rico?',
     answer:
-      'Los sistemas solares residenciales comienzan desde $13,000. El precio final depende del consumo eléctrico de tu hogar, la cantidad de paneles necesarios y si incluyes batería de respaldo. En Kilowatt PR ofrecemos cotización gratuita y sin compromiso.',
+      'Los sistemas solares residenciales comienzan desde $11,950. El precio final depende del consumo eléctrico de tu hogar, la cantidad de paneles necesarios y si incluyes batería de respaldo. En Kilowatt PR ofrecemos cotización gratuita y sin compromiso.',
   },
   {
     question: '¿Qué opciones de financiamiento están disponibles?',

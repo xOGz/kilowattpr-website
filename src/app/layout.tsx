@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Kilowatt PR',
   },
   description:
-    'Instalación de paneles solares desde $13,000 en Puerto Rico. Ingeniero PE con más de 50 años, equipo con más de una década instalando solar. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
+    'Instalación solar en Puerto Rico desde $11,950. Contratista eléctrico licenciado. PE #6083 · Lic. #21309. 78 municipios desde Aguada. 4.9★ en Google.',
   openGraph: {
     type: 'website',
     locale: 'es_PR',

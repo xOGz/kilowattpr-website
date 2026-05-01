@@ -24,7 +24,7 @@ const faqs = [
   {
     question: '¿Por qué incluyen batería en todos los sistemas?',
     answer:
-      'En Puerto Rico, la batería de respaldo no es un lujo — es una necesidad. Con la inestabilidad de la red de LUMA Energy y la temporada de huracanes, un sistema solar sin batería te deja sin energía durante apagones. Por eso todos nuestros sistemas desde $13,000 incluyen batería de respaldo.',
+      'En Puerto Rico, la batería de respaldo no es un lujo — es una necesidad. Con la inestabilidad de la red de LUMA Energy y la temporada de huracanes, un sistema solar sin batería te deja sin energía durante apagones. Por eso todos nuestros sistemas desde $11,950 incluyen batería de respaldo.',
   },
   {
     question: '¿Qué significa "inspección 3 meses gratis"?',
@@ -312,7 +312,7 @@ export default function PorQueKilowattPage() {
           </h2>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Solicita una cotización gratuita con desglose completo de costos. Sistemas solares
-            con batería incluida desde $13,000. Sin compromisos, sin letra pequeña.
+            con batería incluida desde $11,950. Sin compromisos, sin letra pequeña.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

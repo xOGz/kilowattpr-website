@@ -85,7 +85,7 @@ export default function MejorInstaladorPage() {
           <h2>Por Qué Es Importante Elegir Bien</h2>
 
           <p>
-            Instalar paneles solares es una inversión de entre $13,000 y $35,000 — probablemente
+            Instalar paneles solares es una inversión de entre $11,950 y $35,000 — probablemente
             una de las compras más grandes que harás para tu hogar después de la propia casa. A
             diferencia de comprar un electrodoméstico, un sistema solar requiere diseño profesional,
             permisos gubernamentales, instalación técnica y coordinación con LUMA Energy para la
