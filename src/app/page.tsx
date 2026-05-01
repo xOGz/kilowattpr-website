@@ -8,7 +8,14 @@ import {
 import { buildAlternates } from '@/lib/alternates'
 import QuoteForm from '@/components/QuoteForm'
 import SolarCalculator from '@/components/SolarCalculator'
-import { LocalBusinessSchema, FAQSchema } from '@/components/SchemaOrg'
+import {
+  LocalBusinessSchema,
+  FAQSchema,
+  XavierPersonSchema,
+  PersonSchema,
+  KristenPersonSchema,
+  BreadcrumbSchema,
+} from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import HeroWithTextRotate from '@/components/HeroWithTextRotate'
 import TestimonialsSection from '@/components/TestimonialsSection'
@@ -16,14 +23,14 @@ import TrustBar from '@/components/TrustBar'
 import CTAHeading from '@/components/CTAHeading'
 
 export const metadata: Metadata = {
-  title: 'Paneles Solares y Contratista Eléctrico en Puerto Rico',
+  title: 'Paneles Solares en Puerto Rico — Kilowatt PR | Aguada · 78 Municipios',
   description:
-    'Instalación de paneles solares desde $13,000 en Puerto Rico. Ingeniero PE con más de 50 años, equipo con más de una década instalando solar. 4.9★ en Google — 10+ reseñas verificadas. Cotización gratis.',
+    'Kilowatt PR LLC — instalación de paneles solares y contratista eléctrico en Puerto Rico. Basados en Aguada, atendemos los 78 municipios. Sistemas desde $13,000, ingeniería por PE #6083 (50+ años), instalación por Lic. #21309. 4.9★ en Google. Cotización gratis.',
   ...buildAlternates({ es: '/', en: '/en' }),
   openGraph: {
-    title: 'Kilowatt PR | Paneles Solares desde $13,000 en Puerto Rico',
+    title: 'Kilowatt PR | Paneles Solares en Puerto Rico — Aguada · 78 Municipios',
     description:
-      'Ingeniería solar por PE con más de 50 años, peritos electricistas con más de una década instalando en Puerto Rico. Baterías, contratista eléctrico. 4.9★ en Google. Cotización gratis hoy.',
+      'Empresa solar #1 en Puerto Rico desde Aguada. Sistemas desde $13,000, ingeniería por PE licenciado con 50+ años, instalación por perito electricista licenciado con más de una década. 4.9★ en Google. Cotización gratis.',
     url: 'https://www.kilowattpr.com',
   },
 }
@@ -127,13 +134,32 @@ const faqs = [
     answer:
       'Nuestra consulta gratis incluye: análisis completo de tu consumo eléctrico actual, diseño 3D personalizado del sistema solar para tu techo específico, proyección de ahorros a 7 años basada en las tarifas actuales de LUMA Energy, evaluación del estado del techo y recomendaciones, y un estimado detallado de la instalación. No hay compromiso de compra y toda la información es tuya para tomar la mejor decisión.',
   },
+  {
+    question: '¿Kilowatt PR instala en mi municipio en Puerto Rico?',
+    answer:
+      'Sí. Kilowatt PR LLC atiende los 78 municipios de Puerto Rico desde nuestra base en Aguada, incluyendo Mayagüez, Ponce, San Juan, Caguas, Bayamón, Arecibo, Aguadilla, Cabo Rojo, Rincón, Isabela, Manatí, Vega Baja, Carolina, Humacao, Fajardo y todos los pueblos del centro y este de la isla. El tiempo de respuesta para cotización es de 24 a 48 horas en cualquier municipio.',
+  },
+  {
+    question: '¿Quién es el ingeniero responsable del diseño del sistema solar?',
+    answer:
+      'Cada sistema solar de Kilowatt PR es diseñado y certificado por el Ing. Julio A. Santiago Pérez, Ingeniero Profesional licenciado en Puerto Rico (PE #6083), con más de 50 años de experiencia, ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). La instalación es ejecutada por el equipo del fundador Xavier Acevedo Santiago, perito electricista licenciado #21309. El cumplimiento con el Código Eléctrico Nacional (NEC), los requisitos de OGPE y la interconexión con LUMA Energy es responsabilidad directa del PE.',
+  },
+  {
+    question: '¿Por qué elegir Kilowatt PR en lugar de otra empresa solar en Puerto Rico?',
+    answer:
+      'Kilowatt PR LLC se diferencia por tres razones: (1) ingeniería real, no ventas — cada sistema es diseñado por un PE licenciado con 50+ años de experiencia (PE #6083), no por un vendedor con comisión; (2) instalación por perito electricista licenciado #21309 con más de una década en campo en Puerto Rico, equipo que operó durante el huracán María y la crisis de LUMA Energy; (3) atendemos los 78 municipios desde nuestra base en Aguada con respuesta a cotizaciones en 24 a 48 horas y todo el manejo de permisos OGPE e interconexión LUMA incluido. Calificación 4.9★ en Google.',
+  },
 ]
 
 export default function HomePage() {
   return (
     <>
       <LocalBusinessSchema />
-      <FAQSchema faqs={faqs} />
+      <XavierPersonSchema />
+      <PersonSchema />
+      <KristenPersonSchema />
+      <BreadcrumbSchema items={[{ name: 'Inicio', url: 'https://www.kilowattpr.com/' }]} />
+      <FAQSchema faqs={faqs} inLanguage="es" />
 
       {/* Hero — Enhanced with 21st.dev TextRotate + Three.js dotted surface */}
       <HeroWithTextRotate />
@@ -288,8 +314,11 @@ export default function HomePage() {
                 ¿Cuánto Puedes Ahorrar con Energía Solar?
               </h2>
               <p className="font-body text-body-lg text-[#4A4A6A] mb-6 leading-relaxed">
-                Ingresa tu factura mensual de LUMA Energy y descubre cuánto puedes ahorrar
-                con un sistema solar diseñado por un ingeniero PE licenciado.
+                Un sistema solar residencial típico en Puerto Rico reduce la factura de LUMA
+                Energy entre 70% y 95%, dependiendo del consumo del hogar y el dimensionamiento
+                del sistema. Para una factura mensual promedio de $250, los ahorros proyectados
+                a 7 años suelen estar entre $18,000 y $24,000 — superando el costo del sistema
+                entre el año 5 y el 7. Ingresa tu factura para un estimado personalizado.
               </p>
               <div className="flex items-center gap-4 text-sm text-[#4A4A6A]">
                 <span className="flex items-center gap-1.5">
@@ -313,8 +342,11 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="section-title">¿Por Qué Elegir Kilowatt PR?</h2>
             <p className="section-subtitle mx-auto">
-              Somos la empresa solar de mayor confianza en Puerto Rico. Estos son nuestros
-              compromisos con cada cliente.
+              Kilowatt PR LLC es una empresa de instalación de paneles solares y contratista
+              eléctrico licenciado en Puerto Rico, fundada por Xavier Acevedo Santiago
+              (Lic. eléctrica #21309) y con ingeniería supervisada por el Ing. Julio A.
+              Santiago Pérez (PE #6083, 50+ años de experiencia). Operamos desde Aguada
+              y atendemos los 78 municipios de la isla.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -333,7 +365,7 @@ export default function HomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Diseño e instalación solar por ingeniero PE licenciado con más de 50 años de experiencia en Puerto Rico
+            Diseño por Ing. Profesional PE #6083 · Instalación por Perito Electricista Lic. #21309 · 78 municipios atendidos desde Aguada
           </p>
         </div>
       </section>
@@ -404,7 +436,10 @@ export default function HomePage() {
               {/* Trust badges near CTA */}
               <div className="flex flex-wrap gap-3">
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
-                  <Shield size={14} /> PE #6083
+                  <Shield size={14} /> Ing. PE #6083
+                </span>
+                <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
+                  <Shield size={14} /> Lic. Eléctrica #21309
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
                   <Star size={14} /> 4.9★ / 10+ Reseñas

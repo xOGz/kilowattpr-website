@@ -64,6 +64,8 @@ export function OrganizationSchema() {
             '@type': 'Service',
             name: 'Instalación de Paneles Solares',
             description: 'Sistemas fotovoltaicos residenciales y comerciales desde $13,000',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
         },
         {
@@ -72,6 +74,8 @@ export function OrganizationSchema() {
             '@type': 'Service',
             name: 'Sistemas de Batería de Respaldo',
             description: 'Independencia energética durante apagones de LUMA Energy',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
         },
         {
@@ -80,6 +84,8 @@ export function OrganizationSchema() {
             '@type': 'Service',
             name: 'Contratista Eléctrico',
             description: 'Servicios eléctricos residenciales y comerciales, reparación de bases de medidores con certificaciones LUMA',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
         },
         {
@@ -88,10 +94,18 @@ export function OrganizationSchema() {
             '@type': 'Service',
             name: 'Mantenimiento y Lavado de Paneles',
             description: 'Limpieza profesional cada 6-8 meses para máxima eficiencia',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
         },
       ],
     },
+    founder: { '@id': 'https://www.kilowattpr.com/#xavier-acevedo' },
+    employee: [
+      { '@id': 'https://www.kilowattpr.com/#xavier-acevedo' },
+      { '@id': 'https://www.kilowattpr.com/#julio-santiago-perez' },
+      { '@id': 'https://www.kilowattpr.com/#kristen-roman' },
+    ],
   }
 
   return (
@@ -173,7 +187,90 @@ export function LocalBusinessSchema() {
       bestRating: 5,
       worstRating: 1,
     },
+    review: [
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Hector Viera' },
+        datePublished: '2026-03-19',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          'Javier es tremendo profesional y hace un excelente trabajo. Trabaja completamente organizado y es bien honesto con lo que ve que se necesite y como se pueden resolver los problemas. Recomendado al 100%.',
+        inLanguage: 'es',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Richard Nohe' },
+        datePublished: '2026-03-05',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          'Kilowatt PR is excellent! We had a great experience and highly recommend them. They are knowledgeable, professional, punctual, and reasonably priced. They replaced an inverter for us and had to redo a lot of the work that the previous electrician did. If you need a good electrician, you can’t go wrong with them.',
+        inLanguage: 'en',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Vanessa Bonilla' },
+        datePublished: '2026-02-19',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          'Excelente servicio, respondió rápido, trabajo limpio y muy profesional.',
+        inLanguage: 'es',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Enrique Santiago' },
+        datePublished: '2026-01-22',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          'Excelente experiencia con Kilowatt PR. Desde el primer día fueron claros, responsables y bien profesionales. Me explicaron todo el proceso sin rodeos y cumplieron exactamente con lo prometido. La instalación del sistema solar quedó limpia, bien hecha y dentro del tiempo acordado. Se nota la experiencia y el conocimiento técnico del equipo. Además, me ayudaron con todo el proceso de medición neta sin complicaciones. Desde que el sistema está funcionando, todo corre perfecto. Los recomiendo 100% si buscas un trabajo serio, bien hecho y sin sorpresas.',
+        inLanguage: 'es',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Wilfredo Acevedo' },
+        datePublished: '2025-11-01',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          '¡Muy profesional! Tremendo servicio. 100% recomendado. ¡Los duros del oeste!',
+        inLanguage: 'es',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Rosie Torres De Calderón' },
+        datePublished: '2025-10-11',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          'Excelente trabajo de electricidad, muy acertado, rápido, confiable, profesional y con costos muy adecuados. Rosie Calderón, clienta agradecida.',
+        inLanguage: 'es',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+      {
+        '@type': 'Review',
+        author: { '@type': 'Person', name: 'Jean Carlos Vélez' },
+        datePublished: '2024-11-17',
+        reviewRating: { '@type': 'Rating', ratingValue: 5, bestRating: 5 },
+        reviewBody:
+          'Excelente electricista, responsable y presta un servicio de calidad.',
+        inLanguage: 'es',
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        publisher: { '@type': 'Organization', name: 'Google' },
+      },
+    ],
     slogan: 'Professional solar engineering for Puerto Rico — 50+ years of experience, families protected across the island',
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '.faq-answer', '[itemprop="description"]'],
+    },
   }
 
   return (
@@ -184,16 +281,29 @@ export function LocalBusinessSchema() {
   )
 }
 
-export function FAQSchema({ faqs }: { faqs: { question: string; answer: string }[] }) {
+export function FAQSchema({
+  faqs,
+  inLanguage = 'es',
+}: {
+  faqs: { question: string; answer: string }[]
+  inLanguage?: 'es' | 'en'
+}) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    inLanguage,
+    publisher: { '@id': 'https://www.kilowattpr.com/#organization' },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['.faq-question', '.faq-answer'],
+    },
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
         text: faq.answer,
+        inLanguage,
       },
     })),
   }

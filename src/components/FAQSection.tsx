@@ -22,7 +22,7 @@ export default function FAQSection({ faqs, title = '¿Tienes Preguntas?' }: { fa
               className="bg-surface-container-high rounded-lg overflow-hidden transition-all duration-300"
             >
               <button
-                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-headline font-semibold text-on-surface hover:bg-surface-container-highest transition-colors duration-200"
+                className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-headline font-semibold text-on-surface hover:bg-surface-container-highest transition-colors duration-200 faq-question"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 aria-expanded={openIndex === i}
               >
@@ -34,7 +34,7 @@ export default function FAQSection({ faqs, title = '¿Tienes Preguntas?' }: { fa
                 )}
               </button>
               {openIndex === i && (
-                <div className="px-6 pb-5 text-on-surface-variant leading-relaxed pt-2 font-body">
+                <div className="px-6 pb-5 text-on-surface-variant leading-relaxed pt-2 font-body faq-answer">
                   {faq.answer}
                 </div>
               )}
