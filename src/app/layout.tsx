@@ -33,6 +33,11 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
   },
+  verification: {
+    other: {
+      'msvalidate.01': 'B29C4F5E5435A84145A3068D57A23841',
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.ico?v=2', sizes: 'any' },
