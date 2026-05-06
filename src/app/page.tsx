@@ -23,14 +23,14 @@ import TrustBar from '@/components/TrustBar'
 import CTAHeading from '@/components/CTAHeading'
 
 export const metadata: Metadata = {
-  title: 'Paneles Solares en Puerto Rico — Kilowatt PR | Aguada · 78 Municipios',
+  title: 'Placas Solares en Puerto Rico desde $11,950 | Kilowatt PR',
   description:
-    'Instalación solar en Puerto Rico desde $11,950. Contratista eléctrico licenciado. PE #6083 · Lic. #21309. 78 municipios desde Aguada. 4.9★ en Google.',
+    'Instalación de placas y paneles solares en Puerto Rico desde $11,950. Diseño por ingeniero PE licenciado (PE #6083), instalación por perito electricista (Lic. #21309). Servicio en los 78 municipios desde Aguada. Cotización gratis.',
   ...buildAlternates({ es: '/', en: '/en' }),
   openGraph: {
-    title: 'Kilowatt PR | Paneles Solares en Puerto Rico — Aguada · 78 Municipios',
+    title: 'Placas Solares en Puerto Rico desde $11,950 | Kilowatt PR',
     description:
-      'Empresa solar #1 en Puerto Rico desde Aguada. Sistemas desde $11,950, ingeniería por PE licenciado con 50+ años, instalación por perito electricista licenciado con más de una década. 4.9★ en Google. Cotización gratis.',
+      'Instalación de paneles y placas solares en Puerto Rico. Diseño por ingeniero PE licenciado con 50+ años de experiencia, instalación por perito electricista con más de una década en campo. Servicio en los 78 municipios desde Aguada. Cotización gratis por WhatsApp.',
     url: 'https://www.kilowattpr.com',
   },
 }

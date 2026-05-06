@@ -7,6 +7,22 @@
     { "source": "/services", "destination": "/servicios/", "statusCode": 301 },
     { "source": "/services/", "destination": "/servicios/", "statusCode": 301 },
     { "source": "/contact", "destination": "/contacto/", "statusCode": 301 },
-    { "source": "/contact/", "destination": "/contacto/", "statusCode": 301 }
+    { "source": "/contact/", "destination": "/contacto/", "statusCode": 301 },
+    { "source": "/cotizacion", "destination": "/contacto/", "statusCode": 301 },
+    { "source": "/cotizacion/", "destination": "/contacto/", "statusCode": 301 },
+    { "source": "/quote", "destination": "/en/contact/", "statusCode": 301 },
+    { "source": "/quote/", "destination": "/en/contact/", "statusCode": 301 },
+    { "source": "/servicios/paneles-solares", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/servicios/paneles-solares/", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/servicios/placas-solares", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/servicios/placas-solares/", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/servicios/baterias-respaldo", "destination": "/servicios/sistemas-con-bateria/", "statusCode": 301 },
+    { "source": "/servicios/baterias-respaldo/", "destination": "/servicios/sistemas-con-bateria/", "statusCode": 301 },
+    { "source": "/servicios/bateria", "destination": "/servicios/sistemas-con-bateria/", "statusCode": 301 },
+    { "source": "/servicios/bateria/", "destination": "/servicios/sistemas-con-bateria/", "statusCode": 301 },
+    { "source": "/placas-solares", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/placas-solares/", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/paneles-solares", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },
+    { "source": "/paneles-solares/", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 }
   ]
 }

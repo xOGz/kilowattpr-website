@@ -7,9 +7,9 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
-  title: 'Instalación de Paneles Solares en Puerto Rico',
+  title: 'Instalación de Placas Solares (Paneles) en Puerto Rico',
   description:
-    'Kilowatt PR instala sistemas de paneles solares residenciales y comerciales en toda Puerto Rico. Técnicos certificados, gestión de permisos OGPE y LUMA. Cotización gratis.',
+    'Kilowatt PR instala placas y paneles solares residenciales y comerciales en toda Puerto Rico. Diseño por ingeniero PE licenciado, instalación por perito electricista, gestión de permisos OGPE y LUMA. Cotización gratis.',
   ...buildAlternates({
     es: '/servicios/instalacion-paneles-solares',
     en: '/en/services/solar-panel-installation',
@@ -43,12 +43,14 @@ export default function InstalacionPanelesSolaresPage() {
       <section className="bg-navy-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Instalación de Paneles Solares en{' '}
+            Instalación de Placas Solares (Paneles) en{' '}
             <span className="text-solar-yellow">Puerto Rico</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
             Sistemas fotovoltaicos residenciales y comerciales instalados por técnicos y
-            ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico.
+            ingenieros eléctricos con más de 3 décadas de experiencia en Puerto Rico. En
+            Puerto Rico le decimos placas solares; técnicamente son paneles fotovoltaicos —
+            te instalamos los dos.
           </p>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function HeroWithTextRotate() {
         <div className="max-w-4xl">
           <div className="chip-gold inline-flex items-center gap-2 mb-8">
             <Sun size={12} />
-            LA EMPRESA SOLAR #1 DE CONFIANZA EN LA ISLA
+            INGENIERÍA PE LICENCIADA · INSTALACIÓN POR PERITO ELECTRICISTA
           </div>
           <h1 className="font-display text-display-lg mb-6 text-on-surface">
             Reduce Tu Factura de LUMA Hasta un 95% con Energía Solar para{" "}
@@ -40,8 +40,9 @@ export default function HeroWithTextRotate() {
             </span>
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
-            Diseño e instalación por ingeniero eléctrico licenciado con más de 50 años de
-            experiencia en Puerto Rico. Familias protegidas contra los apagones de LUMA en toda la isla.
+            Instalación de placas solares (paneles solares) en Puerto Rico, diseñada por
+            ingeniero eléctrico PE licenciado con más de 50 años de experiencia. Familias
+            protegidas contra los apagones de LUMA en toda la isla.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a

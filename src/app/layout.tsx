@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | Kilowatt PR',
   },
   description:
-    'Instalación solar en Puerto Rico desde $11,950. Contratista eléctrico licenciado. PE #6083 · Lic. #21309. 78 municipios desde Aguada. 4.9★ en Google.',
+    'Instalación de placas y paneles solares en Puerto Rico desde $11,950. Diseño por ingeniero PE licenciado (PE #6083), instalación por perito electricista (Lic. #21309). Servicio en los 78 municipios desde Aguada.',
   openGraph: {
     type: 'website',
     locale: 'es_PR',
