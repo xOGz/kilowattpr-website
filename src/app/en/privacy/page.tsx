@@ -82,7 +82,7 @@ export default function PrivacyPage() {
           If you have any questions about this Privacy Policy, contact us:
         </p>
         <ul>
-          <li>Email: info@kilowattpr.com</li>
+          <li>Email: ventas@kilowattpr.com</li>
           <li>Phone: +1-787-431-2275</li>
           <li>Address: HC 3 Box 31767, Aguada, PR 00602</li>
         </ul>

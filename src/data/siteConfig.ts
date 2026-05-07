@@ -4,7 +4,7 @@ export const siteConfig = {
   url: 'https://www.kilowattpr.com',
   phone: '+1-787-431-2275',
   whatsapp: 'https://wa.me/17874312275',
-  email: 'info@kilowattpr.com',
+  email: 'ventas@kilowattpr.com',
   address: {
     street: 'HC 3 Box 31767',
     city: 'Aguada',

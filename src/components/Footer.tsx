@@ -167,8 +167,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-primary-container shrink-0" />
-                <a href="mailto:info@kilowattpr.com" className="hover:text-primary-container transition-colors duration-200">
-                  info@kilowattpr.com
+                <a href="mailto:ventas@kilowattpr.com" className="hover:text-primary-container transition-colors duration-200">
+                  ventas@kilowattpr.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
