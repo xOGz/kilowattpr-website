@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Instalación de Cargadores de Vehículos Eléctricos en Puerto Rico',
   description:
-    'Kilowatt PR instala cargadores de vehículos eléctricos (EV) Level 2 y Level 3 en residencias y comercios en Puerto Rico. Combinamos solar + EV para máximo ahorro.',
+    'Cargadores de vehículos eléctricos (EV) Level 2 y Level 3 en residencias y comercios en PR. Combinamos solar más EV para máximo ahorro. 787-431-2275.',
   alternates: { canonical: 'https://www.kilowattpr.com/servicios/cargadores-ev' },
 }
 

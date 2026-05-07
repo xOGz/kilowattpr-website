@@ -8,7 +8,7 @@ import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 export const metadata: Metadata = {
   title: 'Servicios de Energía Solar en Puerto Rico',
   description:
-    'Kilowatt PR ofrece instalación de paneles solares, sistemas con batería, sellado de techo y mantenimiento en toda Puerto Rico. Técnicos certificados, garantía 25 años.',
+    'Kilowatt PR: instalación de paneles solares, sistemas con batería, sellado de techo y mantenimiento en toda PR. Garantía 25 años. Llama 787-431-2275.',
   ...buildAlternates({ es: '/servicios', en: '/en/services' }),
 }
 

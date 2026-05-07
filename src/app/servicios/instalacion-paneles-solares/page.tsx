@@ -9,7 +9,7 @@ import { buildAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Instalación de Placas Solares (Paneles) en Puerto Rico',
   description:
-    'Kilowatt PR instala placas y paneles solares residenciales y comerciales en toda Puerto Rico. Diseño por ingeniero PE licenciado, instalación por perito electricista, gestión de permisos OGPE y LUMA. Cotización gratis.',
+    'Placas y paneles solares residenciales y comerciales en toda PR. Diseño por ingeniero PE licenciado, instalación por perito electricista. Cotización gratis: 787-431-2275.',
   ...buildAlternates({
     es: '/servicios/instalacion-paneles-solares',
     en: '/en/services/solar-panel-installation',

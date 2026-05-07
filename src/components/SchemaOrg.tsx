@@ -149,6 +149,11 @@ export function LocalBusinessSchema() {
     description:
       'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $11,950, baterías de respaldo, reparación de bases de medidores. 4.9★ en Google.',
     url: 'https://www.kilowattpr.com',
+    image: [
+      'https://www.kilowattpr.com/logo_transparent.png',
+      'https://www.kilowattpr.com/og-image.png',
+    ],
+    logo: 'https://www.kilowattpr.com/logo_transparent.png',
     telephone: '+1-787-431-2275',
     email: 'ventas@kilowattpr.com',
     address: {

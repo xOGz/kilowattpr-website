@@ -9,7 +9,7 @@ import { buildAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Sistemas Solares con Batería en Puerto Rico',
   description:
-    'Independencia energética total durante los apagones de LUMA Energy. Sistemas solares con batería instalados por Kilowatt PR en toda Puerto Rico. Hasta 24 horas de respaldo.',
+    'Independencia energética durante apagones de LUMA. Sistemas solares con batería en toda PR. Hasta 24h de respaldo. Llama 787-431-2275 (WhatsApp).',
   ...buildAlternates({
     es: '/servicios/sistemas-con-bateria',
     en: '/en/services/battery-backup-systems',

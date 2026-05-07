@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Energía Solar Comercial en Puerto Rico — Sistemas para Negocios',
   description:
-    'Sistemas solares comerciales para negocios en Puerto Rico. Restaurantes, farmacias, almacenes, hoteles. ROI en 3-5 años. Consulta gratis.',
+    'Sistemas solares comerciales para negocios en PR. Restaurantes, farmacias, almacenes, hoteles. ROI en 3 a 5 años. Consulta gratis: 787-431-2275.',
   alternates: { canonical: 'https://www.kilowattpr.com/servicios/energia-solar-comercial' },
 }
 

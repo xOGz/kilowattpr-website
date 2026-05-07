@@ -9,7 +9,7 @@ import { buildAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Mantenimiento y Lavado de Paneles Solares en Puerto Rico',
   description:
-    'Servicio de mantenimiento y lavado de paneles solares en Puerto Rico. Kilowatt PR: cada 6–8 meses estándar, cada 4–6 meses en zonas costeras. Técnicos certificados.',
+    'Mantenimiento y lavado de paneles solares en PR. Cada 6 a 8 meses estándar, 4 a 6 meses en zonas costeras. Técnicos certificados. 787-431-2275.',
   ...buildAlternates({
     es: '/servicios/mantenimiento-lavado',
     en: '/en/services/maintenance',

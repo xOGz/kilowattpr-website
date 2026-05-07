@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Contratista Eléctrico en Puerto Rico — Servicios Residenciales y Comerciales',
   description:
-    'Servicios de contratista eléctrico residencial y comercial en Puerto Rico. Reparación de bases de medidores, certificaciones LUMA, instalaciones eléctricas. Perito electricista licenciado.',
+    'Contratista eléctrico residencial y comercial en PR. Reparación de bases de medidores, certificaciones LUMA, instalaciones. Perito licenciado. 787-431-2275.',
   alternates: { canonical: 'https://www.kilowattpr.com/servicios/contratista-electrico' },
 }
 

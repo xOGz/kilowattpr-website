@@ -9,7 +9,7 @@ import { buildAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Sellado de Techo en Puerto Rico',
   description:
-    'Kilowatt PR ofrece sellado e impermeabilización profesional de techos en Puerto Rico. Garantía de 2 años de mano de obra. Servicio previo a instalación solar.',
+    'Sellado e impermeabilización profesional de techos en PR. Garantía 2 años de mano de obra. Servicio previo a instalación solar. 787-431-2275 (WhatsApp).',
   ...buildAlternates({
     es: '/servicios/sellado-de-techo',
     en: '/en/services/roof-sealing',
