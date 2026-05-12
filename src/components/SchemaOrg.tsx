@@ -423,6 +423,9 @@ export function PersonSchema() {
       'Battery Storage Systems',
       'LUMA Energy Interconnection',
     ],
+    sameAs: [
+      'https://www.wikidata.org/wiki/Q139769725',
+    ],
   }
 
   return (
