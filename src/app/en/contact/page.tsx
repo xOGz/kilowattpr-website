@@ -109,7 +109,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl font-bold text-navy-dark mb-6">Send Us a Message</h2>
               <form
-                action="https://formsubmit.co/ventas@kilowattpr.com"
+                action="https://formsubmit.co/48c1fbf7f9413adfb536c54cdb5ffae3"
                 method="POST"
                 className="space-y-5"
               >
