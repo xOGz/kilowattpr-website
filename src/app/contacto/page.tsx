@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
 import { buildAlternates } from '@/lib/alternates'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import ContactForm, { type ContactFormLabels } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contacto — Cotización Gratis de Paneles Solares',
@@ -15,7 +16,7 @@ const municipiosList = [
   'Camuy', 'Carolina', 'Fajardo', 'Guaynabo', 'Hatillo', 'Humacao',
   'Isabela', 'Manatí', 'Mayagüez', 'Ponce', 'Rincón', 'San Juan',
   'Toa Alta', 'Toa Baja', 'Yauco', 'Otro municipio',
-]
+].map((m) => ({ value: m, label: m }))
 
 const serviciosList = [
   'Instalación de paneles solares',
@@ -23,7 +24,33 @@ const serviciosList = [
   'Sellado de techo',
   'Mantenimiento y lavado',
   'Consulta general',
-]
+].map((s) => ({ value: s, label: s }))
+
+const formLabelsEs: ContactFormLabels = {
+  name: 'Nombre',
+  namePlaceholder: 'Tu nombre completo',
+  phone: 'Teléfono',
+  phonePlaceholder: '787-000-0000',
+  email: 'Email',
+  emailPlaceholder: 'tucorreo@email.com',
+  municipio: 'Municipio',
+  municipioPlaceholder: 'Selecciona tu municipio',
+  service: 'Servicio de Interés',
+  servicePlaceholder: 'Selecciona un servicio',
+  message: 'Mensaje',
+  messagePlaceholder: 'Cuéntanos sobre tu propiedad y necesidades de energía solar...',
+  submit: 'Enviar Mensaje',
+  submitting: 'Enviando...',
+  successTitle: '¡Mensaje recibido!',
+  successBody: 'Te contactaremos en horas hábiles. Para respuesta inmediata, escríbenos por WhatsApp.',
+  errorTitle: 'No pudimos enviar tu mensaje',
+  errorBody: 'Algo falló en nuestro sistema. Por favor escríbenos por WhatsApp.',
+  whatsappFallback: 'Escríbenos directamente por WhatsApp al',
+  whatsappCta: 'Continuar por WhatsApp',
+  fasterResponse: 'Para una respuesta más rápida, escríbenos directamente por WhatsApp al',
+  fasterResponseSuffix: '',
+  validationGeneric: 'No pudimos procesar tu mensaje. Por favor escríbenos por WhatsApp.',
+}
 
 export default function ContactoPage() {
   return (
@@ -106,117 +133,12 @@ export default function ContactoPage() {
             {/* Form */}
             <div>
               <h2 className="text-2xl font-bold text-navy-dark mb-6">Envíanos un Mensaje</h2>
-              <form
-                action="https://formsubmit.co/48c1fbf7f9413adfb536c54cdb5ffae3"
-                method="POST"
-                className="space-y-5"
-              >
-                <input type="hidden" name="_subject" value="Nueva consulta desde kilowattpr.com" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://www.kilowattpr.com/gracias" />
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">
-                      Nombre *
-                    </label>
-                    <input
-                      type="text"
-                      id="nombre"
-                      name="nombre"
-                      required
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow"
-                      placeholder="Tu nombre completo"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">
-                      Teléfono *
-                    </label>
-                    <input
-                      type="tel"
-                      id="telefono"
-                      name="telefono"
-                      required
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow"
-                      placeholder="787-000-0000"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow"
-                    placeholder="tucorreo@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="municipio" className="block text-sm font-medium text-gray-700 mb-1">
-                    Municipio *
-                  </label>
-                  <select
-                    id="municipio"
-                    name="municipio"
-                    required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow bg-white"
-                  >
-                    <option value="">Selecciona tu municipio</option>
-                    {municipiosList.map((m) => (
-                      <option key={m} value={m}>{m}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="servicio" className="block text-sm font-medium text-gray-700 mb-1">
-                    Servicio de Interés
-                  </label>
-                  <select
-                    id="servicio"
-                    name="servicio"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow bg-white"
-                  >
-                    <option value="">Selecciona un servicio</option>
-                    {serviciosList.map((s) => (
-                      <option key={s} value={s}>{s}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="mensaje" className="block text-sm font-medium text-gray-700 mb-1">
-                    Mensaje
-                  </label>
-                  <textarea
-                    id="mensaje"
-                    name="mensaje"
-                    rows={4}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow resize-none"
-                    placeholder="Cuéntanos sobre tu propiedad y necesidades de energía solar..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="btn-primary w-full justify-center text-base py-4"
-                >
-                  Enviar Mensaje
-                </button>
-
-                <p className="text-xs text-gray-400 text-center">
-                  Para una respuesta más rápida, escríbenos directamente por WhatsApp al{' '}
-                  <a href="https://wa.me/17874312275" className="text-solar-yellow font-medium">
-                    787-431-2275
-                  </a>
-                </p>
-              </form>
+              <ContactForm
+                locale="es"
+                labels={formLabelsEs}
+                municipios={municipiosList}
+                services={serviciosList}
+              />
             </div>
           </div>
         </div>

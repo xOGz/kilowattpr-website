@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react'
+import ContactForm, { type ContactFormLabels } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact — Free Solar Panel Quote',
@@ -15,18 +16,62 @@ export const metadata: Metadata = {
 }
 
 const municipiosList = [
-  'Aguada', 'Aguadilla', 'Arecibo', 'Bayam\u00F3n', 'Cabo Rojo', 'Caguas',
-  'Camuy', 'Carolina', 'Fajardo', 'Guaynabo', 'Hatillo', 'Humacao',
-  'Isabela', 'Manat\u00ED', 'Mayag\u00FCez', 'Ponce', 'Rinc\u00F3n', 'San Juan',
-  'Toa Alta', 'Toa Baja', 'Yauco', 'Other municipality',
+  { value: 'Aguada', label: 'Aguada' },
+  { value: 'Aguadilla', label: 'Aguadilla' },
+  { value: 'Arecibo', label: 'Arecibo' },
+  { value: 'Bayam\u00F3n', label: 'Bayam\u00F3n' },
+  { value: 'Cabo Rojo', label: 'Cabo Rojo' },
+  { value: 'Caguas', label: 'Caguas' },
+  { value: 'Camuy', label: 'Camuy' },
+  { value: 'Carolina', label: 'Carolina' },
+  { value: 'Fajardo', label: 'Fajardo' },
+  { value: 'Guaynabo', label: 'Guaynabo' },
+  { value: 'Hatillo', label: 'Hatillo' },
+  { value: 'Humacao', label: 'Humacao' },
+  { value: 'Isabela', label: 'Isabela' },
+  { value: 'Manat\u00ED', label: 'Manat\u00ED' },
+  { value: 'Mayag\u00FCez', label: 'Mayag\u00FCez' },
+  { value: 'Ponce', label: 'Ponce' },
+  { value: 'Rinc\u00F3n', label: 'Rinc\u00F3n' },
+  { value: 'San Juan', label: 'San Juan' },
+  { value: 'Toa Alta', label: 'Toa Alta' },
+  { value: 'Toa Baja', label: 'Toa Baja' },
+  { value: 'Yauco', label: 'Yauco' },
+  { value: 'Otro municipio', label: 'Other municipality' },
 ]
 
 const servicesList = [
-  'Solar panel installation',
-  'Solar system with battery',
-  'Maintenance & cleaning',
-  'General consultation',
+  { value: 'Instalaci\u00F3n de paneles solares', label: 'Solar panel installation' },
+  { value: 'Sistema solar con bater\u00EDa', label: 'Solar system with battery' },
+  { value: 'Mantenimiento y lavado', label: 'Maintenance & cleaning' },
+  { value: 'Consulta general', label: 'General consultation' },
 ]
+
+const formLabelsEn: ContactFormLabels = {
+  name: 'Name',
+  namePlaceholder: 'Your full name',
+  phone: 'Phone',
+  phonePlaceholder: '787-000-0000',
+  email: 'Email',
+  emailPlaceholder: 'youremail@email.com',
+  municipio: 'Municipality',
+  municipioPlaceholder: 'Select your municipality',
+  service: 'Service of Interest',
+  servicePlaceholder: 'Select a service',
+  message: 'Message',
+  messagePlaceholder: 'Tell us about your property and solar energy needs...',
+  submit: 'Send Message',
+  submitting: 'Sending...',
+  successTitle: 'Message received!',
+  successBody: 'We will contact you during business hours. For an immediate response, message us on WhatsApp.',
+  errorTitle: 'We could not send your message',
+  errorBody: 'Something went wrong on our end. Please message us on WhatsApp.',
+  whatsappFallback: 'Message us directly on WhatsApp at',
+  whatsappCta: 'Continue on WhatsApp',
+  fasterResponse: 'For a faster response, message us directly on WhatsApp at',
+  fasterResponseSuffix: '',
+  validationGeneric: 'We could not process your message. Please message us on WhatsApp.',
+}
 
 export default function ContactPage() {
   return (
@@ -108,117 +153,12 @@ export default function ContactPage() {
             {/* Form */}
             <div>
               <h2 className="text-2xl font-bold text-navy-dark mb-6">Send Us a Message</h2>
-              <form
-                action="https://formsubmit.co/48c1fbf7f9413adfb536c54cdb5ffae3"
-                method="POST"
-                className="space-y-5"
-              >
-                <input type="hidden" name="_subject" value="New inquiry from kilowattpr.com (English)" />
-                <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://www.kilowattpr.com/en/contact" />
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="nombre"
-                      required
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                      Phone *
-                    </label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="telefono"
-                      required
-                      className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow"
-                      placeholder="787-000-0000"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow"
-                    placeholder="youremail@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="municipality" className="block text-sm font-medium text-gray-700 mb-1">
-                    Municipality *
-                  </label>
-                  <select
-                    id="municipality"
-                    name="municipio"
-                    required
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow bg-white"
-                  >
-                    <option value="">Select your municipality</option>
-                    {municipiosList.map((m) => (
-                      <option key={m} value={m}>{m}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1">
-                    Service of Interest
-                  </label>
-                  <select
-                    id="service"
-                    name="servicio"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow bg-white"
-                  >
-                    <option value="">Select a service</option>
-                    {servicesList.map((s) => (
-                      <option key={s} value={s}>{s}</option>
-                    ))}
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="mensaje"
-                    rows={4}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-solar-yellow focus:ring-1 focus:ring-solar-yellow resize-none"
-                    placeholder="Tell us about your property and solar energy needs..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="btn-primary w-full justify-center text-base py-4"
-                >
-                  Send Message
-                </button>
-
-                <p className="text-xs text-gray-400 text-center">
-                  For a faster response, message us directly on WhatsApp at{' '}
-                  <a href="https://wa.me/17874312275" className="text-solar-yellow font-medium">
-                    787-431-2275
-                  </a>
-                </p>
-              </form>
+              <ContactForm
+                locale="en"
+                labels={formLabelsEn}
+                municipios={municipiosList}
+                services={servicesList}
+              />
             </div>
           </div>
         </div>
