@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import PostTLDR from '@/components/PostTLDR'
 
 export const metadata: Metadata = {
   title: '¿Cómo Elegir el Mejor Instalador Solar en Puerto Rico? Guía 2026',
@@ -71,6 +72,19 @@ export default function MejorInstaladorPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-navy-dark mb-4">
             ¿Cómo Elegir el Mejor Instalador Solar en Puerto Rico en 2026?
           </h1>
+
+          <PostTLDR>
+            <p>
+              Los 5 criterios no-negociables al evaluar un instalador en Puerto Rico:{' '}
+              <strong>(1)</strong> perito electricista licenciado por la Junta Examinadora,{' '}
+              <strong>(2)</strong> ingeniero PE responsable del diseño,{' '}
+              <strong>(3)</strong> garantía de mano de obra mínima de 1 año en instalación solar,{' '}
+              <strong>(4)</strong> reseñas verificadas en Google con casos locales en tu
+              municipio, <strong>(5)</strong> capacidad de gestionar la interconexión con LUMA
+              sin que tú tengas que hacer trámites. Cualquier instalador que falle en uno solo
+              es un riesgo.
+            </p>
+          </PostTLDR>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
             Elegir al instalador de paneles solares correcto es una de las decisiones más importantes

@@ -54,6 +54,13 @@ export function OrganizationSchema() {
       name: 'Puerto Rico',
       containedInPlace: { '@type': 'Country', name: 'United States' },
     },
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: 4.9,
+      reviewCount: 10,
+      bestRating: 5,
+      worstRating: 1,
+    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
       name: 'Servicios de Kilowatt PR',
