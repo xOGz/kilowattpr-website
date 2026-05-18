@@ -5,6 +5,7 @@ import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import { buildAlternates } from '@/lib/alternates'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
+import PostTLDR from '@/components/PostTLDR'
 
 export const metadata: Metadata = {
   title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?',
@@ -97,6 +98,16 @@ export default function CuantoCuestaPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-navy-dark mb-4">
             ¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?
           </h1>
+
+          <PostTLDR>
+            <p>
+              En 2026, un sistema solar residencial en Puerto Rico cuesta entre{' '}
+              <strong>$11,950 y $35,000</strong> instalado, dependiendo del tamaño y si incluye
+              batería de respaldo. Los factores que mueven el precio son: kilovatios del sistema
+              (5-12 kW típico residencial), capacidad de batería (10-30 kWh), tipo de inversor
+              (string vs híbrido), sellado de techo previo y complejidad eléctrica del hogar.
+            </p>
+          </PostTLDR>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
             Si estás considerando instalar paneles solares en Puerto Rico, el costo es probablemente

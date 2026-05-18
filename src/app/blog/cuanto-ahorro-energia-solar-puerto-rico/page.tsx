@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import PostTLDR from '@/components/PostTLDR'
 
 export const metadata: Metadata = {
   title: '¿Cuánto Puedes Ahorrar con Energía Solar en Puerto Rico? Calculadora 2026',
@@ -67,6 +68,16 @@ export default function CuantoAhorroPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-navy-dark mb-4">
             ¿Cuánto Puedes Ahorrar con Energía Solar en Puerto Rico?
           </h1>
+
+          <PostTLDR>
+            <p>
+              Una familia residencial promedio en Puerto Rico con factura mensual de LUMA de{' '}
+              <strong>$250-400</strong> puede reducirla a <strong>$20-50/mes</strong> con un
+              sistema solar bien dimensionado, ahorrando{' '}
+              <strong>$2,500-$4,500 al año</strong>. El retorno de inversión típico es de 3.5-6
+              años en sistemas sin batería y 6-9 años en sistemas con batería de respaldo.
+            </p>
+          </PostTLDR>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
             La pregunta más importante antes de invertir en paneles solares: ¿cuánto voy a ahorrar

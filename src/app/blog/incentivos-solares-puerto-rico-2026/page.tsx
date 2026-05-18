@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import PostTLDR from '@/components/PostTLDR'
 
 export const metadata: Metadata = {
   title: 'Cómo Preparar Tu Hogar para Huracanes con Energía Solar en Puerto Rico',
@@ -65,6 +66,17 @@ export default function HurricanePreparationPage() {
           <h1 className="text-3xl md:text-4xl font-bold text-navy-dark mb-4">
             Cómo Preparar Tu Hogar para la Temporada de Huracanes con Energía Solar
           </h1>
+
+          <PostTLDR>
+            <p>
+              Un sistema solar con batería de respaldo mantiene operativos los críticos del hogar
+              (nevera, ventiladores, internet, equipo médico, cargadores de celular) durante
+              apagones prolongados sin depender de gasolina ni de la red de LUMA. La instalación
+              debe completarse <strong>antes del 1 de junio</strong> para estar listo cuando
+              empieza la temporada — el proceso típico desde contrato hasta operación es de 6-10
+              semanas.
+            </p>
+          </PostTLDR>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
             El huracán María dejó a Puerto Rico sin electricidad por meses. Fiona, cinco años

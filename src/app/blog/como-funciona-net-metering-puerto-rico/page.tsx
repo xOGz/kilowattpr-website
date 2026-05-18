@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import PostTLDR from '@/components/PostTLDR'
 
 export const metadata: Metadata = {
   title: 'Cómo Funciona el Net Metering (Medición Neta) en Puerto Rico',
@@ -66,6 +67,15 @@ export default function NetMeteringPuertoRicoPage() {
             Cómo Funciona el Net Metering (Medición Neta) en Puerto Rico
           </h1>
 
+          <PostTLDR>
+            <p>
+              El net metering te permite enviar la energía solar que no consumes a la red de LUMA
+              y recibir crédito en tu factura mensual. Requiere un medidor bidireccional instalado
+              por LUMA durante la interconexión, opera bajo las reglas del Negociado de Energía de
+              Puerto Rico (PREB), y los créditos se acumulan mes a mes y se liquidan anualmente.
+            </p>
+          </PostTLDR>
+
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
             Si tienes paneles solares o estás considerando instalarlos, probablemente
             has escuchado el término "net metering" o "medición neta". Es el mecanismo
@@ -80,12 +90,20 @@ export default function NetMeteringPuertoRicoPage() {
           <h2>¿Qué Es el Net Metering?</h2>
 
           <p>
-            El net metering (medición neta) es una política regulada por el Negociado
-            de Energía de Puerto Rico (PREB) que permite a los propietarios de sistemas
-            solares intercambiar energía con la red eléctrica. En términos simples:
-            cuando tus paneles producen más energía de la que usas, el excedente va a
-            la red y recibes un crédito. Cuando necesitas más energía de la que produces
-            (por ejemplo, de noche), la tomas de la red.
+            El net metering (medición neta) es una política regulada por el{' '}
+            <a
+              href="https://energia.pr.gov/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-solar-yellow hover:underline"
+            >
+              Negociado de Energía de Puerto Rico (PREB)
+            </a>{' '}
+            que permite a los propietarios de sistemas solares intercambiar energía
+            con la red eléctrica. En términos simples: cuando tus paneles producen
+            más energía de la que usas, el excedente va a la red y recibes un crédito.
+            Cuando necesitas más energía de la que produces (por ejemplo, de noche),
+            la tomas de la red.
           </p>
 
           <p>
@@ -183,7 +201,19 @@ export default function NetMeteringPuertoRicoPage() {
             Es importante notar que incluso con net metering, tu factura de LUMA nunca
             llega exactamente a $0 porque existen cargos fijos mínimos que aplican
             independientemente de tu consumo neto. Sin embargo, es posible reducir tu
-            factura mensual de $300–$400 a $20–$50.
+            factura mensual de $300–$400 a $20–$50. Esta magnitud de ahorro es posible
+            porque Puerto Rico tiene una de las tarifas eléctricas residenciales más
+            altas de todo Estados Unidos según los datos publicados por la{' '}
+            <a
+              href="https://www.eia.gov/state/?sid=RQ"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-solar-yellow hover:underline"
+            >
+              U.S. Energy Information Administration (EIA)
+            </a>
+            , lo que aumenta el valor de cada kWh que reemplazas con tu producción
+            solar.
           </p>
 
           <h2>Liquidación Anual de Créditos</h2>
@@ -246,9 +276,18 @@ export default function NetMeteringPuertoRicoPage() {
 
           <p>
             Este proceso puede tomar entre 4 y 12 semanas dependiendo de la carga de
-            trabajo de LUMA y la complejidad del sistema. En Kilowatt PR gestionamos
-            todo este proceso por ti: desde la solicitud inicial hasta que tu sistema
-            está produciendo y exportando a la red.
+            trabajo de{' '}
+            <a
+              href="https://lumapr.com/"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              className="text-solar-yellow hover:underline"
+            >
+              LUMA Energy
+            </a>{' '}
+            y la complejidad del sistema. En Kilowatt PR gestionamos todo este proceso
+            por ti: desde la solicitud inicial hasta que tu sistema está produciendo y
+            exportando a la red.
           </p>
 
           <h2>Cómo Maximizar tus Beneficios con Net Metering</h2>
