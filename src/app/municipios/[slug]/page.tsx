@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { MapPin, Phone, MessageCircle, CheckCircle, Sun, Home, AlertTriangle } from 'lucide-react'
 import { municipios } from '@/data/municipios'
 import FAQSection from '@/components/FAQSection'
-import { BreadcrumbSchema } from '@/components/SchemaOrg'
+import { BreadcrumbSchema, FAQSchema } from '@/components/SchemaOrg'
 
 export async function generateStaticParams() {
   return municipios.map((m) => ({ slug: m.slug }))
@@ -78,6 +78,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
+      <FAQSchema faqs={allFaqs} />
       <BreadcrumbSchema
         items={[
           { name: 'Inicio', url: 'https://www.kilowattpr.com' },
