@@ -1,6 +1,7 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "out",
+  "trailingSlash": true,
   "redirects": [
     { "source": "/about", "destination": "/sobre-nosotros/", "statusCode": 301 },
     { "source": "/about/", "destination": "/sobre-nosotros/", "statusCode": 301 },
