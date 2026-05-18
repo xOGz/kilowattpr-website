@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     'Articles, guides, and tips about solar energy in Puerto Rico. Costs, LUMA Energy, batteries, maintenance, hurricanes, and more. By the Kilowatt PR team.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/blog',
+    canonical: 'https://www.kilowattpr.com/en/blog/',
     languages: {
-      es: 'https://www.kilowattpr.com/blog',
-      en: 'https://www.kilowattpr.com/en/blog',
+      es: 'https://www.kilowattpr.com/blog/',
+      en: 'https://www.kilowattpr.com/en/blog/',
     },
   },
 }

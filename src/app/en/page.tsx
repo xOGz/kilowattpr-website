@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: 'Kilowatt PR | Solar Panels from $11,950 in Puerto Rico',
     description:
       'Solar engineering by a PE with 50+ years of experience, licensed electricians with over a decade installing in Puerto Rico. Batteries, electrical contractor. 4.9★ on Google. Free quote today.',
-    url: 'https://www.kilowattpr.com/en',
+    url: 'https://www.kilowattpr.com/en/',
     locale: 'en_US',
   },
 }

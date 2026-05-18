@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description:
     'Kilowatt PR: founded by Xavier Acevedo Santiago, licensed electrician #21309. PE #6083 engineering advisor. 4.9 stars on Google in Puerto Rico.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/about',
+    canonical: 'https://www.kilowattpr.com/en/about/',
     languages: {
-      'es': 'https://www.kilowattpr.com/sobre-nosotros',
-      'en': 'https://www.kilowattpr.com/en/about',
+      'es': 'https://www.kilowattpr.com/sobre-nosotros/',
+      'en': 'https://www.kilowattpr.com/en/about/',
     },
   },
   openGraph: {
     title: 'About Us | Kilowatt PR',
     description:
       'Founded by Xavier Acevedo Santiago, licensed electrician #21309. PE #6083 engineering advisor. Families protected across the island.',
-    url: 'https://www.kilowattpr.com/en/about',
+    url: 'https://www.kilowattpr.com/en/about/',
     locale: 'en_US',
   },
 }

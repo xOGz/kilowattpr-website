@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Guía Solar Puerto Rico 2026 | Kilowatt PR',
     description:
       'Todo lo que necesitas saber sobre energía solar en Puerto Rico en un solo documento. Descarga gratis.',
-    url: 'https://www.kilowattpr.com/guia-solar',
+    url: 'https://www.kilowattpr.com/guia-solar/',
   },
 }
 

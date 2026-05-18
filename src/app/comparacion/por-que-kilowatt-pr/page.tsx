@@ -128,7 +128,7 @@ function FeatureCheck({ value }: { readonly value: boolean }) {
 
 export default function PorQueKilowattPage() {
   const publishDate = '2026-03-28'
-  const url = 'https://www.kilowattpr.com/comparacion/por-que-kilowatt-pr'
+  const url = 'https://www.kilowattpr.com/comparacion/por-que-kilowatt-pr/'
 
   return (
     <>

@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   description:
     'Contact Kilowatt PR for your free solar panel quote in Puerto Rico. WhatsApp, phone, email. Service across all of Puerto Rico.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/contact',
+    canonical: 'https://www.kilowattpr.com/en/contact/',
     languages: {
-      'es': 'https://www.kilowattpr.com/contacto',
-      'en': 'https://www.kilowattpr.com/en/contact',
+      'es': 'https://www.kilowattpr.com/contacto/',
+      'en': 'https://www.kilowattpr.com/en/contact/',
     },
   },
 }

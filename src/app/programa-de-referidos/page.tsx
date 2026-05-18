@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'Programa de Referidos | Kilowatt PR — Gana $500',
     description:
       'Gana $500 por cada persona que refieras a Kilowatt PR y complete su instalación solar.',
-    url: 'https://www.kilowattpr.com/programa-de-referidos',
+    url: 'https://www.kilowattpr.com/programa-de-referidos/',
   },
 }
 

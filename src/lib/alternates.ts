@@ -22,7 +22,11 @@ export interface BuildAlternatesInput {
 function joinUrl(path: string): string {
   // Root path renders as bare origin (no trailing slash) to match existing canonical.
   if (path === '/' || path === '') return BASE
-  return `${BASE}${path}`
+  // Non-root paths must end with a trailing slash to match Next.js `trailingSlash: true`
+  // and the URLs served by Vercel. Without this, GSC reports the slashless canonical
+  // as "Alternate page with proper canonical tag" against the served (with-slash) URL.
+  const withSlash = path.endsWith('/') ? path : `${path}/`
+  return `${BASE}${withSlash}`
 }
 
 export function buildAlternates(input: BuildAlternatesInput): Pick<Metadata, 'alternates'> {

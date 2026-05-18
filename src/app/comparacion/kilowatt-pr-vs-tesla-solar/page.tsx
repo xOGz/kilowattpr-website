@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Comparación detallada entre Kilowatt PR y Tesla Solar en Puerto Rico. Presencia local, instalación directa, soporte post-venta, precios transparentes y más. 4.9★ en Google.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-tesla-solar',
+    canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-tesla-solar/',
   },
 }
 
@@ -127,7 +127,7 @@ function ComparisonIcon({ positive }: { readonly positive: boolean }) {
 
 export default function KilowattVsTeslaPage() {
   const publishDate = '2026-03-28'
-  const url = 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-tesla-solar'
+  const url = 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-tesla-solar/'
 
   return (
     <>

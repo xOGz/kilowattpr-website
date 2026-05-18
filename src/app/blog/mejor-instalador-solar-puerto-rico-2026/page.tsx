@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Guía para elegir el mejor instalador de paneles solares en Puerto Rico en 2026. Qué verificar: licencias, experiencia, garantías, reseñas. Checklist completo.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/blog/mejor-instalador-solar-puerto-rico-2026',
+    canonical: 'https://www.kilowattpr.com/blog/mejor-instalador-solar-puerto-rico-2026/',
   },
 }
 
@@ -39,7 +39,7 @@ const faqs = [
 export default function MejorInstaladorPage() {
   const publishDate = '2026-04-10'
   const modifyDate = '2026-04-10'
-  const url = 'https://www.kilowattpr.com/blog/mejor-instalador-solar-puerto-rico-2026'
+  const url = 'https://www.kilowattpr.com/blog/mejor-instalador-solar-puerto-rico-2026/'
 
   return (
     <>

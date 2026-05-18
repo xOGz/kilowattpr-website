@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description:
     'Calculate your solar savings in Puerto Rico. Enter your LUMA bill and discover the recommended system size, estimated cost, and return on investment.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/solar-calculator',
+    canonical: 'https://www.kilowattpr.com/en/solar-calculator/',
     languages: {
-      'es': 'https://www.kilowattpr.com/calculadora-solar',
-      'en': 'https://www.kilowattpr.com/en/solar-calculator',
+      'es': 'https://www.kilowattpr.com/calculadora-solar/',
+      'en': 'https://www.kilowattpr.com/en/solar-calculator/',
     },
   },
   openGraph: {
     title: 'Solar Calculator | Kilowatt PR',
     description:
       'How much can you save with solar energy in Puerto Rico? Calculate your savings based on your LUMA bill.',
-    url: 'https://www.kilowattpr.com/en/solar-calculator',
+    url: 'https://www.kilowattpr.com/en/solar-calculator/',
     locale: 'en_US',
   },
 }

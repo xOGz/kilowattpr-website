@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Cómo Funciona el Net Metering (Medición Neta) en Puerto Rico',
   description:
     'Explicación completa del net metering en Puerto Rico. Cómo funciona el medidor bidireccional, créditos en tu factura de LUMA, requisitos de PREB y proceso de interconexión.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/como-funciona-net-metering-puerto-rico' },
+  alternates: { canonical: 'https://www.kilowattpr.com/blog/como-funciona-net-metering-puerto-rico/' },
 }
 
 const faqs = [
@@ -33,7 +33,7 @@ const faqs = [
 export default function NetMeteringPuertoRicoPage() {
   const publishDate = '2026-03-17'
   const modifyDate = '2026-03-17'
-  const url = 'https://www.kilowattpr.com/blog/como-funciona-net-metering-puerto-rico'
+  const url = 'https://www.kilowattpr.com/blog/como-funciona-net-metering-puerto-rico/'
 
   return (
     <>

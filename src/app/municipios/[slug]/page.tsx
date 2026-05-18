@@ -20,11 +20,11 @@ export async function generateMetadata({
   return {
     title: `Instalación de Paneles Solares en ${municipio.name}, Puerto Rico`,
     description: `Kilowatt PR instala paneles solares en ${municipio.name}, Puerto Rico. ${municipio.averageSunHours} de sol diarias, técnicos certificados, consulta gratis, garantía de 25 años. Servicio completo incluyendo permisos y LUMA.`,
-    alternates: { canonical: `https://www.kilowattpr.com/municipios/${municipio.slug}` },
+    alternates: { canonical: `https://www.kilowattpr.com/municipios/${municipio.slug}/` },
     openGraph: {
       title: `Paneles Solares en ${municipio.name} PR | Kilowatt PR`,
       description: `Instalación de sistemas solares residenciales y comerciales en ${municipio.name}, Puerto Rico. ${municipio.averageSunHours} de sol diarias.`,
-      url: `https://www.kilowattpr.com/municipios/${municipio.slug}`,
+      url: `https://www.kilowattpr.com/municipios/${municipio.slug}/`,
     },
   }
 }
@@ -38,7 +38,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     '@type': 'LocalBusiness',
     name: 'Kilowatt PR LLC',
     description: `Instalación de paneles solares en ${municipio.name}, Puerto Rico. Peritos electricistas e ingenieros eléctricos con más de 3 décadas de experiencia. ${municipio.averageSunHours} de sol diarias.`,
-    url: `https://www.kilowattpr.com/municipios/${municipio.slug}`,
+    url: `https://www.kilowattpr.com/municipios/${municipio.slug}/`,
     telephone: '+1-787-431-2275',
     areaServed: {
       '@type': 'City',
@@ -81,8 +81,8 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
       <BreadcrumbSchema
         items={[
           { name: 'Inicio', url: 'https://www.kilowattpr.com' },
-          { name: 'Municipios', url: 'https://www.kilowattpr.com/municipios' },
-          { name: municipio.name, url: `https://www.kilowattpr.com/municipios/${municipio.slug}` },
+          { name: 'Municipios', url: 'https://www.kilowattpr.com/municipios/' },
+          { name: municipio.name, url: `https://www.kilowattpr.com/municipios/${municipio.slug}/` },
         ]}
       />
 

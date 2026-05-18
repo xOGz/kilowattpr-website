@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: 'Sobre Nosotros | Kilowatt PR',
     description:
       'Fundada por Xavier Acevedo Santiago, perito electricista licenciado #21309. Asesoría de ingeniería PE #6083. Familias protegidas en toda la isla.',
-    url: 'https://www.kilowattpr.com/sobre-nosotros',
+    url: 'https://www.kilowattpr.com/sobre-nosotros/',
   },
 }
 

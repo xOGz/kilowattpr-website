@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Xavier Acevedo Santiago — Fundador y CEO de Kilowatt PR',
   description:
     'Xavier Acevedo Santiago: fundador y CEO de Kilowatt PR LLC. Perito electricista licenciado #21309, más de una década instalando solar en Puerto Rico.',
-  alternates: { canonical: 'https://www.kilowattpr.com/equipo/xavier-acevedo' },
+  alternates: { canonical: 'https://www.kilowattpr.com/equipo/xavier-acevedo/' },
 }
 
 const credentials = [

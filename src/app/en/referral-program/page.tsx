@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description:
     'Refer a friend or family member to Kilowatt PR and earn $500 for each completed installation. No referral limit. Exclusive program for customers.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/referral-program',
+    canonical: 'https://www.kilowattpr.com/en/referral-program/',
     languages: {
-      es: 'https://www.kilowattpr.com/programa-de-referidos',
-      en: 'https://www.kilowattpr.com/en/referral-program',
+      es: 'https://www.kilowattpr.com/programa-de-referidos/',
+      en: 'https://www.kilowattpr.com/en/referral-program/',
     },
   },
   openGraph: {
     title: 'Referral Program | Kilowatt PR — Earn $500',
     description:
       'Earn $500 for every person you refer to Kilowatt PR who completes their solar installation.',
-    url: 'https://www.kilowattpr.com/en/referral-program',
+    url: 'https://www.kilowattpr.com/en/referral-program/',
   },
 }
 

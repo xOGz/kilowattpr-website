@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: '10 Preguntas que Debes Hacer Antes de Instalar Paneles Solares en Puerto Rico',
   description:
     'Las 10 preguntas críticas que todo consumidor debe hacer antes de contratar un instalador solar en Puerto Rico. Licencias, garantías, baterías, permisos OGPE y más.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/preguntas-antes-instalar-solar' },
+  alternates: { canonical: 'https://www.kilowattpr.com/blog/preguntas-antes-instalar-solar/' },
 }
 
 const faqs = [
@@ -33,7 +33,7 @@ const faqs = [
 export default function PreguntasAntesInstalarPage() {
   const publishDate = '2026-03-24'
   const modifyDate = '2026-03-24'
-  const url = 'https://www.kilowattpr.com/blog/preguntas-antes-instalar-solar'
+  const url = 'https://www.kilowattpr.com/blog/preguntas-antes-instalar-solar/'
 
   return (
     <>

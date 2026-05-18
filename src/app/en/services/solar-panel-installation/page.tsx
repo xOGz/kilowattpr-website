@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     'Kilowatt PR installs residential and commercial solar panel systems across Puerto Rico. Certified technicians, OGPE and LUMA permit management. Free quote.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/services/solar-panel-installation',
+    canonical: 'https://www.kilowattpr.com/en/services/solar-panel-installation/',
     languages: {
-      'es': 'https://www.kilowattpr.com/servicios/instalacion-paneles-solares',
-      'en': 'https://www.kilowattpr.com/en/services/solar-panel-installation',
+      'es': 'https://www.kilowattpr.com/servicios/instalacion-paneles-solares/',
+      'en': 'https://www.kilowattpr.com/en/services/solar-panel-installation/',
     },
   },
 }

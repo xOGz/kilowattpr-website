@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Deja tu Reseña — Kilowatt PR',
   description:
     'Comparte tu experiencia con Kilowatt PR en Google. Tu reseña honesta ayuda a otras familias puertorriqueñas a tomar una decisión informada sobre energía solar.',
-  alternates: { canonical: 'https://www.kilowattpr.com/dejar-resena' },
+  alternates: { canonical: 'https://www.kilowattpr.com/dejar-resena/' },
   // noindex so Google doesn't rank this review-request page over the actual reviews page
   robots: { index: false, follow: true },
 }

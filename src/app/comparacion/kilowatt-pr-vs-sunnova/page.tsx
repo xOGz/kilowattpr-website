@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     'Comparación objetiva entre Kilowatt PR y Sunnova en Puerto Rico. Instalador local con 4.9★ en Google vs cadena nacional en Chapter 11 (junio 2025). Precios, garantía, servicio y más.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-sunnova',
+    canonical: 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-sunnova/',
   },
 }
 
@@ -135,7 +135,7 @@ function ComparisonIcon({ positive }: { readonly positive: boolean }) {
 
 export default function KilowattVsSunnovaPage() {
   const publishDate = '2026-03-15'
-  const url = 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-sunnova'
+  const url = 'https://www.kilowattpr.com/comparacion/kilowatt-pr-vs-sunnova/'
 
   return (
     <>

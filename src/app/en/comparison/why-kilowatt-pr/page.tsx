@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   description:
     'Compare Kilowatt PR with national chains and typical local installers. Licensed master electrician, PE engineer, transparent pricing from $13K, battery included, 4.9 stars on Google.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/comparison/why-kilowatt-pr',
+    canonical: 'https://www.kilowattpr.com/en/comparison/why-kilowatt-pr/',
     languages: {
-      es: 'https://www.kilowattpr.com/comparacion/por-que-kilowatt-pr',
-      en: 'https://www.kilowattpr.com/en/comparison/why-kilowatt-pr',
+      es: 'https://www.kilowattpr.com/comparacion/por-que-kilowatt-pr/',
+      en: 'https://www.kilowattpr.com/en/comparison/why-kilowatt-pr/',
     },
   },
 }
@@ -130,7 +130,7 @@ function FeatureCheck({ value }: { readonly value: boolean }) {
 
 export default function WhyKilowattPage() {
   const publishDate = '2026-03-28'
-  const url = 'https://www.kilowattpr.com/en/comparison/why-kilowatt-pr'
+  const url = 'https://www.kilowattpr.com/en/comparison/why-kilowatt-pr/'
 
   return (
     <>

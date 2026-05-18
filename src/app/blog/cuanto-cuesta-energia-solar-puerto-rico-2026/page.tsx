@@ -38,7 +38,7 @@ const faqs = [
 export default function CuantoCuestaPage() {
   const publishDate: string = '2026-01-15'
   const modifyDate: string = '2026-04-23'
-  const url = 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026'
+  const url = 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026/'
   const wasUpdated = modifyDate !== publishDate
   const modifyDateFormatted = new Date(modifyDate).toLocaleDateString('es-PR', {
     day: 'numeric',
