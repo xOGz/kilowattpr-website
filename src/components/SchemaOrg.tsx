@@ -339,7 +339,7 @@ export const authorData = {
     es: 'Ingeniero electricista licenciado con más de 50 años de experiencia. Ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). Certificado como instalador de sistemas fotovoltaicos por el Programa de Política Pública Energética de Puerto Rico.',
     en: 'Licensed electrical engineer with over 50 years of experience. Former NASA engineer and former professor at the University of Puerto Rico, Mayagüez Campus (RUM). Certified photovoltaic systems installer by Puerto Rico\'s Public Energy Policy Program.',
   },
-  url: 'https://www.kilowattpr.com/equipo/julio-santiago-perez',
+  url: 'https://www.kilowattpr.com/equipo/julio-santiago-perez/',
 }
 
 export const xavierData = {
@@ -358,7 +358,7 @@ export const xavierData = {
     es: 'Fundador y director ejecutivo de Kilowatt PR LLC. Perito electricista licenciado #21309 con más de una década de experiencia instalando sistemas solares residenciales y comerciales en Puerto Rico. Fundó la empresa después del huracán María con la misión de proveer energía confiable y resiliente a familias y negocios puertorriqueños frente a la crisis de LUMA Energy.',
     en: 'Founder and CEO of Kilowatt PR LLC. Licensed electrical contractor #21309 with over a decade of experience installing residential and commercial solar energy systems in Puerto Rico. Founded the company after Hurricane María with the mission of bringing reliable, resilient power to Puerto Rican families and businesses amid the LUMA Energy crisis.',
   },
-  url: 'https://www.kilowattpr.com/equipo/xavier-acevedo',
+  url: 'https://www.kilowattpr.com/equipo/xavier-acevedo/',
 }
 
 export const kristenData = {
@@ -376,7 +376,7 @@ export const kristenData = {
     es: 'Coordinadora de proyectos y servicio al cliente en Kilowatt PR. Primer punto de contacto para cada lead, gestiona la agenda de consultas, coordinación con los técnicos de instalación y el seguimiento post-instalación. Responsable de que cada cliente reciba respuesta en menos de 2 horas durante horario laboral.',
     en: 'Project coordinator and customer service lead at Kilowatt PR. First point of contact for every lead, handling consultation scheduling, coordination with the install crew, and post-install follow-up. Responsible for ensuring every customer gets a response within 2 hours during business hours.',
   },
-  url: 'https://www.kilowattpr.com/equipo/kristen-roman',
+  url: 'https://www.kilowattpr.com/equipo/kristen-roman/',
 }
 
 export function PersonSchema() {

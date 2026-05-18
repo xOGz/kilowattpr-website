@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Calcula cuánto puedes ahorrar con paneles solares en Puerto Rico. Ejemplos reales por factura de LUMA: $200, $300, $500/mes. Retorno de inversión y proyecciones.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/blog/cuanto-ahorro-energia-solar-puerto-rico',
+    canonical: 'https://www.kilowattpr.com/blog/cuanto-ahorro-energia-solar-puerto-rico/',
   },
 }
 
@@ -35,7 +35,7 @@ const faqs = [
 export default function CuantoAhorroPage() {
   const publishDate = '2026-04-10'
   const modifyDate = '2026-04-10'
-  const url = 'https://www.kilowattpr.com/blog/cuanto-ahorro-energia-solar-puerto-rico'
+  const url = 'https://www.kilowattpr.com/blog/cuanto-ahorro-energia-solar-puerto-rico/'
 
   return (
     <>

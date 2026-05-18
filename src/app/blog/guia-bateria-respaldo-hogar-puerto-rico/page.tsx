@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Guía Completa: Baterías de Respaldo Solar en Puerto Rico',
   description:
     'Todo sobre sistemas de almacenamiento solar en Puerto Rico: tipos, capacidad, costo y cómo elegir. Diseñado para hogares que sufren apagones de LUMA Energy.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/guia-bateria-respaldo-hogar-puerto-rico' },
+  alternates: { canonical: 'https://www.kilowattpr.com/blog/guia-bateria-respaldo-hogar-puerto-rico/' },
 }
 
 const faqs = [
@@ -33,7 +33,7 @@ const faqs = [
 export default function GuiaBateriaPage() {
   const publishDate = '2026-02-15'
   const modifyDate = '2026-02-15'
-  const url = 'https://www.kilowattpr.com/blog/guia-bateria-respaldo-hogar-puerto-rico'
+  const url = 'https://www.kilowattpr.com/blog/guia-bateria-respaldo-hogar-puerto-rico/'
 
   return (
     <>

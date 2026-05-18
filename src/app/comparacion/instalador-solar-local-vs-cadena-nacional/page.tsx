@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Descubre por qué elegir un instalador solar local en Puerto Rico marca la diferencia. Respuesta ante huracanes, conocimiento de LUMA y OGPE, servicio directo vs subcontratistas.',
   alternates: {
     canonical:
-      'https://www.kilowattpr.com/comparacion/instalador-solar-local-vs-cadena-nacional',
+      'https://www.kilowattpr.com/comparacion/instalador-solar-local-vs-cadena-nacional/',
   },
 }
 
@@ -138,7 +138,7 @@ function ComparisonIcon({ positive }: { readonly positive: boolean }) {
 export default function LocalVsNacionalPage() {
   const publishDate = '2026-03-15'
   const url =
-    'https://www.kilowattpr.com/comparacion/instalador-solar-local-vs-cadena-nacional'
+    'https://www.kilowattpr.com/comparacion/instalador-solar-local-vs-cadena-nacional/'
 
   return (
     <>

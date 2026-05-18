@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Instalación Solar en Todos los Municipios de Puerto Rico',
   description:
     'Kilowatt PR instala paneles solares en todos los municipios de Puerto Rico. Selecciona tu municipio para más información sobre el servicio en tu área.',
-  alternates: { canonical: 'https://www.kilowattpr.com/municipios' },
+  alternates: { canonical: 'https://www.kilowattpr.com/municipios/' },
 }
 
 export default function MunicipiosPage() {

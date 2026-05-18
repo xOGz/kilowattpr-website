@@ -10,6 +10,8 @@
     { "source": "/contact/", "destination": "/contacto/", "statusCode": 301 },
     { "source": "/cotizacion", "destination": "/contacto/", "statusCode": 301 },
     { "source": "/cotizacion/", "destination": "/contacto/", "statusCode": 301 },
+    { "source": "/cotizacion-gratis", "destination": "/contacto/", "statusCode": 301 },
+    { "source": "/cotizacion-gratis/", "destination": "/contacto/", "statusCode": 301 },
     { "source": "/quote", "destination": "/en/contact/", "statusCode": 301 },
     { "source": "/quote/", "destination": "/en/contact/", "statusCode": 301 },
     { "source": "/servicios/paneles-solares", "destination": "/servicios/instalacion-paneles-solares/", "statusCode": 301 },

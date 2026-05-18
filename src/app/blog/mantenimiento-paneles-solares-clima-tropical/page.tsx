@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Mantenimiento de Paneles Solares en Clima Tropical: Lo Que Necesitas Saber',
   description:
     'Guía completa de mantenimiento de paneles solares en Puerto Rico. Frecuencia de limpieza, efectos del salitre, polvo del Sahara, humedad tropical y cuándo llamar a un profesional.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical' },
+  alternates: { canonical: 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical/' },
 }
 
 const faqs = [
@@ -33,7 +33,7 @@ const faqs = [
 export default function MantenimientoPanelesPage() {
   const publishDate = '2026-03-15'
   const modifyDate = '2026-03-15'
-  const url = 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical'
+  const url = 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical/'
 
   return (
     <>

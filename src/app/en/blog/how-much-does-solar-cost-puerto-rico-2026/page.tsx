@@ -9,16 +9,16 @@ export const metadata: Metadata = {
   description:
     'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems from $11,950 and up, commercial, with and without battery. Financing available.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
+    canonical: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026/',
     languages: {
-      'es': 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026',
-      'en': 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
+      'es': 'https://www.kilowattpr.com/blog/cuanto-cuesta-energia-solar-puerto-rico-2026/',
+      'en': 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026/',
     },
   },
   openGraph: {
     title: 'How Much Does Solar Energy Cost in Puerto Rico in 2026?',
     description: 'Complete guide to solar energy costs in Puerto Rico 2026. Residential systems, commercial, with and without battery.',
-    url: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026',
+    url: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026/',
     locale: 'en_US',
     type: 'article',
   },
@@ -46,7 +46,7 @@ const faqs = [
 export default function SolarCostPage() {
   const publishDate = '2026-01-15'
   const modifyDate = '2026-01-15'
-  const url = 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026'
+  const url = 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026/'
 
   return (
     <>

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Ing. Julio A. Santiago Pérez — Ingeniero Electricista Licenciado',
   description:
     'Ing. Julio Santiago Pérez (PE #6083), 50+ años de experiencia. Ex NASA, ex profesor UPR Mayagüez. COO de Kilowatt PR.',
-  alternates: { canonical: 'https://www.kilowattpr.com/equipo/julio-santiago-perez' },
+  alternates: { canonical: 'https://www.kilowattpr.com/equipo/julio-santiago-perez/' },
 }
 
 const credentials = [

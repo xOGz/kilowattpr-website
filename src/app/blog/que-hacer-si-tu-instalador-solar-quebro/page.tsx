@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     'Sunnova y Freedom Forever quebraron en 2025–2026. Si tu instalador solar cerró, tu sistema, garantías y monitoreo siguen siendo tuyos. Guía paso a paso para clientes en Puerto Rico.',
   alternates: {
     canonical:
-      'https://www.kilowattpr.com/blog/que-hacer-si-tu-instalador-solar-quebro',
+      'https://www.kilowattpr.com/blog/que-hacer-si-tu-instalador-solar-quebro/',
   },
 }
 
@@ -58,7 +58,7 @@ export default function InstaladorSolarQuebroPage() {
   const publishDate = '2026-05-02'
   const modifyDate = '2026-05-02'
   const url =
-    'https://www.kilowattpr.com/blog/que-hacer-si-tu-instalador-solar-quebro'
+    'https://www.kilowattpr.com/blog/que-hacer-si-tu-instalador-solar-quebro/'
 
   return (
     <>

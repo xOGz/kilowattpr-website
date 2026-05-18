@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Kristen S. Román — Coordinadora de Proyectos · Kilowatt PR',
   description:
     'Kristen S. Román es coordinadora de proyectos y responsable de servicio al cliente en Kilowatt PR. Primer punto de contacto para cada cotización en Puerto Rico.',
-  alternates: { canonical: 'https://www.kilowattpr.com/equipo/kristen-roman' },
+  alternates: { canonical: 'https://www.kilowattpr.com/equipo/kristen-roman/' },
 }
 
 const responsibilities = [

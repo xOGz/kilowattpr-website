@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Reseñas y Testimonios | Kilowatt PR',
     description:
       '4.9★ en Google. Familias y negocios en Puerto Rico comparten su experiencia con Kilowatt PR.',
-    url: 'https://www.kilowattpr.com/resenas',
+    url: 'https://www.kilowattpr.com/resenas/',
   },
 }
 

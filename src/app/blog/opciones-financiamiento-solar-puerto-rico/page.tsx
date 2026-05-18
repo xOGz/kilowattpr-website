@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Guía completa de financiamiento solar en Puerto Rico. Préstamos verdes, cooperativas, financiamiento directo. Cómo pagar tu sistema solar sin pago inicial.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/blog/opciones-financiamiento-solar-puerto-rico',
+    canonical: 'https://www.kilowattpr.com/blog/opciones-financiamiento-solar-puerto-rico/',
   },
 }
 
@@ -39,7 +39,7 @@ const faqs = [
 export default function FinanciamientoSolarPage() {
   const publishDate = '2026-04-10'
   const modifyDate = '2026-04-10'
-  const url = 'https://www.kilowattpr.com/blog/opciones-financiamiento-solar-puerto-rico'
+  const url = 'https://www.kilowattpr.com/blog/opciones-financiamiento-solar-puerto-rico/'
 
   return (
     <>

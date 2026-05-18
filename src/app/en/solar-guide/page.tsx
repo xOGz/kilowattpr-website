@@ -7,17 +7,17 @@ export const metadata: Metadata = {
   description:
     'Download the free definitive guide to solar energy in Puerto Rico. Costs, process, batteries, LUMA, maintenance, and more. All in one document.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/solar-guide',
+    canonical: 'https://www.kilowattpr.com/en/solar-guide/',
     languages: {
-      'es': 'https://www.kilowattpr.com/guia-solar',
-      'en': 'https://www.kilowattpr.com/en/solar-guide',
+      'es': 'https://www.kilowattpr.com/guia-solar/',
+      'en': 'https://www.kilowattpr.com/en/solar-guide/',
     },
   },
   openGraph: {
     title: 'Solar Guide Puerto Rico 2026 | Kilowatt PR',
     description:
       'Everything you need to know about solar energy in Puerto Rico in one document. Free download.',
-    url: 'https://www.kilowattpr.com/en/solar-guide',
+    url: 'https://www.kilowattpr.com/en/solar-guide/',
     locale: 'en_US',
   },
 }

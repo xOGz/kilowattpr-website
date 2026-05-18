@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   description:
     'Guía de energía solar comercial para negocios en Puerto Rico. Sistemas de 15-50kW+, análisis de ROI real basado en tarifas de LUMA Energy, y casos de estudio para restaurantes, almacenes y comercios.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios',
+    canonical: 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios/',
     languages: {
-      'es': 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios',
+      'es': 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios/',
     },
   },
 }
@@ -38,7 +38,7 @@ const faqs = [
 export default function SolarComercialPage() {
   const publishDate = '2026-03-25'
   const modifyDate = '2026-03-25'
-  const url = 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios'
+  const url = 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios/'
 
   return (
     <>

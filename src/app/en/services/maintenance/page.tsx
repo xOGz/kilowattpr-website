@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     'Solar panel maintenance and cleaning service in Puerto Rico. Kilowatt PR: every 6\u20138 months standard, every 4\u20136 months in coastal areas. Certified technicians.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/services/maintenance',
+    canonical: 'https://www.kilowattpr.com/en/services/maintenance/',
     languages: {
-      'es': 'https://www.kilowattpr.com/servicios/mantenimiento-lavado',
-      'en': 'https://www.kilowattpr.com/en/services/maintenance',
+      'es': 'https://www.kilowattpr.com/servicios/mantenimiento-lavado/',
+      'en': 'https://www.kilowattpr.com/en/services/maintenance/',
     },
   },
 }

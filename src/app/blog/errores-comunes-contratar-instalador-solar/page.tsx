@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   description:
     'Evita los 6 errores más costosos al contratar un instalador de paneles solares en Puerto Rico. Guía del consumidor con consejos prácticos para proteger tu inversión.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar',
+    canonical: 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar/',
     languages: {
-      'es': 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar',
+      'es': 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar/',
     },
   },
 }
@@ -38,7 +38,7 @@ const faqs = [
 export default function ErroresComunesPage() {
   const publishDate = '2026-03-22'
   const modifyDate = '2026-03-22'
-  const url = 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar'
+  const url = 'https://www.kilowattpr.com/blog/errores-comunes-contratar-instalador-solar/'
 
   return (
     <>

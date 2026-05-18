@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Cómo Leer tu Factura de LUMA y Calcular tu Ahorro Solar',
   description:
     'Aprende a leer cada cargo de tu factura de LUMA Energy y calcula cuánto puedes ahorrar con paneles solares en Puerto Rico. Guía paso a paso por ingenieros eléctricos.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/como-leer-factura-luma-ahorro-solar' },
+  alternates: { canonical: 'https://www.kilowattpr.com/blog/como-leer-factura-luma-ahorro-solar/' },
 }
 
 const faqs = [
@@ -33,7 +33,7 @@ const faqs = [
 export default function ComoLeerFacturaPage() {
   const publishDate = '2026-03-10'
   const modifyDate = '2026-03-10'
-  const url = 'https://www.kilowattpr.com/blog/como-leer-factura-luma-ahorro-solar'
+  const url = 'https://www.kilowattpr.com/blog/como-leer-factura-luma-ahorro-solar/'
 
   return (
     <>

@@ -4,10 +4,10 @@ export const metadata: Metadata = {
   title: 'Privacy Policy',
   description: 'Privacy policy of Kilowatt PR LLC.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/privacy',
+    canonical: 'https://www.kilowattpr.com/en/privacy/',
     languages: {
-      es: 'https://www.kilowattpr.com/privacidad',
-      en: 'https://www.kilowattpr.com/en/privacy',
+      es: 'https://www.kilowattpr.com/privacidad/',
+      en: 'https://www.kilowattpr.com/en/privacy/',
     },
   },
 }

@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     'Kilowatt PR offers professional roof sealing and waterproofing in Puerto Rico. 2-year workmanship warranty. Pre-solar installation service.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/services/roof-sealing',
+    canonical: 'https://www.kilowattpr.com/en/services/roof-sealing/',
     languages: {
-      'es': 'https://www.kilowattpr.com/servicios/sellado-de-techo',
-      'en': 'https://www.kilowattpr.com/en/services/roof-sealing',
+      'es': 'https://www.kilowattpr.com/servicios/sellado-de-techo/',
+      'en': 'https://www.kilowattpr.com/en/services/roof-sealing/',
     },
   },
 }

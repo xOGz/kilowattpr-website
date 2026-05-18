@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Instalación de Cargadores de Vehículos Eléctricos en Puerto Rico',
   description:
     'Cargadores de vehículos eléctricos (EV) Level 2 y Level 3 en residencias y comercios en PR. Combinamos solar más EV para máximo ahorro. 787-431-2275.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios/cargadores-ev' },
+  alternates: { canonical: 'https://www.kilowattpr.com/servicios/cargadores-ev/' },
 }
 
 const faqs = [

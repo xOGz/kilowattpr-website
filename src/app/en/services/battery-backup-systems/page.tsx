@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     'Total energy independence during LUMA Energy outages. Solar battery backup systems installed by Kilowatt PR across Puerto Rico. Up to 24 hours of backup power.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/services/battery-backup-systems',
+    canonical: 'https://www.kilowattpr.com/en/services/battery-backup-systems/',
     languages: {
-      'es': 'https://www.kilowattpr.com/servicios/sistemas-con-bateria',
-      'en': 'https://www.kilowattpr.com/en/services/battery-backup-systems',
+      'es': 'https://www.kilowattpr.com/servicios/sistemas-con-bateria/',
+      'en': 'https://www.kilowattpr.com/en/services/battery-backup-systems/',
     },
   },
 }

@@ -7,17 +7,17 @@ export const metadata: Metadata = {
   description:
     'Read the real experiences of families and businesses in Puerto Rico who trusted Kilowatt PR for their solar system. 4.9 stars on Google — verified reviews from real customers.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/reviews',
+    canonical: 'https://www.kilowattpr.com/en/reviews/',
     languages: {
-      'es': 'https://www.kilowattpr.com/resenas',
-      'en': 'https://www.kilowattpr.com/en/reviews',
+      'es': 'https://www.kilowattpr.com/resenas/',
+      'en': 'https://www.kilowattpr.com/en/reviews/',
     },
   },
   openGraph: {
     title: 'Reviews and Testimonials | Kilowatt PR',
     description:
       '4.9 stars on Google. Families and businesses in Puerto Rico share their experience with Kilowatt PR.',
-    url: 'https://www.kilowattpr.com/en/reviews',
+    url: 'https://www.kilowattpr.com/en/reviews/',
     locale: 'en_US',
   },
 }

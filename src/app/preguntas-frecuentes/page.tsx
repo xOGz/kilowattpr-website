@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: 'Preguntas Frecuentes sobre Energía Solar en Puerto Rico',
   description:
     'Respuestas a las preguntas más comunes sobre energía solar en Puerto Rico: costos, instalación, LUMA, baterías, mantenimiento y net metering.',
-  alternates: { canonical: 'https://www.kilowattpr.com/preguntas-frecuentes' },
+  alternates: { canonical: 'https://www.kilowattpr.com/preguntas-frecuentes/' },
   openGraph: {
     title: 'Preguntas Frecuentes | Kilowatt PR',
     description:
       'Todo lo que necesitas saber sobre energía solar en Puerto Rico: costos desde $11,950, proceso de instalación, LUMA y más.',
-    url: 'https://www.kilowattpr.com/preguntas-frecuentes',
+    url: 'https://www.kilowattpr.com/preguntas-frecuentes/',
   },
 }
 

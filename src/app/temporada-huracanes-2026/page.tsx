@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   keywords:
     'temporada huracanes puerto rico 2026 solar, huracanes puerto rico, batería respaldo huracanes, paneles solares huracanes, energía solar Puerto Rico',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/temporada-huracanes-2026',
+    canonical: 'https://www.kilowattpr.com/temporada-huracanes-2026/',
   },
 }
 
@@ -49,7 +49,7 @@ const faqs = [
 
 export default function TemporadaHuracanes2026Page() {
   const publishDate = '2026-03-28'
-  const url = 'https://www.kilowattpr.com/temporada-huracanes-2026'
+  const url = 'https://www.kilowattpr.com/temporada-huracanes-2026/'
 
   return (
     <>

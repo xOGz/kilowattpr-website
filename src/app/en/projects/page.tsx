@@ -6,10 +6,10 @@ export const metadata: Metadata = {
   description:
     'Gallery of solar panel installation projects in Puerto Rico completed by Kilowatt PR LLC. Residential, commercial, and battery backup systems.',
   alternates: {
-    canonical: 'https://www.kilowattpr.com/en/projects',
+    canonical: 'https://www.kilowattpr.com/en/projects/',
     languages: {
-      es: 'https://www.kilowattpr.com/proyectos',
-      en: 'https://www.kilowattpr.com/en/projects',
+      es: 'https://www.kilowattpr.com/proyectos/',
+      en: 'https://www.kilowattpr.com/en/projects/',
     },
   },
 }
