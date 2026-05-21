@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'Mantenimiento de Paneles Solares en Clima Tropical: Lo Que Necesitas Saber',
   description:
-    'Guía completa de mantenimiento de paneles solares en Puerto Rico. Frecuencia de limpieza, efectos del salitre, polvo del Sahara, humedad tropical y cuándo llamar a un profesional.',
+    'Guía de mantenimiento de paneles solares en Puerto Rico basada en más de una década de servicio en la isla: frecuencia de limpieza por zona, salitre, polvo del Sahara, mantenimiento post-huracán y cuándo llamar a un profesional.',
   alternates: { canonical: 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical/' },
 }
 
@@ -28,18 +28,26 @@ const faqs = [
     question: '¿Qué pasa si no le doy mantenimiento a mis paneles solares?',
     answer: 'Sin mantenimiento regular, los paneles solares en el clima tropical de Puerto Rico pueden perder hasta un 25% de su eficiencia debido a la acumulación de salitre, polvo, moho y residuos orgánicos. Además, la falta de inspección puede permitir que problemas menores (conexiones sueltas, tornillos oxidados, sellado deteriorado) se conviertan en reparaciones costosas. El mantenimiento preventivo protege tu inversión y asegura que tu sistema produzca al máximo durante sus 25+ años de vida útil.',
   },
+  {
+    question: '¿Cómo sé si mis paneles necesitan limpieza sin subir al techo?',
+    answer: 'Tu app de monitoreo es la mejor herramienta de diagnóstico. Si la producción de un día soleado es notablemente menor que la de semanas anteriores con clima similar, casi siempre la causa es suciedad acumulada. Otras señales: una capa visible de polvo o sal al mirar los paneles desde el suelo, manchas de agua o residuos orgánicos en los bordes, o producción que no se recupera después de un día de lluvia fuerte. Ante cualquiera de estas señales, una inspección resuelve la duda.',
+  },
+  {
+    question: '¿Debo inspeccionar mis paneles después de un huracán?',
+    answer: 'Sí, siempre. Después de un huracán o tormenta tropical, recomendamos una inspección profesional antes de confiar de nuevo en el sistema. Los vientos fuertes pueden aflojar herrajes, desplazar paneles, dejar escombros entre el panel y el techo, y causar micro-fisuras que no se ven a simple vista. Una inspección post-huracán de Kilowatt PR verifica la estructura de montaje, las conexiones eléctricas, el sellado y la producción por string para confirmar que el sistema quedó seguro y operando al máximo.',
+  },
 ]
 
 export default function MantenimientoPanelesPage() {
   const publishDate = '2026-03-15'
-  const modifyDate = '2026-03-15'
+  const modifyDate = '2026-05-20'
   const url = 'https://www.kilowattpr.com/blog/mantenimiento-paneles-solares-clima-tropical/'
 
   return (
     <>
       <ArticleSchema
         title="Mantenimiento de Paneles Solares en Clima Tropical: Lo Que Necesitas Saber"
-        description="Guía completa de mantenimiento de paneles solares en Puerto Rico. Frecuencia de limpieza, salitre, polvo del Sahara y cuándo llamar a un profesional."
+        description="Guía de mantenimiento de paneles solares en Puerto Rico basada en más de una década de servicio: frecuencia de limpieza, salitre, polvo del Sahara, mantenimiento post-huracán y cuándo llamar a un profesional."
         datePublished={publishDate}
         dateModified={modifyDate}
         url={url}
@@ -71,7 +79,9 @@ export default function MantenimientoPanelesPage() {
             nuestro clima tropical presenta desafíos únicos para el mantenimiento de paneles
             solares. El salitre costero, el polvo del Sahara, la humedad extrema y las
             temperaturas altas pueden afectar la eficiencia de tu sistema si no se maneja
-            correctamente. Esta guía te explica todo lo que necesitas saber.
+            correctamente. Esta guía la escribimos a partir de más de una década dando
+            servicio solar y eléctrico en la isla, atravesando el huracán María y la crisis
+            de LUMA Energy.
           </p>
         </div>
 
@@ -108,17 +118,20 @@ export default function MantenimientoPanelesPage() {
             En zonas costeras, esta acumulación puede reducir la producción hasta un{' '}
             <strong>15% a 20%</strong> si no se limpia regularmente. El salitre también puede
             acelerar la corrosión de los marcos de aluminio y las conexiones eléctricas si
-            los componentes no son de grado marino.
+            los componentes no son de grado marino. En Kilowatt PR seleccionamos herrajes y
+            sistemas de montaje aptos para ambiente costero precisamente por esta razón.
           </p>
 
           <h3>2. Polvo del Sahara</h3>
           <p>
             Cada año, entre junio y agosto, nubes masivas de polvo del desierto del Sahara
-            cruzan el Atlántico y llegan al Caribe. Estas nubes depositan partículas finas
-            sobre toda la isla, incluyendo tus paneles solares. Durante eventos severos de
-            polvo sahariano, la producción solar puede bajar entre un{' '}
-            <strong>5% y 15%</strong> temporalmente. Después de que pasa el evento, una
-            limpieza rápida restaura la producción normal.
+            cruzan el Atlántico y llegan al Caribe. Este fenómeno, conocido como la Capa de
+            Aire Sahariano, es monitoreado de cerca por la Administración Nacional Oceánica
+            y Atmosférica (NOAA) porque también influye en la temporada de huracanes. Para
+            tus paneles, lo relevante es que estas nubes depositan partículas finas sobre
+            toda la isla. Durante eventos severos de polvo sahariano, la producción solar
+            puede bajar entre un <strong>5% y 15%</strong> temporalmente. Después de que pasa
+            el evento, una limpieza rápida restaura la producción normal.
           </p>
 
           <h3>3. Humedad y Moho</h3>
@@ -141,6 +154,52 @@ export default function MantenimientoPanelesPage() {
             el panel y el techo permite la circulación de aire que reduce la temperatura.
             Kilowatt PR instala con la separación apropiada según las especificaciones del
             fabricante.
+          </p>
+
+          <h2>Lo Que Vemos en el Campo: Más de una Década de Mantenimiento Solar en PR</h2>
+
+          <p>
+            La teoría sobre suciedad y eficiencia es una cosa; lo que realmente observamos
+            techo por techo en Puerto Rico es otra. Estos son los patrones que más se repiten
+            en nuestro trabajo de mantenimiento a lo largo de la isla:
+          </p>
+
+          <ul>
+            <li>
+              <strong>El problema casi nunca es el equipo, es la suciedad.</strong> Cuando
+              un cliente llama porque "el sistema bajó de producción", la causa más común no
+              es una falla del inversor ni de los paneles: es una capa de polvo, sal o residuo
+              orgánico que se acumuló sin que nadie lo notara.
+            </li>
+            <li>
+              <strong>La diferencia entre la costa y la montaña es real.</strong> Un sistema
+              en Rincón o Aguada acumula salitre a un ritmo muy distinto al de uno en Cayey o
+              Utuado. No existe un calendario único de limpieza para toda la isla; depende de
+              tu microclima.
+            </li>
+            <li>
+              <strong>La esquina inferior del panel es donde empieza el problema.</strong> El
+              agua de lluvia arrastra suciedad hacia el borde inferior del panel y la deja ahí
+              al evaporarse. Esa franja sucia en la parte baja del vidrio es una de las
+              primeras señales visibles de que toca limpieza.
+            </li>
+            <li>
+              <strong>La lluvia no limpia tus paneles.</strong> Es el mito más común. La
+              lluvia tropical fuerte moja la suciedad y la redistribuye, pero el salitre y el
+              polvo fino quedan adheridos. Confiar en la lluvia como "limpieza gratis" es una
+              de las razones por las que vemos sistemas con años de acumulación.
+            </li>
+            <li>
+              <strong>Los nidos y los escombros bajo el panel son comunes.</strong> El espacio
+              entre el panel y el techo es atractivo para aves, lagartijos e insectos.
+              Detectar y despejar eso a tiempo evita problemas de cableado y sombras parciales.
+            </li>
+          </ul>
+
+          <p>
+            Esa experiencia acumulada es la razón por la que el mantenimiento preventivo
+            funciona: la mayoría de las pérdidas de producción en Puerto Rico son
+            predecibles y evitables.
           </p>
 
           <h2>Frecuencia de Limpieza Recomendada</h2>
@@ -167,6 +226,30 @@ export default function MantenimientoPanelesPage() {
             </div>
           </div>
 
+          <p>
+            Por ejemplo, un sistema en Aguada —zona de llano costero con brisa marina
+            constante— suele necesitar limpieza cada 5 a 7 meses, mientras que uno en San Juan,
+            más protegido del salitre directo pero expuesto a polvo urbano, puede mantenerse
+            bien con un intervalo similar o ligeramente más largo. La regla práctica: mientras
+            más cerca del mar y más expuesto al viento, más frecuente la limpieza.
+          </p>
+
+          <h2>Señales de que tus Paneles Necesitan Limpieza Ya</h2>
+
+          <p>
+            No tienes que esperar al próximo servicio programado. Estas son las señales de
+            que toca actuar antes:
+          </p>
+
+          <ul>
+            <li><strong>La producción bajó sin explicación.</strong> En un día soleado, tu sistema produce notablemente menos que en semanas anteriores con clima parecido.</li>
+            <li><strong>Capa visible de polvo o sal.</strong> Desde el suelo se ve una película opaca o manchas blancuzcas sobre el vidrio.</li>
+            <li><strong>Franja sucia en el borde inferior.</strong> Una línea de residuo acumulado en la parte baja de los paneles.</li>
+            <li><strong>Moho, líquenes o manchas verdes</strong> en los marcos o esquinas.</li>
+            <li><strong>Pasó un evento de polvo del Sahara</strong> o una tormenta de viento que arrastró tierra y hojas.</li>
+            <li><strong>Han pasado más de 8 meses</strong> desde la última limpieza, sin importar la zona.</li>
+          </ul>
+
           <h2>Qué Sucede Si No Mantienes tus Paneles: Pérdida de Hasta 25% de Eficiencia</h2>
 
           <p>
@@ -190,6 +273,53 @@ export default function MantenimientoPanelesPage() {
             <li><strong>Micro-fisuras en paneles</strong> se expanden con los ciclos térmicos tropicales</li>
           </ul>
 
+          <h2>Mantenimiento Después de un Huracán o Tormenta Tropical</h2>
+
+          <p>
+            En Puerto Rico el mantenimiento solar no se entiende sin la temporada de
+            huracanes. Después del huracán María, parte de nuestro trabajo fue precisamente
+            evaluar y restaurar sistemas eléctricos y solares afectados. Por eso insistimos:
+            un sistema solar que pasó un huracán necesita una inspección profesional antes de
+            volver a confiar plenamente en él, aunque "se vea bien" desde el suelo.
+          </p>
+
+          <p>Una inspección post-huracán debe verificar al menos:</p>
+
+          <ul>
+            <li><strong>Herrajes y estructura de montaje</strong> — los vientos fuertes aflojan tornillería y pueden desplazar paneles milímetros que rompen el sellado.</li>
+            <li><strong>Escombros entre el panel y el techo</strong> — hojas, ramas y tierra que generan sombras parciales y retienen humedad.</li>
+            <li><strong>Micro-fisuras en el vidrio</strong> — impactos de escombros voladores que no se ven a simple vista pero degradan el rendimiento.</li>
+            <li><strong>Conexiones eléctricas y cableado</strong> — humedad infiltrada o cables desplazados.</li>
+            <li><strong>Producción por string</strong> — comparar contra la producción esperada para confirmar que todo el arreglo está aportando.</li>
+          </ul>
+
+          <p>
+            Si quieres prepararte antes de que llegue la temporada, revisa nuestra guía de{' '}
+            <Link href="/temporada-huracanes-2026">temporada de huracanes 2026</Link> y, si
+            acabas de pasar un apagón prolongado, lee{' '}
+            <Link href="/blog/que-hacer-despues-apagon-luma">qué hacer después de un apagón de LUMA</Link>.
+          </p>
+
+          <h2>El Monitoreo: tu Primera Herramienta de Diagnóstico</h2>
+
+          <p>
+            La mayoría de los sistemas solares modernos incluyen una app de monitoreo que
+            muestra la producción diaria. Esa app es tu mejor aliada para el mantenimiento
+            sin subir al techo. Te recomendamos revisarla con esta lógica simple:
+          </p>
+
+          <ul>
+            <li>Compara días soleados entre sí, no un día nublado contra uno despejado.</li>
+            <li>Una caída gradual y sostenida de producción en días buenos casi siempre es suciedad acumulada.</li>
+            <li>Una caída súbita y marcada puede indicar un problema de equipo o de una conexión: ahí conviene llamar de inmediato.</li>
+            <li>Anota tu producción típica por temporada para tener una referencia personal.</li>
+          </ul>
+
+          <p>
+            El monitoreo te dice <em>cuándo</em> algo cambió; la inspección profesional te
+            dice <em>por qué</em>. Los dos juntos son el mantenimiento completo.
+          </p>
+
           <h2>Limpieza DIY vs. Limpieza Profesional</h2>
 
           <h3>Lo Que Puedes Hacer Tú Mismo</h3>
@@ -212,7 +342,8 @@ export default function MantenimientoPanelesPage() {
           <h3>Cuándo Llamar a un Profesional</h3>
           <p>
             Recomendamos una inspección profesional al menos una vez al año, y siempre después
-            de un huracán o evento climático severo. La inspección profesional de Kilowatt PR
+            de un huracán o evento climático severo. El{' '}
+            <Link href="/servicios/mantenimiento-lavado">servicio de mantenimiento y lavado de Kilowatt PR</Link>{' '}
             incluye:
           </p>
 
@@ -229,16 +360,20 @@ export default function MantenimientoPanelesPage() {
 
           <p>
             En Kilowatt PR ofrecemos planes de mantenimiento preventivo diseñados
-            específicamente para las condiciones de Puerto Rico. Nuestros técnicos con más
-            de una década de experiencia en la isla conocen los desafíos de cada zona: sabemos
-            que un sistema en Rincón necesita un protocolo diferente a uno en Cayey.
+            específicamente para las condiciones de Puerto Rico. Nuestros técnicos y peritos
+            electricistas, con más de una década de experiencia en la isla, conocen los
+            desafíos de cada zona: sabemos que un sistema en Rincón necesita un protocolo
+            diferente a uno en Cayey.
           </p>
 
           <p>
             El mantenimiento no es un gasto: es la protección de tu inversión. Un sistema
-            solar de $20,000 a $30,000 merece el cuidado adecuado para producir al máximo
-            durante sus 25 años de garantía. Un programa de mantenimiento típico cuesta
-            una fracción de lo que pierdes en producción cuando los paneles están sucios.
+            solar de $15,000 a $35,000 merece el cuidado adecuado para producir al máximo
+            durante sus 25 años de vida útil. La garantía de mano de obra de Kilowatt PR en
+            la instalación de sistemas solares es de 1 año; las garantías de los equipos
+            (paneles, inversor, batería) las cubre cada fabricante. Un programa de
+            mantenimiento preventivo cuesta una fracción de lo que pierdes en producción
+            cuando los paneles están sucios.
           </p>
         </div>
 
@@ -264,9 +399,9 @@ export default function MantenimientoPanelesPage() {
           <h3 className="font-bold text-navy-dark mb-4">Artículos Relacionados</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', label: 'Costos de Energía Solar 2026' },
-              { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', label: 'Guía de Baterías' },
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
+              { href: '/servicios/mantenimiento-lavado', label: 'Servicio de Mantenimiento y Lavado' },
+              { href: '/blog/que-hacer-despues-apagon-luma', label: 'Qué Hacer Después de un Apagón de LUMA' },
+              { href: '/temporada-huracanes-2026', label: 'Temporada de Huracanes 2026' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-solar-yellow font-medium hover:underline text-sm">
                 {l.label}
