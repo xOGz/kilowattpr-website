@@ -406,6 +406,7 @@ export default function TemporadaHuracanes2026Page() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', label: 'Guía de Baterías de Respaldo' },
+              { href: '/blog/mantenimiento-paneles-solares-clima-tropical', label: 'Mantenimiento de Paneles (y post-huracán)' },
               { href: '/comparacion/por-que-kilowatt-pr', label: '¿Por Qué Kilowatt PR?' },
               { href: '/calculadora-solar', label: 'Calculadora Solar' },
             ].map((l) => (

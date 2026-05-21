@@ -136,6 +136,14 @@ export default function MantenimientoLavadoPage() {
             </div>
           </div>
 
+          <p className="mt-6 text-sm text-gray-600">
+            ¿Quieres entender por qué el clima de Puerto Rico afecta tanto a los paneles?
+            Lee nuestra guía completa de{' '}
+            <Link href="/blog/mantenimiento-paneles-solares-clima-tropical" className="text-solar-yellow font-medium hover:underline">
+              mantenimiento de paneles solares en clima tropical
+            </Link>.
+          </p>
+
           <div className="mt-12 bg-solar-yellow/10 border border-solar-yellow/30 rounded-xl p-8">
             <h3 className="text-navy-dark font-bold text-lg mb-5 text-center">
               ¿Cuándo fue la última vez que limpiaron tus paneles?
