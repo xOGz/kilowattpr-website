@@ -61,9 +61,9 @@ const services = [
   {
     icon: Building,
     title: 'Energía Solar Comercial',
-    desc: 'Sistemas solares para negocios: restaurantes, farmacias, almacenes, hoteles. Sistemas de 10kW a 100kW+ con retorno de inversión en 3 a 5 años.',
+    desc: 'Sistemas solares para negocios: restaurantes, farmacias, almacenes, hoteles. Sistemas de 10kW a 100kW+ con retorno de inversión en 4 a 7 años.',
     href: '/servicios/energia-solar-comercial',
-    features: ['Sistemas 10kW–100kW+', 'ROI en 3–5 años', 'Net metering comercial', 'Reducción de cargos por demanda'],
+    features: ['Sistemas 10kW–100kW+', 'ROI en 4–7 años', 'Net metering comercial', 'Reducción de cargos por demanda'],
     image: '/servicios/solar-comercial.webp',
     imageAlt: 'Trabajo de servicio eléctrico comercial por Kilowatt PR en Puerto Rico',
   },

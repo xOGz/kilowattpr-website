@@ -5,9 +5,9 @@ import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 
 export const metadata: Metadata = {
-  title: 'Energía Solar Comercial en Puerto Rico: ROI para Negocios Locales',
+  title: 'ROI de la Energía Solar Comercial en Puerto Rico: 3 Casos Reales',
   description:
-    'Guía de energía solar comercial para negocios en Puerto Rico. Sistemas de 15-50kW+, análisis de ROI real basado en tarifas de LUMA Energy, y casos de estudio para restaurantes, almacenes y comercios.',
+    'Análisis de retorno de inversión (ROI) solar comercial en Puerto Rico con 3 escenarios: restaurante, almacén y comercio retail. Períodos de recuperación, ahorro a 25 años y el valor de la continuidad operacional durante apagones de LUMA.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios/',
     languages: {
@@ -37,14 +37,14 @@ const faqs = [
 
 export default function SolarComercialPage() {
   const publishDate = '2026-03-25'
-  const modifyDate = '2026-03-25'
+  const modifyDate = '2026-05-22'
   const url = 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios/'
 
   return (
     <>
       <ArticleSchema
-        title="Energía Solar Comercial en Puerto Rico: ROI para Negocios Locales"
-        description="Guía de energía solar comercial para negocios en Puerto Rico. Sistemas de 15-50kW+, análisis de ROI real basado en tarifas de LUMA Energy."
+        title="ROI de la Energía Solar Comercial en Puerto Rico: 3 Casos Reales"
+        description="Análisis de retorno de inversión solar comercial en Puerto Rico con 3 escenarios reales: restaurante, almacén y comercio retail, basado en tarifas de LUMA Energy."
         datePublished={publishDate}
         dateModified={modifyDate}
         url={url}
@@ -68,15 +68,17 @@ export default function SolarComercialPage() {
           </div>
 
           <h1 className="text-3xl md:text-4xl font-bold text-navy-dark mb-4">
-            Energía Solar Comercial en Puerto Rico: ROI para Negocios Locales
+            ROI de la Energía Solar Comercial en Puerto Rico: 3 Casos Reales de Negocios
           </h1>
 
           <p className="article-intro text-xl text-gray-600 leading-relaxed">
             Si eres dueño de un negocio en Puerto Rico, ya conoces el dolor de las facturas
-            de LUMA Energy. Las tarifas comerciales son incluso más altas que las
-            residenciales, y cada apagón representa ventas perdidas, inventario arruinado
-            y clientes frustrados. La energía solar comercial no es solo una decisión
-            ambiental — es una estrategia financiera con retorno de inversión medible.
+            de LUMA Energy. Esta guía no vende — analiza los números: tres escenarios reales
+            de retorno de inversión (un restaurante, un almacén y un comercio retail) con
+            períodos de recuperación, ahorro proyectado a 25 años y el valor económico de
+            seguir operando durante los apagones. Si después quieres una propuesta para tu
+            negocio, te conectamos con nuestro{' '}
+            <Link href="/servicios/energia-solar-comercial">servicio de energía solar comercial</Link>.
           </p>
         </div>
 
@@ -301,7 +303,10 @@ export default function SolarComercialPage() {
             En Kilowatt PR, nuestros técnicos con más de una década de experiencia en
             Puerto Rico y nuestro ingeniero profesional con más de 50 años en el campo
             analizan tu consumo comercial, evalúan tu espacio de techo y te presentan un
-            diseño con el ROI detallado — sin costo ni compromiso.
+            diseño con el ROI detallado —
+            sin costo ni compromiso. Cuando estés listo para esa propuesta, conoce los
+            detalles del proceso, los permisos y lo que incluye en nuestra página de{' '}
+            <Link href="/servicios/energia-solar-comercial">energía solar comercial para negocios</Link>.
           </p>
         </div>
 
@@ -320,7 +325,7 @@ export default function SolarComercialPage() {
         </div>
       </article>
 
-      <FAQSection faqs={faqs} title="Preguntas sobre Energía Solar Comercial en Puerto Rico" />
+      <FAQSection faqs={faqs} title="Preguntas sobre el ROI de la Energía Solar Comercial" />
 
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

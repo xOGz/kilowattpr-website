@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Energía Solar Comercial en Puerto Rico — Sistemas para Negocios',
   description:
-    'Sistemas solares comerciales para negocios en PR. Restaurantes, farmacias, almacenes, hoteles. ROI en 3 a 5 años. Consulta gratis: 787-431-2275.',
+    'Sistemas solares comerciales para negocios en PR. Restaurantes, farmacias, almacenes, hoteles. ROI en 4 a 7 años. Consulta gratis: 787-431-2275.',
   alternates: { canonical: 'https://www.kilowattpr.com/servicios/energia-solar-comercial/' },
 }
 
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: '¿Cuál es el retorno de inversión (ROI) de un sistema solar comercial?',
-    answer: 'La mayoría de los negocios en Puerto Rico recuperan su inversión en energía solar en 3 a 5 años, dependiendo del tamaño del sistema y el consumo eléctrico. Con las tarifas de LUMA Energy entre las más altas de Estados Unidos, un sistema solar comercial puede generar ahorros de miles de dólares mensuales. Después del período de retorno, la electricidad que produce tu sistema es prácticamente gratis por los próximos 20+ años.',
+    answer: 'La mayoría de los negocios en Puerto Rico recuperan su inversión en energía solar en 4 a 7 años, dependiendo del tamaño del sistema y el consumo eléctrico. Con las tarifas de LUMA Energy entre las más altas de Estados Unidos, un sistema solar comercial puede generar ahorros de miles de dólares mensuales. Después del período de retorno, la electricidad que produce tu sistema es prácticamente gratis por los próximos 20+ años.',
   },
   {
     question: '¿Cómo funciona el net metering para negocios en Puerto Rico?',
@@ -43,7 +43,7 @@ export default function EnergiaSolarComercialPage() {
             <span className="text-solar-yellow">Puerto Rico</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
-            Sistemas solares de 10 kW a 100 kW+ para negocios. ROI en 3-5 años, reducción de
+            Sistemas solares de 10 kW a 100 kW+ para negocios. ROI en 4-7 años, reducción de
             cargos por demanda y protección contra los aumentos de LUMA Energy.
           </p>
         </div>
@@ -83,7 +83,7 @@ export default function EnergiaSolarComercialPage() {
               completa de permisos OGPE, solicitud de interconexión con LUMA Energy y un plan
               de mantenimiento para asegurar el rendimiento óptimo durante toda la vida útil del
               sistema. La mayoría de nuestros clientes comerciales recuperan su inversión en
-              3 a 5 años.
+              4 a 7 años.
             </p>
           </div>
 
@@ -135,7 +135,19 @@ export default function EnergiaSolarComercialPage() {
             </div>
           </div>
 
-          <div className="mt-12 bg-solar-yellow/10 border border-solar-yellow/30 rounded-xl p-8">
+          <div className="mt-10 bg-blue-50 border border-blue-200 rounded-xl p-6">
+            <p className="text-gray-700 text-sm leading-relaxed">
+              <strong className="text-navy-dark">¿Quieres ver números concretos antes de decidir?</strong>{' '}
+              Lee nuestro{' '}
+              <Link href="/blog/energia-solar-comercial-roi-negocios" className="text-solar-yellow font-medium hover:underline">
+                análisis de ROI solar comercial con 3 casos reales
+              </Link>{' '}
+              — restaurante, almacén y comercio retail — con períodos de recuperación y
+              ahorro proyectado a 25 años.
+            </p>
+          </div>
+
+          <div className="mt-8 bg-solar-yellow/10 border border-solar-yellow/30 rounded-xl p-8">
             <h3 className="text-navy-dark font-bold text-lg mb-5 text-center">
               ¿Quieres reducir los costos eléctricos de tu negocio?
             </h3>

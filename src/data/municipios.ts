@@ -154,7 +154,7 @@ export const municipios: Municipio[] = [
       },
       {
         question: '¿Ofrecen servicio para negocios cerca del aeropuerto de Aguadilla?',
-        answer: 'Sí, hemos instalado sistemas comerciales en la zona de Ramey y áreas industriales cerca del aeropuerto Rafael Hernández. Los negocios en esta zona tienen facturas eléctricas altas por refrigeración y aire acondicionado, haciendo que el retorno de inversión en solar sea especialmente atractivo — típicamente 3 a 5 años.',
+        answer: 'Sí, hemos instalado sistemas comerciales en la zona de Ramey y áreas industriales cerca del aeropuerto Rafael Hernández. Los negocios en esta zona tienen facturas eléctricas altas por refrigeración y aire acondicionado, haciendo que el retorno de inversión en solar sea especialmente atractivo — típicamente 4 a 7 años.',
       },
     ],
   },
