@@ -21,6 +21,7 @@ export const metadata: Metadata = {
     url: 'https://www.kilowattpr.com/en/blog/how-much-does-solar-cost-puerto-rico-2026/',
     locale: 'en_US',
     type: 'article',
+    images: [{ url: 'https://www.kilowattpr.com/gallery/paneles-residencial.webp', width: 1200, height: 630, alt: 'Residential solar panels installed in Puerto Rico by Kilowatt PR' }],
   },
 }
 
@@ -250,7 +251,7 @@ export default function SolarCostPage() {
           <h3 className="font-bold text-navy-dark mb-4">Related Articles</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Hurricane Preparation' },
+              { href: '/blog/preparar-hogar-huracanes-solar', label: 'Hurricane Preparation' },
               { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', label: 'Battery Guide' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'LUMA Interconnection' },
             ].map((l) => (

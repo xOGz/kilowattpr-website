@@ -22,8 +22,8 @@ export default function Footer() {
             </div>
             <p className="text-body-md leading-relaxed mb-5 text-on-surface-variant">
               {isEnglish
-                ? 'Professional solar engineering for Puerto Rico. Design and installation by a licensed PE engineer with 50+ years of experience. Families protected across the island.'
-                : 'Ingeniería solar profesional para Puerto Rico. Diseño e instalación por ingeniero PE licenciado con más de 50 años de experiencia. Familias protegidas en toda la isla.'}
+                ? 'Professional solar engineering for Puerto Rico. Design and installation by a licensed PE engineer with 30+ years of experience. Families protected across the island.'
+                : 'Ingeniería solar profesional para Puerto Rico. Diseño e instalación por ingeniero PE licenciado con más de 30 años de experiencia. Familias protegidas en toda la isla.'}
             </p>
             <div className="flex gap-4">
               <a

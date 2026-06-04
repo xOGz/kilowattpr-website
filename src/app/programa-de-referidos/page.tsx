@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description:
       'Gana $500 por cada persona que refieras a Kilowatt PR y complete su instalación solar.',
     url: 'https://www.kilowattpr.com/programa-de-referidos/',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Programa de referidos solares de Kilowatt PR en Puerto Rico' }],
   },
 }
 

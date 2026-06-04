@@ -21,6 +21,7 @@ export const metadata: Metadata = {
       '4.9 stars on Google. Families and businesses in Puerto Rico share their experience with Kilowatt PR.',
     url: 'https://www.kilowattpr.com/en/reviews/',
     locale: 'en_US',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Customer reviews of Kilowatt PR in Puerto Rico' }],
   },
 }
 

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
       'Earn $500 for every person you refer to Kilowatt PR who completes their solar installation.',
     url: 'https://www.kilowattpr.com/en/referral-program/',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Kilowatt PR solar referral program in Puerto Rico' }],
   },
 }
 

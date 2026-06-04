@@ -19,7 +19,7 @@ const faqs = [
   {
     question: '¿Qué credenciales tiene Kilowatt PR?',
     answer:
-      'Kilowatt PR cuenta con Xavier Acevedo Santiago, fundador y perito electricista licenciado (#21309), quien supervisa cada instalación. El Ing. Julio A. Santiago Pérez (PE #6083), COO y asesor de ingeniería, respalda el diseño técnico de cada sistema con más de 50 años de experiencia profesional.',
+      'Kilowatt PR cuenta con Xavier Acevedo Santiago, fundador y perito electricista licenciado (#21309), quien supervisa cada instalación. El Ing. Julio A. Santiago Pérez (PE #6083), COO y asesor de ingeniería, respalda el diseño técnico de cada sistema con más de 30 años de experiencia profesional.',
   },
   {
     question: '¿Por qué incluyen batería en todos los sistemas?',
@@ -260,7 +260,7 @@ export default function PorQueKilowattPage() {
                 COO y Asesor de Ingeniería — PE #6083
               </p>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Ingeniero electricista con 50+ años de experiencia. Ex ingeniero de NASA y
+                Ingeniero electricista con 30+ años de experiencia. Ex ingeniero de NASA y
                 ex profesor de la Universidad de Puerto Rico, Mayagüez. Respalda el diseño
                 técnico de cada sistema.
               </p>

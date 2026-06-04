@@ -33,7 +33,7 @@ const faqs = [
   {
     question: '¿Kilowatt PR ofrece garantía en sus instalaciones?',
     answer:
-      'Sí. Todos nuestros sistemas incluyen garantía del fabricante en paneles (25 años), inversores (10-12 años) y baterías (10 años). Además, ofrecemos garantía de mano de obra en la instalación. Como empresa local en Aguada, nuestro equipo está disponible para cualquier servicio post-venta sin intermediarios.',
+      'Sí. Los paneles, inversores y baterías están cubiertos por la garantía directa del fabricante — el plazo exacto varía por marca y modelo y se detalla en la cotización formal. Adicional a eso, Kilowatt PR ofrece 1 año de garantía de mano de obra en la instalación de sistemas solares. Como empresa local en Aguada, nuestro equipo está disponible para cualquier servicio post-venta sin intermediarios.',
   },
 ]
 
@@ -69,7 +69,7 @@ const comparaciones: readonly ComparisonRow[] = [
   },
   {
     categoria: 'Ingeniería',
-    kilowatt: 'Ing. Julio A. Santiago Pérez (PE #6083), COO y asesor de ingeniería con 50+ años de experiencia',
+    kilowatt: 'Ing. Julio A. Santiago Pérez (PE #6083), COO y asesor de ingeniería con 30+ años de experiencia',
     sunnova: 'Ingenieros corporativos sin presencia local permanente',
     kilowattPositive: true,
     sunnovaPositive: false,
@@ -97,7 +97,7 @@ const comparaciones: readonly ComparisonRow[] = [
   },
   {
     categoria: 'Reseñas verificadas',
-    kilowatt: '4.9★ con 10+ reseñas verificadas en Google',
+    kilowatt: '4.9★ con 10 reseñas verificadas en Google',
     sunnova: 'Múltiples quejas de servicio al cliente en plataformas públicas',
     kilowattPositive: true,
     sunnovaPositive: false,
@@ -295,7 +295,7 @@ export default function KilowattVsSunnovaPage() {
 
           <p>
             Cada proyecto de Kilowatt PR cuenta con la supervisión del Ing. Julio A. Santiago
-            Pérez (PE #6083), COO y asesor de ingeniería con más de 50 años de experiencia,
+            Pérez (PE #6083), COO y asesor de ingeniería con más de 30 años de experiencia,
             incluyendo trabajo en NASA y docencia en la Universidad de Puerto Rico en Mayagüez.
             Xavier Acevedo Santiago, fundador y perito electricista licenciado (#21309), supervisa
             cada instalación personalmente.
@@ -317,7 +317,7 @@ export default function KilowattVsSunnovaPage() {
             <Shield className="text-green-600 mx-auto mb-3" size={32} />
             <p className="font-bold text-navy-dark text-lg">Kilowatt PR</p>
             <p className="text-3xl font-bold text-green-600 my-2">4.9 ★</p>
-            <p className="text-sm text-gray-600">10+ reseñas verificadas</p>
+            <p className="text-sm text-gray-600">10 reseñas verificadas</p>
             <p className="text-xs text-gray-400 mt-1">Google Business Profile</p>
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">
@@ -371,7 +371,7 @@ export default function KilowattVsSunnovaPage() {
           </p>
           <p>
             Kilowatt PR ofrece instalación directa, propiedad del sistema desde el primer día,
-            ingeniería supervisada por un PE con 50+ años de experiencia, y servicio post-venta
+            ingeniería supervisada por un PE con 30+ años de experiencia, y servicio post-venta
             sin intermediarios. Si estás evaluando opciones o necesitas asistencia con un sistema
             existente, estamos disponibles para una consulta gratuita.
           </p>

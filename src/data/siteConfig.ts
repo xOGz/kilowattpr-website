@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: 'Kilowatt PR LLC',
-  tagline: 'Ingeniería solar profesional para Puerto Rico — ingeniero PE con 50+ años de experiencia, 4.9★ en Google',
+  tagline: 'Ingeniería solar profesional para Puerto Rico — ingeniero PE con 30+ años de experiencia, 4.9★ en Google',
   url: 'https://www.kilowattpr.com',
   phone: '+1-787-431-2275',
   whatsapp: 'https://wa.me/17874312275',
@@ -22,8 +22,8 @@ export const siteConfig = {
     count: 10,
   },
   trustAnchor: {
-    es: 'diseño e instalación solar por ingeniero PE licenciado con más de 50 años de experiencia en Puerto Rico',
-    en: 'solar design and installation by a licensed PE engineer with 50+ years of experience in Puerto Rico',
+    es: 'diseño e instalación solar por ingeniero PE licenciado con más de 30 años de experiencia en Puerto Rico',
+    en: 'solar design and installation by a licensed PE engineer with 30+ years of experience in Puerto Rico',
   },
   hours: 'Lunes–Sábado, 8:00 AM – 5:00 PM',
 }

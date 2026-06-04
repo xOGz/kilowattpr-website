@@ -22,7 +22,7 @@ const faqs = [
   {
     question: '¿Puedo comprar un Tesla Powerwall a través de Kilowatt PR?',
     answer:
-      'Kilowatt PR trabaja con múltiples marcas de baterías de respaldo de alta calidad. Si bien el Tesla Powerwall es un producto popular, la disponibilidad directa depende de Tesla. Nosotros podemos recomendar la mejor batería para tu hogar basándonos en tu consumo, presupuesto y necesidades específicas.',
+      'Sí, instalamos Tesla Powerwall si lo solicitas. Sin embargo, por defecto recomendamos EG4, Solark, Fortress o Sunbeat porque ofrecen precio más bajo, calidad equivalente, garantía similar y mejor soporte local — acceso a piezas y servicio sin depender de los canales centralizados de Tesla. En la consulta gratis te mostramos la comparación lado a lado y tú decides. Si después de ver los números todavía prefieres Powerwall, lo instalamos sin problema.',
   },
   {
     question: '¿Cuál es la diferencia de precio entre Tesla Solar y Kilowatt PR?',
@@ -61,7 +61,7 @@ const comparaciones: readonly ComparisonRow[] = [
   },
   {
     categoria: 'Disponibilidad de baterías',
-    kilowatt: 'Baterías incluidas en todos los sistemas desde $13K',
+    kilowatt: 'EG4, Solark, Fortress, Sunbeat — disponibles. Powerwall bajo solicitud. Sistemas desde $11,950',
     tesla: 'Powerwall con disponibilidad variable y tiempos de espera',
     kilowattPositive: true,
     teslaPositive: false,
@@ -103,7 +103,7 @@ const comparaciones: readonly ComparisonRow[] = [
   },
   {
     categoria: 'Reseñas verificadas',
-    kilowatt: '4.9★ con 10+ reseñas en Google Business Profile',
+    kilowatt: '4.9★ con 10 reseñas verificadas en Google Business Profile',
     tesla: 'Reseñas mixtas para operaciones en Puerto Rico',
     kilowattPositive: true,
     teslaPositive: false,
@@ -248,7 +248,7 @@ export default function KilowattVsTeslaPage() {
           <p>
             Kilowatt PR cuenta con Xavier Acevedo Santiago, fundador y perito electricista
             licenciado (#21309), quien supervisa cada instalación personalmente. El Ing. Julio
-            A. Santiago Pérez (PE #6083), COO y asesor de ingeniería con más de 50 años de
+            A. Santiago Pérez (PE #6083), COO y asesor de ingeniería con más de 30 años de
             experiencia, respalda el diseño de cada sistema. Tesla no ofrece este nivel de
             supervisión local personalizada en Puerto Rico.
           </p>
@@ -293,7 +293,7 @@ export default function KilowattVsTeslaPage() {
             <Shield className="text-green-600 mx-auto mb-3" size={32} />
             <p className="font-bold text-navy-dark text-lg">Kilowatt PR</p>
             <p className="text-3xl font-bold text-green-600 my-2">4.9 ★</p>
-            <p className="text-sm text-gray-600">10+ reseñas verificadas</p>
+            <p className="text-sm text-gray-600">10 reseñas verificadas</p>
             <p className="text-xs text-gray-400 mt-1">Google Business Profile</p>
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 text-center">

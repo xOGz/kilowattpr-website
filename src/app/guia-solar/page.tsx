@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description:
       'Todo lo que necesitas saber sobre energía solar en Puerto Rico en un solo documento. Descarga gratis.',
     url: 'https://www.kilowattpr.com/guia-solar/',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Guía de energía solar en Puerto Rico de Kilowatt PR' }],
   },
 }
 
@@ -89,7 +90,12 @@ export default function GuiaSolarPage() {
               <p className="text-on-surface-variant text-sm mb-5">
                 Ingresa tu email y te enviamos la guía al instante.
               </p>
-              <LeadCaptureForm source="guia-solar" buttonText="Descargar Guía Gratis" />
+              <LeadCaptureForm
+                source="guia-solar"
+                buttonText="Descargar Guía Gratis"
+                serviceInterest="Guía Solar Puerto Rico 2026"
+                locale="es"
+              />
             </div>
           </div>
         </div>

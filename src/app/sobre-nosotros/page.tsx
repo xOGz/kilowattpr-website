@@ -16,6 +16,7 @@ export const metadata: Metadata = {
     description:
       'Fundada por Xavier Acevedo Santiago, perito electricista licenciado #21309. Asesoría de ingeniería PE #6083. Familias protegidas en toda la isla.',
     url: 'https://www.kilowattpr.com/sobre-nosotros/',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Equipo de Kilowatt PR, instaladores solares en Puerto Rico' }],
   },
 }
 
@@ -40,7 +41,7 @@ export default function AboutPage() {
             <p className="text-xl text-on-surface-variant leading-relaxed">
               Kilowatt PR no es otra empresa solar más. Fundada por electricistas con
               experiencia real en el campo, y asesorada por un ingeniero eléctrico PE con
-              más de 50 años de trayectoria profesional — incluyendo NASA y la Universidad
+              más de 30 años de trayectoria profesional — incluyendo NASA y la Universidad
               de Puerto Rico en Mayagüez.
             </p>
           </div>
@@ -71,7 +72,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Xavier cuenta con la asesoría del Ing. Julio A. Santiago Pérez (PE #6083),
-                  ingeniero eléctrico licenciado con más de 50 años de experiencia, ex ingeniero
+                  ingeniero eléctrico licenciado con más de 30 años de experiencia, ex ingeniero
                   de NASA y ex profesor de la UPR Mayagüez, quien sirve como COO y asesor de
                   ingeniería de la empresa.
                 </p>
@@ -211,12 +212,12 @@ export default function AboutPage() {
               {
                 icon: CheckCircle,
                 title: 'Nuestra Misión',
-                desc: 'Proteger a las familias y negocios de Puerto Rico de los apagones y las tarifas abusivas mediante sistemas solares de ingeniería profesional — diseñados, instalados y respaldados por un equipo con más de 50 años de experiencia.',
+                desc: 'Proteger a las familias y negocios de Puerto Rico de los apagones y las tarifas abusivas mediante sistemas solares de ingeniería profesional — diseñados, instalados y respaldados por un equipo con más de 30 años de experiencia.',
               },
               {
                 icon: Award,
                 title: 'Nuestro Compromiso',
-                desc: 'Cada instalación viene respaldada por garantía de 25 años en paneles, garantías de 5 a 10 años en inversores y baterías, e inspección de calidad a los 3 meses sin costo adicional. No terminamos hasta que tu sistema está produciendo.',
+                desc: 'Cada instalación viene respaldada por la garantía directa del fabricante en paneles, inversor y batería (plazo según marca), más 1 año de garantía de mano de obra de Kilowatt PR e inspección de calidad a los 3 meses sin costo adicional. No terminamos hasta que tu sistema está produciendo.',
               },
               {
                 icon: MapPin,
@@ -261,7 +262,7 @@ export default function AboutPage() {
                 role: 'COO y Asesor de Ingeniería',
                 name: 'Julio A. Santiago Pérez, PE',
                 credentials: 'PE #6083 · PPPE-PV-1809',
-                desc: 'Ingeniero eléctrico licenciado con 50+ años de experiencia. Ex ingeniero de NASA y ex profesor de la UPR Mayagüez. Asesora en el diseño de ingeniería de cada sistema solar.',
+                desc: 'Ingeniero eléctrico licenciado con 30+ años de experiencia. Ex ingeniero de NASA y ex profesor de la UPR Mayagüez. Asesora en el diseño de ingeniería de cada sistema solar.',
                 photo: '/team/julio-santiago.png',
                 href: '/equipo/julio-santiago-perez',
               },
@@ -328,7 +329,7 @@ export default function AboutPage() {
             <div className="bg-surface-container-high rounded-xl px-6 py-5 flex items-center gap-3">
               <Shield className="text-primary-container shrink-0" size={28} />
               <div className="text-left">
-                <p className="font-headline font-semibold text-on-surface">4.9★ / 10+ Reseñas</p>
+                <p className="font-headline font-semibold text-on-surface">4.9★ / 10 Reseñas</p>
                 <p className="text-on-surface-variant text-sm">Verificadas en Google Business</p>
               </div>
             </div>

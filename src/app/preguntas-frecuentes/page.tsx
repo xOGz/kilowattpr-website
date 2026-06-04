@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description:
       'Todo lo que necesitas saber sobre energía solar en Puerto Rico: costos desde $11,950, proceso de instalación, LUMA y más.',
     url: 'https://www.kilowattpr.com/preguntas-frecuentes/',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Preguntas frecuentes sobre energía solar en Puerto Rico de Kilowatt PR' }],
   },
 }
 
@@ -26,7 +27,7 @@ const costosFinanciamiento = [
   {
     question: '¿Qué opciones de financiamiento están disponibles?',
     answer:
-      'Ofrecemos financiamiento directo con pagos mensuales accesibles. También trabajamos con instituciones financieras locales para ofrecerte las mejores tasas. El pago mensual del financiamiento suele ser menor que tu factura actual de LUMA Energy.',
+      'Kilowatt PR no ofrece financiamiento directo. El cliente gestiona el préstamo con la institución financiera de su preferencia (banco o cooperativa local) y nosotros proveemos toda la documentación técnica que el banco solicite: cotización formal, especificaciones del sistema, proyección de ahorro y demás información requerida para evaluar el préstamo.',
   },
   {
     question: '¿En cuánto tiempo recupero mi inversión en energía solar?',
@@ -41,7 +42,7 @@ const costosFinanciamiento = [
   {
     question: '¿La cotización tiene algún costo o compromiso?',
     answer:
-      'No. La consulta inicial y cotización son completamente gratis y sin compromiso. Nuestro ingeniero PE #6083 diseña cada sistema personalizado según tu consumo real, orientación del techo y necesidades específicas.',
+      'La cotización es gratis y sin compromiso para clientes en Aguada, Aguadilla, Rincón, Moca, Añasco y Mayagüez. Para visitas fuera de esta área cercana a nuestra base, cobramos $150 por la inspección y cotización, los cuales se reembolsan al firmar contrato o llegar a un acuerdo de servicio. Esto cubre el tiempo de viaje y la inspección técnica en sitio. Nuestro ingeniero PE #6083 diseña cada sistema personalizado según tu consumo real, orientación del techo y necesidades específicas.',
   },
 ]
 
@@ -77,7 +78,7 @@ const equiposTecnologia = [
   {
     question: '¿Qué marcas de paneles solares instalan?',
     answer:
-      'Instalamos paneles de las marcas más confiables del mercado con garantía de 25 años. Seleccionamos equipos de alto rendimiento probados en condiciones tropicales como las de Puerto Rico: alta humedad, calor y exposición a sal marina en zonas costeras.',
+      'Instalamos paneles de las marcas tier-1 más confiables del mercado, cubiertos por garantía directa del fabricante. Seleccionamos equipos de alto rendimiento probados en condiciones tropicales como las de Puerto Rico: alta humedad, calor y exposición a sal marina en zonas costeras. La marca específica para tu sistema se selecciona durante el diseño y se detalla en la cotización.',
   },
   {
     question: '¿Necesito batería de respaldo con mis paneles solares?',
@@ -120,12 +121,12 @@ const mantenimiento = [
   {
     question: '¿Cuánto dura la garantía de los paneles solares?',
     answer:
-      'Los paneles tienen garantía de fabricante de 25 años en rendimiento. Los inversores típicamente tienen 10 a 12 años de garantía. Las baterías varían según el modelo, generalmente entre 10 y 15 años. Kilowatt PR ofrece garantía de mano de obra en la instalación.',
+      'Los equipos (paneles, inversores y baterías) están cubiertos por la garantía del fabricante — el plazo exacto depende de la marca seleccionada para tu sistema, y se detalla en la cotización formal. Adicional a eso, Kilowatt PR ofrece 1 año de garantía de mano de obra en la instalación de sistemas solares: cualquier defecto atribuible al trabajo de instalación lo corregimos sin costo durante ese período.',
   },
   {
     question: '¿Qué pasa si un panel se daña?',
     answer:
-      'Si un panel se daña por defecto de fabricación, está cubierto por la garantía de 25 años del fabricante. Si el daño es por causas externas (impacto, vandalismo), tu seguro de hogar normalmente lo cubre. Nuestro equipo puede manejar el reemplazo y reclamación.',
+      'Si un panel se daña por defecto de fabricación, está cubierto por la garantía directa del fabricante (consulta el plazo específico en la cotización). Si el daño es por causas externas (impacto, vandalismo), tu seguro de hogar normalmente lo cubre. Nuestro equipo puede manejar el reemplazo y reclamación.',
   },
 ]
 

@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       'How much can you save with solar energy in Puerto Rico? Calculate your savings based on your LUMA bill.',
     url: 'https://www.kilowattpr.com/en/solar-calculator/',
     locale: 'en_US',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Solar savings calculator for Puerto Rico by Kilowatt PR' }],
   },
 }
 
@@ -69,7 +70,7 @@ export default function SolarCalculatorPage() {
       {/* Calculator */}
       <section className="py-16 section-light-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SolarCalculator />
+          <SolarCalculator locale="en" />
         </div>
       </section>
 

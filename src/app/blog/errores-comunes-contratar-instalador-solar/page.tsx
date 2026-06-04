@@ -171,7 +171,7 @@ export default function ErroresComunesPage() {
             viento tienen las estructuras de montaje? ¿Son los equipos resistentes a la
             corrosión marina? ¿Se utilizó software de diseño con datos solares específicos
             de tu municipio? En Kilowatt PR, cada sistema es diseñado por nuestro asesor
-            de ingeniería, Ing. Julio A. Santiago Pérez (PE #6083), con más de 50 años de
+            de ingeniería, Ing. Julio A. Santiago Pérez (PE #6083), con más de 30 años de
             experiencia en ingeniería eléctrica en Puerto Rico.
           </p>
 
@@ -231,7 +231,7 @@ export default function ErroresComunesPage() {
             <li>
               <strong>Licencias verificables:</strong> Nuestro fundador es perito electricista
               licenciado y participa directamente en cada proyecto. Nuestro asesor de
-              ingeniería, Ing. Julio A. Santiago Pérez (PE #6083), tiene más de 50 años
+              ingeniería, Ing. Julio A. Santiago Pérez (PE #6083), tiene más de 30 años
               de experiencia, incluyendo trabajo con NASA y como profesor de la Universidad
               de Puerto Rico en Mayagüez.
             </li>
@@ -295,7 +295,7 @@ export default function ErroresComunesPage() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', label: 'Costos de Energía Solar 2026' },
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
+              { href: '/blog/preparar-hogar-huracanes-solar', label: 'Preparación para Huracanes' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'Interconexión con LUMA' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-solar-yellow font-medium hover:underline text-sm">

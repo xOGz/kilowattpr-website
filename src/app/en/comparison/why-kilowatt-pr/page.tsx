@@ -21,7 +21,7 @@ const faqs = [
   {
     question: 'What credentials does Kilowatt PR have?',
     answer:
-      'Kilowatt PR has Xavier Acevedo Santiago, founder and licensed master electrician (#21309), who supervises every installation. Eng. Julio A. Santiago Perez (PE #6083), COO and engineering advisor, backs the technical design of every system with over 50 years of professional experience.',
+      'Kilowatt PR has Xavier Acevedo Santiago, founder and licensed master electrician (#21309), who supervises every installation. Eng. Julio A. Santiago Perez (PE #6083), COO and engineering advisor, backs the technical design of every system with over 30 years of professional experience.',
   },
   {
     question: 'Why do you include battery in all systems?',
@@ -262,7 +262,7 @@ export default function WhyKilowattPage() {
                 COO & Engineering Advisor — PE #6083
               </p>
               <p className="text-gray-300 text-sm leading-relaxed">
-                Electrical engineer with 50+ years of experience. Former NASA engineer and
+                Electrical engineer with 30+ years of experience. Former NASA engineer and
                 former professor at the University of Puerto Rico, Mayaguez. Backs the technical
                 design of every system.
               </p>

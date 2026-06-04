@@ -8,7 +8,7 @@ export function OrganizationSchema() {
     url: 'https://www.kilowattpr.com',
     logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo_transparent.png' },
     description:
-      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Engineering led by a licensed PE with over 50 years of experience; install team with over a decade of on-the-ground installation experience across all 78 municipalities of Puerto Rico. Services include residential and commercial solar energy systems, battery backup, and electrical contracting.',
+      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Engineering led by a licensed PE with over 30 years of experience; install team with over a decade of on-the-ground installation experience across all 78 municipalities of Puerto Rico. Services include residential and commercial solar energy systems, battery backup, and electrical contracting.',
     priceRange: '$$$',
     knowsAbout: [
       'Micro inverter solar installation',
@@ -355,7 +355,7 @@ export function LocalBusinessSchema() {
         publisher: { '@type': 'Organization', name: 'Google' },
       },
     ],
-    slogan: 'Professional solar engineering for Puerto Rico — 50+ years of experience, families protected across the island',
+    slogan: 'Professional solar engineering for Puerto Rico — 30+ years of experience, families protected across the island',
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '.faq-answer', '[itemprop="description"]'],
@@ -418,10 +418,10 @@ export const authorData = {
     pvCertification: 'PPPE-PV-1809',
     certifyingBody: 'DDEC — Departamento de Desarrollo Económico y Comercio de Puerto Rico',
   },
-  experience: '50+ años',
+  experience: '30+ años',
   bio: {
-    es: 'Ingeniero electricista licenciado con más de 50 años de experiencia. Ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). Certificado como instalador de sistemas fotovoltaicos por el Programa de Política Pública Energética de Puerto Rico.',
-    en: 'Licensed electrical engineer with over 50 years of experience. Former NASA engineer and former professor at the University of Puerto Rico, Mayagüez Campus (RUM). Certified photovoltaic systems installer by Puerto Rico\'s Public Energy Policy Program.',
+    es: 'Ingeniero electricista licenciado con más de 30 años de experiencia. Ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). Certificado como instalador de sistemas fotovoltaicos por el Programa de Política Pública Energética de Puerto Rico.',
+    en: 'Licensed electrical engineer with over 30 years of experience. Former NASA engineer and former professor at the University of Puerto Rico, Mayagüez Campus (RUM). Certified photovoltaic systems installer by Puerto Rico\'s Public Energy Policy Program.',
   },
   url: 'https://www.kilowattpr.com/equipo/julio-santiago-perez/',
 }
