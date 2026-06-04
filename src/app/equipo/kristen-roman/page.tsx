@@ -103,7 +103,7 @@ export default function KristenRomanPage() {
               </h3>
               <p className="text-on-surface-variant text-body-md leading-relaxed">
                 Kilowatt PR responde a toda solicitud de cotización en menos de 2 horas durante horario
-                laboral (Lunes–Viernes, 8:00 AM – 5:00 PM). Si escribes fuera de horario, recibirás
+                laboral (Lunes–Sábado, 8:00 AM – 5:00 PM). Si escribes fuera de horario, recibirás
                 respuesta a primera hora del siguiente día laborable.
               </p>
             </div>

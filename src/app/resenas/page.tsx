@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
 import { buildAlternates } from '@/lib/alternates'
+import { LocalBusinessSchema } from '@/components/SchemaOrg'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Reseñas y Testimonios — 4.9★ en Google',
@@ -117,7 +119,7 @@ function RatingDisplay() {
             <Star key={i} size={24} className="fill-[#F5A623] text-[#F5A623]" />
           ))}
         </div>
-        <p className="text-on-surface-variant text-sm">Promedio en 10+ reseñas de Google</p>
+        <p className="text-on-surface-variant text-sm">Promedio en 10 reseñas verificadas de Google</p>
       </div>
     </div>
   )
@@ -126,6 +128,10 @@ function RatingDisplay() {
 export default function ResenasPage() {
   return (
     <>
+      {/* Review + AggregateRating (4.9★ / 10) reused from the canonical
+          LocalBusiness node, plus breadcrumb trail for AI/search citability. */}
+      <LocalBusinessSchema />
+      <BreadcrumbSchema items={[{ name: 'Reseñas', path: '/resenas' }]} />
       {/* Hero */}
       <section className="bg-surface text-on-surface py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

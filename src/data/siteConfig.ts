@@ -25,5 +25,5 @@ export const siteConfig = {
     es: 'diseño e instalación solar por ingeniero PE licenciado con más de 50 años de experiencia en Puerto Rico',
     en: 'solar design and installation by a licensed PE engineer with 50+ years of experience in Puerto Rico',
   },
-  hours: 'Lunes–Viernes, 8:00 AM – 5:00 PM',
+  hours: 'Lunes–Sábado, 8:00 AM – 5:00 PM',
 }

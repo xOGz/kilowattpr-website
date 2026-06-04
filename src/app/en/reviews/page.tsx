@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
+import { LocalBusinessSchema } from '@/components/SchemaOrg'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Reviews and Testimonials — 4.9 Stars on Google',
@@ -132,6 +134,9 @@ function RatingDisplay() {
 export default function ReviewsPage() {
   return (
     <>
+      {/* Review + AggregateRating (4.9★ / 10) + breadcrumb for AI/search citability. */}
+      <LocalBusinessSchema />
+      <BreadcrumbSchema items={[{ name: 'Reviews', path: '/en/reviews' }]} rootLabel="Home" />
       {/* Hero */}
       <section className="bg-surface text-on-surface py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

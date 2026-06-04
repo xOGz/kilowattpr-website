@@ -41,9 +41,17 @@ const municipiosList = [
 ]
 
 const servicesList = [
-  { value: 'Instalaci\u00F3n de paneles solares', label: 'Solar panel installation' },
-  { value: 'Sistema solar con bater\u00EDa', label: 'Solar system with battery' },
+  { value: 'Instalaci\u00F3n solar (micro inversores)', label: 'Solar installation (microinverters)' },
+  { value: 'Sistema solar h\u00EDbrido con bater\u00EDa', label: 'Hybrid solar system with battery backup' },
+  { value: 'Sellado de techo', label: 'Roof sealing' },
   { value: 'Mantenimiento y lavado', label: 'Maintenance & cleaning' },
+  { value: 'Transfer Switch / ATS', label: 'Transfer switch / ATS' },
+  { value: 'Cargador EV', label: 'EV charger installation' },
+  { value: 'Planta el\u00E9ctrica diesel', label: 'Diesel electric generator' },
+  { value: 'Contratista el\u00E9ctrico', label: 'Electrical contractor' },
+  { value: 'Base de contador', label: 'Meter base repair/installation' },
+  { value: 'Certificaci\u00F3n el\u00E9ctrica LUMA', label: 'LUMA electrical certification' },
+  { value: 'Servicios periciales el\u00E9ctricos', label: 'Forensic electrical services' },
   { value: 'Consulta general', label: 'General consultation' },
 ]
 
@@ -100,7 +108,7 @@ export default function ContactPage() {
                   { icon: MessageCircle, label: 'Phone / WhatsApp (preferred)', value: '+1-787-431-2275', href: 'https://wa.me/17874312275' },
                   { icon: Mail, label: 'Email', value: 'ventas@kilowattpr.com', href: 'mailto:ventas@kilowattpr.com' },
                   { icon: MapPin, label: 'Address', value: 'HC 3 Box 31767, Aguada, PR 00602', href: '#map' },
-                  { icon: Clock, label: 'Hours', value: 'Monday\u2013Friday, 8:00 AM \u2013 5:00 PM', href: null },
+                  { icon: Clock, label: 'Hours', value: 'Monday\u2013Saturday, 8:00 AM \u2013 5:00 PM', href: null },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-solar-yellow/10 rounded-lg flex items-center justify-center shrink-0">

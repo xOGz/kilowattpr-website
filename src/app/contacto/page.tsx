@@ -19,10 +19,17 @@ const municipiosList = [
 ].map((m) => ({ value: m, label: m }))
 
 const serviciosList = [
-  'Instalación de paneles solares',
-  'Sistema solar con batería',
+  'Instalación solar (micro inversores)',
+  'Sistema solar híbrido con batería',
   'Sellado de techo',
   'Mantenimiento y lavado',
+  'Transfer Switch / ATS',
+  'Cargador EV',
+  'Planta eléctrica diesel',
+  'Contratista eléctrico',
+  'Base de contador',
+  'Certificación eléctrica LUMA',
+  'Servicios periciales eléctricos',
   'Consulta general',
 ].map((s) => ({ value: s, label: s }))
 
@@ -80,7 +87,7 @@ export default function ContactoPage() {
                   { icon: MessageCircle, label: 'Teléfono / WhatsApp (preferido)', value: '+1-787-431-2275', href: 'https://wa.me/17874312275' },
                   { icon: Mail, label: 'Email', value: 'ventas@kilowattpr.com', href: 'mailto:ventas@kilowattpr.com' },
                   { icon: MapPin, label: 'Dirección', value: 'HC 3 Box 31767, Aguada, PR 00602', href: '#mapa' },
-                  { icon: Clock, label: 'Horario', value: 'Lunes–Viernes, 8:00 AM – 5:00 PM', href: null },
+                  { icon: Clock, label: 'Horario', value: 'Lunes–Sábado, 8:00 AM – 5:00 PM', href: null },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-4">
                     <div className="w-10 h-10 bg-solar-yellow/10 rounded-lg flex items-center justify-center shrink-0">
