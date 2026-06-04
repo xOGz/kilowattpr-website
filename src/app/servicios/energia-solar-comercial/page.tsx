@@ -4,12 +4,16 @@ import { FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import QuoteForm from '@/components/QuoteForm'
 import { CheckCircle, ArrowRight } from 'lucide-react'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Energía Solar Comercial en Puerto Rico — Sistemas para Negocios',
   description:
     'Sistemas solares comerciales para negocios en PR. Restaurantes, farmacias, almacenes, hoteles. ROI en 4 a 7 años. Consulta gratis: 787-431-2275.',
-  alternates: { canonical: 'https://www.kilowattpr.com/servicios/energia-solar-comercial/' },
+  ...buildAlternates({
+    es: '/servicios/energia-solar-comercial',
+    en: '/en/services/commercial-solar',
+  }),
 }
 
 const faqs = [
@@ -75,8 +79,9 @@ export default function EnergiaSolarComercialPage() {
             <p>
               Nuestros sistemas comerciales van desde 10 kW para negocios pequeños hasta 100 kW
               o más para operaciones industriales y comerciales grandes. Utilizamos paneles de
-              alta eficiencia con garantía de 25 años e inversores comerciales diseñados para
-              maximizar la producción en las condiciones tropicales de Puerto Rico.
+              alta eficiencia con garantía directa del fabricante e inversores comerciales
+              diseñados para maximizar la producción en las condiciones tropicales de Puerto Rico.
+              Adicional, ofrecemos 1 año de garantía de mano de obra de Kilowatt PR en la instalación.
             </p>
             <p>
               El proceso incluye análisis de consumo detallado, diseño personalizado, gestión
@@ -94,7 +99,7 @@ export default function EnergiaSolarComercialPage() {
             <div className="space-y-4">
               {[
                 { step: '1', title: 'Análisis Comercial Gratuito', desc: 'Estudiamos tus facturas de LUMA Energy, patrones de consumo, cargos por demanda y horario de operación para diseñar el sistema óptimo.' },
-                { step: '2', title: 'Diseño y Propuesta', desc: 'Te presentamos un diseño personalizado con proyección de ahorros, ROI estimado y opciones de financiamiento comercial.' },
+                { step: '2', title: 'Diseño y Propuesta', desc: 'Te presentamos un diseño personalizado con proyección de ahorros y ROI estimado. Si tu empresa va a financiar el proyecto, te entregamos la cotización formal y documentación técnica para que la presentes al banco o cooperativa de tu preferencia — Kilowatt no financia directamente.' },
                 { step: '3', title: 'Permisos y Logística', desc: 'Gestionamos todos los permisos de OGPE y la solicitud de interconexión con LUMA Energy. Planificamos la instalación para no afectar tus operaciones.' },
                 { step: '4', title: 'Instalación', desc: 'Nuestro equipo instala el sistema en el menor tiempo posible, coordinando cualquier interrupción necesaria en horarios de baja actividad.' },
                 { step: '5', title: 'Activación y Monitoreo', desc: 'Activamos el sistema, configuramos el monitoreo en tiempo real y te entregamos acceso al dashboard para ver tu producción y ahorros.' },
