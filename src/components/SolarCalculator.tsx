@@ -7,11 +7,11 @@ const LUMA_RATE_PER_KWH = 0.27
 // PR/Culebra real-world design factor, matches the Kilowatt quote engine
 // (1300 kWh/kW/yr, NOT the 1600 PVWatts theoretical that overstated savings).
 const SOLAR_PRODUCTION_KWH_PER_KW_YEAR = 1300
-// Cost model calibrated to the real Kilowatt quote engine price curve
-// (Aguada, solar): 5.5kW->$13.9k, 9kW->$18.9k, 14kW->$26.9k, 21kW->$37.9k.
-// Linear fit: total ≈ base + per-kW; floored at the residential minimum.
-const PRICE_BASE = 4700
-const PRICE_PER_KW = 1600
+// Rough all-in estimate at $2.55/watt (Xavier 2026-06-04). The calculator is
+// an approximation: real price shifts with battery count, so a flat $/W keeps
+// it simple. $2.55/W lines up with a typical battery-backed install
+// (e.g. 9 kW ≈ $22,950). Floored at the residential minimum.
+const PRICE_PER_WATT = 2.55
 const MIN_SYSTEM_COST = 11950
 const ANNUAL_LUMA_INCREASE = 0.03
 
@@ -68,7 +68,7 @@ interface CalculatorResult {
 function calculateSolar(monthlyBill: number): CalculatorResult {
   const annualConsumptionKwh = (monthlyBill * 12) / LUMA_RATE_PER_KWH
   const recommendedKw = Math.ceil(annualConsumptionKwh / SOLAR_PRODUCTION_KWH_PER_KW_YEAR)
-  const estimatedSystemCost = Math.max(MIN_SYSTEM_COST, PRICE_BASE + recommendedKw * PRICE_PER_KW)
+  const estimatedSystemCost = Math.max(MIN_SYSTEM_COST, recommendedKw * 1000 * PRICE_PER_WATT)
   const annualProduction = recommendedKw * SOLAR_PRODUCTION_KWH_PER_KW_YEAR
   const coverageRatio = Math.min(annualProduction / annualConsumptionKwh, 0.95)
   const annualSavings = monthlyBill * 12 * coverageRatio
