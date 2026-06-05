@@ -16,14 +16,15 @@ import { buildEnAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Solar Panels & Electrical Contractor in Puerto Rico',
   description:
-    'Solar panel installation from $11,950 in Puerto Rico. Licensed PE engineer with 50+ years of experience, install team with over a decade on the island. 4.9★ on Google — 10+ verified reviews. Free quote.',
+    'Solar panel installation from $11,950 in Puerto Rico. Licensed PE engineer with 30+ years of experience, install team with over a decade on the island. 4.9★ on Google — 10+ verified reviews. Free quote.',
   ...buildEnAlternates({ es: '/', en: '/en' }),
   openGraph: {
     title: 'Kilowatt PR | Solar Panels from $11,950 in Puerto Rico',
     description:
-      'Solar engineering by a PE with 50+ years of experience, licensed electricians with over a decade installing in Puerto Rico. Batteries, electrical contractor. 4.9★ on Google. Free quote today.',
+      'Solar engineering by a PE with 30+ years of experience, licensed electricians with over a decade installing in Puerto Rico. Batteries, electrical contractor. 4.9★ on Google. Free quote today.',
     url: 'https://www.kilowattpr.com/en/',
     locale: 'en_US',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Solar panel installation in Puerto Rico by Kilowatt PR' }],
   },
 }
 
@@ -58,7 +59,7 @@ const differentiators = [
   {
     icon: CheckCircle,
     title: 'PE Engineer with 50+ Years',
-    desc: 'Every system is designed by Eng. Julio A. Santiago Pérez (PE #6083), a licensed electrical engineer with 50+ years of experience, former NASA engineer and former professor at UPR Mayagüez. Real engineering, not salespeople.',
+    desc: 'Every system is designed by Eng. Julio A. Santiago Pérez (PE #6083), a licensed electrical engineer with 30+ years of experience, former NASA engineer and former professor at UPR Mayagüez. Real engineering, not salespeople.',
   },
   {
     icon: Shield,
@@ -198,7 +199,7 @@ export default function EnglishHomePage() {
             ))}
           </div>
           <p className="text-center mt-14 text-primary-container font-display font-semibold text-lg tracking-tight">
-            Solar design and installation by a licensed PE engineer with 50+ years of experience in Puerto Rico
+            Solar design and installation by a licensed PE engineer with 30+ years of experience in Puerto Rico
           </p>
         </div>
       </section>

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import { Star } from 'lucide-react'
+import { LocalBusinessSchema } from '@/components/SchemaOrg'
+import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
   title: 'Reviews and Testimonials — 4.9 Stars on Google',
@@ -19,6 +21,7 @@ export const metadata: Metadata = {
       '4.9 stars on Google. Families and businesses in Puerto Rico share their experience with Kilowatt PR.',
     url: 'https://www.kilowattpr.com/en/reviews/',
     locale: 'en_US',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Customer reviews of Kilowatt PR in Puerto Rico' }],
   },
 }
 
@@ -132,6 +135,9 @@ function RatingDisplay() {
 export default function ReviewsPage() {
   return (
     <>
+      {/* Review + AggregateRating (4.9★ / 10) + breadcrumb for AI/search citability. */}
+      <LocalBusinessSchema />
+      <BreadcrumbSchema items={[{ name: 'Reviews', path: '/en/reviews' }]} rootLabel="Home" />
       {/* Hero */}
       <section className="bg-surface text-on-surface py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

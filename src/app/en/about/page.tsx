@@ -20,6 +20,7 @@ export const metadata: Metadata = {
       'Founded by Xavier Acevedo Santiago, licensed electrician #21309. PE #6083 engineering advisor. Families protected across the island.',
     url: 'https://www.kilowattpr.com/en/about/',
     locale: 'en_US',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'The Kilowatt PR team, solar installers in Puerto Rico' }],
   },
 }
 
@@ -43,7 +44,7 @@ export default function AboutPage() {
             <p className="text-xl text-on-surface-variant leading-relaxed">
               Kilowatt PR is not just another solar company. Founded by electricians with
               real field experience, and advised by a PE electrical engineer with
-              over 50 years of professional experience — including NASA and the University
+              over 30 years of professional experience — including NASA and the University
               of Puerto Rico at Mayag&uuml;ez.
             </p>
           </div>
@@ -74,7 +75,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Xavier is advised by Eng. Julio A. Santiago P&eacute;rez (PE #6083),
-                  a licensed electrical engineer with over 50 years of experience, former NASA
+                  a licensed electrical engineer with over 30 years of experience, former NASA
                   engineer and former professor at UPR Mayag&uuml;ez, who serves as COO and
                   engineering advisor for the company.
                 </p>
@@ -214,7 +215,7 @@ export default function AboutPage() {
               {
                 icon: CheckCircle,
                 title: 'Our Mission',
-                desc: 'Protect Puerto Rico\'s families and businesses from blackouts and abusive rates through professionally engineered solar systems — designed, installed, and backed by a team with over 50 years of experience.',
+                desc: 'Protect Puerto Rico\'s families and businesses from blackouts and abusive rates through professionally engineered solar systems — designed, installed, and backed by a team with over 30 years of experience.',
               },
               {
                 icon: Award,
@@ -263,7 +264,7 @@ export default function AboutPage() {
                 role: 'COO and Engineering Advisor',
                 name: 'Julio A. Santiago P\u00E9rez, PE',
                 credentials: 'PE #6083 \u00B7 PPPE-PV-1809',
-                desc: 'Licensed electrical engineer with 50+ years of experience. Former NASA engineer and former professor at UPR Mayag\u00FCez. Advises on the engineering design of every solar system.',
+                desc: 'Licensed electrical engineer with 30+ years of experience. Former NASA engineer and former professor at UPR Mayag\u00FCez. Advises on the engineering design of every solar system.',
                 photo: '/team/julio-santiago.png',
               },
               {

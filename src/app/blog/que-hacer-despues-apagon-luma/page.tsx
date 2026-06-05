@@ -3,12 +3,16 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Qué Hacer Después de un Apagón de LUMA: Guía Práctica para tu Sistema Solar',
   description:
     'Checklist post-apagón para dueños de sistemas solares en Puerto Rico. Verifica inversor, batería, producción y reconexión a la red de LUMA. Cuándo llamar a soporte técnico.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/que-hacer-despues-apagon-luma/' },
+  ...buildAlternates({
+    es: '/blog/que-hacer-despues-apagon-luma',
+    en: '/en/blog/what-to-do-after-luma-outage',
+  }),
 }
 
 const faqs = [

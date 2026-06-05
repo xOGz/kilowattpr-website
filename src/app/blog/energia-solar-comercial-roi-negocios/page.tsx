@@ -301,7 +301,7 @@ export default function SolarComercialPage() {
           </p>
           <p>
             En Kilowatt PR, nuestros técnicos con más de una década de experiencia en
-            Puerto Rico y nuestro ingeniero profesional con más de 50 años en el campo
+            Puerto Rico y nuestro ingeniero profesional con más de 30 años en el campo
             analizan tu consumo comercial, evalúan tu espacio de techo y te presentan un
             diseño con el ROI detallado —
             sin costo ni compromiso. Cuando estés listo para esa propuesta, conoce los

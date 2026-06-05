@@ -30,28 +30,29 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Placas Solares en Puerto Rico desde $11,950 | Kilowatt PR',
     description:
-      'Instalación de paneles y placas solares en Puerto Rico. Diseño por ingeniero PE licenciado con 50+ años de experiencia, instalación por perito electricista con más de una década en campo. Servicio en los 78 municipios desde Aguada. Cotización gratis por WhatsApp.',
+      'Instalación de paneles y placas solares en Puerto Rico. Diseño por ingeniero PE licenciado con 30+ años de experiencia, instalación por perito electricista con más de una década en campo. Servicio en los 78 municipios desde Aguada. Cotización gratis por WhatsApp.',
     url: 'https://www.kilowattpr.com',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Instalación de paneles solares en Puerto Rico por Kilowatt PR' }],
   },
 }
 
 const services = [
   {
     icon: Sun,
-    title: 'Instalación de Paneles Solares',
-    desc: 'Sistemas fotovoltaicos residenciales y comerciales diseñados para las condiciones climáticas de Puerto Rico.',
+    title: 'Instalación de Micro Inversores',
+    desc: 'Sistemas solares con micro inversores (residencial y comercial) diseñados para las condiciones climáticas de Puerto Rico.',
     href: '/servicios/instalacion-paneles-solares',
   },
   {
     icon: Battery,
-    title: 'Sistemas con Batería',
-    desc: 'Independencia energética total durante los apagones de LUMA Energy. Hasta 24 horas de respaldo.',
+    title: 'Sistemas Solares Híbridos con Batería',
+    desc: 'Independencia energética durante apagones de LUMA. EG4, Solark, Fortress, Sunbeat (Tesla Powerwall bajo solicitud).',
     href: '/servicios/sistemas-con-bateria',
   },
   {
     icon: Zap,
     title: 'Contratista Eléctrico',
-    desc: 'Servicios de contratista eléctrico residencial y comercial. Reparación de bases de medidores con certificaciones de LUMA.',
+    desc: 'Contratista eléctrico residencial y comercial con perito licenciado #21309. Mejoras de panel, bases de medidor, certificaciones LUMA, transfer switch y servicios periciales.',
     href: '/servicios/contratista-electrico',
   },
   {
@@ -66,12 +67,12 @@ const differentiators = [
   {
     icon: CheckCircle,
     title: 'Ingeniero PE con 50+ Años',
-    desc: 'Cada sistema es diseñado por el Ing. Julio A. Santiago Pérez (PE #6083), ingeniero eléctrico licenciado con más de 50 años de experiencia, ex ingeniero de NASA y ex profesor de la UPR Mayagüez. No vendedores — ingeniería real.',
+    desc: 'Cada sistema es diseñado por el Ing. Julio A. Santiago Pérez (PE #6083), ingeniero eléctrico licenciado con más de 30 años de experiencia, ex ingeniero de NASA y ex profesor de la UPR Mayagüez. No vendedores — ingeniería real.',
   },
   {
     icon: Shield,
     title: 'Resistente a Huracanes',
-    desc: 'Sistemas diseñados para las condiciones extremas de Puerto Rico: huracanes, calor tropical y polvo del Sahara. Paneles con garantía de 25 años, inversores y baterías con 5 a 10 años de garantía local.',
+    desc: 'Sistemas diseñados para las condiciones extremas de Puerto Rico: huracanes, calor tropical y polvo del Sahara. Equipos cubiertos por garantía directa del fabricante (varía por marca) más 1 año de garantía de mano de obra de Kilowatt PR.',
   },
   {
     icon: Zap,
@@ -127,7 +128,7 @@ const faqs = [
   {
     question: '¿Qué garantías ofrecen en los sistemas solares?',
     answer:
-      'Los paneles solares que instalamos cuentan con una garantía del fabricante de 25 años que cubre tanto el rendimiento como los defectos de fabricación. Los inversores y baterías tienen garantías mayormente locales generalmente entre 5 y 10 años. Además, incluimos una inspección de calidad a los 3 meses sin costo adicional para verificar que tu sistema está operando al máximo rendimiento. También ofrecemos un plan de servicio extendido opcional para quienes desean cobertura adicional.',
+      'Los equipos (paneles, inversor y batería) están cubiertos por la garantía directa del fabricante — el plazo exacto varía por marca y modelo, y se detalla en la cotización formal. Adicional a eso, Kilowatt PR ofrece 1 año de garantía de mano de obra en la instalación: cualquier defecto atribuible al trabajo de instalación lo corregimos sin costo durante ese período. Incluimos también una inspección de calidad a los 3 meses sin costo adicional para verificar que tu sistema está operando al máximo rendimiento.',
   },
   {
     question: '¿Qué incluye la consulta gratis de Kilowatt PR?',
@@ -142,12 +143,12 @@ const faqs = [
   {
     question: '¿Quién es el ingeniero responsable del diseño del sistema solar?',
     answer:
-      'Cada sistema solar de Kilowatt PR es diseñado y certificado por el Ing. Julio A. Santiago Pérez, Ingeniero Profesional licenciado en Puerto Rico (PE #6083), con más de 50 años de experiencia, ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). La instalación es ejecutada por el equipo del fundador Xavier Acevedo Santiago, perito electricista licenciado #21309. El cumplimiento con el Código Eléctrico Nacional (NEC), los requisitos de OGPE y la interconexión con LUMA Energy es responsabilidad directa del PE.',
+      'Cada sistema solar de Kilowatt PR es diseñado y certificado por el Ing. Julio A. Santiago Pérez, Ingeniero Profesional licenciado en Puerto Rico (PE #6083), con más de 30 años de experiencia, ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). La instalación es ejecutada por el equipo del fundador Xavier Acevedo Santiago, perito electricista licenciado #21309. El cumplimiento con el Código Eléctrico Nacional (NEC), los requisitos de OGPE y la interconexión con LUMA Energy es responsabilidad directa del PE.',
   },
   {
     question: '¿Por qué elegir Kilowatt PR en lugar de otra empresa solar en Puerto Rico?',
     answer:
-      'Kilowatt PR LLC se diferencia por tres razones: (1) ingeniería real, no ventas — cada sistema es diseñado por un PE licenciado con 50+ años de experiencia (PE #6083), no por un vendedor con comisión; (2) instalación por perito electricista licenciado #21309 con más de una década en campo en Puerto Rico, equipo que operó durante el huracán María y la crisis de LUMA Energy; (3) atendemos los 78 municipios desde nuestra base en Aguada con respuesta a cotizaciones en 24 a 48 horas y todo el manejo de permisos OGPE e interconexión LUMA incluido. Calificación 4.9★ en Google.',
+      'Kilowatt PR LLC se diferencia por tres razones: (1) ingeniería real, no ventas — cada sistema es diseñado por un PE licenciado con 30+ años de experiencia (PE #6083), no por un vendedor con comisión; (2) instalación por perito electricista licenciado #21309 con más de una década en campo en Puerto Rico, equipo que operó durante el huracán María y la crisis de LUMA Energy; (3) atendemos los 78 municipios desde nuestra base en Aguada con respuesta a cotizaciones en 24 a 48 horas y todo el manejo de permisos OGPE e interconexión LUMA incluido. Calificación 4.9★ en Google.',
   },
 ]
 
@@ -345,7 +346,7 @@ export default function HomePage() {
               Kilowatt PR LLC es una empresa de instalación de paneles solares y contratista
               eléctrico licenciado en Puerto Rico, fundada por Xavier Acevedo Santiago
               (Lic. eléctrica #21309) y con ingeniería supervisada por el Ing. Julio A.
-              Santiago Pérez (PE #6083, 50+ años de experiencia). Operamos desde Aguada
+              Santiago Pérez (PE #6083, 30+ años de experiencia). Operamos desde Aguada
               y atendemos los 78 municipios de la isla.
             </p>
           </div>
@@ -442,7 +443,7 @@ export default function HomePage() {
                   <Shield size={14} /> Lic. Eléctrica #21309
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
-                  <Star size={14} /> 4.9★ / 10+ Reseñas
+                  <Star size={14} /> 4.9★ / 10 Reseñas
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
                   <CheckCircle size={14} /> Garantía 25 Años

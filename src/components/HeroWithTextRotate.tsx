@@ -41,7 +41,7 @@ export default function HeroWithTextRotate() {
           </h1>
           <p className="text-xl text-on-surface-variant mb-10 leading-relaxed max-w-2xl font-body">
             Instalación de placas solares (paneles solares) en Puerto Rico, diseñada por
-            ingeniero eléctrico PE licenciado con más de 50 años de experiencia. Familias
+            ingeniero eléctrico PE licenciado con más de 30 años de experiencia. Familias
             protegidas contra los apagones de LUMA en toda la isla.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">

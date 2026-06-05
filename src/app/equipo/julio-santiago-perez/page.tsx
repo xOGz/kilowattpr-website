@@ -7,7 +7,7 @@ import { PersonSchema, authorData } from '@/components/SchemaOrg'
 export const metadata: Metadata = {
   title: 'Ing. Julio A. Santiago Pérez — Ingeniero Electricista Licenciado',
   description:
-    'Ing. Julio Santiago Pérez (PE #6083), 50+ años de experiencia. Ex NASA, ex profesor UPR Mayagüez. COO de Kilowatt PR.',
+    'Ing. Julio Santiago Pérez (PE #6083), 30+ años de experiencia. Ex NASA, ex profesor UPR Mayagüez. COO de Kilowatt PR.',
   alternates: { canonical: 'https://www.kilowattpr.com/equipo/julio-santiago-perez/' },
 }
 
@@ -53,7 +53,7 @@ const articles = [
   { href: '/blog/energia-solar-bateria-esencial-puerto-rico', title: 'Energía Solar con Batería: Por Qué es Esencial en PR' },
   { href: '/blog/mantenimiento-paneles-solares-clima-tropical', title: 'Mantenimiento de Paneles Solares en Clima Tropical' },
   { href: '/blog/como-leer-factura-luma-ahorro-solar', title: 'Cómo Leer tu Factura de LUMA y Calcular tu Ahorro' },
-  { href: '/blog/incentivos-solares-puerto-rico-2026', title: 'Cómo Preparar Tu Hogar para Huracanes con Energía Solar' },
+  { href: '/blog/preparar-hogar-huracanes-solar', title: 'Cómo Preparar Tu Hogar para Huracanes con Energía Solar' },
   { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', title: 'Guía Completa: Baterías de Respaldo Solar' },
   { href: '/blog/como-funciona-interconexion-luma-energia', title: 'Cómo Funciona la Interconexión con LUMA Energy' },
   { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', title: '¿Cuánto Cuesta la Energía Solar en Puerto Rico en 2026?' },
@@ -130,7 +130,7 @@ export default function AuthorPage() {
               ))}
             </div>
             <p className="mt-6 text-center text-on-surface-variant text-body-lg">
-              Más de <span className="font-bold text-on-surface">50 años</span> de experiencia en ingeniería eléctrica
+              Más de <span className="font-bold text-on-surface">30 años</span> de experiencia en ingeniería eléctrica
             </p>
           </div>
 

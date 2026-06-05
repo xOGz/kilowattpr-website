@@ -33,11 +33,16 @@ export default function FAQSection({ faqs, title = '¿Tienes Preguntas?' }: { fa
                   <ChevronDown className="text-primary-container shrink-0" size={20} />
                 )}
               </button>
-              {openIndex === i && (
-                <div className="px-6 pb-5 text-on-surface-variant leading-relaxed pt-2 font-body faq-answer">
-                  {faq.answer}
-                </div>
-              )}
+              {/* Always render the answer so it ships in the static HTML (AI/crawler
+                  citability + FAQPage parity). Collapse is CSS-only via `hidden`. */}
+              <div
+                className={`px-6 pb-5 text-on-surface-variant leading-relaxed pt-2 font-body faq-answer${
+                  openIndex === i ? '' : ' hidden'
+                }`}
+                hidden={openIndex !== i}
+              >
+                {faq.answer}
+              </div>
             </div>
           ))}
         </div>

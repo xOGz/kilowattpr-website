@@ -19,12 +19,13 @@ export async function generateMetadata({
   if (!municipio) return {}
   return {
     title: `Instalación de Paneles Solares en ${municipio.name}, Puerto Rico`,
-    description: `Kilowatt PR instala paneles solares en ${municipio.name}, Puerto Rico. ${municipio.averageSunHours} de sol diarias, técnicos certificados, consulta gratis, garantía de 25 años. Servicio completo incluyendo permisos y LUMA.`,
+    description: `Kilowatt PR instala paneles solares en ${municipio.name}, Puerto Rico. ${municipio.averageSunHours} de sol diarias, técnicos licenciados, consulta gratis, garantía del fabricante + 1 año mano de obra Kilowatt. Servicio completo incluyendo permisos y LUMA.`,
     alternates: { canonical: `https://www.kilowattpr.com/municipios/${municipio.slug}/` },
     openGraph: {
       title: `Paneles Solares en ${municipio.name} PR | Kilowatt PR`,
       description: `Instalación de sistemas solares residenciales y comerciales en ${municipio.name}, Puerto Rico. ${municipio.averageSunHours} de sol diarias.`,
       url: `https://www.kilowattpr.com/municipios/${municipio.slug}/`,
+      images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: `Instalación de paneles solares en ${municipio.name}, Puerto Rico por Kilowatt PR` }],
     },
   }
 }
@@ -54,7 +55,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     },
     {
       question: `¿Cuánto cuesta instalar paneles solares en ${municipio.name}?`,
-      answer: `El costo de un sistema solar en ${municipio.name} comienza desde $11,950 en adelante para instalaciones residenciales, dependiendo del tamaño del sistema y el consumo eléctrico del hogar. El precio exacto se determina durante la consulta gratis, donde analizamos tu consumo y diseñamos el sistema ideal. Ofrecemos opciones de financiamiento para que puedas empezar a ahorrar desde el primer mes.`,
+      answer: `El costo de un sistema solar en ${municipio.name} comienza desde $11,950 en adelante para instalaciones residenciales, dependiendo del tamaño del sistema y el consumo eléctrico del hogar. El precio exacto se determina durante la consulta gratis, donde analizamos tu consumo y diseñamos el sistema ideal. Kilowatt PR no financia directamente, pero te entregamos la cotización formal y documentación técnica para que gestiones el préstamo con la cooperativa o banco de tu preferencia.`,
     },
     {
       question: `¿Cuánto tiempo tarda la instalación en ${municipio.name}?`,
@@ -218,7 +219,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
               <h3 className="font-bold text-gray-900 mb-2">Ingeniero PE Licenciado</h3>
               <p className="text-gray-600 text-sm">
                 Cada sistema es diseñado por el Ing. Julio A. Santiago Pérez (PE #6083),
-                con más de 50 años de experiencia, ex ingeniero de NASA y ex profesor de la UPR Mayagüez.
+                con más de 30 años de experiencia, ex ingeniero de NASA y ex profesor de la UPR Mayagüez.
               </p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">

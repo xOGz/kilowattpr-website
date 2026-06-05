@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     description:
       '¿Cuánto puedes ahorrar con energía solar en Puerto Rico? Calcula tu ahorro basado en tu factura de LUMA.',
     url: 'https://www.kilowattpr.com/calculadora-solar/',
+    images: [{ url: 'https://www.kilowattpr.com/og-image.jpg', width: 1200, height: 630, alt: 'Calculadora de ahorro solar para Puerto Rico de Kilowatt PR' }],
   },
 }
 

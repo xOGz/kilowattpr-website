@@ -87,7 +87,7 @@ const posts = [
     category: 'Savings & Billing',
   },
   {
-    slug: '/blog/incentivos-solares-puerto-rico-2026',
+    slug: '/blog/preparar-hogar-huracanes-solar',
     title: 'How to Prepare Your Home for Hurricanes with Solar Energy',
     excerpt: 'Protect your family from outages during hurricane season with a solar battery backup system. Step-by-step guide to prepare before June.',
     date: '2026-02-28',
@@ -126,7 +126,7 @@ export default function BlogPage() {
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
             Guides, tips, and everything you need to know about solar energy in Puerto Rico.
-            By Eng. Julio A. Santiago Perez, PE — electrical engineer with over 50 years of experience.
+            By Eng. Julio A. Santiago Perez, PE — electrical engineer with over 30 years of experience.
           </p>
         </div>
       </section>

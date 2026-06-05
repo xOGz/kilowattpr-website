@@ -8,13 +8,20 @@ export function OrganizationSchema() {
     url: 'https://www.kilowattpr.com',
     logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo_transparent.png' },
     description:
-      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Engineering led by a licensed PE with over 50 years of experience; install team with over a decade of on-the-ground installation experience across all 78 municipalities of Puerto Rico. Services include residential and commercial solar energy systems, battery backup, and electrical contracting.',
+      'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Engineering led by a licensed PE with over 30 years of experience; install team with over a decade of on-the-ground installation experience across all 78 municipalities of Puerto Rico. Services include residential and commercial solar energy systems, battery backup, and electrical contracting.',
     priceRange: '$$$',
     knowsAbout: [
-      'Solar panel installation',
-      'Solar energy systems',
-      'Battery backup systems',
-      'Electrical contracting',
+      'Micro inverter solar installation',
+      'Hybrid solar systems with battery backup',
+      'Roof sealing pre-solar installation',
+      'Solar panel maintenance and cleaning',
+      'Transfer switch (manual and ATS) installation',
+      'EV charger installation (Level 2 and Level 3)',
+      'Diesel electric plants (residential and commercial)',
+      'Residential and commercial electrical contracting',
+      'Meter base repair and installation',
+      'LUMA Energy electrical certifications',
+      'Forensic electrical services (perito)',
       'Puerto Rico energy grid',
       'LUMA Energy',
       'Net metering Puerto Rico',
@@ -69,8 +76,8 @@ export function OrganizationSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Instalación de Paneles Solares',
-            description: 'Sistemas fotovoltaicos residenciales y comerciales desde $11,950',
+            name: 'Instalación de Micro Inversores',
+            description: 'Sistemas solares con micro inversores residenciales y comerciales desde $11,950',
             areaServed: { '@type': 'State', name: 'Puerto Rico' },
             provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
@@ -79,8 +86,8 @@ export function OrganizationSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Sistemas de Batería de Respaldo',
-            description: 'Independencia energética durante apagones de LUMA Energy',
+            name: 'Sistemas Solares Híbridos con Batería de Respaldo',
+            description: 'Sistemas híbridos con batería de respaldo (EG4, Solark, Fortress, Sunbeat) para independencia energética durante apagones de LUMA',
             areaServed: { '@type': 'State', name: 'Puerto Rico' },
             provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
@@ -89,8 +96,8 @@ export function OrganizationSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Contratista Eléctrico',
-            description: 'Servicios eléctricos residenciales y comerciales, reparación de bases de medidores con certificaciones LUMA',
+            name: 'Sellado de Techo Previo a Instalación',
+            description: 'Impermeabilización profesional de techo antes de la instalación solar. Garantía de 2 años de mano de obra',
             areaServed: { '@type': 'State', name: 'Puerto Rico' },
             provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
@@ -99,8 +106,78 @@ export function OrganizationSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Mantenimiento y Lavado de Paneles',
-            description: 'Limpieza profesional cada 6-8 meses para máxima eficiencia',
+            name: 'Mantenimiento y Lavado de Paneles Solares',
+            description: 'Limpieza profesional con agua purificada e inspección para máxima eficiencia',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Transfer Switch Manual / ATS',
+            description: 'Instalación de transfer switch manual o automático (ATS) para integrar generadores o sistemas solares al panel eléctrico',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Cargadores para Vehículos Eléctricos (EV)',
+            description: 'Instalación de cargadores EV Level 2 y Level 3 para residencias y comercios',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Plantas Eléctricas Diesel',
+            description: 'Venta, instalación y servicio de plantas eléctricas diesel residenciales y comerciales',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Contratista Eléctrico Residencial y Comercial',
+            description: 'Servicios eléctricos generales con perito electricista licenciado #21309: paneles, cableado, mejoras de servicio',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Reparación/Instalación de Base de Contador',
+            description: 'Reparación e instalación de bases de medidor coordinada con LUMA Energy',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Certificaciones Eléctricas para LUMA Energy',
+            description: 'Emisión de certificaciones eléctricas requeridas por LUMA Energy para reconexiones, mejoras de servicio y permisos',
+            areaServed: { '@type': 'State', name: 'Puerto Rico' },
+            provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Servicios Periciales Eléctricos',
+            description: 'Informes, inspecciones y dictámenes de perito electricista licenciado para casos legales, seguros y certificaciones técnicas',
             areaServed: { '@type': 'State', name: 'Puerto Rico' },
             provider: { '@id': 'https://www.kilowattpr.com/#organization' },
           },
@@ -158,7 +235,7 @@ export function LocalBusinessSchema() {
     url: 'https://www.kilowattpr.com',
     image: [
       'https://www.kilowattpr.com/logo_transparent.png',
-      'https://www.kilowattpr.com/og-image.png',
+      'https://www.kilowattpr.com/og-image.jpg',
     ],
     logo: 'https://www.kilowattpr.com/logo_transparent.png',
     telephone: '+1-787-431-2275',
@@ -179,14 +256,14 @@ export function LocalBusinessSchema() {
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         opens: '08:00',
         closes: '17:00',
       },
     ],
     priceRange: '$$',
     currenciesAccepted: 'USD',
-    paymentAccepted: 'Cash, Credit Card, Financing',
+    paymentAccepted: 'Cash, Check, Credit Card, Bank/Coop Financing (client-managed)',
     areaServed: {
       '@type': 'State',
       name: 'Puerto Rico',
@@ -278,7 +355,7 @@ export function LocalBusinessSchema() {
         publisher: { '@type': 'Organization', name: 'Google' },
       },
     ],
-    slogan: 'Professional solar engineering for Puerto Rico — 50+ years of experience, families protected across the island',
+    slogan: 'Professional solar engineering for Puerto Rico — 30+ years of experience, families protected across the island',
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', 'h2', '.faq-answer', '[itemprop="description"]'],
@@ -341,10 +418,10 @@ export const authorData = {
     pvCertification: 'PPPE-PV-1809',
     certifyingBody: 'DDEC — Departamento de Desarrollo Económico y Comercio de Puerto Rico',
   },
-  experience: '50+ años',
+  experience: '30+ años',
   bio: {
-    es: 'Ingeniero electricista licenciado con más de 50 años de experiencia. Ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). Certificado como instalador de sistemas fotovoltaicos por el Programa de Política Pública Energética de Puerto Rico.',
-    en: 'Licensed electrical engineer with over 50 years of experience. Former NASA engineer and former professor at the University of Puerto Rico, Mayagüez Campus (RUM). Certified photovoltaic systems installer by Puerto Rico\'s Public Energy Policy Program.',
+    es: 'Ingeniero electricista licenciado con más de 30 años de experiencia. Ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). Certificado como instalador de sistemas fotovoltaicos por el Programa de Política Pública Energética de Puerto Rico.',
+    en: 'Licensed electrical engineer with over 30 years of experience. Former NASA engineer and former professor at the University of Puerto Rico, Mayagüez Campus (RUM). Certified photovoltaic systems installer by Puerto Rico\'s Public Energy Policy Program.',
   },
   url: 'https://www.kilowattpr.com/equipo/julio-santiago-perez/',
 }
@@ -539,18 +616,23 @@ export function ArticleSchema({
   datePublished,
   dateModified,
   url,
+  image = 'https://www.kilowattpr.com/og-image.jpg',
 }: {
   title: string
   description: string
   datePublished: string
   dateModified?: string
   url: string
+  /** Absolute URL of the article's representative image. Google requires
+      `image` for Article rich results; defaults to the site OG image. */
+  image?: string
 }) {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
     description,
+    image,
     datePublished,
     ...(dateModified ? { dateModified } : {}),
     author: {
@@ -562,6 +644,7 @@ export function ArticleSchema({
     },
     publisher: { '@id': 'https://www.kilowattpr.com/#organization' },
     url,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     speakable: {
       '@type': 'SpeakableSpecification',
       cssSelector: ['h1', '.article-intro'],

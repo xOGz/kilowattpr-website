@@ -4,12 +4,16 @@ import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import PostTLDR from '@/components/PostTLDR'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Cómo Funciona el Net Metering (Medición Neta) en Puerto Rico',
   description:
     'Explicación completa del net metering en Puerto Rico. Cómo funciona el medidor bidireccional, créditos en tu factura de LUMA, requisitos de PREB y proceso de interconexión.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/como-funciona-net-metering-puerto-rico/' },
+  ...buildAlternates({
+    es: '/blog/como-funciona-net-metering-puerto-rico',
+    en: '/en/blog/how-net-metering-works-puerto-rico',
+  }),
 }
 
 const faqs = [

@@ -1,14 +1,25 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase'
+
+const CRM_INTAKE_ENDPOINT = 'https://kilowatt-crm.vercel.app/api/leads/intake'
 
 interface LeadCaptureFormProps {
   source: string
   buttonText?: string
+  /** What the lead is actually requesting, sent to the CRM so the right guide
+      is delivered and tracked (e.g. 'Guía Solar Puerto Rico 2026'). */
+  serviceInterest?: string
+  /** Language of the page so the CRM follows up in the right language. */
+  locale?: 'es' | 'en'
 }
 
-export default function LeadCaptureForm({ source, buttonText = 'Descargar Gratis' }: LeadCaptureFormProps) {
+export default function LeadCaptureForm({
+  source,
+  buttonText = 'Descargar Gratis',
+  serviceInterest = 'Consulta general',
+  locale = 'es',
+}: LeadCaptureFormProps) {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -18,23 +29,48 @@ export default function LeadCaptureForm({ source, buttonText = 'Descargar Gratis
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    const lead = {
-      name: formData.get('nombre') as string,
-      phone: (formData.get('telefono') as string) || null,
-      email: formData.get('email') as string,
-      source: source,
-      service_interest: 'lead-magnet',
+    const payload = {
+      name: String(formData.get('nombre') ?? ''),
+      phone: String(formData.get('telefono') ?? '') || null,
+      email: String(formData.get('email') ?? ''),
+      municipio: 'No especificado',
+      service_interest: serviceInterest,
+      message: `Lead magnet download — source: ${source}`,
+      website: String(formData.get('website') ?? ''),
+      source_url: typeof window !== 'undefined' ? window.location.href : null,
+      locale,
     }
 
-    const { error } = await supabase.from('leads').insert(lead)
+    try {
+      const res = await fetch(CRM_INTAKE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
 
-    if (error) {
-      console.error('Supabase error:', error)
+      const json = (await res.json().catch(() => null)) as
+        | { success: boolean; error?: string }
+        | null
+
+      if (!res.ok || !json?.success) {
+        console.error('Lead intake error:', json?.error)
+        setStatus('error')
+        return
+      }
+
+      // GA4 conversion event for lead magnet downloads
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'lead_magnet_download', {
+          event_category: 'lead',
+          event_label: source,
+        })
+      }
+
+      setStatus('success')
+    } catch (err) {
+      console.error('Network error:', err)
       setStatus('error')
-      return
     }
-
-    setStatus('success')
   }
 
   if (status === 'success') {
@@ -50,7 +86,16 @@ export default function LeadCaptureForm({ source, buttonText = 'Descargar Gratis
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+      {/* Honeypot — hidden from real users, bots fill it */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
       <div>
         <input
           type="text"

@@ -305,7 +305,7 @@ export default function LocalVsNacionalPage() {
           <p>
             Kilowatt PR fue fundada en Aguada por Xavier Acevedo Santiago, perito electricista
             licenciado (#21309). El equipo cuenta con el Ing. Julio A. Santiago Pérez (PE
-            #6083) como COO y asesor de ingeniería, con más de 50 años de experiencia que
+            #6083) como COO y asesor de ingeniería, con más de 30 años de experiencia que
             incluyen trabajo en NASA y docencia en la Universidad de Puerto Rico en Mayagüez.
           </p>
 
@@ -344,7 +344,7 @@ export default function LocalVsNacionalPage() {
         {/* Trust bar */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-12">
           {[
-            { value: '4.9★', label: '10+ reseñas' },
+            { value: '4.9★', label: '10 reseñas verificadas' },
             { value: '10+', label: 'años en PR' },
             { value: '78', label: 'municipios servidos' },
             { value: '24h', label: 'tiempo de respuesta' },

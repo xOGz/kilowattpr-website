@@ -3,12 +3,16 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Batería Solar vs Generador de Gasolina: ¿Cuál es Mejor para Puerto Rico?',
   description:
     'Comparación detallada entre baterías solares y generadores de gasolina para Puerto Rico. Costos a 10 años, mantenimiento, seguridad, ruido y rendimiento durante huracanes.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/bateria-solar-vs-generador-gasolina/' },
+  ...buildAlternates({
+    es: '/blog/bateria-solar-vs-generador-gasolina',
+    en: '/en/blog/solar-battery-vs-gas-generator',
+  }),
 }
 
 const faqs = [

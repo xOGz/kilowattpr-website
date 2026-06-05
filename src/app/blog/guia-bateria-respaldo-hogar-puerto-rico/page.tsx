@@ -3,12 +3,16 @@ import Link from 'next/link'
 import { Calendar, User } from 'lucide-react'
 import { ArticleSchema, FAQSchema } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
+import { buildAlternates } from '@/lib/alternates'
 
 export const metadata: Metadata = {
   title: 'Guía Completa: Baterías de Respaldo Solar en Puerto Rico',
   description:
     'Todo sobre sistemas de almacenamiento solar en Puerto Rico: tipos, capacidad, costo y cómo elegir. Diseñado para hogares que sufren apagones de LUMA Energy.',
-  alternates: { canonical: 'https://www.kilowattpr.com/blog/guia-bateria-respaldo-hogar-puerto-rico/' },
+  ...buildAlternates({
+    es: '/blog/guia-bateria-respaldo-hogar-puerto-rico',
+    en: '/en/blog/home-battery-backup-guide-puerto-rico',
+  }),
 }
 
 const faqs = [
@@ -218,7 +222,7 @@ export default function GuiaBateriaPage() {
             {[
               { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', label: 'Costos de Energía Solar 2026' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'Interconexión con LUMA' },
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
+              { href: '/blog/preparar-hogar-huracanes-solar', label: 'Preparación para Huracanes' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-solar-yellow font-medium hover:underline text-sm">
                 {l.label}
