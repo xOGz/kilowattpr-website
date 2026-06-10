@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: '¿Los paneles solares resisten los huracanes en Puerto Rico?',
-    answer: 'Los paneles solares que instalamos están certificados para resistir vientos de hasta 130-140 mph según los estándares de la isla. Instalamos los soportes con materiales de acero inoxidable y sistemas de fijación reforzados diseñados para las condiciones de huracanes de Puerto Rico. Además, los paneles cuentan con garantía de 25 años del fabricante.',
+    answer: 'Los paneles solares que instalamos están certificados para resistir vientos de hasta 130-140 mph según los estándares de la isla. Instalamos los soportes con materiales de acero inoxidable y sistemas de fijación reforzados diseñados para las condiciones de huracanes de Puerto Rico. Además, los paneles cuentan con garantía directa del fabricante y 1 año de mano de obra por parte de Kilowatt PR en la instalación.',
   },
 ]
 
@@ -87,9 +87,9 @@ export default function InstalacionPanelesSolaresPage() {
             <p>
               Los sistemas que instalamos están diseñados específicamente para las condiciones
               de Puerto Rico: resistencia a vientos huracanados, calor tropical, alta humedad,
-              polvo del Sahara y ambientes costeros con salitre. Cada sistema viene con una
-              garantía completa de mano de obra adicional a las garantías de fábrica de los
-              equipos.
+              polvo del Sahara y ambientes costeros con salitre. Cada sistema viene con
+              <strong> 1 año de garantía de mano de obra de Kilowatt PR</strong>, adicional a las
+              garantías directas de fábrica de los equipos (paneles, inversor y batería).
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function InstalacionPanelesSolaresPage() {
             <div className="space-y-4">
               {[
                 { step: '1', title: 'Consulta Gratis', desc: 'Análisis de consumo, diseño 3D del sistema y proyección de ahorros a 25 años. Sin costo, sin compromiso.' },
-                { step: '2', title: 'Firma de Contrato', desc: 'Revisamos todos los detalles del sistema, costo, financiamiento disponible y cronograma de trabajo.' },
+                { step: '2', title: 'Firma de Contrato', desc: 'Revisamos todos los detalles del sistema, costo y cronograma de trabajo. Si necesitas financiamiento, te entregamos la cotización formal y documentación técnica para que la presentes a tu cooperativa o banco — Kilowatt no financia directamente.' },
                 { step: '3', title: 'Permisos y Diseño Final', desc: 'Gestionamos los permisos de OGPE y sometemos la solicitud de interconexión a LUMA Energy.' },
                 { step: '4', title: 'Instalación', desc: 'Nuestro equipo instala el sistema en 1–2 días con mínima interferencia en tu rutina diaria.' },
                 { step: '5', title: 'Inspecciones y Activación', desc: 'Coordinamos las inspecciones requeridas y la activación del medidor bidireccional con LUMA Energy.' },

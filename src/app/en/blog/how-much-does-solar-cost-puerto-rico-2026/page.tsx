@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: 'Is it worth installing solar panels in Puerto Rico in 2026?',
-    answer: 'Yes, installing solar panels in Puerto Rico in 2026 remains one of the best investments available. LUMA Energy rates continue to be among the highest in the entire United States, system prices have dropped significantly, and the need for energy independence from frequent outages is greater than ever. Most systems pay for themselves in 5 to 8 years, with a 25-year warranty.',
+    answer: 'Yes, installing solar panels in Puerto Rico in 2026 remains one of the best investments available. LUMA Energy rates continue to be among the highest in the entire United States, system prices have dropped significantly, and the need for energy independence from frequent outages is greater than ever. Most systems pay for themselves in 5 to 8 years, with panels covered by manufacturer warranties of up to 25 years and a 1-year Kilowatt PR workmanship warranty.',
   },
   {
     question: 'Is financing available for solar panels in Puerto Rico?',

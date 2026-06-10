@@ -64,7 +64,7 @@ const differentiators = [
   {
     icon: Shield,
     title: 'Hurricane Resistant',
-    desc: 'Systems engineered for Puerto Rico\'s extreme conditions: hurricanes, tropical heat, and Saharan dust. Panels with 25-year warranty, inverters and batteries with 5 to 10-year local warranties.',
+    desc: 'Systems engineered for Puerto Rico\'s extreme conditions: hurricanes, tropical heat, and Saharan dust. Equipment covered by direct manufacturer warranties (varies by brand) plus a 1-year Kilowatt PR workmanship warranty.',
   },
   {
     icon: Zap,

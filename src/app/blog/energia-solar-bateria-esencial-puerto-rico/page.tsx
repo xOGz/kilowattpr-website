@@ -282,7 +282,7 @@ export default function BateriaEsencialPage() {
           <div className="flex flex-wrap gap-3">
             {[
               { href: '/blog/cuanto-cuesta-energia-solar-puerto-rico-2026', label: 'Costos de Energía Solar 2026' },
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
+              { href: '/blog/preparar-hogar-huracanes-solar', label: 'Preparación para Huracanes' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'Interconexión con LUMA' },
             ].map((l) => (
               <Link key={l.href} href={l.href} className="text-solar-yellow font-medium hover:underline text-sm">

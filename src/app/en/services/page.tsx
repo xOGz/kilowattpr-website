@@ -6,7 +6,7 @@ import { buildEnAlternates } from '@/lib/alternates'
 export const metadata: Metadata = {
   title: 'Solar Energy Services in Puerto Rico',
   description:
-    'Kilowatt PR offers solar panel installation, battery backup systems, roof sealing, and maintenance across Puerto Rico. Certified technicians, 25-year warranty.',
+    'Kilowatt PR offers solar panel installation, battery backup systems, roof sealing, and maintenance across Puerto Rico. Certified technicians, 1-year workmanship warranty.',
   ...buildEnAlternates({ es: '/servicios', en: '/en/services' }),
 }
 
