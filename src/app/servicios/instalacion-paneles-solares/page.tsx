@@ -23,11 +23,11 @@ const faqs = [
   },
   {
     question: '¿Cómo funciona la interconexión con LUMA Energy en Puerto Rico?',
-    answer: 'La interconexión con LUMA Energy es el proceso oficial para conectar tu sistema solar a la red eléctrica. Kilowatt PR maneja todo este proceso por ti: preparamos la solicitud de interconexión, coordinamos la inspección de LUMA, y nos aseguramos de que tu medidor bidireccional esté instalado correctamente. Este proceso puede tomar entre 3 y 6 semanas adicionales a la instalación.',
+    answer: 'La interconexión con LUMA Energy es el proceso oficial para conectar tu sistema solar a la red eléctrica bajo medición neta, y es opcional: solo aplica si deseas vender tu excedente a la red. Kilowatt PR maneja todo este proceso por ti: preparamos la solicitud, coordinamos la inspección de LUMA, y nos aseguramos de que tu medidor bidireccional esté instalado correctamente. Con el portal nuevo de LUMA, los casos residenciales se aprueban en 2 a 4 semanas.',
   },
   {
     question: '¿Necesito permiso de OGPE para instalar paneles solares en Puerto Rico?',
-    answer: 'Sí, la instalación de paneles solares en Puerto Rico requiere permisos de OGPE (Oficina de Gerencia de Permisos). Este proceso incluye la presentación de planos estructurales y eléctricos. Kilowatt PR gestiona todos estos permisos como parte del servicio de instalación, sin costo adicional para el cliente.',
+    answer: 'No. La instalación de sistemas solares en Puerto Rico no requiere permiso de construcción, ni de OGPE ni municipal. El único trámite es la solicitud de medición neta (interconexión) con LUMA Energy, y es opcional: solo aplica si deseas conectar tu sistema a la red. Kilowatt PR la gestiona por ti sin costo adicional, y el portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.',
   },
   {
     question: '¿Los paneles solares resisten los huracanes en Puerto Rico?',
@@ -69,8 +69,9 @@ export default function InstalacionPanelesSolaresPage() {
               En Kilowatt PR, cada instalación comienza con un análisis completo de tu consumo
               eléctrico y una evaluación de tu techo. Diseñamos el sistema en 3D para optimizar
               la captación solar según la orientación e inclinación específica de tu propiedad.
-              Luego gestionamos todos los permisos de OGPE y el proceso de interconexión con
-              LUMA Energy, sin que tengas que hacer nada.
+              Instalar solar en Puerto Rico tiene menos fricción de la que muchos creen:
+              no se requiere permiso de construcción. Y si deseas medición neta, gestionamos
+              la solicitud de interconexión con LUMA Energy por ti, sin que tengas que hacer nada.
             </p>
             <p>
               Trabajamos con los paneles solares de mayor calidad disponibles en el mercado,
@@ -101,7 +102,7 @@ export default function InstalacionPanelesSolaresPage() {
               {[
                 { step: '1', title: 'Consulta Gratis', desc: 'Análisis de consumo, diseño 3D del sistema y proyección de ahorros a 25 años. Sin costo, sin compromiso.' },
                 { step: '2', title: 'Firma de Contrato', desc: 'Revisamos todos los detalles del sistema, costo y cronograma de trabajo. Si necesitas financiamiento, te entregamos la cotización formal y documentación técnica para que la presentes a tu cooperativa o banco — Kilowatt no financia directamente.' },
-                { step: '3', title: 'Permisos y Diseño Final', desc: 'Gestionamos los permisos de OGPE y sometemos la solicitud de interconexión a LUMA Energy.' },
+                { step: '3', title: 'Diseño Final y Medición Neta', desc: 'Finalizamos el diseño del sistema. Si deseas medición neta, sometemos la solicitud de interconexión a LUMA Energy por ti. No se requiere permiso de construcción.' },
                 { step: '4', title: 'Instalación', desc: 'Nuestro equipo instala el sistema en 1–2 días con mínima interferencia en tu rutina diaria.' },
                 { step: '5', title: 'Inspecciones y Activación', desc: 'Coordinamos las inspecciones requeridas y la activación del medidor bidireccional con LUMA Energy.' },
                 { step: '6', title: 'Seguimiento', desc: 'Te enseñamos a monitorear tu sistema y estamos disponibles para cualquier consulta post-instalación.' },
@@ -128,8 +129,8 @@ export default function InstalacionPanelesSolaresPage() {
                 'Estructura de montaje en acero inoxidable',
                 'Cableado y protecciones eléctricas',
                 'Sistema de monitoreo en tiempo real',
-                'Gestión completa de permisos OGPE',
-                'Solicitud de interconexión con LUMA',
+                'Sin permisos de construcción requeridos',
+                'Gestión de medición neta con LUMA (opcional)',
                 'Garantía de 25 años en paneles',
                 'Orientación para el cliente',
                 'Soporte post-instalación',

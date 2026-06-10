@@ -17,7 +17,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'Instalador Solar Local vs Cadena Nacional: Por Qué Importa en Puerto Rico',
   description:
-    'Descubre por qué elegir un instalador solar local en Puerto Rico marca la diferencia. Respuesta ante huracanes, conocimiento de LUMA y OGPE, servicio directo vs subcontratistas.',
+    'Descubre por qué elegir un instalador solar local en Puerto Rico marca la diferencia. Respuesta ante huracanes, medición neta con LUMA gestionada, servicio directo vs subcontratistas.',
   alternates: {
     canonical:
       'https://www.kilowattpr.com/comparacion/instalador-solar-local-vs-cadena-nacional/',
@@ -29,7 +29,7 @@ const faqs = [
     question:
       '¿Por qué es importante que mi instalador solar sea local en Puerto Rico?',
     answer:
-      'Un instalador local conoce las condiciones específicas de Puerto Rico: los procesos de permisos de la OGPE, los requisitos de interconexión de LUMA Energy, los protocolos de huracanes y las características de cada municipio. Además, puede responder rápidamente ante emergencias sin depender de logística desde Estados Unidos continental.',
+      'Un instalador local conoce las condiciones específicas de Puerto Rico: los requisitos de interconexión y medición neta de LUMA Energy, los protocolos de huracanes y las características de cada municipio. Además, puede responder rápidamente ante emergencias sin depender de logística desde Estados Unidos continental.',
   },
   {
     question:
@@ -47,7 +47,7 @@ const faqs = [
     question:
       '¿Cómo verifico que un instalador solar es legítimo en Puerto Rico?',
     answer:
-      'Verifica que el instalador tenga un perito electricista licenciado con número de licencia vigente del DACO/Junta Examinadora, un ingeniero eléctrico licenciado (PE) para el diseño del sistema, experiencia documentada con permisos de la OGPE, y reseñas verificables en Google Business Profile. Kilowatt PR cuenta con Xavier Acevedo Santiago (perito electricista lic. #21309) y el Ing. Julio A. Santiago Pérez (PE #6083).',
+      'Verifica que el instalador tenga un perito electricista licenciado con número de licencia vigente del DACO/Junta Examinadora, un ingeniero eléctrico licenciado (PE) para el diseño del sistema, experiencia documentada con solicitudes de medición neta ante LUMA Energy, y reseñas verificables en Google Business Profile. Kilowatt PR cuenta con Xavier Acevedo Santiago (perito electricista lic. #21309) y el Ing. Julio A. Santiago Pérez (PE #6083).',
   },
 ]
 
@@ -78,9 +78,9 @@ const comparaciones: readonly ComparisonRow[] = [
     nacionalPositive: false,
   },
   {
-    categoria: 'Conocimiento de permisos OGPE',
+    categoria: 'Gestión de medición neta con LUMA',
     icon: <FileText size={18} className="text-solar-yellow" />,
-    local: 'Experiencia directa con procesos municipales y estatales',
+    local: 'Experiencia directa con el proceso de interconexión de LUMA',
     nacional: 'Proceso centralizado que puede generar demoras',
     localPositive: true,
     nacionalPositive: false,
@@ -192,8 +192,8 @@ export default function LocalVsNacionalPage() {
               },
               {
                 icon: <FileText className="text-solar-yellow" size={24} />,
-                title: 'Permisos OGPE',
-                desc: 'Cada municipio tiene requisitos específicos. Un equipo local navega estos procesos con eficiencia.',
+                title: 'Trámites sin fricción',
+                desc: 'Instalar solar en Puerto Rico no requiere permiso de construcción. El único trámite es la medición neta con LUMA, es opcional y la gestionamos nosotros.',
               },
               {
                 icon: <MapPin className="text-solar-yellow" size={24} />,
@@ -325,9 +325,9 @@ export default function LocalVsNacionalPage() {
               día hábil por WhatsApp o llamada.
             </li>
             <li>
-              <strong>Permisos sin complicaciones:</strong> Gestionamos directamente los
-              permisos con la OGPE y la interconexión con LUMA Energy, con experiencia en
-              los requisitos específicos de cada municipio.
+              <strong>Trámites sin complicaciones:</strong> Instalar solar no requiere
+              permiso de construcción en Puerto Rico. Si deseas medición neta, gestionamos
+              la interconexión con LUMA Energy por ti, de principio a fin.
             </li>
             <li>
               <strong>Preparación para huracanes:</strong> Diseñamos e instalamos sistemas

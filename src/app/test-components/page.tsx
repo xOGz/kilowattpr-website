@@ -140,7 +140,7 @@ export default function TestComponentsPage() {
           >
             {[
               { num: "01", title: "Consulta Gratis", desc: "Analizamos tu consumo eléctrico y diseñamos tu sistema en 3D." },
-              { num: "02", title: "Diseño y Permisos", desc: "Manejamos OGPE y la interconexión con LUMA Energy por ti." },
+              { num: "02", title: "Diseño y Medición Neta", desc: "Gestionamos la medición neta con LUMA Energy por ti si la deseas." },
               { num: "03", title: "Instalación", desc: "1–2 días de instalación. Empiezas a ahorrar desde el primer mes." },
             ].map((step) => (
               <div key={step.num} className="text-center">

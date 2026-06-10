@@ -117,19 +117,19 @@ export default function TemporadaHuracanes2026Page() {
                 desc: 'Evaluamos tu consumo, diseñamos el sistema ideal y te damos precio fijo.',
               },
               {
-                step: 'Semana 2-3',
-                title: 'Permisos OGPE',
-                desc: 'Gestionamos todos los permisos necesarios con la OGPE directamente.',
-              },
-              {
-                step: 'Semana 3-5',
+                step: 'Semana 2',
                 title: 'Instalación',
-                desc: 'Nuestro equipo propio instala tu sistema. Sin subcontratistas.',
+                desc: 'Nuestro equipo propio instala tu sistema. Sin subcontratistas y sin permisos de construcción que esperar.',
               },
               {
-                step: 'Semana 5-8',
+                step: 'Semana 2-3',
+                title: 'Medición neta (opcional)',
+                desc: 'Si deseas medición neta, sometemos la solicitud de interconexión con LUMA Energy por ti.',
+              },
+              {
+                step: 'Semana 3-6',
                 title: 'Conexión LUMA',
-                desc: 'Completamos el proceso de interconexión con LUMA Energy.',
+                desc: 'El portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.',
               },
             ].map((item) => (
               <div key={item.step} className="bg-white rounded-xl p-5 border border-red-100">
@@ -259,14 +259,15 @@ export default function TemporadaHuracanes2026Page() {
               Instalamos Rápido — Tu Sistema Antes de Junio
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Nuestro equipo propio, con experiencia en permisos OGPE y procesos LUMA,
-              acelera cada paso para que tengas tu sistema funcionando a tiempo.
+              Nuestro equipo propio, con experiencia en los procesos de medición neta
+              de LUMA, acelera cada paso para que tengas tu sistema funcionando a tiempo.
+              Y como instalar solar no requiere permiso de construcción, empezamos rápido.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 border border-gray-200 text-center">
-              <p className="text-3xl font-bold text-solar-yellow mb-2">4-8</p>
+              <p className="text-3xl font-bold text-solar-yellow mb-2">3-6</p>
               <p className="font-semibold text-navy-dark">Semanas de inicio a fin</p>
               <p className="text-sm text-gray-500 mt-2">
                 Desde cotización hasta sistema conectado y operando con LUMA
@@ -322,7 +323,7 @@ export default function TemporadaHuracanes2026Page() {
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto mb-4">
             Cada sistema incluye paneles solares, batería de respaldo, inversor,
-            instalación completa, permisos OGPE y proceso de interconexión con LUMA.
+            instalación completa y gestión de medición neta con LUMA si la deseas.
             Precio fijo, sin sorpresas.
           </p>
 

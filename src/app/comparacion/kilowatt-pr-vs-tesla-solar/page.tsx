@@ -74,8 +74,8 @@ const comparaciones: readonly ComparisonRow[] = [
     teslaPositive: false,
   },
   {
-    categoria: 'Conocimiento de permisos OGPE',
-    kilowatt: 'Gestión directa con experiencia local en permisos',
+    categoria: 'Gestión de medición neta con LUMA',
+    kilowatt: 'Gestión directa de la interconexión con experiencia local',
     tesla: 'Proceso centralizado desde EE.UU. continental',
     kilowattPositive: true,
     teslaPositive: false,

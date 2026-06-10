@@ -8,7 +8,7 @@ import { CheckCircle, ArrowRight } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Solar Panel Installation in Puerto Rico',
   description:
-    'Kilowatt PR installs residential and commercial solar panel systems across Puerto Rico. Certified technicians, OGPE and LUMA permit management. Free quote.',
+    'Kilowatt PR installs residential and commercial solar panel systems across Puerto Rico. Certified technicians, no construction permits needed, LUMA net metering handled for you. Free quote.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/en/services/solar-panel-installation/',
     languages: {
@@ -25,11 +25,11 @@ const faqs = [
   },
   {
     question: 'How does interconnection with LUMA Energy work in Puerto Rico?',
-    answer: 'Interconnection with LUMA Energy is the official process to connect your solar system to the electrical grid. Kilowatt PR handles this entire process for you: we prepare the interconnection application, coordinate the LUMA inspection, and ensure your bidirectional meter is installed correctly. This process can take an additional 3 to 6 weeks after installation.',
+    answer: 'Interconnection with LUMA Energy is the official process to connect your solar system to the grid under net metering, and it is optional: it only applies if you want to send your excess energy to the grid. Kilowatt PR handles this entire process for you: we prepare the application, coordinate the LUMA inspection, and ensure your bidirectional meter is installed correctly. With LUMA\'s new portal, residential cases are approved in 2 to 4 weeks.',
   },
   {
     question: 'Do I need an OGPE permit to install solar panels in Puerto Rico?',
-    answer: 'Yes, solar panel installation in Puerto Rico requires permits from OGPE (Office of Permit Management). This process includes submitting structural and electrical plans. Kilowatt PR manages all these permits as part of the installation service, at no additional cost to the customer.',
+    answer: 'No. Solar system installations in Puerto Rico do not require a construction permit, neither from OGPE nor from the municipality. The only paperwork is the net metering (interconnection) application with LUMA Energy, and it is optional: it only applies if you want to connect your system to the grid. Kilowatt PR handles it for you at no additional cost, and LUMA\'s new portal approves residential cases in 2 to 4 weeks.',
   },
   {
     question: 'Can solar panels withstand hurricanes in Puerto Rico?',
@@ -70,8 +70,9 @@ export default function SolarPanelInstallationPage() {
               At Kilowatt PR, every installation begins with a complete analysis of your
               electricity consumption and a roof evaluation. We design the system in 3D to
               optimize solar capture based on your property&apos;s specific orientation and
-              tilt. Then we manage all OGPE permits and the LUMA Energy interconnection
-              process, so you don&apos;t have to do anything.
+              tilt. Going solar in Puerto Rico has less friction than most people think:
+              no construction permit is required. And if you want net metering, we manage
+              the LUMA Energy interconnection process for you, so you don&apos;t have to do anything.
             </p>
             <p>
               We work with the highest quality solar panels available on the market,
@@ -101,7 +102,7 @@ export default function SolarPanelInstallationPage() {
               {[
                 { step: '1', title: 'Free Consultation', desc: 'Consumption analysis, 3D system design, and 25-year savings projection. No cost, no obligation.' },
                 { step: '2', title: 'Contract Signing', desc: 'We review all system details, cost, available financing, and work schedule.' },
-                { step: '3', title: 'Permits & Final Design', desc: 'We manage OGPE permits and submit the interconnection request to LUMA Energy.' },
+                { step: '3', title: 'Final Design & Net Metering', desc: 'We finalize the system design. If you want net metering, we submit the interconnection request to LUMA Energy for you. No construction permit is required.' },
                 { step: '4', title: 'Installation', desc: 'Our team installs the system in 1\u20132 days with minimal disruption to your daily routine.' },
                 { step: '5', title: 'Inspections & Activation', desc: 'We coordinate required inspections and bidirectional meter activation with LUMA Energy.' },
                 { step: '6', title: 'Follow-Up', desc: 'We teach you how to monitor your system and remain available for any post-installation questions.' },
@@ -128,8 +129,8 @@ export default function SolarPanelInstallationPage() {
                 'Stainless steel mounting structure',
                 'Wiring and electrical protections',
                 'Real-time monitoring system',
-                'Full OGPE permit management',
-                'LUMA interconnection request',
+                'No construction permits required',
+                'LUMA net metering management (optional)',
                 '25-year panel warranty',
                 'Customer orientation',
                 'Post-installation support',

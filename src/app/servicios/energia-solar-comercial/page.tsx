@@ -85,9 +85,10 @@ export default function EnergiaSolarComercialPage() {
             </p>
             <p>
               El proceso incluye análisis de consumo detallado, diseño personalizado, gestión
-              completa de permisos OGPE, solicitud de interconexión con LUMA Energy y un plan
+              de la solicitud de medición neta con LUMA Energy si tu negocio la desea, y un plan
               de mantenimiento para asegurar el rendimiento óptimo durante toda la vida útil del
-              sistema. La mayoría de nuestros clientes comerciales recuperan su inversión en
+              sistema. Instalar solar no requiere permiso de construcción en Puerto Rico, así
+              que el proyecto avanza sin demoras de permisología. La mayoría de nuestros clientes comerciales recuperan su inversión en
               4 a 7 años.
             </p>
           </div>
@@ -100,7 +101,7 @@ export default function EnergiaSolarComercialPage() {
               {[
                 { step: '1', title: 'Análisis Comercial Gratuito', desc: 'Estudiamos tus facturas de LUMA Energy, patrones de consumo, cargos por demanda y horario de operación para diseñar el sistema óptimo.' },
                 { step: '2', title: 'Diseño y Propuesta', desc: 'Te presentamos un diseño personalizado con proyección de ahorros y ROI estimado. Si tu empresa va a financiar el proyecto, te entregamos la cotización formal y documentación técnica para que la presentes al banco o cooperativa de tu preferencia — Kilowatt no financia directamente.' },
-                { step: '3', title: 'Permisos y Logística', desc: 'Gestionamos todos los permisos de OGPE y la solicitud de interconexión con LUMA Energy. Planificamos la instalación para no afectar tus operaciones.' },
+                { step: '3', title: 'Medición Neta y Logística', desc: 'Si deseas medición neta, gestionamos la solicitud de interconexión con LUMA Energy. No se requiere permiso de construcción. Planificamos la instalación para no afectar tus operaciones.' },
                 { step: '4', title: 'Instalación', desc: 'Nuestro equipo instala el sistema en el menor tiempo posible, coordinando cualquier interrupción necesaria en horarios de baja actividad.' },
                 { step: '5', title: 'Activación y Monitoreo', desc: 'Activamos el sistema, configuramos el monitoreo en tiempo real y te entregamos acceso al dashboard para ver tu producción y ahorros.' },
               ].map((item) => (
@@ -126,8 +127,8 @@ export default function EnergiaSolarComercialPage() {
                 'Paneles solares comerciales de alta eficiencia',
                 'Inversores comerciales con monitoreo',
                 'Estructura de montaje para techos comerciales',
-                'Gestión completa de permisos OGPE',
-                'Solicitud de interconexión y net metering',
+                'Sin permisos de construcción requeridos',
+                'Gestión de medición neta con LUMA (opcional)',
                 'Garantía de 25 años en paneles',
                 'Plan de mantenimiento preventivo',
                 'Soporte técnico post-instalación',

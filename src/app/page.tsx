@@ -94,8 +94,8 @@ const steps = [
   },
   {
     num: '02',
-    title: 'Diseño y Permisos',
-    desc: 'Manejamos todo el proceso de permisología con OGPE y la solicitud de interconexión con LUMA Energy. Tú no tienes que hacer nada.',
+    title: 'Diseño y Medición Neta',
+    desc: 'En Puerto Rico la instalación solar no requiere permisos de construcción. Si deseas medición neta, gestionamos la solicitud con LUMA Energy por ti. Tú no tienes que hacer nada.',
   },
   {
     num: '03',
@@ -113,7 +113,7 @@ const faqs = [
   {
     question: '¿Cuánto tiempo tarda la instalación solar en Puerto Rico?',
     answer:
-      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 1 y 3 semanas. Este tiempo incluye la obtención de permisos con OGPE (Oficina de Gerencia de Permisos), la aprobación de interconexión con LUMA Energy, la llegada del equipo y la instalación física. La instalación en sí toma generalmente 1 a 2 días. Manejamos todo el proceso de permisos por ti, sin que tengas que hacer nada.',
+      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 1 y 2 semanas. En Puerto Rico la instalación solar no requiere permisos de construcción, lo que acelera todo el proceso. La instalación en sí toma generalmente 1 a 2 días. Si deseas medición neta, gestionamos la solicitud de interconexión con LUMA Energy por ti: el portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.',
   },
   {
     question: '¿Con qué frecuencia se deben limpiar los paneles solares?',
@@ -143,12 +143,12 @@ const faqs = [
   {
     question: '¿Quién es el ingeniero responsable del diseño del sistema solar?',
     answer:
-      'Cada sistema solar de Kilowatt PR es diseñado y certificado por el Ing. Julio A. Santiago Pérez, Ingeniero Profesional licenciado en Puerto Rico (PE #6083), con más de 30 años de experiencia, ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). La instalación es ejecutada por el equipo del fundador Xavier Acevedo Santiago, perito electricista licenciado #21309. El cumplimiento con el Código Eléctrico Nacional (NEC), los requisitos de OGPE y la interconexión con LUMA Energy es responsabilidad directa del PE.',
+      'Cada sistema solar de Kilowatt PR es diseñado y certificado por el Ing. Julio A. Santiago Pérez, Ingeniero Profesional licenciado en Puerto Rico (PE #6083), con más de 30 años de experiencia, ex ingeniero de NASA y ex profesor de la Universidad de Puerto Rico, Recinto de Mayagüez (RUM). La instalación es ejecutada por el equipo del fundador Xavier Acevedo Santiago, perito electricista licenciado #21309. El cumplimiento con el Código Eléctrico Nacional (NEC) y la interconexión con LUMA Energy es responsabilidad directa del PE.',
   },
   {
     question: '¿Por qué elegir Kilowatt PR en lugar de otra empresa solar en Puerto Rico?',
     answer:
-      'Kilowatt PR LLC se diferencia por tres razones: (1) ingeniería real, no ventas — cada sistema es diseñado por un PE licenciado con 30+ años de experiencia (PE #6083), no por un vendedor con comisión; (2) instalación por perito electricista licenciado #21309 con más de una década en campo en Puerto Rico, equipo que operó durante el huracán María y la crisis de LUMA Energy; (3) atendemos los 78 municipios desde nuestra base en Aguada con respuesta a cotizaciones en 24 a 48 horas y todo el manejo de permisos OGPE e interconexión LUMA incluido. Calificación 4.9★ en Google.',
+      'Kilowatt PR LLC se diferencia por tres razones: (1) ingeniería real, no ventas — cada sistema es diseñado por un PE licenciado con 30+ años de experiencia (PE #6083), no por un vendedor con comisión; (2) instalación por perito electricista licenciado #21309 con más de una década en campo en Puerto Rico, equipo que operó durante el huracán María y la crisis de LUMA Energy; (3) atendemos los 78 municipios desde nuestra base en Aguada con respuesta a cotizaciones en 24 a 48 horas y la gestión de medición neta con LUMA incluida si la deseas. Calificación 4.9★ en Google.',
   },
 ]
 

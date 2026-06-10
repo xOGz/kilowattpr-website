@@ -14,9 +14,9 @@ const services = [
   {
     icon: Sun,
     title: 'Solar Panel Installation',
-    desc: 'We install residential and commercial photovoltaic systems designed for Puerto Rico\'s climate conditions. Everything included: consultation, 3D design, OGPE permits, LUMA interconnection, and installation.',
+    desc: 'We install residential and commercial photovoltaic systems designed for Puerto Rico\'s climate conditions. Everything included: consultation, 3D design, installation, and LUMA net metering management if you want it. No construction permits required.',
     href: '/en/services/solar-panel-installation',
-    features: ['Residential systems 4kW\u201325kW', 'Custom commercial systems', 'OGPE permit management', 'LUMA Energy interconnection'],
+    features: ['Residential systems 4kW\u201325kW', 'Custom commercial systems', 'No construction permits required', 'LUMA net metering management (optional)'],
   },
   {
     icon: Battery,

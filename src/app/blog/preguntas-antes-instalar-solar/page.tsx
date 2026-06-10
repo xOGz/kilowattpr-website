@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: '10 Preguntas que Debes Hacer Antes de Instalar Paneles Solares en Puerto Rico',
   description:
-    'Las 10 preguntas críticas que todo consumidor debe hacer antes de contratar un instalador solar en Puerto Rico. Licencias, garantías, baterías, permisos OGPE y más.',
+    'Las 10 preguntas críticas que todo consumidor debe hacer antes de contratar un instalador solar en Puerto Rico. Licencias, garantías, baterías, medición neta con LUMA y más.',
   alternates: { canonical: 'https://www.kilowattpr.com/blog/preguntas-antes-instalar-solar/' },
 }
 
@@ -17,8 +17,8 @@ const faqs = [
     answer: 'Un instalador solar legítimo en Puerto Rico debe tener licencia de perito electricista vigente emitida por la Junta Examinadora de Peritos Electricistas. Además, debe estar registrado como contratista y tener seguro de responsabilidad. Pide el número de licencia y verifícalo antes de firmar cualquier contrato. En Kilowatt PR, nuestro perito electricista es Xavier Acevedo Santiago (Licencia #21309) y nuestro ingeniero asesor es el Ing. Julio A. Santiago Pérez, PE (#6083).',
   },
   {
-    question: '¿Quién maneja los permisos de OGPE y la interconexión con LUMA?',
-    answer: 'Una empresa solar profesional debe manejar todos los trámites por ti: permisos de OGPE (Oficina de Gerencia de Permisos), solicitud de interconexión con LUMA, inspecciones requeridas y el permiso de operación final (PTO). Si un instalador te dice que los permisos son "tu responsabilidad", es una señal de alerta. En Kilowatt PR gestionamos todo el proceso completo hasta que tu sistema está produciendo y exportando energía a la red.',
+    question: '¿Necesito permisos para instalar paneles solares en Puerto Rico?',
+    answer: 'No. En Puerto Rico la instalación de un sistema solar no requiere permiso de construcción, ni de OGPE ni municipal. El único trámite es la solicitud de medición neta con LUMA, y es opcional: solo aplica si quieres conectar tu sistema a la red. Los sistemas off-grid no llevan ningún trámite. Desconfía de instaladores que te cobran por "permisos de construcción" que la instalación solar no necesita. En Kilowatt PR gestionamos la solicitud de medición neta completa, y el portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.',
   },
   {
     question: '¿Qué garantías debo exigir para un sistema solar en Puerto Rico?',
@@ -39,7 +39,7 @@ export default function PreguntasAntesInstalarPage() {
     <>
       <ArticleSchema
         title="10 Preguntas que Debes Hacer Antes de Instalar Paneles Solares en Puerto Rico"
-        description="Las 10 preguntas críticas antes de contratar un instalador solar en Puerto Rico. Licencias, garantías, baterías, permisos OGPE y señales de alerta."
+        description="Las 10 preguntas críticas antes de contratar un instalador solar en Puerto Rico. Licencias, garantías, baterías, medición neta con LUMA y señales de alerta."
         datePublished={publishDate}
         dateModified={modifyDate}
         url={url}
@@ -129,25 +129,26 @@ export default function PreguntasAntesInstalarPage() {
             </div>
           </div>
 
-          <h2>3. ¿Quién maneja los permisos de OGPE y la interconexión con LUMA?</h2>
+          <h2>3. ¿Quién maneja la solicitud de medición neta con LUMA?</h2>
 
           <p>
-            La instalación solar en Puerto Rico requiere permisos de la Oficina de
-            Gerencia de Permisos (OGPE) y un proceso de interconexión con LUMA que
-            puede tomar semanas o meses. Una empresa profesional gestiona todo este
-            proceso por ti, desde la solicitud inicial hasta que tu sistema está
-            conectado y produciendo.
+            Dato que pocos instaladores te dicen: en Puerto Rico la instalación solar
+            no requiere permiso de construcción. El único trámite es la solicitud de
+            medición neta con LUMA, y es opcional: solo si quieres conectar tu sistema
+            a la red. Una empresa profesional gestiona esa solicitud por ti, desde el
+            sometimiento hasta que tu sistema está conectado y produciendo. El portal
+            nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.
           </p>
 
           <div className="not-prose bg-gray-50 rounded-xl p-6 my-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-bold text-green-700 mb-2">Buena Respuesta</h4>
-                <p className="text-sm text-gray-700">"Nosotros manejamos todo: permisos de OGPE, solicitud de interconexión a LUMA, inspecciones y el PTO. Tú no tienes que hacer trámites."</p>
+                <p className="text-sm text-gray-700">"La instalación no necesita permiso de construcción. Si quieres medición neta, nosotros sometemos la solicitud a LUMA y la seguimos hasta la activación. Tú no tienes que hacer trámites."</p>
               </div>
               <div>
                 <h4 className="font-bold text-red-700 mb-2">Señal de Alerta</h4>
-                <p className="text-sm text-gray-700">"Los permisos son responsabilidad del cliente" / "OGPE no es nuestra área" / Cobran extra por los trámites que deberían estar incluidos.</p>
+                <p className="text-sm text-gray-700">"El trámite con LUMA es responsabilidad del cliente" / Te cobran por "permisos de construcción" que la instalación solar en Puerto Rico no necesita.</p>
               </div>
             </div>
           </div>
@@ -338,7 +339,7 @@ export default function PreguntasAntesInstalarPage() {
           <ul>
             <li><strong>Licencia:</strong> Perito electricista Xavier Acevedo Santiago, Lic. #21309. Ingeniero asesor Julio A. Santiago Pérez, PE #6083.</li>
             <li><strong>Batería:</strong> Presentamos opciones con y sin batería, explicando claramente las implicaciones de cada una.</li>
-            <li><strong>Permisos:</strong> Gestionamos todo: OGPE, interconexión LUMA, inspecciones, PTO.</li>
+            <li><strong>Trámites:</strong> La instalación no requiere permiso de construcción. Si quieres medición neta, gestionamos la solicitud con LUMA de principio a fin.</li>
             <li><strong>Huracanes:</strong> Todos nuestros diseños incluyen cálculos de carga de viento certificados por ingeniero PE.</li>
             <li><strong>Garantías:</strong> Todo por escrito en el contrato, desglosado por componente.</li>
             <li><strong>Financiamiento:</strong> Opciones claras con pagos mensuales menores a tu factura actual de LUMA.</li>

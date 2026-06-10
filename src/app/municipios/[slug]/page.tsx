@@ -59,7 +59,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
     },
     {
       question: `¿Cuánto tiempo tarda la instalación en ${municipio.name}?`,
-      answer: `El proceso completo desde la firma del contrato hasta la activación del sistema en ${municipio.name} toma entre 1 y 3 semanas. Este tiempo incluye la tramitación de permisos con OGPE y la aprobación de interconexión con LUMA Energy. La instalación física se realiza en 1 a 2 días. Manejamos todos los trámites por ti.`,
+      answer: `El proceso completo desde la firma del contrato hasta la activación del sistema en ${municipio.name} toma entre 1 y 2 semanas. En Puerto Rico la instalación solar no requiere permisos de construcción, lo que acelera el proceso. La instalación física se realiza en 1 a 2 días. Si deseas medición neta, gestionamos la solicitud con LUMA Energy por ti.`,
     },
     {
       question: `¿Trabajan con la interconexión de LUMA Energy en ${municipio.name}?`,
@@ -178,7 +178,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
             {[
               `Instalación residencial y comercial en ${municipio.name}`,
               'Sistemas con batería de respaldo para apagones',
-              'Gestión completa de permisos OGPE',
+              'Sin permisos de construcción requeridos',
               'Interconexión con LUMA Energy incluida',
               'Sellado de techo previo cuando es necesario',
               'Mantenimiento y lavado periódico',

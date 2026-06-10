@@ -117,8 +117,8 @@ const comparaciones: readonly ComparisonRow[] = [
     sunnovaPositive: false,
   },
   {
-    categoria: 'Conocimiento de permisos OGPE',
-    kilowatt: 'Gestión directa de permisos con experiencia local',
+    categoria: 'Gestión de medición neta con LUMA',
+    kilowatt: 'Gestión directa de la interconexión con experiencia local',
     sunnova: 'Proceso centralizado que puede generar retrasos',
     kilowattPositive: true,
     sunnovaPositive: false,
@@ -269,7 +269,7 @@ export default function KilowattVsSunnovaPage() {
           <p>
             Puerto Rico tiene condiciones únicas que hacen que la elección de instalador solar sea
             diferente al resto de Estados Unidos. La inestabilidad de la red eléctrica con LUMA
-            Energy, la temporada de huracanes, y los procesos de permisos con la OGPE requieren
+            Energy, la temporada de huracanes, y los procesos de medición neta con LUMA requieren
             un equipo que conozca el territorio, tenga relaciones locales y pueda responder
             rápidamente cuando lo necesites.
           </p>

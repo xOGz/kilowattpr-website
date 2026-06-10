@@ -47,7 +47,7 @@ const chapters = [
   {
     icon: CheckCircle,
     title: 'The Step-by-Step Process',
-    desc: 'From the free consultation to activation: OGPE permits, LUMA interconnection, real timelines.',
+    desc: 'From the free consultation to activation: installation, LUMA net metering, real timelines.',
   },
   {
     icon: BookOpen,

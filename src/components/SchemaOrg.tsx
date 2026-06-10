@@ -548,7 +548,7 @@ export function XavierPersonSchema() {
       'Commercial Solar Systems',
       'Electrical Contracting',
       'LUMA Energy Interconnection',
-      'OGPe Permitting',
+      'Net Metering with LUMA Energy',
     ],
   }
 

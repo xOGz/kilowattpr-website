@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: '¿Qué preguntas debo hacerle a un instalador solar antes de contratarlo?',
-    answer: 'Las preguntas esenciales son: (1) ¿Quién es el perito electricista licenciado que firma los planos? (2) ¿Tienen experiencia con permisos de OGPE y la interconexión de LUMA Energy? (3) ¿Qué marcas de paneles, inversores y baterías instalan? (4) ¿Ofrecen garantía de mano de obra además de la garantía del fabricante? (5) ¿Cuántas instalaciones han completado en Puerto Rico? (6) ¿Pueden mostrar referencias o reseñas verificadas?',
+    answer: 'Las preguntas esenciales son: (1) ¿Quién es el perito electricista licenciado que firma los planos? (2) ¿Gestionan la solicitud de medición neta con LUMA Energy? (3) ¿Qué marcas de paneles, inversores y baterías instalan? (4) ¿Ofrecen garantía de mano de obra además de la garantía del fabricante? (5) ¿Cuántas instalaciones han completado en Puerto Rico? (6) ¿Pueden mostrar referencias o reseñas verificadas?',
   },
   {
     question: '¿Por qué no debo elegir siempre la cotización más barata?',
@@ -175,26 +175,28 @@ export default function ErroresComunesPage() {
             experiencia en ingeniería eléctrica en Puerto Rico.
           </p>
 
-          <h2>Error #5: Ignorar la Experiencia con OGPE y LUMA Energy</h2>
+          <h2>Error #5: Pagar por Permisos que la Instalación Solar No Necesita</h2>
 
           <p>
-            El proceso de permisos e interconexión en Puerto Rico es complejo. Necesitas
-            permisos de la Oficina de Gerencia de Permisos (OGPE), la interconexión con
-            LUMA Energy para la medición neta, y en algunos casos permisos adicionales
-            dependiendo del municipio y el tipo de propiedad.
+            Esto sorprende a muchos: en Puerto Rico la instalación de un sistema solar no
+            requiere permiso de construcción, ni de OGPE ni municipal. El único trámite es
+            la solicitud de medición neta con LUMA Energy, y es opcional: solo aplica si
+            quieres conectar tu sistema a la red. Un sistema off-grid no lleva ningún
+            trámite.
           </p>
           <p>
-            Algunas compañías — especialmente las que vienen de fuera de Puerto Rico o son
-            relativamente nuevas — no conocen bien este proceso. El resultado: meses de
-            retrasos, documentos rechazados, y un sistema instalado en tu techo que no
-            puedes usar legalmente porque no tiene la interconexión aprobada.
+            Algunas compañías, especialmente las que vienen de fuera de Puerto Rico o son
+            relativamente nuevas, te cobran por gestiones de permisos que no existen o
+            inflan el cronograma con trámites innecesarios. El resultado: pagas de más y
+            esperas de más.
           </p>
           <p>
-            <strong>Cómo evitarlo:</strong> Pregunta cuántas interconexiones con LUMA
-            Energy ha completado la compañía. ¿Conocen el proceso de OGPE? ¿Cuánto tiempo
-            típicamente toma desde la firma del contrato hasta tener el sistema produciendo
-            energía? Una compañía con experiencia real en Puerto Rico puede darte un
-            cronograma realista — generalmente de 8 a 12 semanas para un sistema residencial.
+            <strong>Cómo evitarlo:</strong> Pregunta cuántas solicitudes de medición neta
+            con LUMA Energy ha completado la compañía y cuánto tiempo toma desde la firma
+            del contrato hasta tener el sistema produciendo energía. Una compañía con
+            experiencia real en Puerto Rico te da un cronograma realista: instalación en
+            1 a 2 semanas, y si quieres medición neta, el portal nuevo de LUMA aprueba
+            casos residenciales en 2 a 4 semanas.
           </p>
 
           <h2>Error #6: Creer Promesas de Ahorro Irrealistas</h2>
@@ -246,9 +248,9 @@ export default function ErroresComunesPage() {
               clima tropical de la isla.
             </li>
             <li>
-              <strong>Experiencia con LUMA y OGPE:</strong> Manejamos todo el proceso de
-              permisos e interconexión. Conocemos el sistema porque llevamos años
-              navegándolo.
+              <strong>Trámites sin sorpresas:</strong> Te decimos de frente que la
+              instalación no requiere permiso de construcción. Si quieres medición neta,
+              gestionamos la solicitud con LUMA de principio a fin.
             </li>
             <li>
               <strong>Transparencia en precios y ahorros:</strong> Proyecciones basadas

@@ -107,9 +107,11 @@ export default function CommercialSolarPage() {
               offer a 1 year Kilowatt PR workmanship warranty on the installation.
             </p>
             <p>
-              The process includes a detailed consumption analysis, custom design, full OGPE
-              permit management, interconnection request with LUMA Energy, and a maintenance
+              The process includes a detailed consumption analysis, custom design, net
+              metering application with LUMA Energy if your business wants it, and a maintenance
               plan to ensure optimal performance throughout the system&apos;s entire lifespan.
+              Solar installations do not require a construction permit in Puerto Rico, so
+              your project moves forward without permitting delays.
               Most of our commercial clients recover their investment in 4 to 7 years.
             </p>
           </div>
@@ -122,7 +124,7 @@ export default function CommercialSolarPage() {
               {[
                 { step: '1', title: 'Free Commercial Analysis', desc: 'We study your LUMA Energy bills, consumption patterns, demand charges, and operating schedule to design the optimal system.' },
                 { step: '2', title: 'Design & Proposal', desc: 'We present a custom design with a savings projection and estimated ROI. If your company is going to finance the project, we deliver the formal quote and technical documentation so you can present it to the bank or credit union of your choice. Kilowatt does not finance directly.' },
-                { step: '3', title: 'Permits & Logistics', desc: 'We manage all OGPE permits and the interconnection request with LUMA Energy. We plan the installation so it does not affect your operations.' },
+                { step: '3', title: 'Net Metering & Logistics', desc: 'If you want net metering, we manage the interconnection request with LUMA Energy. No construction permit is required. We plan the installation so it does not affect your operations.' },
                 { step: '4', title: 'Installation', desc: 'Our team installs the system in the shortest time possible, coordinating any necessary interruption during low-activity hours.' },
                 { step: '5', title: 'Activation & Monitoring', desc: 'We activate the system, set up real-time monitoring, and give you dashboard access to see your production and savings.' },
               ].map((item) => (
@@ -148,8 +150,8 @@ export default function CommercialSolarPage() {
                 'High-efficiency commercial solar panels',
                 'Commercial inverters with monitoring',
                 'Mounting structure for commercial roofs',
-                'Full OGPE permit management',
-                'Interconnection request and net metering',
+                'No construction permits required',
+                'LUMA net metering management (optional)',
                 '25-year panel warranty',
                 'Preventive maintenance plan',
                 'Post-installation technical support',
