@@ -56,13 +56,6 @@ const testimonials: Testimonial[] = [
     text: 'I have a commercial business and the energy costs were killing me. Kilowatt PR designed a system that perfectly matched my consumption. In six months I\'m already seeing the return on investment.',
   },
   {
-    name: 'Ana G.',
-    municipio: 'Mayag\u00FCez',
-    rating: 5,
-    initials: 'AG',
-    text: 'What impressed me the most was that they handled the entire process — OGPE permits, LUMA interconnection, inspections. I didn\'t have to do anything but sign. Highly recommended.',
-  },
-  {
     name: 'Jos\u00E9 R.',
     municipio: 'Caguas',
     rating: 5,

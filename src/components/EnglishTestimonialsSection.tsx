@@ -23,12 +23,6 @@ const testimonials = [
     role: "Ponce, PR",
   },
   {
-    text: "Kilowatt PR handled everything — permits, OGPE, LUMA interconnection. I didn't have to do anything. The service was flawless from start to finish.",
-    image: "https://api.dicebear.com/7.x/initials/svg?seed=AG&backgroundColor=3DD8F5&textColor=003545",
-    name: "Ana G.",
-    role: "Mayagüez, PR",
-  },
-  {
     text: "Professional from the first contact. The installation was quick and the system works perfectly. Totally recommended.",
     image: "https://api.dicebear.com/7.x/initials/svg?seed=JR&backgroundColor=F5A623&textColor=3A2400",
     name: "José R.",
