@@ -121,7 +121,7 @@ export const municipios: Municipio[] = [
     topConcern: 'Lluvias frecuentes de la tarde que requieren diseño optimizado para producción matutina',
     nearbyMunicipios: ['aguada', 'aguadilla', 'cabo-rojo', 'rincon', 'yauco'],
     localLandmark: 'Cerca de la Universidad de Puerto Rico (RUM) y el centro urbano del oeste',
-    installationNotes: 'Mayagüez tiene un patrón climático particular: mañanas soleadas y lluvias frecuentes por la tarde, especialmente en los meses de verano. Diseñamos los sistemas para maximizar la producción en las horas de la mañana orientando los paneles ligeramente hacia el este cuando la geometría del techo lo permite. La presencia de la UPR-Mayagüez crea demanda tanto residencial como comercial, y hemos trabajado con propiedades de alquiler estudiantil donde el sistema solar añade valor y reduce costos operativos. Para comercios en el centro de Mayagüez, ofrecemos financiamiento que permite empezar a ahorrar desde el primer mes.',
+    installationNotes: 'Mayagüez tiene un patrón climático particular: mañanas soleadas y lluvias frecuentes por la tarde, especialmente en los meses de verano. Diseñamos los sistemas para maximizar la producción en las horas de la mañana orientando los paneles ligeramente hacia el este cuando la geometría del techo lo permite. La presencia de la UPR-Mayagüez crea demanda tanto residencial como comercial, y hemos trabajado con propiedades de alquiler estudiantil donde el sistema solar añade valor y reduce costos operativos. Para comercios en el centro de Mayagüez, entregamos cotización formal lista para presentar al banco o cooperativa que financie el proyecto.',
     uniqueFAQs: [
       {
         question: '¿Instalan en propiedades de alquiler cerca de la UPR Mayagüez?',
@@ -254,7 +254,7 @@ export const municipios: Municipio[] = [
       },
       {
         question: '¿Ofrecen sistemas solares comerciales para negocios en Caguas?',
-        answer: 'Sí. Hemos trabajado con comercios en el área de Las Catalinas y el corredor de la PR-30. Los negocios en Caguas con facturas de LUMA superiores a $1,000/mes ven un retorno de inversión en 3-4 años. Ofrecemos sistemas desde 10kW hasta 50kW+ para uso comercial, con financiamiento disponible.',
+        answer: 'Sí. Hemos trabajado con comercios en el área de Las Catalinas y el corredor de la PR-30. Los negocios en Caguas con facturas de LUMA superiores a $1,000/mes ven un retorno de inversión en 3-4 años. Instalamos sistemas desde 10kW hasta 50kW+ para uso comercial; entregamos cotización formal lista para presentar al banco o cooperativa que financie el proyecto (Kilowatt no financia directamente).',
       },
     ],
   },

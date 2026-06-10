@@ -16,11 +16,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: '¿Puedo instalar paneles solares sin pago inicial en Puerto Rico?',
-    answer: 'Sí, existen opciones de financiamiento que cubren el 100% del costo del sistema solar, permitiéndote comenzar a ahorrar desde el primer mes sin desembolso inicial. Algunas cooperativas de crédito, bancos y programas de financiamiento directo del instalador ofrecen planes con $0 de pronto. Tu pago mensual del préstamo suele ser menor que tu factura actual de LUMA Energy.',
+    answer: 'Sí, existen opciones de financiamiento que cubren el 100% del costo del sistema solar, permitiéndote comenzar a ahorrar desde el primer mes sin desembolso inicial. Cooperativas de crédito y bancos locales ofrecen planes con $0 de pronto. Tu pago mensual del préstamo suele ser menor que tu factura actual de LUMA Energy. Kilowatt PR no ofrece financiamiento directo: tú gestionas el préstamo con la institución financiera de tu preferencia y nosotros proveemos la documentación técnica que el banco solicite.',
   },
   {
     question: '¿Cuál es la mejor opción de financiamiento solar en Puerto Rico?',
-    answer: 'La mejor opción depende de tu situación financiera. Las cooperativas de ahorro y crédito generalmente ofrecen las tasas más competitivas (desde 5% APR) y un servicio más personalizado. Los préstamos verdes de bancos comerciales como Banco Popular y FirstBank son buenas opciones para montos más altos. El financiamiento directo del instalador es ideal si prefieres un proceso simplificado con $0 inicial.',
+    answer: 'La mejor opción depende de tu situación financiera. Las cooperativas de ahorro y crédito generalmente ofrecen las tasas más competitivas (desde 5% APR) y un servicio más personalizado. Los préstamos verdes de bancos comerciales como Banco Popular y FirstBank son buenas opciones para montos más altos. Kilowatt PR no financia directamente — proveemos la cotización formal y especificaciones técnicas que cualquier institución te pida para procesar el préstamo.',
   },
   {
     question: '¿Cuánto es el pago mensual de un sistema solar financiado?',
@@ -169,22 +169,21 @@ export default function FinanciamientoSolarPage() {
             consulta primero con ellos.
           </p>
 
-          <h3>3. Financiamiento Directo del Instalador</h3>
+          <h3>3. Cómo te apoya Kilowatt PR en el proceso</h3>
           <p>
-            Algunos instaladores solares ofrecen planes de financiamiento directos que simplifican
-            el proceso:
+            Kilowatt PR <strong>no ofrece financiamiento directo</strong>. Tú gestionas el préstamo con
+            la cooperativa o banco de tu preferencia, y nosotros te entregamos toda la documentación
+            técnica que la institución solicite:
           </p>
           <ul>
-            <li>$0 de pago inicial — comienza a ahorrar inmediatamente</li>
-            <li>Proceso simplificado — una sola solicitud, sin visitar el banco</li>
-            <li>Aprobación rápida — en muchos casos el mismo día</li>
-            <li>Pagos mensuales fijos por 5 a 15 años</li>
+            <li>Cotización formal con desglose de costos</li>
+            <li>Especificaciones técnicas del sistema (paneles, inversor, batería)</li>
+            <li>Proyección de ahorro mensual estimado</li>
+            <li>Cualquier documento adicional que el oficial de préstamo te pida</li>
           </ul>
           <p>
-            En Kilowatt PR trabajamos con múltiples instituciones financieras para ofrecerte
-            las mejores opciones de financiamiento disponibles. Durante la consulta gratuita
-            te presentamos todas las alternativas para que elijas la que mejor se adapte a
-            tu presupuesto.
+            Esto te permite comparar tasas entre cooperativas y bancos sin estar atado a una sola
+            institución, y normalmente conseguir mejores condiciones que con financiamiento del instalador.
           </p>
 
           <h3>4. Préstamos Personales</h3>
@@ -358,10 +357,11 @@ export default function FinanciamientoSolarPage() {
           </p>
 
           <p>
-            En Kilowatt PR te ayudamos a evaluar todas las opciones de financiamiento disponibles
-            durante la consulta gratuita. Analizamos tu consumo, diseñamos el sistema óptimo para
-            tu propiedad y te presentamos un presupuesto detallado con las proyecciones de ahorro
-            y las opciones de pago — todo sin costo ni compromiso.
+            En Kilowatt PR analizamos tu consumo, diseñamos el sistema óptimo para tu propiedad y
+            te entregamos un presupuesto detallado con las proyecciones de ahorro. Nosotros no
+            financiamos directamente — tú llevas esa cotización al banco o cooperativa de tu preferencia
+            y nosotros proveemos cualquier documentación técnica adicional que te soliciten. Todo sin
+            costo ni compromiso.
           </p>
         </div>
 
@@ -370,8 +370,8 @@ export default function FinanciamientoSolarPage() {
             ¿Quieres saber cuánto pagarías mensualmente por tu sistema solar?
           </p>
           <p className="text-gray-600 text-sm mb-4">
-            Consulta gratis — te presentamos todas las opciones de financiamiento disponibles
-            para tu caso específico.
+            Consulta gratis — te entregamos una cotización formal lista para presentar al banco o
+            cooperativa de tu preferencia.
           </p>
           <a
             href="https://wa.me/17874312275"

@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: '¿Qué garantías debo exigir para un sistema solar en Puerto Rico?',
-    answer: 'Un sistema solar completo debe incluir garantía del fabricante de paneles (25 años de producción), garantía del inversor (10–25 años según marca), garantía de la batería si aplica (10 años), y garantía de mano de obra del instalador (mínimo 5 años, idealmente 10). Pide todo por escrito y verifica que el instalador tenga la estabilidad para respaldar esas garantías. Desconfía de garantías verbales o de empresas sin historial comprobable.',
+    answer: 'Un sistema solar completo debe incluir garantía del fabricante de paneles (25 años de producción), garantía del inversor (10–25 años según marca), garantía de la batería si aplica (10 años), y garantía de mano de obra del instalador (mínimo 1 año, por escrito). Pide todo por escrito y verifica que el instalador tenga la estabilidad para respaldar esas garantías. Desconfía de garantías verbales o de empresas sin historial comprobable.',
   },
   {
     question: '¿Los paneles solares en Puerto Rico están certificados para huracanes?',
@@ -186,7 +186,7 @@ export default function PreguntasAntesInstalarPage() {
             <li><strong>Paneles:</strong> Garantía de producción de 25 años (deben producir al menos 80% de su capacidad nominal a los 25 años)</li>
             <li><strong>Inversor:</strong> Garantía de 10 a 25 años dependiendo de la marca</li>
             <li><strong>Batería:</strong> Garantía de 10 años (típicamente 70% de capacidad retenida)</li>
-            <li><strong>Mano de obra:</strong> Mínimo 5 años, idealmente 10 años</li>
+            <li><strong>Mano de obra:</strong> Mínimo 1 año, con el plazo claro y por escrito en el contrato</li>
             <li><strong>Estructura de montaje:</strong> Garantía contra corrosión y defectos de fabricación</li>
           </ul>
 
@@ -194,7 +194,7 @@ export default function PreguntasAntesInstalarPage() {
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-bold text-green-700 mb-2">Buena Respuesta</h4>
-                <p className="text-sm text-gray-700">"Aquí tienes el desglose de garantías por escrito: paneles 25 años, inversor 12 años, batería 10 años, mano de obra 10 años. Todo está en el contrato."</p>
+                <p className="text-sm text-gray-700">"Aquí tienes el desglose de garantías por escrito: equipos según el fabricante (paneles típicamente 25 años) y mano de obra del instalador con plazo claro. Todo está en el contrato."</p>
               </div>
               <div>
                 <h4 className="font-bold text-red-700 mb-2">Señal de Alerta</h4>
@@ -203,24 +203,27 @@ export default function PreguntasAntesInstalarPage() {
             </div>
           </div>
 
-          <h2>6. ¿Qué opciones de financiamiento tienen?</h2>
+          <h2>6. ¿Cómo manejan el financiamiento si necesito un préstamo?</h2>
 
           <p>
-            No todos pueden pagar $11,950–$35,000 de contado, y no deberían tener
-            que hacerlo. Un instalador serio ofrece opciones de financiamiento claras
-            y transparentes. Pregunta por las tasas de interés, los plazos disponibles,
-            si hay penalidad por pago adelantado y cuál es el pago mensual estimado.
+            No todos pueden pagar $11,950–$35,000 de contado. Hay dos modelos en el mercado:
+            (a) instaladores que cobran a plazos directamente (financiamiento del instalador) y
+            (b) instaladores que te entregan una cotización formal para que tú gestiones el préstamo
+            con tu banco o cooperativa. En Kilowatt PR usamos el segundo modelo — preparamos toda
+            la documentación técnica que el banco te pida, pero no financiamos directamente. Esto te
+            permite comparar tasas y normalmente conseguir condiciones más bajas que con financiamiento
+            del instalador.
           </p>
 
           <div className="not-prose bg-gray-50 rounded-xl p-6 my-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-bold text-green-700 mb-2">Buena Respuesta</h4>
-                <p className="text-sm text-gray-700">"Ofrecemos financiamiento con pagos mensuales de $X a $Y dependiendo del sistema. La tasa es X% a Y años. Sin penalidad por pago adelantado. Tu pago mensual es menor que tu factura actual de LUMA."</p>
+                <p className="text-sm text-gray-700">"Te entregamos cotización formal, especificaciones del sistema y proyección de ahorro. Con eso vas a tu cooperativa o banco y comparas tasas. Si necesitan documentación adicional, te la preparamos. No financiamos directamente."</p>
               </div>
               <div>
                 <h4 className="font-bold text-red-700 mb-2">Señal de Alerta</h4>
-                <p className="text-sm text-gray-700">"Solo aceptamos pago completo" / Tasas excesivamente altas / No transparentan los términos hasta firmar / Presionan para que firmes hoy.</p>
+                <p className="text-sm text-gray-700">"Solo aceptamos pago completo" / "Nuestro financiamiento es la única opción" / Presionan para firmar el mismo día / No transparentan los términos hasta firmar.</p>
               </div>
             </div>
           </div>

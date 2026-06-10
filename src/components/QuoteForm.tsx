@@ -1,7 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase'
+
+const CRM_INTAKE_ENDPOINT = 'https://kilowatt-crm.vercel.app/api/leads/intake'
 
 const municipiosList = [
   'Adjuntas', 'Aguada', 'Aguadilla', 'Aguas Buenas', 'Aibonito',
@@ -23,11 +24,17 @@ const municipiosList = [
 ]
 
 const serviciosList = [
-  'Instalación de paneles solares',
-  'Sistema solar con batería',
-  'Contratista eléctrico',
-  'Reparación de base de medidor',
+  'Instalación solar (micro inversores)',
+  'Sistema solar híbrido con batería',
+  'Sellado de techo',
   'Mantenimiento y lavado',
+  'Transfer Switch / ATS',
+  'Cargador EV',
+  'Planta eléctrica diesel',
+  'Contratista eléctrico',
+  'Base de contador',
+  'Certificación eléctrica LUMA',
+  'Servicios periciales eléctricos',
   'Consulta general',
 ]
 
@@ -41,28 +48,54 @@ export default function QuoteForm({ defaultService }: { defaultService?: string 
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    const lead = {
-      name: formData.get('nombre') as string,
-      phone: formData.get('telefono') as string,
-      municipio: formData.get('municipio') as string,
-      service_interest: formData.get('servicio') as string || null,
-      source: 'website' as const,
+    const payload = {
+      name: String(formData.get('nombre') ?? ''),
+      phone: String(formData.get('telefono') ?? ''),
+      email: null,
+      municipio: String(formData.get('municipio') ?? ''),
+      service_interest: String(formData.get('servicio') ?? '') || null,
+      message: null,
+      website: String(formData.get('website') ?? ''),
+      source_url: typeof window !== 'undefined' ? window.location.href : null,
+      locale: 'es' as const,
     }
 
-    const { error } = await supabase.from('leads').insert(lead)
+    try {
+      const res = await fetch(CRM_INTAKE_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      })
 
-    if (error) {
-      console.error('Supabase error:', error)
+      const json = (await res.json().catch(() => null)) as
+        | { success: boolean; error?: string }
+        | null
+
+      if (!res.ok || !json?.success) {
+        console.error('Lead intake error:', json?.error)
+        setStatus('error')
+        return
+      }
+
+      // GA4 conversion event
+      if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+        window.gtag('event', 'form_submit_quote', {
+          event_category: 'lead',
+          event_label: payload.service_interest ?? 'unspecified',
+          municipio: payload.municipio,
+        })
+      }
+
+      setStatus('success')
+
+      // Redirect to gracias page after short delay
+      setTimeout(() => {
+        window.location.href = '/gracias'
+      }, 1000)
+    } catch (err) {
+      console.error('Network error:', err)
       setStatus('error')
-      return
     }
-
-    setStatus('success')
-
-    // Redirect to gracias page after short delay
-    setTimeout(() => {
-      window.location.href = '/gracias'
-    }, 1000)
   }
 
   if (status === 'success') {
@@ -76,7 +109,16 @@ export default function QuoteForm({ defaultService }: { defaultService?: string 
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+      {/* Honeypot — hidden from real users, bots fill it */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        className="hidden"
+      />
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
           <label htmlFor="qf-nombre" className="block text-sm font-medium text-gray-700 mb-1">

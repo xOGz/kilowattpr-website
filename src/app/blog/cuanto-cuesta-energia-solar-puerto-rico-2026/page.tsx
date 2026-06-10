@@ -24,11 +24,11 @@ const faqs = [
   },
   {
     question: '¿Vale la pena instalar paneles solares en Puerto Rico en 2026?',
-    answer: 'Sí, en 2026 instalar paneles solares en Puerto Rico sigue siendo una de las mejores inversiones disponibles. Las tarifas de LUMA Energy continúan siendo las más altas de todo Estados Unidos, los precios de los sistemas han bajado significativamente, y la necesidad de independencia energética ante los apagones frecuentes es mayor que nunca. La mayoría de los sistemas se pagan solos en 5 a 8 años, con una garantía de 25 años.',
+    answer: 'Sí, en 2026 instalar paneles solares en Puerto Rico sigue siendo una de las mejores inversiones disponibles. Las tarifas de LUMA Energy continúan siendo las más altas de todo Estados Unidos, los precios de los sistemas han bajado significativamente, y la necesidad de independencia energética ante los apagones frecuentes es mayor que nunca. La mayoría de los sistemas se pagan solos en 5 a 8 años, con paneles cubiertos por garantía del fabricante de hasta 25 años y 1 año de garantía de mano de obra de Kilowatt PR.',
   },
   {
     question: '¿Hay financiamiento disponible para paneles solares en Puerto Rico?',
-    answer: 'Sí, existen múltiples opciones de financiamiento: préstamos personales, préstamos solares especializados, acuerdos de poder de compra (PPA), y financiamiento a través de cooperativas de crédito. Muchas instituciones financieras en Puerto Rico ofrecen tasas preferenciales para proyectos de energía renovable. En Kilowatt PR te presentamos todas las opciones disponibles durante la consulta.',
+    answer: 'Sí, existen múltiples opciones de financiamiento: préstamos personales, préstamos solares especializados y financiamiento a través de cooperativas de crédito. Muchas instituciones financieras en Puerto Rico ofrecen tasas preferenciales para proyectos de energía renovable. Kilowatt PR no financia directamente — tú gestionas el préstamo con la cooperativa o banco de tu preferencia, y nosotros proveemos la cotización formal y cualquier documentación técnica que la institución te solicite.',
   },
   {
     question: '¿En cuánto tiempo se paga un sistema solar en Puerto Rico?',
@@ -272,7 +272,7 @@ export default function CuantoCuestaPage() {
           <h3 className="font-bold text-navy-dark mb-4">Artículos Relacionados</h3>
           <div className="flex flex-wrap gap-3">
             {[
-              { href: '/blog/incentivos-solares-puerto-rico-2026', label: 'Preparación para Huracanes' },
+              { href: '/blog/preparar-hogar-huracanes-solar', label: 'Preparación para Huracanes' },
               { href: '/blog/guia-bateria-respaldo-hogar-puerto-rico', label: 'Guía de Baterías' },
               { href: '/blog/como-funciona-interconexion-luma-energia', label: 'Interconexión con LUMA' },
             ].map((l) => (

@@ -7,6 +7,7 @@ import MobileCTABar from '@/components/MobileCTABar'
 import EmailCaptureBanner from '@/components/EmailCaptureBanner'
 import { OrganizationSchema, WebSiteSchema } from '@/components/SchemaOrg'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
+import ClientTracker from '@/components/ClientTracker'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.kilowattpr.com'),
@@ -79,6 +80,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <WebSiteSchema />
       </head>
       <body className="bg-surface text-on-surface font-body antialiased">
+        <ClientTracker />
         <Header />
         <main>{children}</main>
         <Footer />

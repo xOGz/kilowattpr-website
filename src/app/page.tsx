@@ -446,7 +446,7 @@ export default function HomePage() {
                   <Star size={14} /> 4.9★ / 10 Reseñas
                 </span>
                 <span className="inline-flex items-center gap-1.5 bg-[#3A2400]/10 rounded-full px-4 py-2 text-sm font-label text-[#3A2400]">
-                  <CheckCircle size={14} /> Garantía 25 Años
+                  <CheckCircle size={14} /> Garantía Local en PR
                 </span>
               </div>
             </div>

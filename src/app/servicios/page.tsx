@@ -1,39 +1,53 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { Sun, Battery, Home, Wrench, Zap, Car, Building, ArrowRight } from 'lucide-react'
+import {
+  Sun,
+  Battery,
+  Home,
+  Wrench,
+  Zap,
+  Car,
+  Building,
+  ArrowRight,
+  Power,
+  Gauge,
+  FileCheck,
+  ShieldCheck,
+  Fuel,
+} from 'lucide-react'
 import { buildAlternates } from '@/lib/alternates'
 import BreadcrumbSchema from '@/components/BreadcrumbSchema'
 
 export const metadata: Metadata = {
-  title: 'Servicios de Energía Solar en Puerto Rico',
+  title: 'Servicios de Energía Solar y Eléctricos en Puerto Rico',
   description:
-    'Kilowatt PR: instalación de paneles solares, sistemas con batería, sellado de techo y mantenimiento en toda PR. Garantía 25 años. Llama 787-431-2275.',
+    'Kilowatt PR: micro inversores, sistemas solares híbridos, transfer switch, plantas diesel, contratista eléctrico, certificaciones LUMA, base de contador y más. Llama 787-431-2275.',
   ...buildAlternates({ es: '/servicios', en: '/en/services' }),
 }
 
-const services = [
+const mainServices = [
   {
     icon: Sun,
-    title: 'Instalación de Paneles Solares',
-    desc: 'Instalamos sistemas fotovoltaicos residenciales y comerciales diseñados para las condiciones climáticas de Puerto Rico. Incluimos todo: consulta, diseño 3D, permisos OGPE, interconexión LUMA y instalación.',
+    title: 'Instalación de Micro Inversores',
+    desc: 'Instalamos sistemas solares con micro inversores (residencial y comercial) diseñados para las condiciones climáticas de Puerto Rico. Incluimos todo: consulta, diseño 3D, permisos OGPE, interconexión LUMA y instalación. 1 año de garantía de mano de obra Kilowatt.',
     href: '/servicios/instalacion-paneles-solares',
     features: ['Sistemas residenciales 4kW–25kW', 'Sistemas comerciales a medida', 'Gestión de permisos OGPE', 'Interconexión con LUMA Energy'],
     image: '/servicios/instalacion-paneles.jpg',
-    imageAlt: 'Sistema de paneles solares instalado sobre techo residencial en Puerto Rico por Kilowatt PR',
+    imageAlt: 'Sistema de paneles solares con micro inversores instalado sobre techo residencial en Puerto Rico por Kilowatt PR',
   },
   {
     icon: Battery,
-    title: 'Sistemas Solares con Batería',
-    desc: 'La solución para la independencia energética total durante los apagones de LUMA Energy. Hasta 24 horas de respaldo para los electrodomésticos esenciales de tu hogar o negocio.',
+    title: 'Sistemas Solares Híbridos con Batería de Respaldo',
+    desc: 'La solución para la independencia energética durante los apagones de LUMA Energy. Sistemas híbridos con batería de respaldo dimensionada según tu consumo. Marcas que instalamos: EG4, Solark, Fortress, Sunbeat (Tesla Powerwall bajo solicitud).',
     href: '/servicios/sistemas-con-bateria',
-    features: ['Hasta 24 horas de respaldo', 'Desconexión automática en apagones', 'Compatible con paneles existentes', 'Monitoreo remoto del sistema'],
+    features: ['Respaldo dimensionado a tu consumo', 'Desconexión automática en apagones', 'Compatible con paneles existentes', 'Monitoreo remoto del sistema'],
     image: '/servicios/sistemas-bateria.webp',
     imageAlt: 'Inversor híbrido EG4 18KPV con batería de respaldo instalado por Kilowatt PR',
   },
   {
     icon: Home,
-    title: 'Sellado de Techo',
+    title: 'Sellado de Techo Previo a Instalación',
     desc: 'Antes de instalar los paneles, evaluamos e impermeabilizamos tu techo. Un techo sellado protege tu hogar del agua y garantiza que la instalación solar sea segura y duradera.',
     href: '/servicios/sellado-de-techo',
     features: ['Evaluación estructural del techo', 'Impermeabilización profesional', 'Garantía de 2 años de mano de obra', 'Compatible con todos los tipos de techo'],
@@ -42,21 +56,30 @@ const services = [
   },
   {
     icon: Wrench,
-    title: 'Mantenimiento y Lavado',
-    desc: 'Mantén tus paneles operando al máximo de su eficiencia. El polvo del Sahara, la sal marina y los residuos tropicales pueden reducir la producción solar hasta un 25% sin mantenimiento regular.',
+    title: 'Mantenimiento y Lavado de Paneles Solares',
+    desc: 'Mantén tus paneles operando al máximo de eficiencia. El polvo del Sahara, la sal marina y los residuos tropicales pueden reducir la producción solar hasta un 25% sin mantenimiento regular.',
     href: '/servicios/mantenimiento-lavado',
     features: ['Limpieza con agua purificada', 'Inspección visual de paneles e inversores', 'Reporte de producción', 'Plan de mantenimiento personalizado'],
     image: '/servicios/mantenimiento-lavado.webp',
     imageAlt: 'Paneles solares limpios y mantenidos para máxima eficiencia en Puerto Rico',
   },
   {
-    icon: Zap,
-    title: 'Contratista Eléctrico',
-    desc: 'Servicios eléctricos residenciales y comerciales. Reparación de bases de medidores con certificaciones LUMA, mejoras de paneles eléctricos y cableado profesional.',
-    href: '/servicios/contratista-electrico',
-    features: ['Reparación de bases de medidores', 'Certificaciones LUMA', 'Mejoras de panel eléctrico', 'Cableado residencial y comercial'],
+    icon: Fuel,
+    title: 'Plantas Eléctricas Diesel',
+    desc: 'Instalación y servicio de plantas eléctricas diesel residenciales y comerciales. Respaldo de emergencia confiable para hogares y negocios que requieren autonomía energética prolongada o complemento al sistema solar.',
+    href: '/servicios/plantas-diesel',
+    features: ['Residenciales y comerciales', 'Dimensionamiento por carga', 'Instalación completa con transfer switch', 'Mantenimiento y servicio'],
     image: '/servicios/contratista-electrico.webp',
-    imageAlt: 'Paneles eléctricos y disconnects instalados por peritos electricistas licenciados en Puerto Rico',
+    imageAlt: 'Planta eléctrica diesel instalada por Kilowatt PR en residencia de Puerto Rico',
+  },
+  {
+    icon: Car,
+    title: 'Cargadores para Vehículos Eléctricos (EV)',
+    desc: 'Instalación de cargadores EV Level 2 y Level 3 para residencias y comercios. Combina solar + EV para máximo ahorro en combustible y electricidad.',
+    href: '/servicios/cargadores-ev',
+    features: ['Level 2 residencial', 'Level 3 comercial', 'Combo solar + EV', 'Evaluación de capacidad eléctrica'],
+    image: '/servicios/cargadores-ev.webp',
+    imageAlt: 'Cargador EV Level 2 instalado por electricista licenciado de Kilowatt PR',
   },
   {
     icon: Building,
@@ -68,13 +91,40 @@ const services = [
     imageAlt: 'Trabajo de servicio eléctrico comercial por Kilowatt PR en Puerto Rico',
   },
   {
-    icon: Car,
-    title: 'Cargadores de Vehículos Eléctricos',
-    desc: 'Instalación de cargadores EV Level 2 y Level 3 para residencias y comercios. Combina solar + EV para máximo ahorro en combustible y electricidad.',
-    href: '/servicios/cargadores-ev',
-    features: ['Level 2 residencial', 'Level 3 comercial', 'Combo solar + EV', 'Evaluación de capacidad eléctrica'],
-    image: '/servicios/cargadores-ev.webp',
-    imageAlt: 'Técnico electricista licenciado de Kilowatt PR trabajando en instalación eléctrica',
+    icon: Zap,
+    title: 'Contratista Eléctrico Residencial y Comercial',
+    desc: 'Servicios eléctricos generales con perito electricista licenciado #21309. Reparación de bases de medidores, mejoras de paneles eléctricos, cableado profesional y trabajos eléctricos completos.',
+    href: '/servicios/contratista-electrico',
+    features: ['Perito electricista licenciado', 'Mejoras de panel eléctrico', 'Cableado residencial y comercial', 'Diagnósticos y reparaciones'],
+    image: '/servicios/contratista-electrico.webp',
+    imageAlt: 'Paneles eléctricos y disconnects instalados por peritos electricistas licenciados en Puerto Rico',
+  },
+]
+
+const specializedServices = [
+  {
+    icon: Power,
+    title: 'Transfer Switch Manual / ATS',
+    desc: 'Instalación de transfer switch manual o automático (ATS) para conectar plantas eléctricas o sistemas solares al panel de tu casa de forma segura.',
+    href: '/servicios/transfer-switch-ats',
+  },
+  {
+    icon: Gauge,
+    title: 'Reparación/Instalación de Base de Contador',
+    desc: 'Reparación o reemplazo de bases de medidor dañadas. Trabajo coordinado con LUMA para restablecer el servicio sin demoras.',
+    href: '/servicios/base-de-contador',
+  },
+  {
+    icon: FileCheck,
+    title: 'Certificaciones Eléctricas para LUMA Energy',
+    desc: 'Emisión de certificaciones eléctricas requeridas por LUMA para reconexiones, mejoras de servicio, permisos de OGPE e inspecciones.',
+    href: 'https://wa.me/17874312275',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Servicios Periciales Eléctricos',
+    desc: 'Informes, inspecciones y dictámenes de perito electricista licenciado. Útil para casos legales, seguros, evaluaciones de propiedad y certificaciones técnicas.',
+    href: 'https://wa.me/17874312275',
   },
 ]
 
@@ -85,11 +135,12 @@ export default function ServicesPage() {
       <section className="bg-navy-dark text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Servicios Solares en <span className="text-solar-yellow">Puerto Rico</span>
+            Servicios Solares y Eléctricos en <span className="text-solar-yellow">Puerto Rico</span>
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl">
-            Soluciones completas de energía renovable para hogares y negocios. Desde la
-            instalación hasta el mantenimiento, lo manejamos todo.
+            Soluciones completas para hogares y negocios. Desde la instalación solar hasta
+            trabajos eléctricos especializados, lo manejamos todo con perito licenciado y diseño
+            firmado por PE #6083.
           </p>
         </div>
       </section>
@@ -97,9 +148,9 @@ export default function ServicesPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12">
-            {services.map((svc, i) => (
+            {mainServices.map((svc, i) => (
               <div
-                key={svc.href}
+                key={svc.href + svc.title}
                 className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
               >
                 <div>
@@ -147,8 +198,41 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Packages */}
+      {/* Specialized electrical services */}
       <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="section-title">Servicios Eléctricos Especializados</h2>
+            <p className="section-subtitle mx-auto">
+              Trabajos eléctricos puntuales con perito licenciado. Llámanos o escribe por WhatsApp
+              para coordinar.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {specializedServices.map((svc) => (
+              <a
+                key={svc.title}
+                href={svc.href}
+                target={svc.href.startsWith('http') ? '_blank' : undefined}
+                rel={svc.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="card hover:shadow-xl transition-shadow group"
+              >
+                <div className="w-12 h-12 bg-solar-yellow/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-solar-yellow/20 transition-colors">
+                  <svc.icon className="text-solar-yellow" size={24} />
+                </div>
+                <h3 className="font-bold text-lg text-navy-dark mb-2">{svc.title}</h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">{svc.desc}</p>
+                <span className="inline-flex items-center gap-2 text-solar-yellow font-semibold text-sm group-hover:gap-3 transition-all">
+                  Coordinar por WhatsApp <ArrowRight size={16} />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Packages */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="section-title">Paquetes de Sistemas Solares</h2>
@@ -160,14 +244,14 @@ export default function ServicesPage() {
                 name: 'Autoconsumo Solar',
                 size: '4kW–8kW PV + 10–30 kWh Batería',
                 desc: 'Genera y almacena tu propia energía sin depender de LUMA. Ideal para hogares que quieren independencia energética sin medición neta.',
-                features: ['Paneles solares de alta eficiencia', 'Batería de respaldo 10–30 kWh', 'Sin trámites de medición neta', 'Protección contra apagones', 'Garantía 25 años paneles'],
+                features: ['Paneles solares de alta eficiencia', 'Batería de respaldo 10–30 kWh', 'Sin trámites de medición neta', 'Protección contra apagones', 'Garantía del fabricante + 1 año mano de obra'],
                 cta: 'Cotizar Autoconsumo',
               },
               {
                 name: 'Medición Neta',
                 size: '4kW–25kW PV + 15–64 kWh Batería',
                 desc: 'El sistema completo: genera energía, almacénala y vende el exceso a LUMA. Maximiza tu ahorro con créditos en tu factura eléctrica.',
-                features: ['Sistema solar hasta 25kW', 'Batería de respaldo 15–64 kWh', 'Gestión completa de medición neta', 'Medidor bidireccional incluido', 'Monitoreo remoto', 'Garantía 25 años paneles'],
+                features: ['Sistema solar hasta 25kW', 'Batería de respaldo 15–64 kWh', 'Gestión completa de medición neta', 'Medidor bidireccional incluido', 'Monitoreo remoto', 'Garantía del fabricante + 1 año mano de obra'],
                 cta: 'Cotizar Medición Neta',
                 featured: true,
               },
@@ -175,7 +259,7 @@ export default function ServicesPage() {
                 name: 'Solar Comercial e Industrial',
                 size: 'Diseño a Medida',
                 desc: 'Sistemas diseñados por ingeniería para negocios, escuelas, hospitales y edificios comerciales. Reducción inmediata de costos operativos.',
-                features: ['Análisis de carga personalizado', 'Diseño de ingeniería PE completo', 'Financiamiento comercial disponible', 'Soporte post-instalación'],
+                features: ['Análisis de carga personalizado', 'Diseño de ingeniería PE completo', 'Cotización formal para tu banco o cooperativa', 'Soporte post-instalación'],
                 cta: 'Cotizar Sistema Comercial',
               },
             ].map((pkg) => (

@@ -220,7 +220,7 @@ export default function AboutPage() {
               {
                 icon: Award,
                 title: 'Our Commitment',
-                desc: 'Every installation is backed by a 25-year warranty on panels, 5 to 10-year warranties on inverters and batteries, and a complimentary 3-month quality inspection at no additional cost. We don\'t stop until your system is producing.',
+                desc: 'Every installation is backed by the manufacturers\' direct equipment warranties (with local replacement in Puerto Rico, no mainland shipping), a 1-year Kilowatt PR workmanship warranty, and a complimentary 3-month quality inspection at no additional cost. We don\'t stop until your system is producing.',
               },
               {
                 icon: MapPin,

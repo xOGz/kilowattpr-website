@@ -328,18 +328,13 @@ export default function TemporadaHuracanes2026Page() {
 
           <div className="flex flex-wrap justify-center gap-6 my-8">
             <div className="text-center">
-              <p className="text-sm text-gray-400">Paneles</p>
-              <p className="text-lg font-bold">25 años garantía</p>
+              <p className="text-sm text-gray-400">Equipos</p>
+              <p className="text-lg font-bold">Garantía del fabricante</p>
             </div>
             <div className="w-px bg-white/20 hidden md:block" />
             <div className="text-center">
-              <p className="text-sm text-gray-400">Baterías</p>
-              <p className="text-lg font-bold">10 años garantía</p>
-            </div>
-            <div className="w-px bg-white/20 hidden md:block" />
-            <div className="text-center">
-              <p className="text-sm text-gray-400">Inversores</p>
-              <p className="text-lg font-bold">10-12 años garantía</p>
+              <p className="text-sm text-gray-400">Mano de obra</p>
+              <p className="text-lg font-bold">1 año Kilowatt PR</p>
             </div>
             <div className="w-px bg-white/20 hidden md:block" />
             <div className="text-center">
