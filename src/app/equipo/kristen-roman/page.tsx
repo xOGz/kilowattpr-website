@@ -23,7 +23,7 @@ const responsibilities = [
     icon: Users,
     title: 'Coordinación con Instalación',
     role: 'Puente entre cliente y equipo técnico',
-    desc: 'Coordina la agenda de los técnicos de instalación, gestiona la documentación de permisos OGPe y el proceso de interconexión con LUMA Energy.',
+    desc: 'Coordina la agenda de los técnicos de instalación, gestiona la documentación de la solicitud de medición neta y el proceso de interconexión con LUMA Energy.',
   },
   {
     icon: Headphones,

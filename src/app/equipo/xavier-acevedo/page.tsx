@@ -38,7 +38,7 @@ const experience = [
     icon: Zap,
     title: 'Instalaciones Solares Residenciales y Comerciales',
     role: 'Más de una década de experiencia',
-    desc: 'Especializado en sistemas 4 kW–25 kW residenciales con baterías, y sistemas comerciales hasta 100 kW+. Coordinación directa de permisos OGPe e interconexión con LUMA Energy.',
+    desc: 'Especializado en sistemas 4 kW–25 kW residenciales con baterías, y sistemas comerciales hasta 100 kW+. Coordinación directa de la medición neta e interconexión con LUMA Energy.',
   },
   {
     icon: Users,

@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: '¿Cuándo es el mejor momento para instalar solar antes de la temporada de huracanes?',
-    answer: 'La temporada de huracanes en Puerto Rico comienza el 1 de junio. Considerando que el proceso de instalación toma entre 1 y 3 semanas (incluyendo permisos de OGPE e interconexión con LUMA), lo ideal es comenzar el proceso en marzo o abril. La demanda aumenta significativamente en mayo y junio, lo que puede extender los tiempos de espera.',
+    answer: 'La temporada de huracanes en Puerto Rico comienza el 1 de junio. La instalación toma entre 1 y 2 semanas, y si deseas medición neta, la solicitud con LUMA se aprueba en 2 a 4 semanas adicionales. Lo ideal es comenzar el proceso en marzo o abril. La demanda aumenta significativamente en mayo y junio, lo que puede extender los tiempos de espera.',
   },
 ]
 
@@ -172,8 +172,9 @@ export default function HurricanePreparationPage() {
 
           <h3>3. Instala Antes de Mayo (Abril-Mayo)</h3>
           <p>
-            El proceso de instalación toma entre 1 y 3 semanas, incluyendo permisos de OGPE e
-            interconexión con LUMA Energy. La demanda de sistemas solares aumenta dramáticamente
+            La instalación toma entre 1 y 2 semanas. Si deseas medición neta, la solicitud
+            con LUMA Energy se aprueba en 2 a 4 semanas adicionales, y la gestionamos
+            nosotros. La demanda de sistemas solares aumenta dramáticamente
             en mayo y junio cuando la gente recuerda que viene la temporada de huracanes. Instalar
             en marzo o abril te asegura los mejores tiempos de respuesta y disponibilidad de equipos.
           </p>

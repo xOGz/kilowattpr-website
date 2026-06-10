@@ -50,12 +50,12 @@ const procesoInstalacion = [
   {
     question: '¿Cuánto tiempo toma instalar un sistema solar?',
     answer:
-      'El proceso completo toma entre 1 y 3 semanas, que incluye diseño, permisos y coordinación con LUMA. La instalación física en tu techo toma solo 1 a 2 días. Nos encargamos de todo el proceso de principio a fin.',
+      'El proceso completo toma entre 1 y 2 semanas, que incluye diseño, coordinación e instalación. La instalación física en tu techo toma solo 1 a 2 días. Nos encargamos de todo el proceso de principio a fin.',
   },
   {
-    question: '¿Kilowatt PR se encarga de los permisos de OGPE?',
+    question: '¿Necesito permisos de construcción para instalar un sistema solar?',
     answer:
-      'Sí. Gestionamos todos los permisos de OGPE (Oficina de Gerencia de Permisos) necesarios para tu instalación. No tienes que preocuparte por el papeleo ni visitas a oficinas gubernamentales.',
+      'No. En Puerto Rico la instalación de sistemas solares no requiere permisos de construcción. El único trámite es la solicitud de medición neta con LUMA Energy, que es opcional y la gestionamos nosotros por ti si la deseas. No tienes que preocuparte por papeleo ni visitas a oficinas gubernamentales.',
   },
   {
     question: '¿Cómo es el proceso de interconexión con LUMA Energy?',

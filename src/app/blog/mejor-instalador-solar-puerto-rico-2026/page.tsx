@@ -21,11 +21,11 @@ const faqs = [
   },
   {
     question: '¿Por qué es importante que el instalador sea una empresa local?',
-    answer: 'Las empresas locales tienen mayor responsabilidad ante sus clientes porque operan en la misma comunidad. Conocen mejor los códigos locales, los procesos de permisos de OGPE y la interconexión con LUMA Energy. Además, pueden responder más rápido ante reclamaciones o servicios de mantenimiento. El caso de Sunnova, una empresa nacional que se declaró en bancarrota (Chapter 11), dejó a miles de clientes en Puerto Rico sin soporte.',
+    answer: 'Las empresas locales tienen mayor responsabilidad ante sus clientes porque operan en la misma comunidad. Conocen mejor los códigos eléctricos locales y el proceso de medición neta con LUMA Energy. Además, pueden responder más rápido ante reclamaciones o servicios de mantenimiento. El caso de Sunnova, una empresa nacional que se declaró en bancarrota (Chapter 11), dejó a miles de clientes en Puerto Rico sin soporte.',
   },
   {
     question: '¿Cuánto tiempo tarda una instalación solar en Puerto Rico?',
-    answer: 'La instalación física de paneles solares generalmente tarda de 1 a 3 días. Sin embargo, el proceso completo — que incluye diseño, permisos de OGPE, instalación e interconexión con LUMA Energy — puede tomar de 4 a 12 semanas dependiendo de la complejidad del proyecto y los tiempos de aprobación de permisos.',
+    answer: 'La instalación física de paneles solares generalmente tarda de 1 a 3 días. En Puerto Rico no se requiere permiso de construcción para instalar un sistema solar, así que el proceso completo de diseño e instalación toma de 1 a 2 semanas. Si el cliente desea medición neta, la solicitud con LUMA Energy es el único trámite, y el portal nuevo aprueba casos residenciales en 2 a 4 semanas.',
   },
   {
     question: '¿Qué garantías debe ofrecer un buen instalador solar?',
@@ -135,7 +135,7 @@ export default function MejorInstaladorPage() {
               {[
                 { criterio: 'Perito electricista licenciado', detalle: 'Verificable con Junta Examinadora / DACO' },
                 { criterio: 'Ingeniero eléctrico PE para diseño', detalle: 'No solo un vendedor — un profesional certificado' },
-                { criterio: 'Experiencia con permisos OGPE', detalle: 'Manejo completo del proceso de permisos' },
+                { criterio: 'Transparencia en los trámites', detalle: 'No cobra por permisos de construcción que la instalación solar en PR no necesita' },
                 { criterio: 'Reseñas verificables en Google', detalle: 'Historial público de clientes satisfechos' },
                 { criterio: 'Garantías claras por escrito', detalle: 'Paneles 25 años, inversor/batería 5-10, mano de obra' },
                 { criterio: 'Manejo de interconexión LUMA', detalle: 'Proceso completo hasta la conexión final' },
@@ -179,15 +179,15 @@ export default function MejorInstaladorPage() {
             el diseño sea seguro, eficiente y cumpla con todos los códigos aplicables.
           </p>
 
-          <h3>3. Experiencia con Permisos OGPE</h3>
+          <h3>3. Transparencia en los Trámites</h3>
           <p>
-            Todo sistema solar en Puerto Rico requiere permisos de la{' '}
-            <a href="https://ogpe.pr.gov/" target="_blank" rel="noopener noreferrer">
-              Oficina de Gerencia de Permisos (OGPE)
-            </a>. El proceso puede ser complejo y lento si no se maneja correctamente. Un
-            instalador experimentado conoce los requisitos, prepara la documentación completa
-            y evita demoras innecesarias. Pregunta cuántas instalaciones ha completado con
-            permisos OGPE en el último año.
+            Aquí va un dato que te puede ahorrar dinero: en Puerto Rico la instalación de
+            un sistema solar no requiere permiso de construcción. El único trámite es la
+            solicitud de medición neta con LUMA Energy, y es opcional: solo aplica si
+            quieres conectar tu sistema a la red. Desconfía de instaladores que te cobran
+            por &ldquo;permisos de construcción&rdquo; que la instalación solar no necesita.
+            Un instalador serio te lo explica de frente y, si quieres medición neta,
+            gestiona la solicitud con LUMA por ti.
           </p>
 
           <h3>4. Reseñas Verificables en Google</h3>
@@ -256,7 +256,7 @@ export default function MejorInstaladorPage() {
           <ol>
             <li><strong>&ldquo;¿Cuál es el número de licencia de su perito electricista?&rdquo;</strong> — Debe poder dártelo inmediatamente.</li>
             <li><strong>&ldquo;¿Quién diseña el sistema? ¿Es un ingeniero eléctrico PE?&rdquo;</strong> — El diseño no debe hacerlo un vendedor.</li>
-            <li><strong>&ldquo;¿Ustedes manejan los permisos de OGPE y la interconexión con LUMA?&rdquo;</strong> — La respuesta debe ser sí a ambos.</li>
+            <li><strong>&ldquo;¿Ustedes gestionan la solicitud de medición neta con LUMA?&rdquo;</strong> — La respuesta debe ser sí, sin costos escondidos por permisos que no existen.</li>
             <li><strong>&ldquo;¿Puedo ver sus reseñas en Google?&rdquo;</strong> — Un negocio legítimo tiene presencia pública.</li>
             <li><strong>&ldquo;¿Qué garantías incluye el contrato por escrito?&rdquo;</strong> — Exige detalles específicos.</li>
             <li><strong>&ldquo;¿Qué marcas de paneles, inversores y baterías usan?&rdquo;</strong> — Investiga las marcas por tu cuenta.</li>
@@ -278,7 +278,7 @@ export default function MejorInstaladorPage() {
                 'No tiene perito electricista propio — subcontrata toda la instalación',
                 'Solo vende por teléfono sin visitar tu techo antes de cotizar',
                 'Promete precios imposiblemente bajos para cerrar rápido',
-                'No maneja permisos de OGPE — te dice que lo hagas tú',
+                'Te cobra por "permisos de construcción" que la instalación solar en Puerto Rico no requiere',
                 'Sin presencia verificable en Google (sin reseñas, sin perfil)',
                 'Presiona para firmar "hoy" con descuentos que vencen mañana',
                 'No puede explicar claramente qué equipo instalará',

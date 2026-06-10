@@ -63,8 +63,8 @@ export default function AboutPage() {
                 <p>
                   Xavier Acevedo Santiago has over a decade of experience installing
                   solar systems in Puerto Rico. He knows firsthand the island&apos;s climate
-                  conditions, OGPE permitting requirements, and the interconnection process
-                  with LUMA Energy.
+                  conditions, the National Electrical Code (NEC), and the net metering and
+                  interconnection process with LUMA Energy.
                 </p>
                 <p>
                   After watching Puerto Rico suffer with a fragile electrical
@@ -271,7 +271,7 @@ export default function AboutPage() {
                 role: 'Customer Service',
                 name: 'Kristen S. Rom\u00E1n',
                 credentials: 'Project Coordinator',
-                desc: 'Your point of contact throughout the entire process. Coordinates OGPE permits, LUMA Energy interconnection, and ensures every customer is completely satisfied.',
+                desc: 'Your point of contact throughout the entire process. Coordinates the net metering request with LUMA Energy, the installation schedule, and ensures every customer is completely satisfied.',
                 photo: '/team/kristen-roman.png',
               },
             ].map((member) => (

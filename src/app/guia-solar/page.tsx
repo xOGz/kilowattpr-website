@@ -41,7 +41,7 @@ const chapters = [
   {
     icon: CheckCircle,
     title: 'El Proceso Paso a Paso',
-    desc: 'Desde la consulta gratis hasta la activación: permisos OGPE, interconexión LUMA, plazos reales.',
+    desc: 'Desde la consulta gratis hasta la activación: instalación, medición neta con LUMA, plazos reales.',
   },
   {
     icon: BookOpen,

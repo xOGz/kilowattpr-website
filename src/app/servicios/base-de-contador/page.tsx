@@ -29,9 +29,9 @@ const faqs = [
       'En el mejor caso, de 2 a 4 días hábiles. El proceso es: (1) visita y cotización el mismo día o al siguiente, (2) instalación del nuevo meter base — generalmente 1 día de trabajo, (3) firma de certificación eléctrica nuestra, (4) coordinación con LUMA para que pase a reinspeccionar e instalar el meter de vuelta. El paso 4 depende de LUMA y a veces toma 24-48 horas adicionales según la zona. Si tu caso es urgente (negocio que está perdiendo dinero por día sin luz, dependencia médica), avísanos en la primera llamada y lo manejamos como prioridad.',
   },
   {
-    question: '¿Necesito permiso de OGPE para cambiar la base?',
+    question: '¿Necesito algún permiso para cambiar la base?',
     answer:
-      'Para reemplazo directo (misma ubicación, mismo amperaje) generalmente no se requiere permiso de OGPE — es trabajo de mantenimiento eléctrico cubierto por la certificación del perito licenciado. Si vas a aumentar el amperaje del servicio (de 100A a 200A, por ejemplo, porque vas a instalar paneles solares o cargador EV), o si vas a mover la ubicación del meter, ahí sí puede requerir permiso. Te orientamos según tu caso en la visita.',
+      'Para reemplazo directo (misma ubicación, mismo amperaje) no tienes que gestionar ningún permiso: es trabajo de mantenimiento eléctrico cubierto por la certificación del perito licenciado. Si vas a aumentar el amperaje del servicio (de 100A a 200A, por ejemplo, porque vas a instalar paneles solares o cargador EV), o si vas a mover la ubicación del meter, el proceso con LUMA es distinto. Te orientamos según tu caso en la visita.',
   },
   {
     question: '¿Aprovecho y subo el servicio de 100A a 200A?',

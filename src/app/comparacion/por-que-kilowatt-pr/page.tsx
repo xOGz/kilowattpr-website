@@ -83,7 +83,7 @@ const features: readonly ComparisonFeature[] = [
     instaladorLocal: false,
   },
   {
-    label: 'Experiencia OGPE/LUMA',
+    label: 'Experiencia en medición neta con LUMA',
     kilowatt: true,
     cadenaNacional: false,
     instaladorLocal: true,

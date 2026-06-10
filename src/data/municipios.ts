@@ -70,8 +70,8 @@ export const municipios: Municipio[] = [
         answer: 'Sí, pero el diseño importa mucho. Utilizamos software de diseño 3D para modelar las sombras de edificios vecinos a lo largo del año y posicionar los paneles donde reciben máxima exposición solar. En la mayoría de los casos en San Juan, un sistema bien diseñado puede reducir tu factura de LUMA entre un 70% y 95% incluso con sombras parciales.',
       },
       {
-        question: '¿Cuánto tarda el proceso completo de permisos e interconexión en San Juan?',
-        answer: 'En San Juan, el proceso completo desde contrato hasta producción toma típicamente entre 6 y 10 semanas. La fase de permisos de OGPE puede tardar 2-4 semanas en municipios urbanos densos como San Juan por el volumen de solicitudes, comparado con 1-3 semanas en municipios pequeños. La interconexión con LUMA añade 2-6 semanas adicionales. Nosotros gestionamos los trámites completos para que no tengas que hacer ninguna gestión.',
+        question: '¿Cuánto tarda el proceso completo de instalación e interconexión en San Juan?',
+        answer: 'En San Juan, el proceso completo desde contrato hasta producción toma típicamente entre 1 y 2 semanas, ya que en Puerto Rico la instalación solar no requiere permisos de construcción. Si deseas medición neta, gestionamos la solicitud con LUMA Energy por ti: el portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas. Nosotros gestionamos los trámites completos para que no tengas que hacer ninguna gestión.',
       },
       {
         question: '¿Necesito permiso especial si mi casa en San Juan está en una zona histórica como el Viejo San Juan o Miramar?',

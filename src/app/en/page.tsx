@@ -86,8 +86,8 @@ const steps = [
   },
   {
     num: '02',
-    title: 'Design & Permits',
-    desc: 'We handle all permitting with OGPE and the interconnection request with LUMA Energy. You don\'t have to do anything.',
+    title: 'Design & Net Metering',
+    desc: 'Solar installations in Puerto Rico require no construction permits. If you want net metering, we handle the request with LUMA Energy for you. You don\'t have to do anything.',
   },
   {
     num: '03',
@@ -105,7 +105,7 @@ const faqs = [
   {
     question: 'How long does solar installation take in Puerto Rico?',
     answer:
-      'The complete process from contract signing to your system producing energy takes between 1 and 3 weeks. This includes obtaining permits from OGPE (Office of Permit Management), interconnection approval with LUMA Energy, equipment delivery, and physical installation. The installation itself typically takes 1 to 2 days. We handle the entire permitting process for you — you don\'t have to do anything.',
+      'The complete process from contract signing to your system producing energy takes between 1 and 2 weeks. Solar installations in Puerto Rico require no construction permits, which keeps the process fast. The installation itself typically takes 1 to 2 days. If you want net metering, we handle the interconnection request with LUMA Energy for you: LUMA\'s new portal approves residential cases in 2 to 4 weeks.',
   },
   {
     question: 'How often should solar panels be cleaned?',

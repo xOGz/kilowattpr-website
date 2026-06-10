@@ -102,15 +102,13 @@ export default function InterconexionLumaPage() {
             de instalación.
           </p>
 
-          <h3>Paso 2: Permiso de OGPE</h3>
+          <h3>Paso 2: ¿Y los permisos de construcción? No aplican</h3>
           <p>
-            Paralelamente a la solicitud de interconexión, se debe obtener el permiso de
-            instalación de{' '}
-            <a href="https://ogpe.pr.gov" target="_blank" rel="noopener noreferrer">
-              OGPE (Oficina de Gerencia de Permisos)
-            </a>. Aunque son procesos separados, ocurren
-            en paralelo. Kilowatt PR gestiona ambos procesos simultáneamente para minimizar
-            el tiempo total.
+            En Puerto Rico la instalación de un sistema solar no requiere permiso de
+            construcción. El único trámite es la solicitud de medición neta con LUMA,
+            y es opcional: solo se hace si quieres conectar tu sistema a la red. Los
+            sistemas off-grid no llevan ningún trámite. Kilowatt PR gestiona la solicitud
+            completa por ti.
           </p>
 
           <h3>Paso 3: Sometimiento de la Solicitud a LUMA</h3>
@@ -141,7 +139,7 @@ export default function InterconexionLumaPage() {
           <h3>Paso 6: Instalación y Inspección</h3>
           <p>
             Kilowatt PR instala el sistema según el diseño aprobado. Tras la instalación,
-            se solicita la inspección de LUMA Energy y las inspecciones requeridas por OGPE.
+            se solicita la inspección de LUMA Energy.
             Los inspectores verifican que la instalación cumple con los planos aprobados y
             los códigos eléctricos aplicables.
           </p>
@@ -165,7 +163,7 @@ export default function InterconexionLumaPage() {
           <h2>Tiempos Típicos del Proceso</h2>
           <p>
             El tiempo total desde la firma del contrato hasta la activación del sistema
-            es de 1 a 3 semanas. La mayor parte de ese tiempo es el proceso de LUMA y OGPE,
+            es de 1 a 3 semanas. La mayor parte de ese tiempo es el proceso de LUMA,
             no la instalación física. Aquí un desglose típico:
           </p>
 
@@ -175,7 +173,6 @@ export default function InterconexionLumaPage() {
                 { etapa: 'Diseño y documentación', tiempo: '1 semana' },
                 { etapa: 'Sometimiento y revisión inicial de LUMA', tiempo: '1–2 semanas' },
                 { etapa: 'Revisión técnica de LUMA', tiempo: '2–4 semanas' },
-                { etapa: 'Permisos de OGPE (en paralelo)', tiempo: '2–3 semanas' },
                 { etapa: 'Instalación física', tiempo: '1–2 días' },
                 { etapa: 'Inspecciones y medidor', tiempo: '1–2 semanas' },
               ].map((row) => (

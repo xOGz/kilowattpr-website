@@ -30,9 +30,9 @@ const mainServices = [
   {
     icon: Sun,
     title: 'Instalación de Micro Inversores',
-    desc: 'Instalamos sistemas solares con micro inversores (residencial y comercial) diseñados para las condiciones climáticas de Puerto Rico. Incluimos todo: consulta, diseño 3D, permisos OGPE, interconexión LUMA y instalación. 1 año de garantía de mano de obra Kilowatt.',
+    desc: 'Instalamos sistemas solares con micro inversores (residencial y comercial) diseñados para las condiciones climáticas de Puerto Rico. Incluimos todo: consulta, diseño 3D, instalación y gestión de medición neta con LUMA si la deseas. Sin permisos de construcción. 1 año de garantía de mano de obra Kilowatt.',
     href: '/servicios/instalacion-paneles-solares',
-    features: ['Sistemas residenciales 4kW–25kW', 'Sistemas comerciales a medida', 'Gestión de permisos OGPE', 'Interconexión con LUMA Energy'],
+    features: ['Sistemas residenciales 4kW–25kW', 'Sistemas comerciales a medida', 'Sin permisos de construcción', 'Gestión de medición neta con LUMA (opcional)'],
     image: '/servicios/instalacion-paneles.jpg',
     imageAlt: 'Sistema de paneles solares con micro inversores instalado sobre techo residencial en Puerto Rico por Kilowatt PR',
   },
@@ -117,7 +117,7 @@ const specializedServices = [
   {
     icon: FileCheck,
     title: 'Certificaciones Eléctricas para LUMA Energy',
-    desc: 'Emisión de certificaciones eléctricas requeridas por LUMA para reconexiones, mejoras de servicio, permisos de OGPE e inspecciones.',
+    desc: 'Emisión de certificaciones eléctricas requeridas por LUMA para reconexiones, mejoras de servicio e inspecciones.',
     href: 'https://wa.me/17874312275',
   },
   {

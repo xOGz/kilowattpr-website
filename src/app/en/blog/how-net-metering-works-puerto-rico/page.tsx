@@ -274,7 +274,6 @@ export default function NetMeteringPuertoRicoPage() {
 
           <ol>
             <li><strong>Authorized installer:</strong> The system must be installed by an installer with a valid license in Puerto Rico</li>
-            <li><strong>OGPE permits:</strong> All construction permits from the Permit Management Office must be approved</li>
             <li><strong>Electrical inspection:</strong> The system must pass the electrical inspection by the licensed electrical contractor</li>
             <li><strong>Interconnection request:</strong> The formal request is submitted to LUMA with the system plans</li>
             <li><strong>LUMA inspection:</strong> LUMA inspects the system before authorizing interconnection</li>
