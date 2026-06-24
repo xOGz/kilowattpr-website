@@ -66,7 +66,7 @@ const services = [
 const differentiators = [
   {
     icon: CheckCircle,
-    title: 'Ingeniero PE con 50+ Años',
+    title: 'Ingeniero PE con 30+ Años',
     desc: 'Cada sistema es diseñado por el Ing. Julio A. Santiago Pérez (PE #6083), ingeniero eléctrico licenciado con más de 30 años de experiencia, ex ingeniero de NASA y ex profesor de la UPR Mayagüez. No vendedores — ingeniería real.',
   },
   {
@@ -90,7 +90,7 @@ const steps = [
   {
     num: '01',
     title: 'Consulta Gratis',
-    desc: 'Analizamos tu consumo eléctrico, diseñamos tu sistema en 3D y te presentamos una proyección de ahorro a 25 años, sin costo y sin compromiso.',
+    desc: 'Analizamos tu consumo eléctrico, diseñamos tu sistema en 3D y te presentamos una proyección de ahorro a 7 años, sin costo y sin compromiso.',
   },
   {
     num: '02',
@@ -113,7 +113,7 @@ const faqs = [
   {
     question: '¿Cuánto tiempo tarda la instalación solar en Puerto Rico?',
     answer:
-      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 1 y 2 semanas. En Puerto Rico la instalación solar no requiere permisos de construcción, lo que acelera todo el proceso. La instalación en sí toma generalmente 1 a 2 días. Si deseas medición neta, gestionamos la solicitud de interconexión con LUMA Energy por ti: el portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.',
+      'El proceso completo desde la firma del contrato hasta que tu sistema esté produciendo energía toma entre 1 y 3 semanas. En Puerto Rico la instalación solar no requiere permisos de construcción, lo que acelera todo el proceso. La instalación en sí toma generalmente 1 a 2 días. Si deseas medición neta, gestionamos la solicitud de interconexión con LUMA Energy por ti: el portal nuevo de LUMA aprueba casos residenciales en 2 a 4 semanas.',
   },
   {
     question: '¿Con qué frecuencia se deben limpiar los paneles solares?',
