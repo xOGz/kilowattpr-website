@@ -50,13 +50,6 @@ const testimonials: Testimonial[] = [
     text: 'Tengo un negocio comercial y los costos de energía me estaban matando. Kilowatt PR diseñó un sistema que se ajustó perfectamente a mi consumo. En seis meses ya estoy viendo el retorno de la inversión.',
   },
   {
-    name: 'Ana G.',
-    municipio: 'Mayagüez',
-    rating: 5,
-    initials: 'AG',
-    text: 'Lo que más me impresionó fue que se encargaron de todo el proceso — permisos de OGPE, interconexión con LUMA, inspecciones. Yo no tuve que hacer nada más que firmar. Súper recomendados.',
-  },
-  {
     name: 'José R.',
     municipio: 'Caguas',
     rating: 5,
