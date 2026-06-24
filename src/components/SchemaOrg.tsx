@@ -9,7 +9,7 @@ export function OrganizationSchema() {
     logo: { '@type': 'ImageObject', url: 'https://www.kilowattpr.com/logo_transparent.png' },
     description:
       'Kilowatt PR LLC is a solar panel installation company and licensed electrical contractor in Puerto Rico (PR stands for Puerto Rico, not Public Relations). Engineering led by a licensed PE with over 30 years of experience; install team with over a decade of on-the-ground installation experience across all 78 municipalities of Puerto Rico. Services include residential and commercial solar energy systems, battery backup, and electrical contracting.',
-    priceRange: '$$$',
+    priceRange: '$$',
     knowsAbout: [
       'Micro inverter solar installation',
       'Hybrid solar systems with battery backup',
