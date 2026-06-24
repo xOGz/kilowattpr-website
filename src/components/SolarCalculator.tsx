@@ -27,7 +27,7 @@ const COPY = {
     monthlySavings: 'Ahorro Mensual',
     years: 'años',
     payback: 'Retorno de Inversión',
-    projected: 'Ahorro Proyectado a 25 Años',
+    projected: 'Ahorro Proyectado a 7 Años',
     lumaNote: 'Incluyendo aumento anual de 3% en tarifa de LUMA',
     cta: 'Obtener Cotización Personalizada',
     disclaimer:
@@ -44,7 +44,7 @@ const COPY = {
     monthlySavings: 'Monthly Savings',
     years: 'years',
     payback: 'Payback Period',
-    projected: '25-Year Projected Savings',
+    projected: '7-Year Projected Savings',
     lumaNote: 'Including a 3% annual increase in the LUMA rate',
     cta: 'Get a Personalized Quote',
     disclaimer:
@@ -62,7 +62,7 @@ interface CalculatorResult {
   monthlySavings: number
   annualSavings: number
   paybackYears: number
-  savings25Years: number
+  savings7Years: number
 }
 
 function calculateSolar(monthlyBill: number): CalculatorResult {
@@ -75,10 +75,10 @@ function calculateSolar(monthlyBill: number): CalculatorResult {
   const monthlySavings = annualSavings / 12
   const paybackYears = estimatedSystemCost / annualSavings
 
-  let savings25Years = 0
-  for (let year = 1; year <= 25; year++) {
+  let savings7Years = 0
+  for (let year = 1; year <= 7; year++) {
     const yearRate = Math.pow(1 + ANNUAL_LUMA_INCREASE, year - 1)
-    savings25Years += annualSavings * yearRate
+    savings7Years += annualSavings * yearRate
   }
 
   return {
@@ -89,7 +89,7 @@ function calculateSolar(monthlyBill: number): CalculatorResult {
     monthlySavings: Math.round(monthlySavings),
     annualSavings: Math.round(annualSavings),
     paybackYears: Math.round(paybackYears * 10) / 10,
-    savings25Years: Math.round(savings25Years),
+    savings7Years: Math.round(savings7Years),
   }
 }
 
@@ -183,13 +183,13 @@ export default function SolarCalculator({ locale = 'es' }: { locale?: Locale }) 
             </div>
           </div>
 
-          {/* 25-year savings highlight */}
+          {/* 7-year savings highlight */}
           <div className="bg-gradient-to-r from-[#E09500] to-[#F5A623] rounded-xl p-6 text-center">
             <p className="text-[#3A2400] font-label text-sm uppercase tracking-wider mb-1">
               {t.projected}
             </p>
             <p className="font-display text-4xl font-bold text-[#3A2400]">
-              {formatCurrency(result.savings25Years)}
+              {formatCurrency(result.savings7Years)}
             </p>
             <p className="text-[#6B4400] text-sm mt-1">
               {t.lumaNote}

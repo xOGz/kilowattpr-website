@@ -32,7 +32,7 @@ const faqs = [
   {
     question: '¿Cómo se calcula el retorno de inversión?',
     answer:
-      'El retorno de inversión divide el costo del sistema entre tu ahorro anual estimado. También consideramos un aumento anual del 3% en la tarifa de LUMA, lo cual hace que tu ahorro a 25 años sea significativamente mayor que el cálculo simple. Históricamente, LUMA ha aumentado las tarifas más del 3% anual.',
+      'El retorno de inversión divide el costo del sistema entre tu ahorro anual estimado. También consideramos un aumento anual del 3% en la tarifa de LUMA, lo cual hace que tu ahorro a 7 años sea significativamente mayor que el cálculo simple. Históricamente, LUMA ha aumentado las tarifas más del 3% anual.',
   },
   {
     question: '¿Puedo reducir mi factura de LUMA un 95%?',
@@ -106,7 +106,7 @@ export default function CalculadoraSolarPage() {
               </div>
               <h3 className="font-headline font-semibold text-[#121240] mb-2">Tu Ahorro</h3>
               <p className="text-[#4A4A6A] text-sm leading-relaxed">
-                Proyectamos tu ahorro mensual, retorno de inversión y ahorro total a 25 años
+                Proyectamos tu ahorro mensual, retorno de inversión y ahorro total a 7 años
                 incluyendo aumentos de tarifa.
               </p>
             </div>

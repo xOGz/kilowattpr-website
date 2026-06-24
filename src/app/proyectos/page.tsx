@@ -101,7 +101,7 @@ export default function ProyectosPage() {
             </h2>
             <p className="text-gray-300 mb-6">
               Cotización gratis, sin compromiso. Análisis de consumo, diseño 3D y proyección
-              de ahorros a 25 años.
+              de ahorros a 7 años.
             </p>
             <a
               href="https://wa.me/17874312275"

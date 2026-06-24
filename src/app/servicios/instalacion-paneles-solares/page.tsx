@@ -100,7 +100,7 @@ export default function InstalacionPanelesSolaresPage() {
             </h2>
             <div className="space-y-4">
               {[
-                { step: '1', title: 'Consulta Gratis', desc: 'Análisis de consumo, diseño 3D del sistema y proyección de ahorros a 25 años. Sin costo, sin compromiso.' },
+                { step: '1', title: 'Consulta Gratis', desc: 'Análisis de consumo, diseño 3D del sistema y proyección de ahorros a 7 años. Sin costo, sin compromiso.' },
                 { step: '2', title: 'Firma de Contrato', desc: 'Revisamos todos los detalles del sistema, costo y cronograma de trabajo. Si necesitas financiamiento, te entregamos la cotización formal y documentación técnica para que la presentes a tu cooperativa o banco — Kilowatt no financia directamente.' },
                 { step: '3', title: 'Diseño Final y Medición Neta', desc: 'Finalizamos el diseño del sistema. Si deseas medición neta, sometemos la solicitud de interconexión a LUMA Energy por ti. No se requiere permiso de construcción.' },
                 { step: '4', title: 'Instalación', desc: 'Nuestro equipo instala el sistema en 1–2 días con mínima interferencia en tu rutina diaria.' },
