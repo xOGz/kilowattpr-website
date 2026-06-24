@@ -228,7 +228,7 @@ export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'Electrician'],
-    '@id': 'https://www.kilowattpr.com/#localbusiness',
+    '@id': 'https://www.kilowattpr.com/#organization',
     name: 'Kilowatt PR LLC',
     description:
       'Contratista eléctrico e instalador de paneles solares #1 en Puerto Rico. Sistemas solares desde $11,950, baterías de respaldo, reparación de bases de medidores. 4.9★ en Google.',
@@ -285,7 +285,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           'Javier es tremendo profesional y hace un excelente trabajo. Trabaja completamente organizado y es bien honesto con lo que ve que se necesite y como se pueden resolver los problemas. Recomendado al 100%.',
         inLanguage: 'es',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
       {
@@ -296,7 +296,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           'Kilowatt PR is excellent! We had a great experience and highly recommend them. They are knowledgeable, professional, punctual, and reasonably priced. They replaced an inverter for us and had to redo a lot of the work that the previous electrician did. If you need a good electrician, you can’t go wrong with them.',
         inLanguage: 'en',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
       {
@@ -307,7 +307,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           'Excelente servicio, respondió rápido, trabajo limpio y muy profesional.',
         inLanguage: 'es',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
       {
@@ -318,7 +318,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           'Excelente experiencia con Kilowatt PR. Desde el primer día fueron claros, responsables y bien profesionales. Me explicaron todo el proceso sin rodeos y cumplieron exactamente con lo prometido. La instalación del sistema solar quedó limpia, bien hecha y dentro del tiempo acordado. Se nota la experiencia y el conocimiento técnico del equipo. Además, me ayudaron con todo el proceso de medición neta sin complicaciones. Desde que el sistema está funcionando, todo corre perfecto. Los recomiendo 100% si buscas un trabajo serio, bien hecho y sin sorpresas.',
         inLanguage: 'es',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
       {
@@ -329,7 +329,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           '¡Muy profesional! Tremendo servicio. 100% recomendado. ¡Los duros del oeste!',
         inLanguage: 'es',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
       {
@@ -340,7 +340,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           'Excelente trabajo de electricidad, muy acertado, rápido, confiable, profesional y con costos muy adecuados. Rosie Calderón, clienta agradecida.',
         inLanguage: 'es',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
       {
@@ -351,7 +351,7 @@ export function LocalBusinessSchema() {
         reviewBody:
           'Excelente electricista, responsable y presta un servicio de calidad.',
         inLanguage: 'es',
-        itemReviewed: { '@id': 'https://www.kilowattpr.com/#localbusiness' },
+        itemReviewed: { '@id': 'https://www.kilowattpr.com/#organization' },
         publisher: { '@type': 'Organization', name: 'Google' },
       },
     ],
@@ -394,6 +394,40 @@ export function FAQSchema({
         text: faq.answer,
         inLanguage,
       },
+    })),
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+    />
+  )
+}
+
+export function HowToSchema({
+  name,
+  steps,
+  totalTime,
+  inLanguage = 'es',
+}: {
+  name: string
+  steps: { name: string; text: string }[]
+  totalTime?: string
+  inLanguage?: 'es' | 'en'
+}) {
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    inLanguage,
+    ...(totalTime ? { totalTime } : {}),
+    provider: { '@id': 'https://www.kilowattpr.com/#organization' },
+    step: steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
     })),
   }
 
