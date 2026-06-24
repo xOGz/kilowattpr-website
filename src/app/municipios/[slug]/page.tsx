@@ -241,7 +241,7 @@ export default function MunicipioPage({ params }: { params: { slug: string } }) 
               Cotización Gratis en {municipio.name}
             </h2>
             <p className="text-gray-300 mb-6">
-              Análisis de consumo, diseño 3D y proyección de ahorros a 25 años.
+              Análisis de consumo, diseño 3D y proyección de ahorros a 7 años.
               Sin costo y sin compromiso.
             </p>
             <a
