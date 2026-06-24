@@ -15,6 +15,7 @@ import {
   PersonSchema,
   KristenPersonSchema,
   BreadcrumbSchema,
+  HowToSchema,
 } from '@/components/SchemaOrg'
 import FAQSection from '@/components/FAQSection'
 import HeroWithTextRotate from '@/components/HeroWithTextRotate'
@@ -161,9 +162,33 @@ export default function HomePage() {
       <KristenPersonSchema />
       <BreadcrumbSchema items={[{ name: 'Inicio', url: 'https://www.kilowattpr.com/' }]} />
       <FAQSchema faqs={faqs} inLanguage="es" />
+      <HowToSchema
+        name="Cómo instalar energía solar en Puerto Rico con Kilowatt PR"
+        totalTime="P3W"
+        inLanguage="es"
+        steps={steps.map((s) => ({ name: s.title, text: s.desc }))}
+      />
 
       {/* Hero — Enhanced with 21st.dev TextRotate + Three.js dotted surface */}
       <HeroWithTextRotate />
+
+      {/* Answer-first summary — self-contained citable unit for AI search (GEO).
+          itemprop="description" is targeted by the LocalBusiness speakable selector. */}
+      <section className="section-light-white py-12">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p
+            itemProp="description"
+            className="font-body text-body-lg text-center leading-relaxed text-[#4A4A6A]"
+          >
+            <strong className="text-[#121240]">Kilowatt PR LLC</strong> es un contratista
+            eléctrico licenciado e instalador de paneles solares que atiende los 78 municipios
+            de Puerto Rico desde Aguada. Los sistemas residenciales comienzan en $11,950,
+            diseñados por un ingeniero PE con más de 30 años de experiencia (PE #6083) e
+            instalados por un perito electricista licenciado (Lic. #21309). Calificación 4.9★
+            en Google.
+          </p>
+        </div>
+      </section>
 
       {/* Trust bar — LIGHT */}
       <TrustBar />
