@@ -73,8 +73,8 @@ export default function HurricanePreparationPage() {
               (nevera, ventiladores, internet, equipo médico, cargadores de celular) durante
               apagones prolongados sin depender de gasolina ni de la red de LUMA. La instalación
               debe completarse <strong>antes del 1 de junio</strong> para estar listo cuando
-              empieza la temporada — el proceso típico desde contrato hasta operación es de 6-10
-              semanas.
+              empieza la temporada — la instalación toma 1–3 semanas hasta tener el sistema
+              generando, y la medición neta con LUMA suma 2–4 semanas adicionales.
             </p>
           </PostTLDR>
 

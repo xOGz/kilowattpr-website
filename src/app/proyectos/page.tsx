@@ -35,7 +35,7 @@ const proyectos = [
     title: 'Sistema Residencial 6kW',
     location: 'Ponce, PR',
     type: 'Residencial',
-    desc: 'Sistema de 6kW para hogar de 3 habitaciones. Incluye sellado de techo previo a la instalación. Proceso completo de 8 semanas desde contrato hasta activación.',
+    desc: 'Sistema de 6kW para hogar de 3 habitaciones. Incluye sellado de techo previo a la instalación. Del contrato a producción: 1–3 semanas; medición neta con LUMA gestionada después.',
     tag: 'Con Sellado de Techo',
   },
   {

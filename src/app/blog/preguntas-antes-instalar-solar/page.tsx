@@ -234,15 +234,15 @@ export default function PreguntasAntesInstalarPage() {
           <p>
             La instalación física de los paneles toma típicamente de 1 a 3 días. Pero
             el proceso completo desde que firmas el contrato hasta que tu sistema está
-            produciendo y conectado a la red de LUMA puede tomar de 6 a 16 semanas,
-            dependiendo de los trámites de permisos y la carga de trabajo de LUMA.
+            produciendo toma de 1 a 3 semanas, y la interconexión con medición neta de
+            LUMA suma 2 a 4 semanas adicionales, según la carga de trabajo de LUMA.
           </p>
 
           <div className="not-prose bg-gray-50 rounded-xl p-6 my-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div>
                 <h4 className="font-bold text-green-700 mb-2">Buena Respuesta</h4>
-                <p className="text-sm text-gray-700">"La instalación toma 1–3 días. El proceso total con permisos e interconexión LUMA es de 8–12 semanas. Te mantenemos informado en cada paso."</p>
+                <p className="text-sm text-gray-700">"La instalación toma 1–3 días. El proceso del contrato a producción es de 1–3 semanas, y la interconexión con medición neta de LUMA suma 2–4 semanas. Te mantenemos informado en cada paso."</p>
               </div>
               <div>
                 <h4 className="font-bold text-red-700 mb-2">Señal de Alerta</h4>

@@ -40,7 +40,7 @@ Kilowatt PR LLC instala sistemas de energía solar residenciales y comerciales e
 - **Costo promedio residencial:** desde $11,950, típicamente $11,950–$35,000 según consumo y si incluye batería.
 - **Recuperación de inversión:** entre 4 y 6 años con las tarifas actuales de LUMA.
 - **Reducción de factura LUMA:** 70%–100% en la mayoría de los casos con net metering.
-- **Tiempo de instalación física:** 1 a 2 días. Proceso completo (diseño, permisos OGPE, coordinación): 1 a 3 semanas. Interconexión LUMA: 2 a 4 semanas adicionales.
+- **Tiempo de instalación física:** 1 a 2 días. Proceso completo (diseño y coordinación): 1 a 3 semanas. Interconexión con medición neta de LUMA: 2 a 4 semanas adicionales.
 - **Mantenimiento:** cada 6–8 meses (estándar), cada 4–6 meses (zonas costeras).
 - **Cotización:** gratis y sin compromiso en Aguada, Aguadilla, Rincón, Moca, Añasco y Mayagüez. Fuera de esa área: $150 por inspección, reembolsables al firmar contrato.
 - **IVU:** $0 en solar (exento en Puerto Rico).
@@ -70,7 +70,7 @@ La cotización es gratis y sin compromiso para clientes en Aguada, Aguadilla, Ri
 ### Proceso de Instalación
 
 **¿Cuánto tiempo toma instalar un sistema solar?**
-El proceso completo toma entre 1 y 3 semanas, que incluye diseño, permisos y coordinación con LUMA. La instalación física en el techo toma solo 1 a 2 días. Kilowatt se encarga de todo el proceso de principio a fin.
+El proceso completo (diseño y coordinación) toma entre 1 y 3 semanas hasta que el sistema produce; la interconexión con medición neta de LUMA suma 2 a 4 semanas adicionales. La instalación física en el techo toma solo 1 a 2 días. Kilowatt se encarga de todo el proceso de principio a fin.
 
 **¿Kilowatt PR se encarga de los permisos de OGPE?**
 Sí. Kilowatt gestiona todos los permisos de OGPE (Oficina de Gerencia de Permisos) necesarios. El cliente no tiene que preocuparse por el papeleo ni visitas a oficinas gubernamentales.
