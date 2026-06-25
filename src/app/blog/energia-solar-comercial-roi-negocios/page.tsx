@@ -7,7 +7,7 @@ import FAQSection from '@/components/FAQSection'
 export const metadata: Metadata = {
   title: 'ROI de la Energía Solar Comercial en Puerto Rico: 3 Casos Reales',
   description:
-    'Análisis de retorno de inversión (ROI) solar comercial en Puerto Rico con 3 escenarios: restaurante, almacén y comercio retail. Períodos de recuperación, ahorro a 25 años y el valor de la continuidad operacional durante apagones de LUMA.',
+    'Análisis de retorno de inversión (ROI) solar comercial en Puerto Rico con 3 escenarios: restaurante, almacén y comercio retail. Períodos de recuperación, ahorro a 7 años y el valor de la continuidad operacional durante apagones de LUMA.',
   alternates: {
     canonical: 'https://www.kilowattpr.com/blog/energia-solar-comercial-roi-negocios/',
     languages: {
@@ -75,7 +75,7 @@ export default function SolarComercialPage() {
             Si eres dueño de un negocio en Puerto Rico, ya conoces el dolor de las facturas
             de LUMA Energy. Esta guía no vende — analiza los números: tres escenarios reales
             de retorno de inversión (un restaurante, un almacén y un comercio retail) con
-            períodos de recuperación, ahorro proyectado a 25 años y el valor económico de
+            períodos de recuperación, ahorro proyectado a 7 años y el valor económico de
             seguir operando durante los apagones. Si después quieres una propuesta para tu
             negocio, te conectamos con nuestro{' '}
             <Link href="/servicios/energia-solar-comercial">servicio de energía solar comercial</Link>.
@@ -173,7 +173,7 @@ export default function SolarComercialPage() {
               <div className="flex justify-between"><span className="text-gray-700">Producción solar mensual:</span><span className="font-semibold">2,860 kWh</span></div>
               <div className="flex justify-between"><span className="text-gray-700">Ahorro mensual estimado:</span><span className="font-semibold text-green-600">$780</span></div>
               <div className="flex justify-between border-t border-gray-300 pt-2 mt-2"><span className="text-gray-700 font-semibold">Período de recuperación:</span><span className="font-bold text-solar-yellow">~5.5 años</span></div>
-              <div className="flex justify-between"><span className="text-gray-700 font-semibold">Ahorro total en 25 años:</span><span className="font-bold text-green-600">$182,000+</span></div>
+              <div className="flex justify-between"><span className="text-gray-700 font-semibold">Ahorro total en 7 años:</span><span className="font-bold text-green-600">$65,000+</span></div>
             </div>
           </div>
 
@@ -196,7 +196,7 @@ export default function SolarComercialPage() {
               <div className="flex justify-between"><span className="text-gray-700">Producción solar mensual:</span><span className="font-semibold">4,550 kWh</span></div>
               <div className="flex justify-between"><span className="text-gray-700">Ahorro mensual estimado:</span><span className="font-semibold text-green-600">$1,200</span></div>
               <div className="flex justify-between border-t border-gray-300 pt-2 mt-2"><span className="text-gray-700 font-semibold">Período de recuperación:</span><span className="font-bold text-solar-yellow">~5.3 años</span></div>
-              <div className="flex justify-between"><span className="text-gray-700 font-semibold">Ahorro total en 25 años:</span><span className="font-bold text-green-600">$284,000+</span></div>
+              <div className="flex justify-between"><span className="text-gray-700 font-semibold">Ahorro total en 7 años:</span><span className="font-bold text-green-600">$100,000+</span></div>
             </div>
           </div>
 
@@ -219,7 +219,7 @@ export default function SolarComercialPage() {
               <div className="flex justify-between"><span className="text-gray-700">Producción solar mensual:</span><span className="font-semibold">1,950 kWh</span></div>
               <div className="flex justify-between"><span className="text-gray-700">Ahorro mensual estimado:</span><span className="font-semibold text-green-600">$510</span></div>
               <div className="flex justify-between border-t border-gray-300 pt-2 mt-2"><span className="text-gray-700 font-semibold">Período de recuperación:</span><span className="font-bold text-solar-yellow">~5.7 años</span></div>
-              <div className="flex justify-between"><span className="text-gray-700 font-semibold">Ahorro total en 25 años:</span><span className="font-bold text-green-600">$118,000+</span></div>
+              <div className="flex justify-between"><span className="text-gray-700 font-semibold">Ahorro total en 7 años:</span><span className="font-bold text-green-600">$42,000+</span></div>
             </div>
           </div>
 

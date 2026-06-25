@@ -149,7 +149,7 @@ export default function EnergiaSolarComercialPage() {
                 análisis de ROI solar comercial con 3 casos reales
               </Link>{' '}
               — restaurante, almacén y comercio retail — con períodos de recuperación y
-              ahorro proyectado a 25 años.
+              ahorro proyectado a 7 años.
             </p>
           </div>
 
